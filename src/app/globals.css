@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #faf8f5;
+  --foreground: #2c1810;
+  --surface: #ffffff;
+  --surface-muted: #f5f0e8;
+  --border: #e7e5e4;
+  --muted: #78716c;
+  --color-header: #f5f3f0;
+  --color-header-border: rgb(166 137 102 / 0.28);
+}
+
+.dark {
+  --background: #0c0a09;
+  --foreground: #f5f0e8;
+  --surface: #1c1917;
+  --surface-muted: #292524;
+  --border: #44403c;
+  --muted: #a8a29e;
+  --color-header: rgb(12 10 9 / 0.95);
+  --color-header-border: rgb(196 168 130 / 0.22);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-lato);
+  --font-serif: var(--font-playfair);
+
+  --color-burgundy-50: #fdf5f5;
+  --color-burgundy-100: #f9e8e8;
+  --color-burgundy-200: #f0cfcf;
+  --color-burgundy-300: #e0a8a8;
+  --color-burgundy-400: #c97575;
+  --color-burgundy-500: #a84848;
+  --color-burgundy-600: #8b3333;
+  --color-burgundy-700: #722f2f;
+  --color-burgundy-800: #5c2626;
+  --color-burgundy-900: #4a1c1c;
+  --color-burgundy-950: #2c1010;
+
+  --color-cream-50: #faf8f5;
+  --color-cream-100: #f5f0e8;
+  --color-cream-200: #ebe3d5;
+  --color-cream-300: #ddd0ba;
+
+  --color-gold-400: #c9a84c;
+  --color-gold-500: #b8943f;
+  --color-gold-600: #9a7a32;
+
+  --color-brand-400: #c4a882;
+  --color-brand-500: #a68966;
+  --color-brand-600: #8b7355;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-lato), system-ui, sans-serif;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-playfair), Georgia, serif;
+}
