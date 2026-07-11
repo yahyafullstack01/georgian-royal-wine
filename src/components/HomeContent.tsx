@@ -6,6 +6,35 @@ import ProductCard from "@/components/ProductCard";
 import { getFeaturedWines } from "@/data/wines";
 import { useLocale } from "@/context/LocaleContext";
 
+const PRESENTATION_URL =
+  "https://grw-wine.com/wp-content/uploads/2025/05/Georgian-Wine_Presentation_2024-.pdf";
+
+function PdfIcon() {
+  return (
+    <svg
+      viewBox="0 0 32 40"
+      aria-hidden="true"
+      className="h-10 w-8 shrink-0 text-stone-700 dark:text-stone-300"
+    >
+      <path
+        fill="currentColor"
+        d="M2 0h18l12 12v28a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm16 2.5V12h9.5L18 2.5zM7 18h18v2H7v-2zm0 6h18v2H7v-2zm0 6h12v2H7v-2z"
+      />
+      <text
+        x="16"
+        y="30"
+        textAnchor="middle"
+        fill="white"
+        fontSize="7"
+        fontWeight="700"
+        fontFamily="system-ui, sans-serif"
+      >
+        PDF
+      </text>
+    </svg>
+  );
+}
+
 export default function HomeContent() {
   const { t } = useLocale();
   const featured = getFeaturedWines();
@@ -81,6 +110,41 @@ export default function HomeContent() {
               {t.home.ourStory}
             </Link>
           </div>
+        </div>
+      </section>
+
+      <section className="border-b border-stone-200 bg-white py-16 sm:py-20 dark:border-stone-800 dark:bg-stone-900">
+        <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
+          <div className="flex flex-col items-center justify-center gap-8 sm:flex-row sm:gap-10">
+            <Image
+              src="/grw-logo.png"
+              alt="Georgian Royal Wine"
+              width={280}
+              height={96}
+              className="h-20 w-auto object-contain sm:h-24"
+            />
+            <a
+              href={PRESENTATION_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-4 text-stone-800 transition-colors hover:text-burgundy-700 dark:text-stone-200 dark:hover:text-gold-400"
+            >
+              <PdfIcon />
+              <span className="whitespace-pre-line text-left text-sm leading-snug tracking-wide uppercase">
+                {t.home.downloadPresentation}
+              </span>
+            </a>
+          </div>
+
+          <h2 className="mt-12 text-2xl font-semibold tracking-[0.2em] text-stone-900 uppercase sm:text-3xl dark:text-cream-100">
+            {t.home.presentationTitle}
+          </h2>
+          <p className="mt-4 text-base text-stone-600 sm:text-lg dark:text-stone-300">
+            {t.home.presentationSubtitle}
+          </p>
+          <p className="mx-auto mt-8 max-w-3xl text-sm leading-relaxed text-stone-500 sm:text-base dark:text-stone-400">
+            {t.home.presentationDesc}
+          </p>
         </div>
       </section>
 

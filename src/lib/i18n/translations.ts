@@ -50,16 +50,34 @@ const translations = {
       whiteWines: "White Wines",
       rose: "Rosé",
       sparkling: "Sparkling",
+      downloadPresentation: "Download\nPresentation",
+      presentationTitle: "Georgian Royal Wine",
+      presentationSubtitle: "Premium Georgian Wines With A Rich History",
+      presentationDesc:
+        "GRW wines are crafted with a blend of tradition and innovation, offering exceptional quality and distinct flavors. Produced in Georgia's renowned Kakheti region, our wines showcase the rich terroir and centuries-old winemaking expertise, delivering a premium experience in every bottle.",
     },
     about: {
-      title: "Our Story",
-      subtitle: "Three decades of passion for exceptional wine",
-      p1: "Georgian Royal Wine was founded in 1987 by Marco and Elena Rossi, two Italian immigrants who brought their family's winemaking tradition to the heart of Napa Valley. What began as a small import business operating from a modest warehouse has grown into one of California's most respected wine merchants.",
-      p2: "Today, our team of certified sommeliers travels the globe — from the limestone slopes of Burgundy to the sun-baked hills of Tuscany — to discover wines that meet our exacting standards. We partner directly with family-owned vineyards, ensuring fair trade practices and authentic expressions of terroir in every bottle we sell.",
-      p3: "Our mission is simple: to make exceptional wine accessible to everyone. Whether you're a seasoned collector or just beginning your wine journey, we're here to guide you to bottles you'll treasure.",
-      years: "Years of Excellence",
-      wines: "Wines in Collection",
-      countries: "Countries Sourced",
+      title: "About Us",
+      subtitle: "Bringing the authentic taste of Georgia to Europe",
+      p1: "We are dedicated to introducing the authentic taste of Georgia to businesses across Europe through our partnership with GRW wines.",
+      p2: "Our focus is on premium, traditional wines crafted from unique Georgian grape varieties, sourced directly from the renowned Kakheti region. By maintaining close relationships with local producers, we ensure the highest standards of quality and authenticity, offering reliable logistics and competitive pricing.",
+      p3: "Whether you are a retailer, restaurant, or distributor, partnering with us means confidently bringing the unique and exquisite flavors of GRW wines to your customers. Our goal is to support your business growth by providing seamless service and products that resonate with wine lovers across Europe, helping to share the rich winemaking heritage of Georgia.",
+      vineyardTitle: "220 Hectares Of Vineyard Area",
+      vineyardDesc:
+        "The Kakheti Valley is renowned for its unique terroir, diverse soils, and climate, cultivating a wide variety of grapevines including Saperavi, Rkatsiteli, Mtsvane, Kisi, and others. The Racha region, with only about 1,600 hectares of vineyards, is known for its rare grape varieties, resulting in exceptionally deep wines.",
+      factsTitle: "Interesting Facts",
+      fact1Title: "Triple Quality Control",
+      fact1:
+        "GRW Premium wines undergo a triple quality control system: laboratory tests at the factory, when exported from Georgia and in Russia at Customs (obtaining certificates and declarations).",
+      fact2Title: "Cradle of Winemaking",
+      fact2:
+        "Georgia is the world's cradle of winemaking. During excavations in Georgia, the ancient city of Colchis was discovered, and in the layers of rock from the 7th century BC – fragments of surviving vessels with chemical elements of wine.",
+      fact3Title: "UNESCO Qvevri Heritage",
+      fact3:
+        "One of the oldest methods of making wine in Georgia, in qvevri, is included in the list of UNESCO intangible cultural heritage.",
+      fact4Title: "Global Recognition",
+      fact4:
+        "Georgian wines are supplied to 80 countries around the world. In 2020, the country exported 125 million bottles, of which 85 million went to major importers such as Russia and the CIS countries. The remaining 40 million bottles were distributed around the world, with the bulk of the shipments going to EU countries. This suggests that the conquest of world markets and recognition of Georgian wine is steadily growing around the world.",
       explore: "Explore Our Collection",
     },
     shop: {
@@ -219,16 +237,34 @@ const translations = {
       whiteWines: "Vinos Blancos",
       rose: "Rosado",
       sparkling: "Espumoso",
+      downloadPresentation: "Descargar\nPresentación",
+      presentationTitle: "Georgian Royal Wine",
+      presentationSubtitle: "Vinos Georgianos Premium con una Rica Historia",
+      presentationDesc:
+        "Los vinos GRW se elaboran con una mezcla de tradición e innovación, ofreciendo una calidad excepcional y sabores distintivos. Producidos en la reconocida región de Kakheti en Georgia, nuestros vinos muestran el rico terroir y siglos de experiencia vinícola, ofreciendo una experiencia premium en cada botella.",
     },
     about: {
-      title: "Nuestra Historia",
-      subtitle: "Tres décadas de pasión por el vino excepcional",
-      p1: "Georgian Royal Wine fue fundada en 1987 por Marco y Elena Rossi, dos inmigrantes italianos que trajeron la tradición vinícola de su familia al corazón del Valle de Napa.",
-      p2: "Hoy, nuestro equipo de sommeliers certificados viaja por el mundo para descubrir vinos que cumplen nuestros exigentes estándares.",
-      p3: "Nuestra misión es simple: hacer el vino excepcional accesible para todos.",
-      years: "Años de Excelencia",
-      wines: "Vinos en Colección",
-      countries: "Países de Origen",
+      title: "Sobre Nosotros",
+      subtitle: "Llevando el auténtico sabor de Georgia a Europa",
+      p1: "Estamos dedicados a presentar el auténtico sabor de Georgia a empresas de toda Europa a través de nuestra asociación con vinos GRW.",
+      p2: "Nos centramos en vinos premium y tradicionales elaborados con variedades únicas de uva georgiana, obtenidos directamente de la reconocida región de Kakheti. Manteniendo estrechas relaciones con productores locales, garantizamos los más altos estándares de calidad y autenticidad, ofreciendo logística fiable y precios competitivos.",
+      p3: "Ya sea minorista, restaurante o distribuidor, asociarse con nosotros significa llevar con confianza los sabores únicos y exquisitos de los vinos GRW a sus clientes. Nuestro objetivo es apoyar el crecimiento de su negocio ofreciendo un servicio impecable y productos que conecten con los amantes del vino en toda Europa.",
+      vineyardTitle: "220 Hectáreas de Viñedos",
+      vineyardDesc:
+        "El valle de Kakheti es famoso por su terroir único, suelos diversos y clima, cultivando una amplia variedad de vides incluyendo Saperavi, Rkatsiteli, Mtsvane, Kisi y otras. La región de Racha, con solo unos 1.600 hectáreas de viñedos, es conocida por sus variedades de uva raras, dando vinos excepcionalmente profundos.",
+      factsTitle: "Datos Interesantes",
+      fact1Title: "Triple Control de Calidad",
+      fact1:
+        "Los vinos premium GRW pasan por un triple sistema de control de calidad: pruebas de laboratorio en la fábrica, al exportarse de Georgia y en Rusia en Aduanas (obteniendo certificados y declaraciones).",
+      fact2Title: "Cuna de la Viticultura",
+      fact2:
+        "Georgia es la cuna mundial de la viticultura. Durante excavaciones se descubrió la antigua ciudad de Colchis, y en capas de roca del siglo VII a.C. – fragmentos de vasijas con elementos químicos del vino.",
+      fact3Title: "Patrimonio Qvevri UNESCO",
+      fact3:
+        "Uno de los métodos más antiguos de elaborar vino en Georgia, en qvevri, está incluido en la lista del patrimonio cultural inmaterial de la UNESCO.",
+      fact4Title: "Reconocimiento Global",
+      fact4:
+        "Los vinos georgianos se suministran a 80 países del mundo. En 2020, el país exportó 125 millones de botellas, de las cuales 85 millones fueron a importadores importantes como Rusia y países de la CEI.",
       explore: "Explorar Nuestra Colección",
     },
     shop: {
@@ -387,16 +423,34 @@ const translations = {
       whiteWines: "Белые Вина",
       rose: "Розовое",
       sparkling: "Игристое",
+      downloadPresentation: "Скачать\nПрезентацию",
+      presentationTitle: "Georgian Royal Wine",
+      presentationSubtitle: "Премиальные Грузинские Вина с Богатой Историей",
+      presentationDesc:
+        "Вина GRW создаются сочетанием традиций и инноваций, предлагая исключительное качество и неповторимые вкусы. Произведённые в знаменитом регионе Кахетия в Грузии, наши вина раскрывают богатый терруар и многовековой опыт виноделия, обеспечивая премиальный опыт в каждой бутылке.",
     },
     about: {
-      title: "Наша История",
-      subtitle: "Три десятилетия страсти к исключительному вину",
-      p1: "Georgian Royal Wine была основана в 1987 году Марко и Еленой Росси, двумя итальянскими иммигрантами, принесшими семейные винодельческие традиции в сердце долины Напа.",
-      p2: "Сегодня наша команда сертифицированных сомелье путешествует по миру, чтобы находить вина, соответствующие нашим высоким стандартам.",
-      p3: "Наша миссия проста: сделать исключительное вино доступным для всех.",
-      years: "Лет Превосходства",
-      wines: "Вин в Коллекции",
-      countries: "Стран Поставок",
+      title: "О нас",
+      subtitle: "Представляем подлинный вкус Грузии в Европе",
+      p1: "Мы стремимся представить подлинный вкус Грузии бизнесу по всей Европе через партнёрство с винами GRW.",
+      p2: "Мы специализируемся на премиальных традиционных винах из уникальных грузинских сортов винограда, поставляемых напрямую из знаменитого региона Кахетия. Поддерживая тесные отношения с местными производителями, мы обеспечиваем высочайшие стандарты качества и подлинности, надёжную логистику и конкурентные цены.",
+      p3: "Будь вы розничный продавец, ресторан или дистрибьютор — партнёрство с нами означает уверенную доставку уникальных и изысканных вкусов вин GRW вашим клиентам. Наша цель — поддержать рост вашего бизнеса, предоставляя безупречный сервис и продукты, которые находят отклик у любителей вина по всей Европе.",
+      vineyardTitle: "220 Гектаров Виноградников",
+      vineyardDesc:
+        "Долина Кахетии славится уникальным терруаром, разнообразными почвами и климатом, где выращивают широкий ассортимент сортов, включая Саперави, Ркацители, Мцване, Кisi и другие. Регион Рача, с площадью около 1 600 гектаров виноградников, известен редкими сортами, дающими исключительно глубокие вина.",
+      factsTitle: "Интересные Факты",
+      fact1Title: "Тройной Контроль Качества",
+      fact1:
+        "Премиальные вина GRW проходят тройной контроль качества: лабораторные тесты на заводе, при экспорте из Грузии и на таможне в России (получение сертификатов и деклараций).",
+      fact2Title: "Колыбель Виноделия",
+      fact2:
+        "Грузия — колыбель виноделия мира. При раскопках была обнаружена древний город Колхида, а в слоях пород VII века до н.э. — фрагменты сосудов с химическими элементами вина.",
+      fact3Title: "Наследие Qvevri ЮНЕСКО",
+      fact3:
+        "Один из древнейших методов виноделия в Грузии в qvevri включён в список немaterialного культурного наследия ЮНЕСКО.",
+      fact4Title: "Мировое Признание",
+      fact4:
+        "Грузинские вина поставляются в 80 стран мира. В 2020 году страна экспортировала 125 миллионов бутылок, из которых 85 миллионов пошли крупным импортёрам, таким как Россия и страны СНГ.",
       explore: "Изучить Коллекцию",
     },
     shop: {
@@ -555,16 +609,34 @@ const translations = {
       whiteWines: "Vins Blancs",
       rose: "Rosé",
       sparkling: "Effervescent",
+      downloadPresentation: "Télécharger la\nPrésentation",
+      presentationTitle: "Georgian Royal Wine",
+      presentationSubtitle: "Vins Géorgiens Premium à l'Histoire Riche",
+      presentationDesc:
+        "Les vins GRW sont élaborés en alliant tradition et innovation, offrant une qualité exceptionnelle et des saveurs distinctives. Produits dans la célèbre région de Kakheti en Géorgie, nos vins mettent en valeur le riche terroir et des siècles d'expertise viticole, pour une expérience premium dans chaque bouteille.",
     },
     about: {
-      title: "Notre Histoire",
-      subtitle: "Trois décennies de passion pour le vin d'exception",
-      p1: "Georgian Royal Wine a été fondée en 1987 par Marco et Elena Rossi, deux immigrants italiens ayant apporté la tradition viticole familiale au cœur de la Napa Valley.",
-      p2: "Aujourd'hui, notre équipe de sommeliers certifiés parcourt le monde pour découvrir des vins répondant à nos standards exigeants.",
-      p3: "Notre mission est simple : rendre le vin d'exception accessible à tous.",
-      years: "Années d'Excellence",
-      wines: "Vins en Collection",
-      countries: "Pays d'Origine",
+      title: "À Propos",
+      subtitle: "Apporter le goût authentique de la Géorgie en Europe",
+      p1: "Nous nous consacrons à présenter le goût authentique de la Géorgie aux entreprises à travers l'Europe grâce à notre partenariat avec les vins GRW.",
+      p2: "Nous nous concentrons sur des vins premium et traditionnels élaborés à partir de cépages géorgiens uniques, provenant directement de la célèbre région de Kakheti. En maintenant des relations étroites avec les producteurs locaux, nous garantissons les plus hauts standards de qualité et d'authenticité, avec une logistique fiable et des prix compétitifs.",
+      p3: "Que vous soyez détaillant, restaurant ou distributeur, s'associer à nous signifie apporter en toute confiance les saveurs uniques et exquises des vins GRW à vos clients. Notre objectif est de soutenir la croissance de votre entreprise en offrant un service impeccable et des produits qui résonnent avec les amateurs de vin à travers l'Europe.",
+      vineyardTitle: "220 Hectares de Vignobles",
+      vineyardDesc:
+        "La vallée de Kakheti est réputée pour son terroir unique, ses sols diversifiés et son climat, cultivant une large variété de cépages dont Saperavi, Rkatsiteli, Mtsvane, Kisi et d'autres. La région de Racha, avec seulement environ 1 600 hectares de vignobles, est connue pour ses cépages rares, produisant des vins exceptionnellement profonds.",
+      factsTitle: "Faits Intéressants",
+      fact1Title: "Triple Contrôle Qualité",
+      fact1:
+        "Les vins premium GRW subissent un triple système de contrôle qualité : tests en laboratoire à l'usine, à l'exportation de Géorgie et en Russie aux douanes (obtention de certificats et déclarations).",
+      fact2Title: "Berceau de la Viticulture",
+      fact2:
+        "La Géorgie est le berceau mondial de la viticulture. Lors de fouilles, l'ancienne ville de Colchis a été découverte, et dans les strates rocheuses du VIIe siècle av. J.-C. — des fragments de récipients contenant des éléments chimiques du vin.",
+      fact3Title: "Patrimoine Qvevri UNESCO",
+      fact3:
+        "L'une des plus anciennes méthodes de vinification en Géorgie, en qvevri, est inscrite sur la liste du patrimoine culturel immaterial de l'UNESCO.",
+      fact4Title: "Reconnaissance Mondiale",
+      fact4:
+        "Les vins géorgiens sont fournis à 80 pays dans le monde. En 2020, le pays a exporté 125 millions de bouteilles, dont 85 millions vers des importateurs majeurs comme la Russie et les pays de la CEI.",
       explore: "Explorer Notre Collection",
     },
     shop: {
@@ -723,16 +795,34 @@ const translations = {
       whiteWines: "Білі Вина",
       rose: "Рожеве",
       sparkling: "Ігристе",
+      downloadPresentation: "Завантажити\nПрезентацію",
+      presentationTitle: "Georgian Royal Wine",
+      presentationSubtitle: "Преміальні Грузинські Вина з Багатою Історією",
+      presentationDesc:
+        "Вина GRW створюються поєднанням традицій та інновацій, пропонуючи виняткову якість і неповторні смаки. Вироблені у знаменитому регіоні Кахетія в Грузії, наші вина розкривають багатий терруар і багатовіковий досвід виноробства, забезпечуючи преміальний досвід у кожній пляшці.",
     },
     about: {
-      title: "Наша Історія",
-      subtitle: "Три десятиліття пристрасті до виняткового вина",
-      p1: "Georgian Royal Wine заснована у 1987 році Марко та Оленою Россі, двома італійськими іммігрантами, які принесли сімейні виноробні традиції в серце долини Напа.",
-      p2: "Сьогодні наша команда сертифікованих сомельє подорожує світом, щоб знаходити вина, що відповідають нашим високим стандартам.",
-      p3: "Наша місія проста: зробити виняткове вино доступним для всіх.",
-      years: "Років Досконалості",
-      wines: "Вин у Колекції",
-      countries: "Країн Постачання",
+      title: "Про нас",
+      subtitle: "Представляємо справжній смак Грузії в Європі",
+      p1: "Ми присвячені представленню справжнього смаку Грузії бізнесу по всій Європі через партнерство з винами GRW.",
+      p2: "Ми зосереджуємось на преміальних традиційних винах з унікальних грузинських сортів винограду, що надходять безпосередньо з відомого регіону Кахетія. Підтримуючи тісні стосунки з місцевими виробниками, ми забезпечуємо найвищі стандарти якості та автентичності, надійну логістику та конкурентні ціни.",
+      p3: "Чи ви роздрібний продавець, ресторан чи дистриб'ютор — партнерство з нами означає впевнену доставку унікальних і вишуканих смаків вин GRW вашим клієнтам. Наша мета — підтримати зростання вашого бізнесу, надаючи бездоганний сервіс і продукти, що резонують з любителями вина по всій Європі.",
+      vineyardTitle: "220 Гектарів Виноградників",
+      vineyardDesc:
+        "Долина Кахетії славиться унікальним терруаром, різноманітними ґрунтами та кліматом, де вирощують широкий асортимент сортів, включаючи Сапераві, Ркацителі, Мцване, Кisi та інші. Регіон Рача, з площею близько 1 600 гектарів виноградників, відомий рідкісними сортами, що дають винятково глибокі вина.",
+      factsTitle: "Цікаві Факти",
+      fact1Title: "Потрійний Контроль Якості",
+      fact1:
+        "Преміальні вина GRW проходять потрійний контроль якості: лабораторні тести на заводі, при експорті з Грузії та на митниці в Росії (отримання сертифікатів і декларацій).",
+      fact2Title: "Колиска Виноробства",
+      fact2:
+        "Грузія — колиска виноробства світу. Під час розкопок було виявлено давнє місто Колхіда, а в шарах порід VII століття до н.е. — фрагменти посудин з хімічними елементами вина.",
+      fact3Title: "Спадщина Qvevri ЮНЕСКО",
+      fact3:
+        "Один із найдавніших методів виготовлення вина в Грузії в qvevri включено до списку немaterialної культурної спадщини ЮНЕСКО.",
+      fact4Title: "Світове Визнання",
+      fact4:
+        "Грузинські вина постачаються до 80 країн світу. У 2020 році країна експортувала 125 мільйонів пляшок, з яких 85 мільйонів пішли великим імпортерам, таким як Росія та країни СНД.",
       explore: "Дослідити Колекцію",
     },
     shop: {

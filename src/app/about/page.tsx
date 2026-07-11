@@ -3,7 +3,8 @@ import AboutContent from "@/components/AboutContent";
 
 export const metadata: Metadata = {
   title: "About Us",
-  description: "Learn about Georgian Royal Wine and our passion for exceptional wine.",
+  description:
+    "Learn about Georgian Royal Wine — premium Georgian wines from Kakheti and Racha, bringing authentic Georgian heritage to Europe.",
 };
 
 export default function AboutPage() {
