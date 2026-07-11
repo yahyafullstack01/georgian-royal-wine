@@ -28,7 +28,7 @@ export default function ProductCard({ wine }: ProductCardProps) {
   const { t } = useLocale();
 
   return (
-    <article className="group flex flex-col overflow-hidden rounded-lg bg-white shadow-sm transition-shadow hover:shadow-lg dark:bg-stone-900 dark:shadow-stone-950/50">
+    <article className="group flex flex-col overflow-hidden rounded-lg border border-burgundy-900/5 bg-white shadow-sm ring-1 ring-gold-500/10 transition-all hover:shadow-lg hover:ring-gold-500/25 dark:border-gold-500/10 dark:bg-stone-900 dark:shadow-stone-950/50 dark:ring-gold-500/15">
       <Link
         href={`/wines/${wine.slug}`}
         className="relative aspect-[3/4] overflow-hidden"

@@ -3,13 +3,15 @@
 import Link from "next/link";
 import { useLocale } from "@/context/LocaleContext";
 import Logo from "@/components/Logo";
+import GeorgianDivider from "@/components/GeorgianDivider";
 
 export default function Footer() {
   const { t } = useLocale();
 
   return (
-    <footer className="mt-auto border-t border-burgundy-900/10 bg-burgundy-950 text-cream-200 dark:border-stone-800 dark:bg-stone-900">
+    <footer className="mt-auto border-t border-gold-500/20 bg-burgundy-950 text-cream-200 dark:border-stone-800 dark:bg-stone-900">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+        <GeorgianDivider className="mb-10" />
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <Logo size="md" linked={false} badge />
@@ -69,19 +71,19 @@ export default function Footer() {
               {t.footer.visitUs}
             </h4>
             <address className="mt-4 space-y-1 text-sm not-italic text-cream-300/80">
-              <p>142 Vineyard Lane</p>
-              <p>Napa Valley, CA 94558</p>
+              <p>{t.footer.address1}</p>
+              <p>{t.footer.address2}</p>
               <p className="pt-2">
-                <a href="tel:+17075551234" className="hover:text-gold-400">
-                  (707) 555-1234
+                <a href="tel:+995322000000" className="hover:text-gold-400">
+                  +995 32 2 000 000
                 </a>
               </p>
               <p>
                 <a
-                  href="mailto:hello@georgianroyalwine.com"
+                  href="mailto:info@grw-wine.com"
                   className="hover:text-gold-400"
                 >
-                  hello@georgianroyalwine.com
+                  info@grw-wine.com
                 </a>
               </p>
             </address>

@@ -4,32 +4,91 @@ import { useState, FormEvent } from "react";
 import { useRouter } from "next/navigation";
 import { useCart } from "@/context/CartContext";
 import { useLocale } from "@/context/LocaleContext";
-import { CheckoutFormData } from "@/types/wine";
+import { CheckoutFormData, CustomerType } from "@/types/wine";
 import { formatPrice } from "@/lib/format";
+import type { OrderRequestPayload } from "@/lib/order";
 import Image from "next/image";
+
+const EUROPEAN_COUNTRIES = [
+  "Germany",
+  "France",
+  "Italy",
+  "Spain",
+  "Netherlands",
+  "Belgium",
+  "Poland",
+  "Austria",
+  "Czech Republic",
+  "Romania",
+  "Portugal",
+  "Sweden",
+  "Denmark",
+  "Finland",
+  "Ireland",
+  "Greece",
+  "Hungary",
+  "Slovakia",
+  "Bulgaria",
+  "Croatia",
+  "Lithuania",
+  "Slovenia",
+  "Latvia",
+  "Estonia",
+  "Luxembourg",
+  "Georgia",
+  "United Kingdom",
+  "Other",
+];
 
 export default function CheckoutForm() {
   const router = useRouter();
   const { items, totalPrice, clearCart } = useCart();
   const { t } = useLocale();
-  const [status, setStatus] = useState<"idle" | "processing" | "success">(
-    "idle"
-  );
+  const [status, setStatus] = useState<
+    "idle" | "processing" | "success" | "error"
+  >("idle");
+  const [errorMessage, setErrorMessage] = useState("");
   const [form, setForm] = useState<CheckoutFormData>({
+    customerType: "individual",
     firstName: "",
     lastName: "",
     email: "",
     phone: "",
+    company: "",
+    businessType: "",
     address: "",
     city: "",
     state: "",
     zip: "",
-    country: "United States",
+    country: "Germany",
+    notes: "",
   });
 
-  const shipping = totalPrice >= 150 ? 0 : 12.99;
-  const tax = totalPrice * 0.08;
-  const grandTotal = totalPrice + shipping + tax;
+  const isBusiness = form.customerType === "business";
+
+  const setCustomerType = (customerType: CustomerType) => {
+    setForm((prev) => ({
+      ...prev,
+      customerType,
+      company: customerType === "individual" ? "" : prev.company,
+      businessType: customerType === "individual" ? "" : prev.businessType,
+    }));
+  };
+
+  const businessTypeOptions = [
+    { value: "restaurant", label: t.checkout.businessRestaurant },
+    { value: "retailer", label: t.checkout.businessRetailer },
+    { value: "distributor", label: t.checkout.businessDistributor },
+    { value: "partner", label: t.checkout.businessPartner },
+    { value: "other", label: t.checkout.businessOther },
+  ] as const;
+
+  const typeButtonClass = (active: boolean) =>
+    `rounded-lg border p-4 text-left transition-colors ${
+      active
+        ? "border-gold-500 bg-gold-500/10 ring-1 ring-gold-500/40 dark:bg-gold-500/15"
+        : "border-stone-200 bg-white hover:border-burgundy-300 dark:border-stone-600 dark:bg-stone-800 dark:hover:border-gold-500/40"
+    }`;
 
   const inputClass =
     "w-full rounded border border-stone-300 bg-white px-4 py-3 text-stone-800 placeholder:text-stone-400 focus:border-burgundy-700 focus:outline-none focus:ring-1 focus:ring-burgundy-700 dark:border-stone-600 dark:bg-stone-800 dark:text-cream-100 dark:placeholder:text-stone-500 dark:focus:border-gold-500 dark:focus:ring-gold-500";
@@ -37,8 +96,41 @@ export default function CheckoutForm() {
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setStatus("processing");
-    await new Promise((resolve) => setTimeout(resolve, 2000));
-    setStatus("success");
+    setErrorMessage("");
+
+    const payload: OrderRequestPayload = {
+      customer: form,
+      items: items.map((item) => ({
+        name: item.wine.name,
+        slug: item.wine.slug,
+        vintage: item.wine.vintage,
+        region: item.wine.region,
+        quantity: item.quantity,
+        unitPrice: item.wine.price,
+        lineTotal: item.wine.price * item.quantity,
+      })),
+      subtotal: totalPrice,
+    };
+
+    try {
+      const response = await fetch("/api/order-request", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+
+      if (!response.ok) {
+        const data = await response.json().catch(() => ({}));
+        throw new Error(data.error ?? t.checkout.error);
+      }
+
+      setStatus("success");
+    } catch (err) {
+      setStatus("error");
+      setErrorMessage(
+        err instanceof Error ? err.message : t.checkout.error
+      );
+    }
   };
 
   if (status === "success") {
@@ -68,7 +160,7 @@ export default function CheckoutForm() {
           <strong>{form.email}</strong>.
         </p>
         <p className="mt-2 text-sm text-stone-500 dark:text-stone-400">
-          {t.checkout.orderTotal}: {formatPrice(grandTotal)}
+          {t.checkout.orderTotal}: {formatPrice(totalPrice)}
         </p>
         <button
           onClick={() => {
@@ -85,12 +177,47 @@ export default function CheckoutForm() {
 
   return (
     <form onSubmit={handleSubmit} className="grid gap-8 lg:grid-cols-5">
-      <div className="space-y-8 lg:col-span-3">
+      <div className="order-2 space-y-8 lg:order-1 lg:col-span-3">
+        <p className="rounded-lg border border-gold-500/20 bg-cream-100 px-4 py-3 text-sm text-stone-600 dark:border-gold-500/15 dark:bg-stone-900 dark:text-stone-300">
+          {t.checkout.orderRequestInfo}
+        </p>
+
         <section className="rounded-lg border border-stone-200 bg-white p-6 dark:border-stone-700 dark:bg-stone-900">
           <h2 className="font-serif text-xl text-burgundy-950 dark:text-cream-100">
             {t.checkout.contactInfo}
           </h2>
-          <div className="mt-4 grid gap-4 sm:grid-cols-2">
+
+          <p className="mt-4 text-sm font-medium text-stone-700 dark:text-stone-300">
+            {t.checkout.customerTypeLabel}
+          </p>
+          <div className="mt-3 grid gap-3 sm:grid-cols-2">
+            <button
+              type="button"
+              onClick={() => setCustomerType("business")}
+              className={typeButtonClass(isBusiness)}
+            >
+              <span className="block font-medium text-burgundy-950 dark:text-cream-100">
+                {t.checkout.customerBusiness}
+              </span>
+              <span className="mt-1 block text-xs text-stone-500 dark:text-stone-400">
+                {t.checkout.customerBusinessDesc}
+              </span>
+            </button>
+            <button
+              type="button"
+              onClick={() => setCustomerType("individual")}
+              className={typeButtonClass(!isBusiness)}
+            >
+              <span className="block font-medium text-burgundy-950 dark:text-cream-100">
+                {t.checkout.customerIndividual}
+              </span>
+              <span className="mt-1 block text-xs text-stone-500 dark:text-stone-400">
+                {t.checkout.customerIndividualDesc}
+              </span>
+            </button>
+          </div>
+
+          <div className="mt-6 grid gap-4 sm:grid-cols-2">
             <div>
               <label
                 htmlFor="firstName"
@@ -155,6 +282,56 @@ export default function CheckoutForm() {
                 className={inputClass}
               />
             </div>
+            {isBusiness && (
+              <>
+                <div className="sm:col-span-2">
+                  <label
+                    htmlFor="company"
+                    className="mb-1.5 block text-sm font-medium text-stone-700 dark:text-stone-300"
+                  >
+                    {t.checkout.company}
+                  </label>
+                  <input
+                    id="company"
+                    required
+                    value={form.company}
+                    onChange={(e) =>
+                      setForm({ ...form, company: e.target.value })
+                    }
+                    placeholder={t.checkout.companyPlaceholder}
+                    className={inputClass}
+                  />
+                </div>
+                <div className="sm:col-span-2">
+                  <label
+                    htmlFor="businessType"
+                    className="mb-1.5 block text-sm font-medium text-stone-700 dark:text-stone-300"
+                  >
+                    {t.checkout.businessType}
+                  </label>
+                  <select
+                    id="businessType"
+                    required
+                    value={form.businessType}
+                    onChange={(e) =>
+                      setForm({
+                        ...form,
+                        businessType: e.target
+                          .value as CheckoutFormData["businessType"],
+                      })
+                    }
+                    className={inputClass}
+                  >
+                    <option value="">{t.checkout.businessTypePlaceholder}</option>
+                    {businessTypeOptions.map((option) => (
+                      <option key={option.value} value={option.value}>
+                        {option.label}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+              </>
+            )}
           </div>
         </section>
 
@@ -239,13 +416,11 @@ export default function CheckoutForm() {
                 onChange={(e) => setForm({ ...form, country: e.target.value })}
                 className={inputClass}
               >
-                <option>United States</option>
-                <option>Canada</option>
-                <option>United Kingdom</option>
-                <option>Australia</option>
-                <option>France</option>
-                <option>Italy</option>
-                <option>Germany</option>
+                {EUROPEAN_COUNTRIES.map((country) => (
+                  <option key={country} value={country}>
+                    {country}
+                  </option>
+                ))}
               </select>
             </div>
           </div>
@@ -253,66 +428,49 @@ export default function CheckoutForm() {
 
         <section className="rounded-lg border border-stone-200 bg-white p-6 dark:border-stone-700 dark:bg-stone-900">
           <h2 className="font-serif text-xl text-burgundy-950 dark:text-cream-100">
-            {t.checkout.payment}
+            {t.checkout.notes}
           </h2>
           <p className="mt-2 text-sm text-stone-500 dark:text-stone-400">
-            {t.checkout.paymentDemo}
+            {t.checkout.notesHint}
           </p>
-          <div className="mt-4 grid gap-4 sm:grid-cols-2">
-            <div className="sm:col-span-2">
-              <label
-                htmlFor="card"
-                className="mb-1.5 block text-sm font-medium text-stone-700 dark:text-stone-300"
-              >
-                {t.checkout.cardNumber}
-              </label>
-              <input
-                id="card"
-                required
-                placeholder="4242 4242 4242 4242"
-                className={inputClass}
-              />
-            </div>
-            <div>
-              <label
-                htmlFor="expiry"
-                className="mb-1.5 block text-sm font-medium text-stone-700 dark:text-stone-300"
-              >
-                {t.checkout.expiry}
-              </label>
-              <input
-                id="expiry"
-                required
-                placeholder="MM/YY"
-                className={inputClass}
-              />
-            </div>
-            <div>
-              <label
-                htmlFor="cvc"
-                className="mb-1.5 block text-sm font-medium text-stone-700 dark:text-stone-300"
-              >
-                {t.checkout.cvc}
-              </label>
-              <input
-                id="cvc"
-                required
-                placeholder="123"
-                className={inputClass}
-              />
-            </div>
-          </div>
+          <textarea
+            id="notes"
+            rows={4}
+            value={form.notes}
+            onChange={(e) => setForm({ ...form, notes: e.target.value })}
+            placeholder={t.checkout.notesPlaceholder}
+            className={`${inputClass} mt-4`}
+          />
         </section>
+
+        {status === "error" && (
+          <p className="rounded bg-red-50 px-4 py-3 text-sm text-red-700 dark:bg-red-950/30 dark:text-red-400">
+            {errorMessage}
+          </p>
+        )}
+
+        <div className="rounded-lg border border-gold-500/20 bg-cream-100 p-6 dark:border-gold-500/15 dark:bg-stone-900">
+          <button
+            type="submit"
+            disabled={status === "processing"}
+            className="w-full rounded bg-burgundy-900 py-4 text-sm font-medium tracking-wide text-cream-100 uppercase transition-colors hover:bg-burgundy-800 disabled:opacity-60 dark:bg-gold-500 dark:text-burgundy-950 dark:hover:bg-gold-400"
+          >
+            {status === "processing" ? t.checkout.processing : t.checkout.submit}
+          </button>
+          <p className="mt-3 text-center text-xs text-stone-500 dark:text-stone-400">
+            {t.checkout.ageNotice}
+          </p>
+        </div>
       </div>
 
-      <div className="h-fit rounded-lg border border-stone-200 bg-white p-6 lg:col-span-2 dark:border-stone-700 dark:bg-stone-900">
+      <div className="order-1 h-fit rounded-lg border border-stone-200 bg-white p-6 lg:sticky lg:top-24 lg:order-2 lg:col-span-2 lg:self-start dark:border-stone-700 dark:bg-stone-900">
         <h2 className="font-serif text-xl text-burgundy-950 dark:text-cream-100">
           {t.checkout.yourOrder}
         </h2>
         <div className="mt-4 max-h-64 space-y-3 overflow-y-auto">
           {items.map((item) => (
             <div key={item.wine.id} className="flex gap-3">
-              <div className="relative h-14 w-10 flex-shrink-0 overflow-hidden rounded">
+              <div className="relative h-14 w-10 shrink-0 overflow-hidden rounded">
                 <Image
                   src={item.wine.image}
                   alt={item.wine.name}
@@ -326,7 +484,7 @@ export default function CheckoutForm() {
                   {item.wine.name}
                 </p>
                 <p className="text-stone-500 dark:text-stone-400">
-                  {t.checkout.qty}: {item.quantity}
+                  {t.checkout.qty}: {item.quantity} · {formatPrice(item.wine.price)} each
                 </p>
               </div>
               <p className="text-sm font-medium">
@@ -337,47 +495,16 @@ export default function CheckoutForm() {
         </div>
 
         <div className="mt-4 space-y-2 border-t border-stone-200 pt-4 text-sm dark:border-stone-700">
-          <div className="flex justify-between">
-            <span className="text-stone-500 dark:text-stone-400">
-              {t.cart.subtotal}
-            </span>
-            <span>{formatPrice(totalPrice)}</span>
-          </div>
-          <div className="flex justify-between">
-            <span className="text-stone-500 dark:text-stone-400">
-              {t.cart.shipping}
-            </span>
-            <span>
-              {shipping === 0 ? t.cart.free : formatPrice(shipping)}
-            </span>
-          </div>
-          <div className="flex justify-between">
-            <span className="text-stone-500 dark:text-stone-400">
-              {t.checkout.tax}
-            </span>
-            <span>{formatPrice(tax)}</span>
-          </div>
-          <div className="flex justify-between border-t border-stone-200 pt-2 font-medium dark:border-stone-700">
-            <span>{t.cart.total}</span>
+          <div className="flex justify-between font-medium">
+            <span>{t.cart.subtotal}</span>
             <span className="font-serif text-lg text-burgundy-900 dark:text-gold-400">
-              {formatPrice(grandTotal)}
+              {formatPrice(totalPrice)}
             </span>
           </div>
+          <p className="text-xs text-stone-500 dark:text-stone-400">
+            {t.checkout.pricingNote}
+          </p>
         </div>
-
-        <button
-          type="submit"
-          disabled={status === "processing"}
-          className="mt-6 w-full rounded bg-burgundy-900 py-3.5 text-sm font-medium tracking-wide text-cream-100 uppercase transition-colors hover:bg-burgundy-800 disabled:opacity-60 dark:bg-gold-500 dark:text-burgundy-950 dark:hover:bg-gold-400"
-        >
-          {status === "processing"
-            ? t.checkout.processing
-            : t.checkout.pay.replace("{amount}", formatPrice(grandTotal))}
-        </button>
-
-        <p className="mt-3 text-center text-xs text-stone-400">
-          {t.checkout.ageNotice}
-        </p>
       </div>
     </form>
   );

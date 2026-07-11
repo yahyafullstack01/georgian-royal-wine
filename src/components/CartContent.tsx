@@ -45,9 +45,6 @@ export default function CartContent() {
     );
   }
 
-  const grandTotal =
-    totalPrice + (totalPrice >= 150 ? 0 : 12.99) + totalPrice * 0.08;
-
   return (
     <div className="grid gap-8 lg:grid-cols-3">
       <div className="lg:col-span-2">
@@ -127,44 +124,16 @@ export default function CartContent() {
           {t.cart.orderSummary}
         </h2>
         <div className="mt-4 space-y-3 text-sm">
-          <div className="flex justify-between">
-            <span className="text-stone-500 dark:text-stone-400">
-              {t.cart.subtotal}
-            </span>
-            <span>{formatPrice(totalPrice)}</span>
-          </div>
-          <div className="flex justify-between">
-            <span className="text-stone-500 dark:text-stone-400">
-              {t.cart.shipping}
-            </span>
-            <span>
-              {totalPrice >= 150 ? t.cart.free : formatPrice(12.99)}
+          <div className="flex justify-between font-medium">
+            <span>{t.cart.subtotal}</span>
+            <span className="font-serif text-xl text-burgundy-900 dark:text-gold-400">
+              {formatPrice(totalPrice)}
             </span>
           </div>
-          <div className="flex justify-between">
-            <span className="text-stone-500 dark:text-stone-400">
-              {t.cart.tax}
-            </span>
-            <span>{formatPrice(totalPrice * 0.08)}</span>
-          </div>
-          <div className="border-t border-stone-200 pt-3 dark:border-stone-700">
-            <div className="flex justify-between font-medium">
-              <span>{t.cart.total}</span>
-              <span className="font-serif text-xl text-burgundy-900 dark:text-gold-400">
-                {formatPrice(grandTotal)}
-              </span>
-            </div>
-          </div>
-        </div>
-
-        {totalPrice < 150 && (
-          <p className="mt-3 text-xs text-stone-500 dark:text-stone-400">
-            {t.cart.freeShipping.replace(
-              "{amount}",
-              formatPrice(150 - totalPrice)
-            )}
+          <p className="text-xs text-stone-500 dark:text-stone-400">
+            {t.checkout.pricingNote}
           </p>
-        )}
+        </div>
 
         <Link
           href="/checkout"

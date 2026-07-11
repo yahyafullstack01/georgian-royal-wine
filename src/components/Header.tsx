@@ -22,7 +22,7 @@ export default function Header() {
 
   return (
     <header
-      className="sticky top-0 z-50 border-b border-[var(--color-header-border)] bg-[var(--color-header)] backdrop-blur-md shadow-sm shadow-brand-500/5"
+      className="sticky top-0 z-50 border-b border-[var(--color-header-border)] bg-[var(--color-header)] backdrop-blur-md shadow-sm shadow-gold-500/5"
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3.5 sm:px-6 lg:px-8">
         <Logo size="sm" badge />
@@ -32,7 +32,7 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm tracking-wide text-stone-600 transition-colors hover:text-brand-600 dark:text-stone-400 dark:hover:text-brand-400"
+              className="text-sm tracking-wide text-stone-600 transition-colors hover:text-burgundy-700 dark:text-stone-400 dark:hover:text-gold-400"
             >
               {link.label}
             </Link>
@@ -45,7 +45,7 @@ export default function Header() {
 
           <Link
             href="/cart"
-            className="relative flex items-center gap-2 rounded-full px-3 py-2 text-sm text-stone-700 transition-colors hover:bg-brand-500/10 dark:text-cream-200 dark:hover:bg-brand-400/10"
+            className="relative flex items-center gap-2 rounded-full px-3 py-2 text-sm text-stone-700 transition-colors hover:bg-gold-500/10 dark:text-cream-200 dark:hover:bg-gold-500/10"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -63,7 +63,7 @@ export default function Header() {
             </svg>
             <span className="hidden sm:inline">{t.nav.cart}</span>
             {totalItems > 0 && (
-              <span className="absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-brand-500 text-xs font-bold text-white">
+              <span className="absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-gold-500 text-xs font-bold text-burgundy-950">
                 {totalItems}
               </span>
             )}

@@ -31,14 +31,26 @@ export interface ContactFormData {
   message: string;
 }
 
+export type CustomerType = "business" | "individual";
+export type BusinessType =
+  | "restaurant"
+  | "retailer"
+  | "distributor"
+  | "partner"
+  | "other";
+
 export interface CheckoutFormData {
+  customerType: CustomerType;
   firstName: string;
   lastName: string;
   email: string;
   phone: string;
+  company: string;
+  businessType: BusinessType | "";
   address: string;
   city: string;
   state: string;
   zip: string;
   country: string;
+  notes: string;
 }

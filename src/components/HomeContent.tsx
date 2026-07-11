@@ -5,6 +5,7 @@ import Image from "next/image";
 import ProductCard from "@/components/ProductCard";
 import { getFeaturedWines } from "@/data/wines";
 import { useLocale } from "@/context/LocaleContext";
+import GeorgianDivider from "@/components/GeorgianDivider";
 
 const PRESENTATION_URL =
   "https://grw-wine.com/wp-content/uploads/2025/05/Georgian-Wine_Presentation_2024-.pdf";
@@ -115,6 +116,7 @@ export default function HomeContent() {
 
       <section className="border-b border-stone-200 bg-white py-16 sm:py-20 dark:border-stone-800 dark:bg-stone-900">
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
+          <GeorgianDivider className="mb-10" />
           <div className="flex flex-col items-center justify-center gap-8 sm:flex-row sm:gap-10">
             <Image
               src="/grw-logo.png"
@@ -148,22 +150,28 @@ export default function HomeContent() {
         </div>
       </section>
 
-      <section className="border-b border-stone-200 bg-white py-12 dark:border-stone-800 dark:bg-stone-900">
-        <div className="mx-auto grid max-w-7xl gap-8 px-4 sm:grid-cols-3 sm:px-6 lg:px-8">
-          {features.map((feature) => (
-            <div key={feature.title} className="text-center">
-              <h3 className="font-serif text-lg text-burgundy-900 dark:text-cream-100">
-                {feature.title}
-              </h3>
-              <p className="mt-2 text-sm leading-relaxed text-stone-500 dark:text-stone-400">
-                {feature.desc}
-              </p>
-            </div>
-          ))}
+      <section className="border-b border-stone-200 bg-cream-100 py-12 dark:border-stone-800 dark:bg-stone-900">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <GeorgianDivider className="mb-10" />
+          <div className="grid gap-8 sm:grid-cols-3">
+            {features.map((feature) => (
+              <div
+                key={feature.title}
+                className="rounded-lg border border-burgundy-900/5 bg-white p-6 text-center shadow-sm dark:border-gold-500/10 dark:bg-stone-900"
+              >
+                <h3 className="font-serif text-lg text-burgundy-900 dark:text-cream-100">
+                  {feature.title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-stone-500 dark:text-stone-400">
+                  {feature.desc}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
-      <section className="py-16 sm:py-24">
+      <section className="bg-cream-50 py-16 sm:py-24 dark:bg-stone-950">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <p className="text-sm tracking-[0.3em] text-burgundy-600 uppercase dark:text-gold-400">
@@ -172,6 +180,7 @@ export default function HomeContent() {
             <h2 className="mt-2 font-serif text-3xl text-burgundy-950 sm:text-4xl dark:text-cream-100">
               {t.home.finestSelections}
             </h2>
+            <GeorgianDivider className="my-6" />
             <p className="mx-auto mt-4 max-w-2xl text-stone-500 dark:text-stone-400">
               {t.home.featuredDesc}
             </p>
@@ -205,6 +214,7 @@ export default function HomeContent() {
           />
         </div>
         <div className="relative z-10 mx-auto max-w-3xl px-4 text-center">
+          <GeorgianDivider className="mb-6" />
           <h2 className="font-serif text-3xl text-cream-100 sm:text-4xl">
             {t.home.legacyTitle}
           </h2>
@@ -220,11 +230,14 @@ export default function HomeContent() {
         </div>
       </section>
 
-      <section className="py-16 sm:py-24">
+      <section className="bg-cream-50 py-16 sm:py-24 dark:bg-stone-950">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-center font-serif text-3xl text-burgundy-950 dark:text-cream-100">
-            {t.home.shopByCategory}
-          </h2>
+          <div className="text-center">
+            <h2 className="font-serif text-3xl text-burgundy-950 dark:text-cream-100">
+              {t.home.shopByCategory}
+            </h2>
+            <GeorgianDivider className="my-6" />
+          </div>
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {categories.map((cat) => (
               <Link
