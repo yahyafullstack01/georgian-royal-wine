@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { wines, getWineBySlug } from "@/data/wines";
+import { getWineContent } from "@/data/wineContent";
 import WineDetailContent from "@/components/WineDetailContent";
 
 interface Props {
@@ -15,9 +16,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const wine = getWineBySlug(slug);
   if (!wine) return { title: "Wine Not Found" };
+  const content = getWineContent(wine.slug, "en");
   return {
-    title: wine.name,
-    description: wine.description,
+    title: content.name,
+    description: content.taste,
   };
 }
 

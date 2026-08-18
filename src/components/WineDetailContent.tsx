@@ -7,30 +7,42 @@ import { formatPrice } from "@/lib/format";
 import AddToCartButton from "@/components/AddToCartButton";
 import GeorgianDivider from "@/components/GeorgianDivider";
 import { useLocale } from "@/context/LocaleContext";
+import { getWineContent } from "@/data/wineContent";
 
 interface WineDetailContentProps {
   wine: Wine;
   related: Wine[];
 }
 
-function categoryLabel(
-  category: string,
-  t: ReturnType<typeof useLocale>["t"]
-) {
-  const map: Record<string, string> = {
-    red: t.shop.red,
-    white: t.shop.white,
-    rosé: t.shop.rose,
-    sparkling: t.shop.sparkling,
-  };
-  return map[category] ?? category;
-}
-
 export default function WineDetailContent({
   wine,
   related,
 }: WineDetailContentProps) {
-  const { t } = useLocale();
+  const { t, locale } = useLocale();
+  const content = getWineContent(wine.slug, locale);
+
+  const specs = [
+    { label: t.product.classification, value: content.classification },
+    { label: t.product.region, value: content.region },
+    { label: t.product.subregion, value: content.subregion },
+    { label: t.product.microzone, value: content.microzone },
+    { label: t.product.grape, value: content.grape },
+    { label: t.product.grapesSourced, value: content.grapesSourced },
+    { label: t.product.alcohol, value: content.alcohol ?? wine.alcohol },
+    { label: t.product.servingTemperature, value: content.servingTemperature },
+    { label: t.product.storageTemperature, value: content.storageTemperature },
+    { label: t.product.color, value: content.color },
+    { label: t.product.aroma, value: content.aroma },
+    { label: t.product.taste, value: content.taste },
+    { label: t.product.tastingNotes, value: content.tastingNotes },
+    { label: t.product.pairing, value: content.pairing },
+    { label: t.product.vinification, value: content.vinification },
+    {
+      label: t.product.vintage,
+      value: content.vintage ?? (wine.vintage ? String(wine.vintage) : undefined),
+    },
+    { label: t.product.volume, value: wine.volume },
+  ].filter((spec) => Boolean(spec.value));
 
   return (
     <div className="bg-cream-50 dark:bg-stone-950">
@@ -43,11 +55,7 @@ export default function WineDetailContent({
             {t.nav.shop}
           </Link>
           <span className="mx-2">/</span>
-          <span className="text-burgundy-900 dark:text-cream-200">
-            {categoryLabel(wine.category, t)}
-          </span>
-          <span className="mx-2">/</span>
-          <span className="text-stone-800 dark:text-stone-300">{wine.name}</span>
+          <span className="text-stone-800 dark:text-stone-300">{content.name}</span>
         </nav>
 
         <div className="grid gap-10 lg:grid-cols-2">
@@ -56,13 +64,13 @@ export default function WineDetailContent({
               className="absolute -inset-2 rounded-lg border border-gold-500/20"
               aria-hidden="true"
             />
-            <div className="relative aspect-[3/4] overflow-hidden rounded-lg bg-stone-100 ring-1 ring-burgundy-900/5 dark:bg-stone-800 dark:ring-gold-500/10">
+            <div className="relative aspect-[3/4] overflow-hidden rounded-lg bg-white ring-1 ring-burgundy-900/5 dark:bg-stone-900 dark:ring-gold-500/10">
               <Image
                 src={wine.image}
-                alt={wine.name}
+                alt={content.name}
                 fill
                 priority
-                className="object-cover"
+                className="object-contain p-6"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
@@ -74,14 +82,16 @@ export default function WineDetailContent({
               aria-hidden="true"
             />
             <p className="text-sm tracking-widest text-burgundy-600 uppercase dark:text-gold-400">
-              {wine.region}, {wine.country}
+              {content.region}, {content.country}
             </p>
             <h1 className="mt-2 font-serif text-4xl text-burgundy-950 dark:text-cream-100">
-              {wine.name}
+              {content.name}
             </h1>
-            <p className="mt-1 text-lg text-stone-500 dark:text-stone-400">
-              {t.product.vintage} {wine.vintage}
-            </p>
+            {(content.vintage || wine.vintage) && (
+              <p className="mt-1 text-lg text-stone-500 dark:text-stone-400">
+                {t.product.vintage} {content.vintage ?? wine.vintage}
+              </p>
+            )}
 
             <GeorgianDivider className="my-6 justify-start" />
 
@@ -89,50 +99,21 @@ export default function WineDetailContent({
               {formatPrice(wine.price)}
             </p>
 
-            <p className="mt-6 leading-relaxed text-stone-600 dark:text-stone-300">
-              {wine.description}
-            </p>
-
-            <div className="mt-8 grid grid-cols-2 gap-4 rounded-lg border border-burgundy-900/5 bg-cream-50 p-4 text-sm sm:grid-cols-4 dark:border-gold-500/10 dark:bg-stone-950">
-              <div>
-                <p className="text-stone-400">{t.product.category}</p>
-                <p className="mt-1 font-medium capitalize">
-                  {categoryLabel(wine.category, t)}
-                </p>
-              </div>
-              <div>
-                <p className="text-stone-400">{t.product.alcohol}</p>
-                <p className="mt-1 font-medium">{wine.alcohol}</p>
-              </div>
-              <div>
-                <p className="text-stone-400">{t.product.volume}</p>
-                <p className="mt-1 font-medium">{wine.volume}</p>
-              </div>
-              <div>
-                <p className="text-stone-400">{t.product.availability}</p>
-                <p
-                  className={`mt-1 font-medium ${wine.inStock ? "text-green-700 dark:text-green-400" : "text-red-600 dark:text-red-400"}`}
+            <dl className="mt-8 divide-y divide-burgundy-900/10 border-y border-burgundy-900/10 dark:divide-gold-500/10 dark:border-gold-500/10">
+              {specs.map((spec) => (
+                <div
+                  key={spec.label}
+                  className="grid gap-1 py-3 sm:grid-cols-[11rem_1fr] sm:gap-6"
                 >
-                  {wine.inStock ? t.product.inStock : t.product.soldOut}
-                </p>
-              </div>
-            </div>
-
-            <div className="mt-8">
-              <h3 className="text-sm font-medium tracking-widest text-burgundy-600 uppercase dark:text-gold-400">
-                {t.product.tastingNotes}
-              </h3>
-              <div className="mt-3 flex flex-wrap gap-2">
-                {wine.tastingNotes.map((note) => (
-                  <span
-                    key={note}
-                    className="rounded-full border border-gold-500/20 bg-burgundy-900/5 px-3 py-1 text-sm text-burgundy-800 dark:bg-cream-100/10 dark:text-cream-200"
-                  >
-                    {note}
-                  </span>
-                ))}
-              </div>
-            </div>
+                  <dt className="text-sm font-medium tracking-wide text-burgundy-800 dark:text-gold-400">
+                    {spec.label}
+                  </dt>
+                  <dd className="text-sm leading-relaxed text-stone-600 dark:text-stone-300">
+                    {spec.value}
+                  </dd>
+                </div>
+              ))}
+            </dl>
 
             <div className="mt-10">
               <AddToCartButton wine={wine} />
@@ -147,34 +128,39 @@ export default function WineDetailContent({
             </h2>
             <GeorgianDivider className="my-6 justify-start" />
             <div className="mt-8 grid gap-6 sm:grid-cols-3">
-              {related.map((w) => (
-                <Link
-                  key={w.id}
-                  href={`/wines/${w.slug}`}
-                  className="group flex gap-4 rounded-lg border border-burgundy-900/5 bg-white p-4 ring-1 ring-gold-500/10 transition-shadow hover:shadow-md dark:border-stone-700 dark:bg-stone-900"
-                >
-                  <div className="relative h-24 w-16 shrink-0 overflow-hidden rounded">
-                    <Image
-                      src={w.image}
-                      alt={w.name}
-                      fill
-                      className="object-cover"
-                      sizes="64px"
-                    />
-                  </div>
-                  <div>
-                    <h3 className="font-serif text-burgundy-950 group-hover:text-burgundy-700 dark:text-cream-100 dark:group-hover:text-gold-400">
-                      {w.name}
-                    </h3>
-                    <p className="text-sm text-stone-500 dark:text-stone-400">
-                      {w.vintage}
-                    </p>
-                    <p className="mt-1 font-medium text-burgundy-900 dark:text-gold-400">
-                      {formatPrice(w.price)}
-                    </p>
-                  </div>
-                </Link>
-              ))}
+              {related.map((w) => {
+                const relatedContent = getWineContent(w.slug, locale);
+                return (
+                  <Link
+                    key={w.id}
+                    href={`/wines/${w.slug}`}
+                    className="group flex gap-4 rounded-lg border border-burgundy-900/5 bg-white p-4 ring-1 ring-gold-500/10 transition-shadow hover:shadow-md dark:border-stone-700 dark:bg-stone-900"
+                  >
+                    <div className="relative h-24 w-16 shrink-0 overflow-hidden rounded bg-white">
+                      <Image
+                        src={w.image}
+                        alt={relatedContent.name}
+                        fill
+                        className="object-contain p-1"
+                        sizes="64px"
+                      />
+                    </div>
+                    <div>
+                      <h3 className="font-serif text-burgundy-950 group-hover:text-burgundy-700 dark:text-cream-100 dark:group-hover:text-gold-400">
+                        {relatedContent.name}
+                      </h3>
+                      {w.vintage && (
+                        <p className="text-sm text-stone-500 dark:text-stone-400">
+                          {w.vintage}
+                        </p>
+                      )}
+                      <p className="mt-1 font-medium text-burgundy-900 dark:text-gold-400">
+                        {formatPrice(w.price)}
+                      </p>
+                    </div>
+                  </Link>
+                );
+              })}
             </div>
           </section>
         )}

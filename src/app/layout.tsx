@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     template: "%s | Georgian Royal Wine",
   },
   description:
-    "Discover exceptional Georgian wines from family-owned vineyards. Shop our curated collection of reds, whites, rosés, and sparkling wines.",
+    "Discover exceptional Georgian wines from Kakheti. Shop red, white, rose, Rezo's, and qvevri wines.",
   icons: {
     icon: "/logo.png",
     apple: "/logo.png",

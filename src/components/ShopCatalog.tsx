@@ -2,7 +2,7 @@
 
 import { useSearchParams } from "next/navigation";
 import { useState, Suspense } from "react";
-import { wines } from "@/data/wines";
+import { getWinesByCategory } from "@/data/wines";
 import ProductCard from "@/components/ProductCard";
 import { useLocale } from "@/context/LocaleContext";
 
@@ -17,14 +17,12 @@ function ShopContent() {
     { value: "all", label: t.shop.allWines },
     { value: "red", label: t.shop.red },
     { value: "white", label: t.shop.white },
-    { value: "rosé", label: t.shop.rose },
-    { value: "sparkling", label: t.shop.sparkling },
+    { value: "rose", label: t.shop.rose },
+    { value: "rezos", label: t.shop.rezos },
+    { value: "qvevri", label: t.shop.qvevri },
   ];
 
-  let filtered =
-    category === "all"
-      ? [...wines]
-      : wines.filter((w) => w.category === category);
+  let filtered = [...getWinesByCategory(category)];
 
   switch (sortBy) {
     case "price-low":
@@ -34,7 +32,7 @@ function ShopContent() {
       filtered.sort((a, b) => b.price - a.price);
       break;
     case "name":
-      filtered.sort((a, b) => a.name.localeCompare(b.name));
+      filtered.sort((a, b) => a.slug.localeCompare(b.slug));
       break;
     default:
       filtered.sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
@@ -76,7 +74,7 @@ function ShopContent() {
         {filtered.length === 1 ? t.shop.wine : t.shop.wines}
       </p>
 
-      <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div className="mt-8 grid grid-cols-2 gap-3 sm:gap-6 lg:grid-cols-3 xl:grid-cols-4">
         {filtered.map((wine) => (
           <ProductCard key={wine.id} wine={wine} />
         ))}

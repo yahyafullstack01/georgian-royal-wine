@@ -48,28 +48,33 @@ export default function HomeContent() {
 
   const categories = [
     {
-      name: t.home.redWines,
+      name: t.shop.red,
       category: "red",
       image:
         "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=600&h=400&fit=crop",
     },
     {
-      name: t.home.whiteWines,
+      name: t.shop.white,
       category: "white",
       image:
         "https://images.unsplash.com/photo-1474722883778-792e799d2d1d?w=600&h=400&fit=crop",
     },
     {
-      name: t.home.rose,
-      category: "rosé",
+      name: t.shop.rose,
+      category: "rose",
       image:
         "https://images.unsplash.com/photo-1567696153798-9c2a3a0b2c1e?w=600&h=400&fit=crop",
     },
     {
-      name: t.home.sparkling,
-      category: "sparkling",
+      name: t.shop.rezos,
+      category: "rezos",
+      image: "/wines/rezos-wine-saperavi.png",
+    },
+    {
+      name: t.shop.qvevri,
+      category: "qvevri",
       image:
-        "https://images.unsplash.com/photo-1547595628-c61a29f496f0?w=600&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=600&h=400&fit=crop",
     },
   ];
 
@@ -186,7 +191,7 @@ export default function HomeContent() {
             </p>
           </div>
 
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-12 grid grid-cols-2 gap-3 sm:gap-6 lg:grid-cols-4">
             {featured.slice(0, 4).map((wine) => (
               <ProductCard key={wine.id} wine={wine} />
             ))}
@@ -238,18 +243,18 @@ export default function HomeContent() {
             </h2>
             <GeorgianDivider className="my-6" />
           </div>
-          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
             {categories.map((cat) => (
               <Link
                 key={cat.category}
                 href={`/shop?category=${cat.category}`}
-                className="group relative aspect-[4/3] overflow-hidden rounded-lg"
+                className="group relative aspect-[4/3] overflow-hidden rounded-lg bg-burgundy-950"
               >
                 <Image
                   src={cat.image}
                   alt={cat.name}
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  className={`${cat.category === "rezos" ? "object-contain p-4" : "object-cover"} transition-transform duration-500 group-hover:scale-105`}
                   sizes="(max-width: 1024px) 50vw, 25vw"
                 />
                 <div className="absolute inset-0 bg-burgundy-950/40 transition-colors group-hover:bg-burgundy-950/50" />

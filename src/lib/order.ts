@@ -3,7 +3,7 @@ import { CheckoutFormData } from "@/types/wine";
 export interface OrderRequestItem {
   name: string;
   slug: string;
-  vintage: number;
+  vintage?: number;
   region: string;
   quantity: number;
   unitPrice: number;
@@ -42,7 +42,7 @@ export function formatOrderRequestEmail(payload: OrderRequestPayload): string {
     "ORDER ITEMS",
     ...items.map(
       (item) =>
-        `- ${item.name} (${item.vintage}) · ${item.region}\n  Qty: ${item.quantity} × €${item.unitPrice.toFixed(2)} = €${item.lineTotal.toFixed(2)}`
+        `- ${item.name}${item.vintage ? ` (${item.vintage})` : ""} · ${item.region}\n  Qty: ${item.quantity} × €${item.unitPrice.toFixed(2)} = €${item.lineTotal.toFixed(2)}`
     ),
     "",
     `SUBTOTAL: €${subtotal.toFixed(2)}`,

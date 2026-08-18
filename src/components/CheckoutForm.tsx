@@ -7,6 +7,7 @@ import { useLocale } from "@/context/LocaleContext";
 import { CheckoutFormData, CustomerType } from "@/types/wine";
 import { formatPrice } from "@/lib/format";
 import type { OrderRequestPayload } from "@/lib/order";
+import { getWineContent } from "@/data/wineContent";
 import Image from "next/image";
 
 const EUROPEAN_COUNTRIES = [
@@ -43,7 +44,7 @@ const EUROPEAN_COUNTRIES = [
 export default function CheckoutForm() {
   const router = useRouter();
   const { items, totalPrice, clearCart } = useCart();
-  const { t } = useLocale();
+  const { t, locale } = useLocale();
   const [status, setStatus] = useState<
     "idle" | "processing" | "success" | "error"
   >("idle");
@@ -100,15 +101,18 @@ export default function CheckoutForm() {
 
     const payload: OrderRequestPayload = {
       customer: form,
-      items: items.map((item) => ({
-        name: item.wine.name,
-        slug: item.wine.slug,
-        vintage: item.wine.vintage,
-        region: item.wine.region,
-        quantity: item.quantity,
-        unitPrice: item.wine.price,
-        lineTotal: item.wine.price * item.quantity,
-      })),
+      items: items.map((item) => {
+        const content = getWineContent(item.wine.slug, locale);
+        return {
+          name: content.name,
+          slug: item.wine.slug,
+          vintage: item.wine.vintage,
+          region: content.region,
+          quantity: item.quantity,
+          unitPrice: item.wine.price,
+          lineTotal: item.wine.price * item.quantity,
+        };
+      }),
       subtotal: totalPrice,
     };
 
@@ -468,20 +472,22 @@ export default function CheckoutForm() {
           {t.checkout.yourOrder}
         </h2>
         <div className="mt-4 max-h-64 space-y-3 overflow-y-auto">
-          {items.map((item) => (
+          {items.map((item) => {
+            const content = getWineContent(item.wine.slug, locale);
+            return (
             <div key={item.wine.id} className="flex gap-3">
-              <div className="relative h-14 w-10 shrink-0 overflow-hidden rounded">
+              <div className="relative h-14 w-10 shrink-0 overflow-hidden rounded bg-white">
                 <Image
                   src={item.wine.image}
-                  alt={item.wine.name}
+                  alt={content.name}
                   fill
-                  className="object-cover"
+                  className="object-contain p-0.5"
                   sizes="40px"
                 />
               </div>
               <div className="flex-1 text-sm">
                 <p className="font-medium text-burgundy-950 dark:text-cream-100">
-                  {item.wine.name}
+                  {content.name}
                 </p>
                 <p className="text-stone-500 dark:text-stone-400">
                   {t.checkout.qty}: {item.quantity} · {formatPrice(item.wine.price)} each
@@ -491,7 +497,8 @@ export default function CheckoutForm() {
                 {formatPrice(item.wine.price * item.quantity)}
               </p>
             </div>
-          ))}
+            );
+          })}
         </div>
 
         <div className="mt-4 space-y-2 border-t border-stone-200 pt-4 text-sm dark:border-stone-700">

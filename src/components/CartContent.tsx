@@ -5,10 +5,11 @@ import { useLocale } from "@/context/LocaleContext";
 import Image from "next/image";
 import Link from "next/link";
 import { formatPrice } from "@/lib/format";
+import { getWineContent } from "@/data/wineContent";
 
 export default function CartContent() {
   const { items, updateQuantity, removeFromCart, totalPrice } = useCart();
-  const { t } = useLocale();
+  const { t, locale } = useLocale();
 
   if (items.length === 0) {
     return (
@@ -49,17 +50,19 @@ export default function CartContent() {
     <div className="grid gap-8 lg:grid-cols-3">
       <div className="lg:col-span-2">
         <div className="divide-y divide-stone-200 rounded-lg border border-stone-200 bg-white dark:divide-stone-700 dark:border-stone-700 dark:bg-stone-900">
-          {items.map((item) => (
+          {items.map((item) => {
+            const content = getWineContent(item.wine.slug, locale);
+            return (
             <div key={item.wine.id} className="flex gap-4 p-4 sm:gap-6 sm:p-6">
               <Link
                 href={`/wines/${item.wine.slug}`}
-                className="relative h-24 w-20 flex-shrink-0 overflow-hidden rounded sm:h-32 sm:w-24"
+                className="relative h-24 w-20 flex-shrink-0 overflow-hidden rounded bg-white sm:h-32 sm:w-24"
               >
                 <Image
                   src={item.wine.image}
-                  alt={item.wine.name}
+                  alt={content.name}
                   fill
-                  className="object-cover"
+                  className="object-contain p-1"
                   sizes="96px"
                 />
               </Link>
@@ -71,10 +74,12 @@ export default function CartContent() {
                       href={`/wines/${item.wine.slug}`}
                       className="font-serif text-lg text-burgundy-950 hover:text-burgundy-700 dark:text-cream-100 dark:hover:text-gold-400"
                     >
-                      {item.wine.name}
+                      {content.name}
                     </Link>
                     <p className="text-sm text-stone-500 dark:text-stone-400">
-                      {item.wine.vintage} · {item.wine.region}
+                      {item.wine.vintage
+                        ? `${item.wine.vintage} · ${content.region}`
+                        : content.region}
                     </p>
                   </div>
                   <p className="font-serif text-lg text-burgundy-900 dark:text-gold-400">
@@ -115,7 +120,8 @@ export default function CartContent() {
                 </div>
               </div>
             </div>
-          ))}
+            );
+          })}
         </div>
       </div>
 

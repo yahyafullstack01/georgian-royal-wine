@@ -26,7 +26,9 @@ export default function AddToCartButton({
   };
 
   const sizeClasses =
-    size === "sm" ? "px-3 py-1.5 text-xs" : "px-6 py-3 text-sm";
+    size === "sm"
+      ? "w-full px-2 py-1.5 text-[10px] leading-tight sm:w-auto sm:px-3 sm:text-xs"
+      : "px-6 py-3 text-sm";
 
   return (
     <button

@@ -27,22 +27,27 @@ export default function Footer() {
             <ul className="mt-4 space-y-2 text-sm">
               <li>
                 <Link href="/shop?category=red" className="hover:text-gold-400">
-                  {t.home.redWines}
+                  {t.shop.red}
                 </Link>
               </li>
               <li>
                 <Link href="/shop?category=white" className="hover:text-gold-400">
-                  {t.home.whiteWines}
+                  {t.shop.white}
                 </Link>
               </li>
               <li>
-                <Link href="/shop?category=rosé" className="hover:text-gold-400">
-                  {t.home.rose}
+                <Link href="/shop?category=rose" className="hover:text-gold-400">
+                  {t.shop.rose}
                 </Link>
               </li>
               <li>
-                <Link href="/shop?category=sparkling" className="hover:text-gold-400">
-                  {t.home.sparkling}
+                <Link href="/shop?category=rezos" className="hover:text-gold-400">
+                  {t.shop.rezos}
+                </Link>
+              </li>
+              <li>
+                <Link href="/shop?category=qvevri" className="hover:text-gold-400">
+                  {t.shop.qvevri}
                 </Link>
               </li>
             </ul>
