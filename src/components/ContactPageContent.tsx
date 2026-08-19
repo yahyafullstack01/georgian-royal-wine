@@ -43,10 +43,10 @@ export default function ContactPageContent() {
                   </h3>
                   <p className="mt-2 text-stone-600 dark:text-stone-300">
                     <a
-                      href="tel:+995322000000"
+                      href="tel:+34607609474"
                       className="hover:text-burgundy-700 dark:hover:text-gold-400"
                     >
-                      +995 32 2 000 000
+                      +34 607 609 474
                     </a>
                     <br />
                     <a
