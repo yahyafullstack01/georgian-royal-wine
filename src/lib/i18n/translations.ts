@@ -135,7 +135,7 @@ const translations = {
       emptyDesc: "Discover our collection of fine wines.",
       browse: "Browse Wines",
       orderSummary: "Order Summary",
-      subtotal: "Subtotal",
+      subtotal: "Total",
       shipping: "Shipping",
       tax: "Tax (est.)",
       total: "Total",
@@ -146,6 +146,14 @@ const translations = {
       remove: "Remove",
       decreaseQty: "Decrease quantity",
       increaseQty: "Increase quantity",
+      bottlesShipped: "{count} bottles ({free} free)",
+      qtyBottles: "Bottles",
+      qtyBoxes: "Boxes",
+      lineBottleSummary: "{qty} bottle(s)",
+      lineBoxSummary:
+        "{qty} box(es) · pay for {paid} · get {total} bottles ({free} free)",
+      comboLineSummary:
+        "{bottles} bottle(s) + {boxes} box(es) · pay for {paid} · get {total} ({free} free)",
     },
     checkout: {
       title: "Order Request",
@@ -182,6 +190,7 @@ const translations = {
       orderRequestInfo:
         "No online payment is required. Submit your order request with the wines and quantities below — our team will contact you to confirm pricing, shipping, and delivery.",
       yourOrder: "Your Order",
+      editOrder: "Edit Order",
       qty: "Qty",
       pricingNote:
         "Subtotal only. Final pricing including shipping will be confirmed by our team.",
@@ -219,6 +228,18 @@ const translations = {
       availability: "Availability",
       vintage: "Vintage",
       youMayLike: "You May Also Like",
+      packBottle: "Bottles",
+      packBottleShort: "bottle",
+      packBox: "Boxes",
+      packBoxDeal: "Pay for 6, get 7",
+      packBottleDesc: "One single bottle",
+      packBoxDesc: "6 paid + 1 free",
+      packBottleSummary: "Total: {price} for 1 bottle",
+      packBoxSummary: "Total: {price} · you receive {total} bottles",
+      choosePack: "How many do you want?",
+      chooseQtyHint: "Choose bottles and/or boxes (both can be combined).",
+      comboSummary:
+        "{bottles} bottle(s) + {boxes} box(es) · pay for {paid} · get {total} bottles ({free} free) · {price}",
     },
     footer: {
       tagline:
@@ -354,7 +375,7 @@ const translations = {
       emptyDesc: "Descubra nuestra colección de vinos finos.",
       browse: "Ver Vinos",
       orderSummary: "Resumen del Pedido",
-      subtotal: "Subtotal",
+      subtotal: "El total",
       shipping: "Envío",
       tax: "Impuesto (est.)",
       total: "Total",
@@ -365,6 +386,14 @@ const translations = {
       remove: "Eliminar",
       decreaseQty: "Disminuir cantidad",
       increaseQty: "Aumentar cantidad",
+      bottlesShipped: "{count} botellas ({free} gratis)",
+      qtyBottles: "Botellas",
+      qtyBoxes: "Cajas",
+      lineBottleSummary: "{qty} botella(s)",
+      lineBoxSummary:
+        "{qty} caja(s) · paga {paid} · recibe {total} botellas ({free} gratis)",
+      comboLineSummary:
+        "{bottles} botella(s) + {boxes} caja(s) · paga {paid} · recibe {total} ({free} gratis)",
     },
     checkout: {
       title: "Solicitud de Pedido",
@@ -401,6 +430,7 @@ const translations = {
       orderRequestInfo:
         "No se requiere pago en línea. Envíe su solicitud con los vinos y cantidades — nuestro equipo le contactará para confirmar precios y envío.",
       yourOrder: "Su Pedido",
+      editOrder: "Editar Pedido",
       qty: "Cant.",
       pricingNote: "Solo subtotal. El precio final incluyendo envío será confirmado por nuestro equipo.",
       processing: "Enviando solicitud…",
@@ -436,6 +466,18 @@ const translations = {
       availability: "Disponibilidad",
       vintage: "Añada",
       youMayLike: "También Le Puede Gustar",
+      packBottle: "Botellas",
+      packBottleShort: "botella",
+      packBox: "Cajas",
+      packBoxDeal: "Paga 6, recibe 7",
+      packBottleDesc: "Una sola botella",
+      packBoxDesc: "6 de pago + 1 gratis",
+      packBottleSummary: "Total: {price} por 1 botella",
+      packBoxSummary: "Total: {price} · recibes {total} botellas",
+      choosePack: "¿Cuántas quieres?",
+      chooseQtyHint: "Elige botellas y/o cajas (se pueden combinar).",
+      comboSummary:
+        "{bottles} botella(s) + {boxes} caja(s) · paga {paid} · recibe {total} botellas ({free} gratis) · {price}",
     },
     footer: {
       tagline:
@@ -571,7 +613,7 @@ const translations = {
       emptyDesc: "Откройте для себя нашу коллекцию вин.",
       browse: "Смотреть Вина",
       orderSummary: "Итого Заказа",
-      subtotal: "Подытог",
+      subtotal: "Общая сумма",
       shipping: "Доставка",
       tax: "Налог (прим.)",
       total: "Итого",
@@ -582,6 +624,14 @@ const translations = {
       remove: "Удалить",
       decreaseQty: "Уменьшить количество",
       increaseQty: "Увеличить количество",
+      bottlesShipped: "{count} бутылок ({free} в подарок)",
+      qtyBottles: "Бутылки",
+      qtyBoxes: "Коробки",
+      lineBottleSummary: "{qty} бут.",
+      lineBoxSummary:
+        "{qty} кор. · оплата за {paid} · получите {total} бут. ({free} в подарок)",
+      comboLineSummary:
+        "{bottles} бут. + {boxes} кор. · оплата за {paid} · получите {total} ({free} в подарок)",
     },
     checkout: {
       title: "Запрос Заказа",
@@ -618,6 +668,7 @@ const translations = {
       orderRequestInfo:
         "Онлайн-оплата не требуется. Отправьте запрос с винами и количеством — наша команда свяжется с вами для подтверждения цены и доставки.",
       yourOrder: "Ваш Заказ",
+      editOrder: "Изменить заказ",
       qty: "Кол-во",
       pricingNote: "Только subtotal. Итоговая цена с доставкой будет подтверждена нашей командой.",
       processing: "Отправка запроса…",
@@ -653,6 +704,18 @@ const translations = {
       availability: "Наличие",
       vintage: "Урожай",
       youMayLike: "Вам Также Понравится",
+      packBottle: "Бутылки",
+      packBottleShort: "бутылка",
+      packBox: "Коробки",
+      packBoxDeal: "Платите за 6, получаете 7",
+      packBottleDesc: "Одна бутылка",
+      packBoxDesc: "6 платных + 1 в подарок",
+      packBottleSummary: "Итого: {price} за 1 бутылку",
+      packBoxSummary: "Итого: {price} · вы получите {total} бутылок",
+      choosePack: "Сколько хотите?",
+      chooseQtyHint: "Выберите бутылки и/или коробки (можно вместе).",
+      comboSummary:
+        "{bottles} бут. + {boxes} кор. · оплата за {paid} · получите {total} бут. ({free} в подарок) · {price}",
     },
     footer: {
       tagline:
@@ -788,7 +851,7 @@ const translations = {
       emptyDesc: "Découvrez notre collection de vins fins.",
       browse: "Parcourir les Vins",
       orderSummary: "Récapitulatif",
-      subtotal: "Sous-total",
+      subtotal: "Total",
       shipping: "Livraison",
       tax: "Taxe (est.)",
       total: "Total",
@@ -799,6 +862,14 @@ const translations = {
       remove: "Supprimer",
       decreaseQty: "Diminuer la quantité",
       increaseQty: "Augmenter la quantité",
+      bottlesShipped: "{count} bouteilles ({free} offerte)",
+      qtyBottles: "Bouteilles",
+      qtyBoxes: "Cartons",
+      lineBottleSummary: "{qty} bouteille(s)",
+      lineBoxSummary:
+        "{qty} carton(s) · payez {paid} · recevez {total} bouteilles ({free} offerte)",
+      comboLineSummary:
+        "{bottles} bouteille(s) + {boxes} carton(s) · payez {paid} · recevez {total} ({free} offerte)",
     },
     checkout: {
       title: "Demande de Commande",
@@ -835,6 +906,7 @@ const translations = {
       orderRequestInfo:
         "Aucun paiement en ligne requis. Envoyez votre demande avec les vins et quantités — notre équipe vous contactera pour confirmer prix et livraison.",
       yourOrder: "Votre Commande",
+      editOrder: "Modifier la commande",
       qty: "Qté",
       pricingNote: "Sous-total uniquement. Le prix final incluant la livraison sera confirmé par notre équipe.",
       processing: "Envoi en cours…",
@@ -870,6 +942,18 @@ const translations = {
       availability: "Disponibilité",
       vintage: "Millésime",
       youMayLike: "Vous Aimerez Aussi",
+      packBottle: "Bouteilles",
+      packBottleShort: "bouteille",
+      packBox: "Cartons",
+      packBoxDeal: "Payez 6, recevez 7",
+      packBottleDesc: "Une seule bouteille",
+      packBoxDesc: "6 payées + 1 offerte",
+      packBottleSummary: "Total : {price} pour 1 bouteille",
+      packBoxSummary: "Total : {price} · vous recevez {total} bouteilles",
+      choosePack: "Combien en voulez-vous ?",
+      chooseQtyHint: "Choisissez bouteilles et/ou cartons (combinables).",
+      comboSummary:
+        "{bottles} bouteille(s) + {boxes} carton(s) · payez {paid} · recevez {total} bouteilles ({free} offerte) · {price}",
     },
     footer: {
       tagline:
@@ -1005,7 +1089,7 @@ const translations = {
       emptyDesc: "Відкрийте для себе нашу колекцію вин.",
       browse: "Переглянути Вина",
       orderSummary: "Підсумок Замовлення",
-      subtotal: "Підсумок",
+      subtotal: "Проміжний підсумок",
       shipping: "Доставка",
       tax: "Податок (орієнт.)",
       total: "Разом",
@@ -1016,6 +1100,14 @@ const translations = {
       remove: "Видалити",
       decreaseQty: "Зменшити кількість",
       increaseQty: "Збільшити кількість",
+      bottlesShipped: "{count} пляшок ({free} у подарунок)",
+      qtyBottles: "Пляшки",
+      qtyBoxes: "Коробки",
+      lineBottleSummary: "{qty} пляш.",
+      lineBoxSummary:
+        "{qty} кор. · оплата за {paid} · отримаєте {total} пляш. ({free} у подарунок)",
+      comboLineSummary:
+        "{bottles} пляш. + {boxes} кор. · оплата за {paid} · отримаєте {total} ({free} у подарунок)",
     },
     checkout: {
       title: "Запит на Замовлення",
@@ -1052,6 +1144,7 @@ const translations = {
       orderRequestInfo:
         "Онлайн-оплата не потрібна. Надішліть запит з винами та кількістю — наша команда зв'яжеться з вами для підтвердження ціни та доставки.",
       yourOrder: "Ваше Замовлення",
+      editOrder: "Редагувати замовлення",
       qty: "К-сть",
       pricingNote: "Лише subtotal. Фінальна ціна з доставкою буде підтверджена нашою командою.",
       processing: "Надсилання запиту…",
@@ -1087,6 +1180,18 @@ const translations = {
       availability: "Наявність",
       vintage: "Вінтаж",
       youMayLike: "Вам Також Сподобається",
+      packBottle: "Пляшки",
+      packBottleShort: "пляшка",
+      packBox: "Коробки",
+      packBoxDeal: "Платите за 6, отримуєте 7",
+      packBottleDesc: "Одна пляшка",
+      packBoxDesc: "6 платних + 1 у подарунок",
+      packBottleSummary: "Разом: {price} за 1 пляшку",
+      packBoxSummary: "Разом: {price} · ви отримаєте {total} пляшок",
+      choosePack: "Скільки бажаєте?",
+      chooseQtyHint: "Оберіть пляшки та/або коробки (можна разом).",
+      comboSummary:
+        "{bottles} пляш. + {boxes} кор. · оплата за {paid} · отримаєте {total} пляш. ({free} у подарунок) · {price}",
     },
     footer: {
       tagline:

@@ -39,7 +39,10 @@ export interface WineContent {
 
 export interface CartItem {
   wine: Wine;
-  quantity: number;
+  /** Extra single bottles (starts at 0). */
+  bottles: number;
+  /** Boxes of 6 paid + 1 free (starts at 0). */
+  boxes: number;
 }
 
 export interface ContactFormData {

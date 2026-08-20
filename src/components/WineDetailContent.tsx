@@ -97,6 +97,9 @@ export default function WineDetailContent({
 
             <p className="font-serif text-3xl text-burgundy-900 dark:text-gold-400">
               {formatPrice(wine.price)}
+              <span className="ml-2 text-base font-sans font-normal text-stone-500 dark:text-stone-400">
+                / {t.product.packBottleShort}
+              </span>
             </p>
 
             <dl className="mt-8 divide-y divide-burgundy-900/10 border-y border-burgundy-900/10 dark:divide-gold-500/10 dark:border-gold-500/10">
@@ -116,7 +119,10 @@ export default function WineDetailContent({
             </dl>
 
             <div className="mt-10">
-              <AddToCartButton wine={wine} />
+              <p className="mb-3 text-sm font-medium tracking-wide text-burgundy-800 uppercase dark:text-gold-400">
+                {t.product.choosePack}
+              </p>
+              <AddToCartButton wine={wine} size="lg" showPackOptions />
             </div>
           </div>
         </div>

@@ -8,7 +8,15 @@ import { CheckoutFormData, CustomerType } from "@/types/wine";
 import { formatPrice } from "@/lib/format";
 import type { OrderRequestPayload } from "@/lib/order";
 import { getWineContent } from "@/data/wineContent";
+import {
+  bottlesFree,
+  bottlesPaid,
+  bottlesShipped,
+  boxUnitPrice,
+  lineTotal,
+} from "@/lib/packing";
 import Image from "next/image";
+import Link from "next/link";
 
 const EUROPEAN_COUNTRIES = [
   "Germany",
@@ -108,9 +116,14 @@ export default function CheckoutForm() {
           slug: item.wine.slug,
           vintage: item.wine.vintage,
           region: content.region,
-          quantity: item.quantity,
-          unitPrice: item.wine.price,
-          lineTotal: item.wine.price * item.quantity,
+          bottles: item.bottles,
+          boxes: item.boxes,
+          bottlesPaid: bottlesPaid(item.bottles, item.boxes),
+          bottlesFree: bottlesFree(item.boxes),
+          bottlesTotal: bottlesShipped(item.bottles, item.boxes),
+          unitBottlePrice: item.wine.price,
+          unitBoxPrice: boxUnitPrice(item.wine),
+          lineTotal: lineTotal(item.wine, item.bottles, item.boxes),
         };
       }),
       subtotal: totalPrice,
@@ -474,6 +487,15 @@ export default function CheckoutForm() {
         <div className="mt-4 max-h-64 space-y-3 overflow-y-auto">
           {items.map((item) => {
             const content = getWineContent(item.wine.slug, locale);
+            const shipped = bottlesShipped(item.bottles, item.boxes);
+            const free = bottlesFree(item.boxes);
+            const paid = bottlesPaid(item.bottles, item.boxes);
+            const detail = t.cart.comboLineSummary
+              .replace("{bottles}", String(item.bottles))
+              .replace("{boxes}", String(item.boxes))
+              .replace("{paid}", String(paid))
+              .replace("{free}", String(free))
+              .replace("{total}", String(shipped));
             return (
             <div key={item.wine.id} className="flex gap-3">
               <div className="relative h-14 w-10 shrink-0 overflow-hidden rounded bg-white">
@@ -489,12 +511,10 @@ export default function CheckoutForm() {
                 <p className="font-medium text-burgundy-950 dark:text-cream-100">
                   {content.name}
                 </p>
-                <p className="text-stone-500 dark:text-stone-400">
-                  {t.checkout.qty}: {item.quantity} · {formatPrice(item.wine.price)} each
-                </p>
+                <p className="text-stone-500 dark:text-stone-400">{detail}</p>
               </div>
               <p className="text-sm font-medium">
-                {formatPrice(item.wine.price * item.quantity)}
+                {formatPrice(lineTotal(item.wine, item.bottles, item.boxes))}
               </p>
             </div>
             );
@@ -512,6 +532,13 @@ export default function CheckoutForm() {
             {t.checkout.pricingNote}
           </p>
         </div>
+
+        <Link
+          href="/cart"
+          className="mt-4 block w-full rounded border border-burgundy-900/20 bg-transparent py-3 text-center text-sm font-medium tracking-wide text-burgundy-900 uppercase transition-colors hover:border-burgundy-900 hover:bg-burgundy-900/5 dark:border-gold-500/30 dark:text-gold-400 dark:hover:border-gold-400 dark:hover:bg-gold-500/10"
+        >
+          {t.checkout.editOrder}
+        </Link>
       </div>
     </form>
   );

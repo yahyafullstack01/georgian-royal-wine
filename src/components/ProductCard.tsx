@@ -53,11 +53,11 @@ export default function ProductCard({ wine }: ProductCardProps) {
             {content.vintage ?? wine.vintage}
           </p>
         )}
-        <div className="mt-auto flex flex-col gap-2 pt-3 sm:flex-row sm:items-center sm:justify-between sm:pt-4">
+        <div className="mt-auto flex items-center justify-between gap-2 pt-3 sm:pt-4">
           <span className="font-serif text-base text-burgundy-900 sm:text-xl dark:text-gold-400">
             {formatPrice(wine.price)}
           </span>
-          <AddToCartButton wine={wine} size="sm" />
+          <AddToCartButton wine={wine} size="sm" showPackOptions={false} />
         </div>
       </div>
     </article>
