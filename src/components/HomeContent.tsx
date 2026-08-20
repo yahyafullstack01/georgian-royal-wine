@@ -81,14 +81,17 @@ export default function HomeContent() {
   return (
     <>
       <section className="relative flex min-h-[85vh] items-center justify-center overflow-hidden">
-        <Image
-          src="https://images.unsplash.com/photo-1506377247727-2f5e3b773a8c?w=1920&h=1080&fit=crop"
-          alt="Vineyard at sunset"
-          fill
-          priority
-          className="object-cover"
-          sizes="100vw"
-        />
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          className="absolute inset-0 h-full w-full object-cover"
+          aria-hidden="true"
+        >
+          <source src="/banner/Home.MP4" type="video/mp4" />
+        </video>
         <div className="absolute inset-0 bg-burgundy-950/60" />
         <div className="relative z-10 mx-auto max-w-4xl px-4 text-center">
           <p className="text-sm tracking-[0.4em] text-gold-400 uppercase">
