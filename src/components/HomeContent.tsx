@@ -6,6 +6,7 @@ import ProductCard from "@/components/ProductCard";
 import { getFeaturedWines } from "@/data/wines";
 import { useLocale } from "@/context/LocaleContext";
 import GeorgianDivider from "@/components/GeorgianDivider";
+import HomeHeroMedia from "@/components/HomeHeroMedia";
 
 const PRESENTATION_URL =
   "https://grw-wine.com/wp-content/uploads/2025/05/Georgian-Wine_Presentation_2024-.pdf";
@@ -50,20 +51,12 @@ export default function HomeContent() {
     {
       name: t.shop.red,
       category: "red",
-      image:
-        "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=600&h=400&fit=crop",
+      image: "/wines/grw-kindzmarauli.png",
     },
     {
       name: t.shop.white,
       category: "white",
-      image:
-        "https://images.unsplash.com/photo-1474722883778-792e799d2d1d?w=600&h=400&fit=crop",
-    },
-    {
-      name: t.shop.rose,
-      category: "rose",
-      image:
-        "https://images.unsplash.com/photo-1567696153798-9c2a3a0b2c1e?w=600&h=400&fit=crop",
+      image: "/wines/grw-alazani-valley.png",
     },
     {
       name: t.shop.rezos,
@@ -73,25 +66,14 @@ export default function HomeContent() {
     {
       name: t.shop.qvevri,
       category: "qvevri",
-      image:
-        "https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=600&h=400&fit=crop",
+      image: "/wines/grw-kisi-qvevri.png",
     },
   ];
 
   return (
     <>
       <section className="relative flex min-h-[85vh] items-center justify-center overflow-hidden">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="metadata"
-          className="absolute inset-0 h-full w-full object-cover"
-          aria-hidden="true"
-        >
-          <source src="/banner/Home.MP4" type="video/mp4" />
-        </video>
+        <HomeHeroMedia />
         <div className="absolute inset-0 bg-burgundy-950/60" />
         <div className="relative z-10 mx-auto max-w-4xl px-4 text-center">
           <p className="text-sm tracking-[0.4em] text-gold-400 uppercase">
@@ -246,21 +228,21 @@ export default function HomeContent() {
             </h2>
             <GeorgianDivider className="my-6" />
           </div>
-          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {categories.map((cat) => (
               <Link
                 key={cat.category}
                 href={`/shop?category=${cat.category}`}
-                className="group relative aspect-[4/3] overflow-hidden rounded-lg bg-burgundy-950"
+                className="group relative aspect-[4/3] overflow-hidden rounded-lg bg-white ring-1 ring-burgundy-900/10 dark:bg-stone-900 dark:ring-gold-500/15"
               >
                 <Image
                   src={cat.image}
                   alt={cat.name}
                   fill
-                  className={`${cat.category === "rezos" ? "object-contain p-4" : "object-cover"} transition-transform duration-500 group-hover:scale-105`}
+                  className="object-contain p-5 transition-transform duration-500 group-hover:scale-105"
                   sizes="(max-width: 1024px) 50vw, 25vw"
                 />
-                <div className="absolute inset-0 bg-burgundy-950/40 transition-colors group-hover:bg-burgundy-950/50" />
+                <div className="absolute inset-0 bg-burgundy-950/35 transition-colors group-hover:bg-burgundy-950/45" />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <h3 className="font-serif text-2xl text-cream-100">
                     {cat.name}
