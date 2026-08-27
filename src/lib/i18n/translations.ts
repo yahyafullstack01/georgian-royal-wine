@@ -69,6 +69,10 @@ const translations = {
       vineyardDesc:
         "The Kakheti Valley is renowned for its unique terroir, diverse soils, and climate, cultivating a wide variety of grapevines including Saperavi, Rkatsiteli, Mtsvane, Kisi, and others. The Racha region, with only about 1,600 hectares of vineyards, is known for its rare grape varieties, resulting in exceptionally deep wines.",
       factsTitle: "Interesting Facts",
+      galleryTitle: "From vine to glass",
+      stripVineyard: "Vineyard",
+      stripCellar: "Cellar",
+      stripCollection: "Collection",
       fact1Title: "Triple Quality Control",
       fact1:
         "GRW Premium wines undergo a triple quality control system: laboratory tests at the factory, when exported from Georgia and in Russia at Customs (obtaining certificates and declarations).",
@@ -128,6 +132,10 @@ const translations = {
       successDesc:
         "Thank you for reaching out. We'll get back to you within 24 hours.",
       sendAnother: "Send another message",
+      actionCall: "Call",
+      actionEmail: "Email",
+      actionWhatsapp: "WhatsApp",
+      actionInstagram: "Instagram",
     },
     cart: {
       title: "Shopping Cart",
@@ -310,6 +318,10 @@ const translations = {
       vineyardDesc:
         "El valle de Kakheti es famoso por su terroir único, suelos diversos y clima, cultivando una amplia variedad de vides incluyendo Saperavi, Rkatsiteli, Mtsvane, Kisi y otras. La región de Racha, con solo unos 1.600 hectáreas de viñedos, es conocida por sus variedades de uva raras, dando vinos excepcionalmente profundos.",
       factsTitle: "Datos Interesantes",
+      galleryTitle: "De la viña a la copa",
+      stripVineyard: "Viñedo",
+      stripCellar: "Bodega",
+      stripCollection: "Colección",
       fact1Title: "Triple Control de Calidad",
       fact1:
         "Los vinos premium GRW pasan por un triple sistema de control de calidad: pruebas de laboratorio en la fábrica, al exportarse de Georgia y en Rusia en Aduanas (obteniendo certificados y declaraciones).",
@@ -368,6 +380,10 @@ const translations = {
       successTitle: "¡Mensaje Enviado!",
       successDesc: "Gracias por contactarnos. Le responderemos en 24 horas.",
       sendAnother: "Enviar otro mensaje",
+      actionCall: "Llamar",
+      actionEmail: "Email",
+      actionWhatsapp: "WhatsApp",
+      actionInstagram: "Instagram",
     },
     cart: {
       title: "Carrito de Compras",
@@ -548,6 +564,10 @@ const translations = {
       vineyardDesc:
         "Долина Кахетии славится уникальным терруаром, разнообразными почвами и климатом, где выращивают широкий ассортимент сортов, включая Саперави, Ркацители, Мцване, Кisi и другие. Регион Рача, с площадью около 1 600 гектаров виноградников, известен редкими сортами, дающими исключительно глубокие вина.",
       factsTitle: "Интересные Факты",
+      galleryTitle: "От лозы до бокала",
+      stripVineyard: "Виноградник",
+      stripCellar: "Погреб",
+      stripCollection: "Коллекция",
       fact1Title: "Тройной Контроль Качества",
       fact1:
         "Премиальные вина GRW проходят тройной контроль качества: лабораторные тесты на заводе, при экспорте из Грузии и на таможне в России (получение сертификатов и деклараций).",
@@ -606,6 +626,10 @@ const translations = {
       successTitle: "Сообщение Отправлено!",
       successDesc: "Спасибо за обращение. Мы ответим в течение 24 часов.",
       sendAnother: "Отправить ещё одно сообщение",
+      actionCall: "Позвонить",
+      actionEmail: "Email",
+      actionWhatsapp: "WhatsApp",
+      actionInstagram: "Instagram",
     },
     cart: {
       title: "Корзина",
@@ -786,6 +810,10 @@ const translations = {
       vineyardDesc:
         "La vallée de Kakheti est réputée pour son terroir unique, ses sols diversifiés et son climat, cultivant une large variété de cépages dont Saperavi, Rkatsiteli, Mtsvane, Kisi et d'autres. La région de Racha, avec seulement environ 1 600 hectares de vignobles, est connue pour ses cépages rares, produisant des vins exceptionnellement profonds.",
       factsTitle: "Faits Intéressants",
+      galleryTitle: "De la vigne au verre",
+      stripVineyard: "Vignoble",
+      stripCellar: "Cave",
+      stripCollection: "Collection",
       fact1Title: "Triple Contrôle Qualité",
       fact1:
         "Les vins premium GRW subissent un triple système de contrôle qualité : tests en laboratoire à l'usine, à l'exportation de Géorgie et en Russie aux douanes (obtention de certificats et déclarations).",
@@ -844,6 +872,10 @@ const translations = {
       successTitle: "Message Envoyé !",
       successDesc: "Merci de nous avoir contactés. Nous répondrons sous 24 heures.",
       sendAnother: "Envoyer un autre message",
+      actionCall: "Appeler",
+      actionEmail: "Email",
+      actionWhatsapp: "WhatsApp",
+      actionInstagram: "Instagram",
     },
     cart: {
       title: "Panier",
@@ -1024,6 +1056,10 @@ const translations = {
       vineyardDesc:
         "Долина Кахетії славиться унікальним терруаром, різноманітними ґрунтами та кліматом, де вирощують широкий асортимент сортів, включаючи Сапераві, Ркацителі, Мцване, Кisi та інші. Регіон Рача, з площею близько 1 600 гектарів виноградників, відомий рідкісними сортами, що дають винятково глибокі вина.",
       factsTitle: "Цікаві Факти",
+      galleryTitle: "Від лози до келиха",
+      stripVineyard: "Виноградник",
+      stripCellar: "Погріб",
+      stripCollection: "Колекція",
       fact1Title: "Потрійний Контроль Якості",
       fact1:
         "Преміальні вина GRW проходять потрійний контроль якості: лабораторні тести на заводі, при експорті з Грузії та на митниці в Росії (отримання сертифікатів і декларацій).",
@@ -1082,6 +1118,10 @@ const translations = {
       successTitle: "Повідомлення Надіслано!",
       successDesc: "Дякуємо за звернення. Ми відповімо протягом 24 годин.",
       sendAnother: "Надіслати ще одне повідомлення",
+      actionCall: "Подзвонити",
+      actionEmail: "Email",
+      actionWhatsapp: "WhatsApp",
+      actionInstagram: "Instagram",
     },
     cart: {
       title: "Кошик",

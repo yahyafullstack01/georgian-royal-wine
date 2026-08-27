@@ -2,20 +2,73 @@
 
 import Image from "next/image";
 import ContactForm from "@/components/ContactForm";
-import PageHero from "@/components/PageHero";
+import ContactHero from "@/components/ContactHero";
 import GeorgianDivider from "@/components/GeorgianDivider";
 import { useLocale } from "@/context/LocaleContext";
+
+const PHONE_DISPLAY = "+34 607 609 474";
+const PHONE_TEL = "+34607609474";
+const EMAIL = "info@grw-wine.com";
+const WHATSAPP = "https://wa.me/34607609474";
+const INSTAGRAM = "https://www.instagram.com/lena.wine.grw";
 
 export default function ContactPageContent() {
   const { t } = useLocale();
 
+  const actions = [
+    {
+      href: `tel:${PHONE_TEL}`,
+      label: t.contact.actionCall,
+      detail: PHONE_DISPLAY,
+    },
+    {
+      href: `mailto:${EMAIL}`,
+      label: t.contact.actionEmail,
+      detail: EMAIL,
+    },
+    {
+      href: WHATSAPP,
+      label: t.contact.actionWhatsapp,
+      detail: "WhatsApp",
+      external: true,
+    },
+    {
+      href: INSTAGRAM,
+      label: t.contact.actionInstagram,
+      detail: "@lena.wine.grw",
+      external: true,
+    },
+  ];
+
   return (
     <>
-      <PageHero title={t.contact.title} subtitle={t.contact.intro} compact />
+      <ContactHero title={t.contact.title} subtitle={t.contact.intro} />
 
       <div className="bg-cream-50 py-16 dark:bg-stone-950">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid gap-12 lg:grid-cols-2">
+          {/* Primary actions */}
+          <div className="mb-14 grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4">
+            {actions.map((action, i) => (
+              <a
+                key={action.href}
+                href={action.href}
+                {...(action.external
+                  ? { target: "_blank", rel: "noopener noreferrer" }
+                  : {})}
+                className="contact-hero-rise group border border-burgundy-900/10 bg-white px-4 py-5 text-center transition-colors hover:border-gold-500/50 hover:bg-cream-100 dark:border-gold-500/15 dark:bg-stone-900 dark:hover:border-gold-500/40 dark:hover:bg-stone-800"
+                style={{ animationDelay: `${i * 80}ms` }}
+              >
+                <p className="text-xs tracking-[0.25em] text-burgundy-700 uppercase dark:text-gold-400">
+                  {action.label}
+                </p>
+                <p className="mt-2 text-sm text-stone-700 transition-colors group-hover:text-burgundy-900 dark:text-stone-300 dark:group-hover:text-cream-100">
+                  {action.detail}
+                </p>
+              </a>
+            ))}
+          </div>
+
+          <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
             <div>
               <GeorgianDivider className="mb-8 justify-start" />
 
@@ -43,48 +96,44 @@ export default function ContactPageContent() {
                   </h3>
                   <p className="mt-2 text-stone-600 dark:text-stone-300">
                     <a
-                      href="tel:+34607609474"
+                      href={`tel:${PHONE_TEL}`}
                       className="hover:text-burgundy-700 dark:hover:text-gold-400"
                     >
-                      +34 607 609 474
+                      {PHONE_DISPLAY}
                     </a>
                     <br />
                     <a
-                      href="mailto:info@grw-wine.com"
+                      href={`mailto:${EMAIL}`}
                       className="hover:text-burgundy-700 dark:hover:text-gold-400"
                     >
-                      info@grw-wine.com
+                      {EMAIL}
                     </a>
                   </p>
                 </div>
               </div>
 
-              <div className="relative mt-10 hidden aspect-video overflow-hidden rounded-lg ring-1 ring-gold-500/20 lg:block">
+              {/* Office — visible on all breakpoints */}
+              <div className="relative mt-10 aspect-[16/10] overflow-hidden ring-1 ring-gold-500/20">
                 <Image
-                  src="https://images.unsplash.com/photo-1506377247727-2f5e3b773a8c?w=800&h=450&fit=crop"
-                  alt="Kakheti vineyard"
+                  src="/about/office.jpg"
+                  alt="GRW office"
                   fill
-                  className="object-cover"
-                  sizes="50vw"
+                  className="object-cover object-[center_30%] transition-transform duration-700 hover:scale-[1.03]"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                 />
-                <div className="absolute inset-0 bg-burgundy-950/20" />
+                <div className="absolute inset-0 bg-burgundy-950/10" />
               </div>
             </div>
 
-            <div className="relative border border-burgundy-900/10 bg-white px-8 py-10 shadow-sm dark:border-gold-500/15 dark:bg-stone-900 sm:px-10">
-              <div
-                className="pointer-events-none absolute inset-3 border border-gold-500/15"
-                aria-hidden="true"
-              />
+            <div>
               <h2 className="font-serif text-2xl text-burgundy-950 dark:text-cream-100">
                 {t.contact.sendMessage}
               </h2>
               <p className="mt-2 text-sm text-stone-500 dark:text-stone-400">
                 {t.contact.formIntro}
               </p>
-              <div className="mt-6">
-                <ContactForm />
-              </div>
+              <GeorgianDivider className="my-6 justify-start" />
+              <ContactForm />
             </div>
           </div>
         </div>

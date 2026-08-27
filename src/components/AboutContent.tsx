@@ -4,6 +4,20 @@ import Image from "next/image";
 import Link from "next/link";
 import { useLocale } from "@/context/LocaleContext";
 import GeorgianDivider from "@/components/GeorgianDivider";
+import AboutHero from "@/components/AboutHero";
+
+const GALLERY = [
+  { src: "/about/harvest-table.jpg", alt: "Rezo’s Wine harvest display" },
+  { src: "/about/shop-shelves.jpg", alt: "GRW wine shelves" },
+  { src: "/about/team-vineyard.jpg", alt: "Team in the vineyard" },
+  { src: "/about/vineyard-red.jpg", alt: "Red grapes in the vineyard" },
+  { src: "/about/grapes-close.jpg", alt: "Ripe grape clusters" },
+  { src: "/about/crush.jpg", alt: "Freshly harvested grapes" },
+  { src: "/about/winery-aerial.jpg", alt: "Winery and vineyards from above" },
+  { src: "/about/tanks-overhead.jpg", alt: "Stainless steel tanks" },
+  { src: "/about/harvest-aerial.jpg", alt: "Harvest among the vines" },
+  { src: "/about/chokha-bottles.jpg", alt: "GRW bottles in the cellar" },
+];
 
 function FactCard({
   icon,
@@ -74,41 +88,16 @@ export default function AboutContent() {
 
   return (
     <div>
-      {/* Hero */}
-      <section className="relative overflow-hidden bg-burgundy-950 py-24 sm:py-32">
-        <div
-          className="pointer-events-none absolute inset-0 opacity-[0.07]"
-          style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23c9a84c' fill-opacity='1'%3E%3Cpath d='M30 0l5 10 10 5-10 5-5 10-5-10-10-5 10-5z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-          }}
-          aria-hidden="true"
-        />
-        <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-transparent via-gold-500 to-transparent" />
-        <div className="relative z-10 mx-auto max-w-4xl px-4 text-center sm:px-6">
-          <Image
-            src="/grw-logo.png"
-            alt="Georgian Royal Wine"
-            width={240}
-            height={82}
-            className="mx-auto h-16 w-auto object-contain sm:h-20"
-            priority
-          />
-          <GeorgianDivider className="my-8" />
-          <h1 className="font-serif text-4xl tracking-wide text-cream-100 sm:text-5xl lg:text-6xl">
-            {t.about.title}
-          </h1>
-          <p className="mx-auto mt-5 max-w-xl text-base text-cream-200/75 sm:text-lg">
-            {t.about.subtitle}
-          </p>
-        </div>
-        <div className="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-transparent via-gold-500 to-transparent" />
-      </section>
+      <AboutHero title={t.about.title} subtitle={t.about.subtitle} />
 
       {/* About intro */}
       <section className="relative bg-cream-50 py-20 dark:bg-stone-950">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="relative border border-burgundy-900/15 bg-white px-8 py-12 shadow-sm dark:border-gold-500/20 dark:bg-stone-900 sm:px-12 sm:py-16">
-            <div className="pointer-events-none absolute inset-3 border border-gold-500/20" aria-hidden="true" />
+            <div
+              className="pointer-events-none absolute inset-3 border border-gold-500/20"
+              aria-hidden="true"
+            />
             <div className="pointer-events-none absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 bg-white px-4 dark:bg-stone-900">
               <span className="text-gold-500">◆</span>
             </div>
@@ -125,6 +114,31 @@ export default function AboutContent() {
               {t.about.p3}
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* Story strip — vine → cellar → shelf */}
+      <section className="bg-burgundy-950">
+        <div className="grid grid-cols-1 sm:grid-cols-3">
+          {[
+            { src: "/about/vineyard-path.jpg", label: t.about.stripVineyard },
+            { src: "/about/barrels.jpg", label: t.about.stripCellar },
+            { src: "/about/shop-shelves.jpg", label: t.about.stripCollection },
+          ].map((item) => (
+            <div key={item.src} className="relative aspect-[4/3] overflow-hidden sm:aspect-[5/4]">
+              <Image
+                src={item.src}
+                alt={item.label}
+                fill
+                sizes="(max-width: 640px) 100vw, 33vw"
+                className="object-cover transition-transform duration-700 hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-burgundy-950/80 via-transparent to-transparent" />
+              <p className="absolute bottom-4 left-4 text-xs tracking-[0.3em] text-gold-400 uppercase">
+                {item.label}
+              </p>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -163,18 +177,67 @@ export default function AboutContent() {
               </div>
             </div>
 
-            <div className="relative">
-              <div className="absolute -inset-3 rounded-lg border border-gold-500/20" aria-hidden="true" />
-              <div className="overflow-hidden rounded-lg shadow-2xl ring-1 ring-gold-500/10">
+            <div className="grid gap-4 sm:grid-cols-2">
+              <div className="relative aspect-[3/4] overflow-hidden sm:row-span-2 sm:aspect-auto sm:min-h-full">
+                <Image
+                  src="/about/vineyard-red.jpg"
+                  alt="Vineyard grapes"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 25vw"
+                  className="object-cover"
+                />
+              </div>
+              <div className="relative aspect-[4/3] overflow-hidden">
+                <Image
+                  src="/about/grapes-close.jpg"
+                  alt="Grape clusters"
+                  fill
+                  sizes="(max-width: 1024px) 50vw, 25vw"
+                  className="object-cover"
+                />
+              </div>
+              <div className="relative aspect-[4/3] overflow-hidden">
                 <Image
                   src="/about/wine-map.png"
                   alt="Kakheti and Racha wine regions map"
-                  width={800}
-                  height={600}
-                  className="h-auto w-full object-cover"
+                  fill
+                  sizes="(max-width: 1024px) 50vw, 25vw"
+                  className="object-cover bg-cream-100"
                 />
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Gallery */}
+      <section className="bg-cream-50 py-20 sm:py-28 dark:bg-stone-950">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <p className="text-sm tracking-[0.35em] text-burgundy-700 uppercase dark:text-gold-400">
+              GRW
+            </p>
+            <h2 className="mt-3 font-serif text-3xl text-burgundy-950 sm:text-4xl dark:text-cream-100">
+              {t.about.galleryTitle}
+            </h2>
+            <GeorgianDivider className="mt-6" />
+          </div>
+
+          <div className="mt-14 grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3">
+            {GALLERY.map((item) => (
+              <div
+                key={item.src}
+                className="relative aspect-[4/3] overflow-hidden"
+              >
+                <Image
+                  src={item.src}
+                  alt={item.alt}
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className="object-cover transition-transform duration-700 hover:scale-[1.03]"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -206,13 +269,21 @@ export default function AboutContent() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="border-t border-burgundy-900/10 bg-white py-16 dark:border-gold-500/10 dark:bg-stone-950">
-        <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
+      {/* CTA with office */}
+      <section className="relative isolate overflow-hidden py-24">
+        <Image
+          src="/about/office.jpg"
+          alt=""
+          fill
+          sizes="100vw"
+          className="object-cover object-[center_30%]"
+        />
+        <div className="absolute inset-0 bg-burgundy-950/70" />
+        <div className="relative z-10 mx-auto max-w-3xl px-4 text-center sm:px-6">
           <GeorgianDivider className="mb-8" />
           <Link
             href="/shop"
-            className="inline-block rounded border-2 border-burgundy-900 px-10 py-3.5 text-sm font-medium tracking-[0.2em] text-burgundy-900 uppercase transition-colors hover:bg-burgundy-900 hover:text-cream-100 dark:border-gold-500 dark:text-gold-400 dark:hover:bg-gold-500 dark:hover:text-burgundy-950"
+            className="inline-block rounded border-2 border-cream-100/80 px-10 py-3.5 text-sm font-medium tracking-[0.2em] text-cream-100 uppercase transition-colors hover:bg-cream-100 hover:text-burgundy-950"
           >
             {t.about.explore}
           </Link>
