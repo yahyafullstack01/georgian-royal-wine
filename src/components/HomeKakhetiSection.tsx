@@ -11,17 +11,6 @@ export default function HomeKakhetiSection() {
 
   return (
     <section className="relative overflow-hidden bg-cream-100 py-20 dark:bg-stone-900 sm:py-28">
-      <div className="pointer-events-none absolute inset-0 opacity-[0.35] dark:opacity-20">
-        <Image
-          src="/home/kakheti-bg.jpg"
-          alt=""
-          fill
-          className="object-cover object-center"
-          sizes="100vw"
-        />
-      </div>
-      <div className="pointer-events-none absolute inset-0 bg-cream-100/88 dark:bg-stone-900/92" />
-
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl">
           <GeorgianDivider className="mb-8" />
