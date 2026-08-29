@@ -30,6 +30,7 @@ export default function Logo({
       height={height}
       priority={size === "sm"}
       className={`${sizeClass} object-contain ${className}`}
+      style={{ width: "auto" }}
     />
   );
 

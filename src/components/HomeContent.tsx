@@ -116,6 +116,7 @@ export default function HomeContent() {
               width={280}
               height={96}
               className="h-20 w-auto object-contain sm:h-24"
+              style={{ width: "auto" }}
             />
             <a
               href={PRESENTATION_URL}

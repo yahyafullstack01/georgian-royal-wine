@@ -66,6 +66,7 @@ export default function AboutHero({ title, subtitle }: AboutHeroProps) {
             width={220}
             height={76}
             className="about-hero-rise mx-auto h-14 w-auto object-contain sm:h-16"
+            style={{ width: "auto" }}
             priority
           />
           <GeorgianDivider className="my-6 sm:my-8" />
