@@ -58,6 +58,42 @@ const translations = {
       presentationSubtitle: "Premium Georgian Wines With A Rich History",
       presentationDesc:
         "GRW wines are crafted with a blend of tradition and innovation, offering exceptional quality and distinct flavors. Produced in Georgia's renowned Kakheti region, our wines showcase the rich terroir and centuries-old winemaking expertise, delivering a premium experience in every bottle.",
+      kakheti: {
+        title: "Premium Georgian wines — directly from Kakheti",
+        introBefore:
+          "We specialize in premium and traditional wines from unique Georgian grape varieties, supplied directly from the winery in Kakheti. Through our partnership with ",
+        introHighlight: "GRW Wines",
+        introAfter:
+          " (the winery is located in Kvareli, Kindzmarauli), we guarantee the highest standards of quality and authenticity, reliable logistics, and competitive prices. Our goal is to support the growth of your business through efficient service and products that resonate with wine lovers across Europe.",
+        kindzmarauliName: "Kindzmarauli",
+        kindzmarauliText:
+          " is one of the most recognizable Georgian wines in the world. A unique naturally semi-sweet taste, protected geographical status, and ancient Kakhetian technology. Produced exclusively in the strictly limited microzone of the Kvareli district. Deep overripe cherry color, velvety taste with notes of blackcurrant, pomegranate, cherry pit, and spices.",
+        cta: "Explore Kindzmarauli",
+      },
+      partnerTitle: "GRW Club",
+      partnerPrice: "Membership: €100/month",
+      partnerBenefits: [
+        "Welcome gift: a case of Borjomi mineral water when you join",
+        "Discounts and bonuses",
+        "Prize draws — wine tours to Georgia, phones, tablets, e-scooters, and more",
+      ],
+      partnerCta: "Join the Club",
+      deliveryTitle: "Delivery",
+      deliveryBenefits: [
+        "Express delivery",
+        "Free delivery in Torrevieja",
+        "Delivery across Spain within 48 hours on weekdays",
+        "Delivery service across Europe",
+      ],
+      deliveryCta: "View Catalog",
+      deliveryConditionsCta: "Conditions & Delivery",
+      servicesTitle: "Sommelier Services",
+      servicesBenefits: [
+        "Wine selection consultation",
+        "Joint tastings",
+        "Wine lists for restaurants",
+      ],
+      servicesCta: "Contact Us",
     },
     about: {
       title: "About Us",
@@ -125,6 +161,7 @@ const translations = {
       orders: "Order Support",
       wholesale: "Wholesale & Partnerships",
       tasting: "Wine Tasting Events",
+      joinClub: "Join the Club",
       other: "Other",
       sending: "Sending...",
       send: "Send Message",
@@ -136,6 +173,35 @@ const translations = {
       actionEmail: "Email",
       actionWhatsapp: "WhatsApp",
       actionInstagram: "Instagram",
+    },
+    deliveryPage: {
+      title: "Conditions & Delivery",
+      subtitle:
+        "Clear shipping terms for Torrevieja, Spain, and Europe — so your order arrives safely and on time.",
+      shippingTitle: "Delivery",
+      shippingItems: [
+        "Express delivery available",
+        "Free delivery within Torrevieja",
+        "Delivery across Spain within 48 hours on weekdays",
+        "Delivery service across Europe",
+      ],
+      stockTitle: "Always in stock",
+      stockText:
+        "Our warehouse always has more than 15,000 bottles available.",
+      sommelierTitle: "Sommelier services",
+      sommelierItems: [
+        "Wine selection consultation",
+        "Joint tastings",
+        "Wine lists for restaurants",
+      ],
+      returnsTitle: "Product returns",
+      returnsText:
+        "Returns are accepted when the product does not match what you ordered, or when the product is damaged.",
+      contactTitle: "Need help?",
+      contactText:
+        "Questions about delivery to your city or country? Our team is ready to help.",
+      contactCta: "Contact us",
+      shopCta: "Browse wines",
     },
     cart: {
       title: "Shopping Cart",
@@ -256,6 +322,7 @@ const translations = {
       company: "Company",
       ourStory: "About Us",
       contactUs: "Contact Us",
+      delivery: "Conditions & Delivery",
       visitUs: "Contact",
       address1: "Calle Paseo Vistalegre nº8, 6º derecha",
       address2: "Torrevieja, Spain",
@@ -307,6 +374,42 @@ const translations = {
       presentationSubtitle: "Vinos Georgianos Premium con una Rica Historia",
       presentationDesc:
         "Los vinos GRW se elaboran con una mezcla de tradición e innovación, ofreciendo una calidad excepcional y sabores distintivos. Producidos en la reconocida región de Kakheti en Georgia, nuestros vinos muestran el rico terroir y siglos de experiencia vinícola, ofreciendo una experiencia premium en cada botella.",
+      kakheti: {
+        title: "Vinos georgianos premium — directamente de Kakheti",
+        introBefore:
+          "Nos especializamos en vinos premium y tradicionales de variedades únicas de uva georgiana, suministrados directamente desde la bodega en Kakheti. Gracias a nuestra asociación con ",
+        introHighlight: "GRW Wines",
+        introAfter:
+          " (la bodega está ubicada en Kvareli, Kindzmarauli), garantizamos los más altos estándares de calidad y autenticidad, logística fiable y precios competitivos. Nuestro objetivo es apoyar el crecimiento de su negocio mediante un servicio eficiente y productos que conecten con los amantes del vino en toda Europa.",
+        kindzmarauliName: "Kindzmarauli",
+        kindzmarauliText:
+          " es uno de los vinos georgianos más reconocidos del mundo. Sabor naturalmente semidulce único, estatus geográfico protegido y antigua tecnología kakhetiana. Producido exclusivamente en la microzona estrictamente limitada del distrito de Kvareli. Color profundo de cereza muy madura, sabor aterciopelado con notas de grosella negra, granada, hueso de cereza y especias.",
+        cta: "Descubrir Kindzmarauli",
+      },
+      partnerTitle: "Club GRW",
+      partnerPrice: "Membresía: 100 €/mes",
+      partnerBenefits: [
+        "Al unirte, regalo: caja de agua mineral Borjomi",
+        "Descuentos y bonificaciones",
+        "Sorteos — tour enológico a Georgia, teléfonos, tablets, patinetes eléctricos y más",
+      ],
+      partnerCta: "Únete al club",
+      deliveryTitle: "Entrega",
+      deliveryBenefits: [
+        "Entrega express",
+        "Entrega gratuita en Torrevieja",
+        "Entrega en España en 48 horas laborables",
+        "Servicio de entrega en Europa",
+      ],
+      deliveryCta: "Ver catálogo",
+      deliveryConditionsCta: "Condiciones y entrega",
+      servicesTitle: "Servicios de sommelier",
+      servicesBenefits: [
+        "Consulta sobre la selección de vinos",
+        "Catas conjuntas",
+        "Cartas de vinos para restaurantes",
+      ],
+      servicesCta: "Contáctenos",
     },
     about: {
       title: "Sobre Nosotros",
@@ -374,6 +477,7 @@ const translations = {
       orders: "Soporte de Pedidos",
       wholesale: "Mayoristas y Alianzas",
       tasting: "Eventos de Cata",
+      joinClub: "Únete al club",
       other: "Otro",
       sending: "Enviando...",
       send: "Enviar Mensaje",
@@ -384,6 +488,35 @@ const translations = {
       actionEmail: "Email",
       actionWhatsapp: "WhatsApp",
       actionInstagram: "Instagram",
+    },
+    deliveryPage: {
+      title: "Condiciones y entrega",
+      subtitle:
+        "Condiciones de envío claras para Torrevieja, España y Europa — para que su pedido llegue seguro y a tiempo.",
+      shippingTitle: "Entrega",
+      shippingItems: [
+        "Entrega express disponible",
+        "Entrega gratuita en Torrevieja",
+        "Entrega en España en 48 horas laborables",
+        "Servicio de entrega en Europa",
+      ],
+      stockTitle: "Siempre disponible",
+      stockText:
+        "En nuestro almacén siempre hay más de 15 000 botellas en stock.",
+      sommelierTitle: "Servicios de sommelier",
+      sommelierItems: [
+        "Consulta sobre la selección de vinos",
+        "Catas conjuntas",
+        "Cartas de vinos para restaurantes",
+      ],
+      returnsTitle: "Devolución de productos",
+      returnsText:
+        "La devolución se realiza cuando el producto no coincide con el pedido o cuando el producto está dañado.",
+      contactTitle: "¿Necesita ayuda?",
+      contactText:
+        "¿Preguntas sobre la entrega a su ciudad o país? Nuestro equipo está listo para ayudar.",
+      contactCta: "Contáctenos",
+      shopCta: "Ver vinos",
     },
     cart: {
       title: "Carrito de Compras",
@@ -502,6 +635,7 @@ const translations = {
       company: "Empresa",
       ourStory: "Nuestra Historia",
       contactUs: "Contáctenos",
+      delivery: "Condiciones y entrega",
       visitUs: "Visítenos",
       address1: "Calle Paseo Vistalegre nº8, 6º derecha",
       address2: "Torrevieja, España",
@@ -553,6 +687,42 @@ const translations = {
       presentationSubtitle: "Премиальные Грузинские Вина с Богатой Историей",
       presentationDesc:
         "Вина GRW создаются сочетанием традиций и инноваций, предлагая исключительное качество и неповторимые вкусы. Произведённые в знаменитом регионе Кахетия в Грузии, наши вина раскрывают богатый терруар и многовековой опыт виноделия, обеспечивая премиальный опыт в каждой бутылке.",
+      kakheti: {
+        title: "Премиальные грузинские вина — напрямую из Кахетии",
+        introBefore:
+          "Мы специализируемся на премиальных и традиционных винах из уникальных грузинских сортов винограда, поставляемых напрямую с винодельни в Кахетии. Благодаря партнёрству с ",
+        introHighlight: "GRW Wines",
+        introAfter:
+          " (винодельня расположена в Кварели, Киндзмараули) мы гарантируем высочайшие стандарты качества и подлинности, надёжную логистику и конкурентоспособные цены. Наша цель — поддержать рост вашего бизнеса посредством эффективного обслуживания и продукции, которая находит отклик у любителей вина по всей Европе.",
+        kindzmarauliName: "Киндзмараули",
+        kindzmarauliText:
+          " — одно из самых узнаваемых грузинских вин в мире. Уникальный природно-полусладкий вкус, защищённый географический статус и древняя кахетинская технология. Производится исключительно в строго ограниченной микрозоне Кварельского района. Глубокий цвет переспелой вишни, бархатистый вкус с нотками чёрной смородины, граната, вишнёвой косточки и пряностей.",
+        cta: "Смотреть Киндзмараули",
+      },
+      partnerTitle: "GRW Клуб",
+      partnerPrice: "Стать членом клуба: 100 €/месяц",
+      partnerBenefits: [
+        "При вступлении в клуб в подарок ящик мин. воды Borjomi",
+        "Скидки и бонусы",
+        "Розыгрыши — вино тур в Грузию, телефоны, планшеты, электросамокаты и другое",
+      ],
+      partnerCta: "Вступить в клуб",
+      deliveryTitle: "Доставка",
+      deliveryBenefits: [
+        "Экспресс доставка",
+        "Доставка по г. Торревьеха БЕСПЛАТНАЯ",
+        "Доставка по Испании в течение 48 часов по будням",
+        "Служба доставки по Европе",
+      ],
+      deliveryCta: "Смотреть каталог",
+      deliveryConditionsCta: "Условия и доставка",
+      servicesTitle: "Услуги сомелье",
+      servicesBenefits: [
+        "Консультация по выбору вина",
+        "Совместные дегустации",
+        "Винные карты для ресторанов",
+      ],
+      servicesCta: "Связаться с нами",
     },
     about: {
       title: "О нас",
@@ -620,6 +790,7 @@ const translations = {
       orders: "Поддержка Заказов",
       wholesale: "Опт и Партнёрство",
       tasting: "Дегустации",
+      joinClub: "Вступить в клуб",
       other: "Другое",
       sending: "Отправка...",
       send: "Отправить",
@@ -630,6 +801,35 @@ const translations = {
       actionEmail: "Email",
       actionWhatsapp: "WhatsApp",
       actionInstagram: "Instagram",
+    },
+    deliveryPage: {
+      title: "Условия и доставка",
+      subtitle:
+        "Понятные условия доставки по Торревьехе, Испании и Европе — чтобы ваш заказ прибыл вовремя и в сохранности.",
+      shippingTitle: "Доставка",
+      shippingItems: [
+        "Экспресс доставка",
+        "Доставка по г. Торревьеха БЕСПЛАТНАЯ",
+        "Доставка по Испании в течение 48 часов по будням",
+        "Служба доставки по Европе",
+      ],
+      stockTitle: "Всегда в наличии",
+      stockText:
+        "На нашем складе всегда в наличии более 15 000 бутылок.",
+      sommelierTitle: "Услуги сомелье",
+      sommelierItems: [
+        "Консультация по выбору вина",
+        "Совместные дегустации",
+        "Винные карты для ресторанов",
+      ],
+      returnsTitle: "Возврат товара",
+      returnsText:
+        "Осуществляется при несоответствии товара, который вы заказывали; при повреждении товара.",
+      contactTitle: "Нужна помощь?",
+      contactText:
+        "Вопросы о доставке в ваш город или страну? Наша команда готова помочь.",
+      contactCta: "Связаться с нами",
+      shopCta: "Смотреть вина",
     },
     cart: {
       title: "Корзина",
@@ -748,6 +948,7 @@ const translations = {
       company: "Компания",
       ourStory: "Наша История",
       contactUs: "Контакты",
+      delivery: "Условия и доставка",
       visitUs: "Посетите Нас",
       address1: "Calle Paseo Vistalegre nº8, 6º derecha",
       address2: "Торревьеха, Испания",
@@ -799,6 +1000,42 @@ const translations = {
       presentationSubtitle: "Vins Géorgiens Premium à l'Histoire Riche",
       presentationDesc:
         "Les vins GRW sont élaborés en alliant tradition et innovation, offrant une qualité exceptionnelle et des saveurs distinctives. Produits dans la célèbre région de Kakheti en Géorgie, nos vins mettent en valeur le riche terroir et des siècles d'expertise viticole, pour une expérience premium dans chaque bouteille.",
+      kakheti: {
+        title: "Vins géorgiens premium — directement de Kakheti",
+        introBefore:
+          "Nous sommes spécialisés dans les vins premium et traditionnels issus de cépages géorgiens uniques, approvisionnés directement depuis la cave en Kakheti. Grâce à notre partenariat avec ",
+        introHighlight: "GRW Wines",
+        introAfter:
+          " (la cave est située à Kvareli, Kindzmarauli), nous garantissons les plus hauts standards de qualité et d'authenticité, une logistique fiable et des prix compétitifs. Notre objectif est de soutenir la croissance de votre entreprise grâce à un service efficace et des produits qui touchent les amateurs de vin dans toute l'Europe.",
+        kindzmarauliName: "Kindzmarauli",
+        kindzmarauliText:
+          " est l'un des vins géorgiens les plus reconnaissables au monde. Goût naturellement demi-doux unique, statut géographique protégé et ancienne technologie kakhétienne. Produit exclusivement dans la microzone strictement limitée du district de Kvareli. Couleur profonde de cerise très mûre, goût velouté aux notes de cassis, grenade, noyau de cerise et épices.",
+        cta: "Découvrir Kindzmarauli",
+      },
+      partnerTitle: "Club GRW",
+      partnerPrice: "Adhésion : 100 €/mois",
+      partnerBenefits: [
+        "Cadeau de bienvenue : caisse d'eau minérale Borjomi à l'inscription",
+        "Réductions et bonus",
+        "Tirages au sort — tour vinicoles en Géorgie, téléphones, tablettes, trottinettes électriques et plus",
+      ],
+      partnerCta: "Rejoindre le club",
+      deliveryTitle: "Livraison",
+      deliveryBenefits: [
+        "Livraison express",
+        "Livraison gratuite à Torrevieja",
+        "Livraison en Espagne sous 48 h ouvrées",
+        "Service de livraison en Europe",
+      ],
+      deliveryCta: "Voir le catalogue",
+      deliveryConditionsCta: "Conditions et livraison",
+      servicesTitle: "Services sommelier",
+      servicesBenefits: [
+        "Consultation pour le choix des vins",
+        "Dégustations en groupe",
+        "Cartes des vins pour restaurants",
+      ],
+      servicesCta: "Nous contacter",
     },
     about: {
       title: "À Propos",
@@ -866,6 +1103,7 @@ const translations = {
       orders: "Support Commandes",
       wholesale: "Vente en Gros & Partenariats",
       tasting: "Événements de Dégustation",
+      joinClub: "Rejoindre le club",
       other: "Autre",
       sending: "Envoi...",
       send: "Envoyer",
@@ -876,6 +1114,35 @@ const translations = {
       actionEmail: "Email",
       actionWhatsapp: "WhatsApp",
       actionInstagram: "Instagram",
+    },
+    deliveryPage: {
+      title: "Conditions et livraison",
+      subtitle:
+        "Des conditions d'expédition claires pour Torrevieja, l'Espagne et l'Europe — pour une arrivée sûre et à temps.",
+      shippingTitle: "Livraison",
+      shippingItems: [
+        "Livraison express disponible",
+        "Livraison gratuite à Torrevieja",
+        "Livraison en Espagne sous 48 h ouvrées",
+        "Service de livraison en Europe",
+      ],
+      stockTitle: "Toujours en stock",
+      stockText:
+        "Notre entrepôt dispose en permanence de plus de 15 000 bouteilles.",
+      sommelierTitle: "Services sommelier",
+      sommelierItems: [
+        "Consultation pour le choix des vins",
+        "Dégustations en groupe",
+        "Cartes des vins pour restaurants",
+      ],
+      returnsTitle: "Retour de produits",
+      returnsText:
+        "Les retours sont acceptés lorsque le produit ne correspond pas à votre commande ou lorsque le produit est endommagé.",
+      contactTitle: "Besoin d'aide ?",
+      contactText:
+        "Des questions sur la livraison vers votre ville ou pays ? Notre équipe est prête à vous aider.",
+      contactCta: "Nous contacter",
+      shopCta: "Voir les vins",
     },
     cart: {
       title: "Panier",
@@ -994,6 +1261,7 @@ const translations = {
       company: "Entreprise",
       ourStory: "Notre Histoire",
       contactUs: "Contactez-nous",
+      delivery: "Conditions et livraison",
       visitUs: "Nous Rendre Visite",
       address1: "Calle Paseo Vistalegre nº8, 6º derecha",
       address2: "Torrevieja, Espagne",
@@ -1045,6 +1313,42 @@ const translations = {
       presentationSubtitle: "Преміальні Грузинські Вина з Багатою Історією",
       presentationDesc:
         "Вина GRW створюються поєднанням традицій та інновацій, пропонуючи виняткову якість і неповторні смаки. Вироблені у знаменитому регіоні Кахетія в Грузії, наші вина розкривають багатий терруар і багатовіковий досвід виноробства, забезпечуючи преміальний досвід у кожній пляшці.",
+      kakheti: {
+        title: "Преміальні грузинські вина — безпосередньо з Кахетії",
+        introBefore:
+          "Ми спеціалізуємося на преміальних і традиційних винах з унікальних грузинських сортів винограду, що надходять безпосередньо з винодельні в Кахетії. Завдяки партнерству з ",
+        introHighlight: "GRW Wines",
+        introAfter:
+          " (винодельня розташована в Кварелі, Киндзмараулі) ми гарантуємо найвищі стандарти якості та автентичності, надійну логістику та конкурентоспособні ціни. Наша мета — підтримати зростання вашого бізнесу через ефективне обслуговування та продукцію, що резонує з любителями вина по всій Європі.",
+        kindzmarauliName: "Киндзмараулі",
+        kindzmarauliText:
+          " — одне з найвідоміших грузинських вин у світі. Унікальний природно-напівсолодкий смак, захищений географічний статус і давня кахетинська технологія. Виробляється виключно в суворо обмеженій мікрозоні Кварельського району. Глибокий колір перестиглої вишні, бархатистий смак з нотами чорної смородини, граната, вишневої кісточки та прянощів.",
+        cta: "Переглянути Киндзмараулі",
+      },
+      partnerTitle: "Клуб GRW",
+      partnerPrice: "Стати членом клубу: 100 €/місяць",
+      partnerBenefits: [
+        "При вступленні в клуб у подарунок ящик мін. води Borjomi",
+        "Знижки та бонуси",
+        "Розіграші — винний тур до Грузії, телефони, планшети, електросамокати та інше",
+      ],
+      partnerCta: "Вступити в клуб",
+      deliveryTitle: "Доставка",
+      deliveryBenefits: [
+        "Експрес-доставка",
+        "Доставка по м. Торрев'єха БЕЗКОШТОВНА",
+        "Доставка Іспанією протягом 48 годин у будні",
+        "Служба доставки Європою",
+      ],
+      deliveryCta: "Переглянути каталог",
+      deliveryConditionsCta: "Умови та доставка",
+      servicesTitle: "Послуги сомельє",
+      servicesBenefits: [
+        "Консультація з вибору вина",
+        "Спільні дегустації",
+        "Винні карти для ресторанів",
+      ],
+      servicesCta: "Зв'язатися з нами",
     },
     about: {
       title: "Про нас",
@@ -1112,6 +1416,7 @@ const translations = {
       orders: "Підтримка Замовлень",
       wholesale: "Опт та Партнерство",
       tasting: "Дегустації",
+      joinClub: "Вступити в клуб",
       other: "Інше",
       sending: "Надсилання...",
       send: "Надіслати",
@@ -1122,6 +1427,35 @@ const translations = {
       actionEmail: "Email",
       actionWhatsapp: "WhatsApp",
       actionInstagram: "Instagram",
+    },
+    deliveryPage: {
+      title: "Умови та доставка",
+      subtitle:
+        "Зрозумілі умови доставки Торрев'єхою, Іспанією та Європою — щоб ваше замовлення прибуло вчасно і в безпеці.",
+      shippingTitle: "Доставка",
+      shippingItems: [
+        "Експрес-доставка",
+        "Доставка по м. Торрев'єха БЕЗКОШТОВНА",
+        "Доставка Іспанією протягом 48 годин у будні",
+        "Служба доставки Європою",
+      ],
+      stockTitle: "Завжди в наявності",
+      stockText:
+        "На нашому складі завжди в наявності понад 15 000 пляшок.",
+      sommelierTitle: "Послуги сомельє",
+      sommelierItems: [
+        "Консультація з вибору вина",
+        "Спільні дегустації",
+        "Винні карти для ресторанів",
+      ],
+      returnsTitle: "Повернення товару",
+      returnsText:
+        "Повернення здійснюється при невідповідності товару тому, який ви замовляли, а також при пошкодженні товару.",
+      contactTitle: "Потрібна допомога?",
+      contactText:
+        "Питання про доставку до вашого міста чи країни? Наша команда готова допомогти.",
+      contactCta: "Зв'язатися з нами",
+      shopCta: "Переглянути вина",
     },
     cart: {
       title: "Кошик",
@@ -1240,6 +1574,7 @@ const translations = {
       company: "Компанія",
       ourStory: "Наша Історія",
       contactUs: "Контакти",
+      delivery: "Умови та доставка",
       visitUs: "Відвідайте Нас",
       address1: "Calle Paseo Vistalegre nº8, 6º derecha",
       address2: "Торрев'єха, Іспанія",

@@ -68,6 +68,11 @@ export default function Footer() {
                   {t.footer.contactUs}
                 </Link>
               </li>
+              <li>
+                <Link href="/delivery" className="hover:text-gold-400">
+                  {t.footer.delivery}
+                </Link>
+              </li>
             </ul>
           </div>
 

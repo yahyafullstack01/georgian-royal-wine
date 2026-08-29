@@ -135,6 +135,7 @@ export default function ContactForm() {
             <option value="orders">{t.contact.orders}</option>
             <option value="wholesale">{t.contact.wholesale}</option>
             <option value="tasting">{t.contact.tasting}</option>
+            <option value="join-club">{t.contact.joinClub}</option>
             <option value="other">{t.contact.other}</option>
           </select>
         </div>
