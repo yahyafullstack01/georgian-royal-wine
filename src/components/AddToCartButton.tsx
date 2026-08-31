@@ -118,6 +118,9 @@ export default function AddToCartButton({
     >
       {showPackOptions && (
         <>
+          <p className="text-sm font-medium text-burgundy-800 dark:text-gold-400">
+            {t.product.freeDeliveryNote}
+          </p>
           <div className="flex flex-col gap-2 sm:flex-row">
             <QtyStepper
               label={t.product.packBottle}

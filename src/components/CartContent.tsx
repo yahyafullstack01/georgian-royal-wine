@@ -60,6 +60,8 @@ function QtyControl({
 export default function CartContent() {
   const { items, setBottles, setBoxes, removeFromCart, totalPrice } = useCart();
   const { t, locale } = useLocale();
+  const totalBoxes = items.reduce((sum, item) => sum + item.boxes, 0);
+  const hasFreeDelivery = totalBoxes >= 1;
 
   if (items.length === 0) {
     return (
@@ -202,11 +204,39 @@ export default function CartContent() {
         <h2 className="font-serif text-xl text-burgundy-950 dark:text-cream-100">
           {t.cart.orderSummary}
         </h2>
+
+        <div
+          className={`mt-4 rounded-lg border px-4 py-3 text-sm ${
+            hasFreeDelivery
+              ? "border-green-500/30 bg-green-50 text-green-900 dark:border-green-500/25 dark:bg-green-950/30 dark:text-green-300"
+              : "border-gold-500/30 bg-gold-500/10 text-burgundy-900 dark:border-gold-500/20 dark:bg-gold-500/10 dark:text-gold-300"
+          }`}
+        >
+          <p className="font-medium">
+            {hasFreeDelivery
+              ? t.cart.freeDeliveryEligible
+              : t.cart.deliveryBoxPromo}
+          </p>
+          <p className="mt-1 text-xs opacity-90">{t.cart.deliveryTorrevieja}</p>
+        </div>
+
         <div className="mt-4 space-y-3 text-sm">
           <div className="flex justify-between font-medium">
             <span>{t.cart.subtotal}</span>
             <span className="font-serif text-xl text-burgundy-900 dark:text-gold-400">
               {formatPrice(totalPrice)}
+            </span>
+          </div>
+          <div className="flex justify-between">
+            <span>{t.cart.shipping}</span>
+            <span
+              className={
+                hasFreeDelivery
+                  ? "font-medium text-green-700 dark:text-green-400"
+                  : "text-stone-500 dark:text-stone-400"
+              }
+            >
+              {hasFreeDelivery ? t.cart.free : t.cart.freeShipping}
             </span>
           </div>
           <p className="text-xs text-stone-500 dark:text-stone-400">

@@ -1,4 +1,5 @@
 import { CheckoutFormData } from "@/types/wine";
+import { BOX_FREE_BOTTLES, BOX_PAID_BOTTLES } from "@/lib/packing";
 
 export interface OrderRequestItem {
   name: string;
@@ -49,7 +50,7 @@ export function formatOrderRequestEmail(payload: OrderRequestPayload): string {
       const parts = [
         item.bottles > 0 ? `${item.bottles} bottle(s)` : null,
         item.boxes > 0
-          ? `${item.boxes} box(es) (6 paid + 1 free each)`
+          ? `${item.boxes} box(es) (${BOX_PAID_BOTTLES} paid + ${BOX_FREE_BOTTLES} free each)`
           : null,
       ].filter(Boolean);
       return `- ${item.name}${item.vintage ? ` (${item.vintage})` : ""} · ${item.region}\n  ${parts.join(" + ")}\n  Bottles: ${item.bottlesTotal} total (${item.bottlesPaid} paid${item.bottlesFree ? `, ${item.bottlesFree} free` : ""})\n  Line total: €${item.lineTotal.toFixed(2)}`;
@@ -83,7 +84,7 @@ export function formatCustomerConfirmationEmail(
       const parts = [
         item.bottles > 0 ? `${item.bottles} bottle(s)` : null,
         item.boxes > 0
-          ? `${item.boxes} box(es) (6 paid + 1 free each)`
+          ? `${item.boxes} box(es) (${BOX_PAID_BOTTLES} paid + ${BOX_FREE_BOTTLES} free each)`
           : null,
       ].filter(Boolean);
       return `- ${item.name}${item.vintage ? ` (${item.vintage})` : ""}\n  ${parts.join(" + ")}\n  You receive ${item.bottlesTotal} bottle(s) · €${item.lineTotal.toFixed(2)}`;

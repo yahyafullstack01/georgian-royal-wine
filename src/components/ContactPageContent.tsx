@@ -10,7 +10,8 @@ const PHONE_DISPLAY = "+34 607 609 474";
 const PHONE_TEL = "+34607609474";
 const EMAIL = "info@grw-wine.com";
 const WHATSAPP = "https://wa.me/34607609474";
-const INSTAGRAM = "https://www.instagram.com/lena.wine.grw";
+const INSTAGRAM =
+  "https://www.instagram.com/georgianwine.es?igsi=MWsxOTYwbWlmZXp4OQ%3D%3D&utm_source=qr";
 
 export default function ContactPageContent() {
   const { t } = useLocale();
@@ -35,7 +36,7 @@ export default function ContactPageContent() {
     {
       href: INSTAGRAM,
       label: t.contact.actionInstagram,
-      detail: "@lena.wine.grw",
+      detail: "@georgianwine.es",
       external: true,
     },
   ];

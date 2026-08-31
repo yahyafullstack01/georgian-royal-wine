@@ -40,6 +40,10 @@ function ShopContent() {
 
   return (
     <>
+      <div className="mb-6 rounded-lg border border-gold-500/30 bg-gold-500/10 px-4 py-3 text-sm text-burgundy-900 dark:border-gold-500/20 dark:bg-gold-500/10 dark:text-gold-300">
+        {t.shop.deliveryNote}
+      </div>
+
       <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div className="flex flex-wrap gap-2">
           {categories.map((cat) => (

@@ -41,7 +41,7 @@ export interface CartItem {
   wine: Wine;
   /** Extra single bottles (starts at 0). */
   bottles: number;
-  /** Boxes of 6 paid + 1 free (starts at 0). */
+  /** Boxes of 5 paid + 1 free = 6 bottles (starts at 0). */
   boxes: number;
 }
 

@@ -1,7 +1,7 @@
 import type { Wine } from "@/types/wine";
 
 /** Bottles charged per box */
-export const BOX_PAID_BOTTLES = 6;
+export const BOX_PAID_BOTTLES = 5;
 /** Free bottles included with each box */
 export const BOX_FREE_BOTTLES = 1;
 /** Total bottles shipped per box */
