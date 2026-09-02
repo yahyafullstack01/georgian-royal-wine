@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import {
   formatCustomerConfirmationEmail,
-  formatOrderRequestEmail,
+  formatStaffOrderEmail,
   type OrderRequestPayload,
 } from "@/lib/order";
 import { getNotificationEmail, isMailConfigured, sendMail } from "@/lib/mail";
@@ -32,12 +32,12 @@ export async function POST(request: Request) {
       );
     }
 
-    const staffBody = formatOrderRequestEmail(body);
-    const customerBody = formatCustomerConfirmationEmail(body);
+    const staffEmail = formatStaffOrderEmail(body);
+    const customerEmail = formatCustomerConfirmationEmail(body);
     const notifyEmail = getNotificationEmail();
 
     if (!isMailConfigured()) {
-      console.log("Order request received (email not configured):\n", staffBody);
+      console.log("Order request received (email not configured):\n", staffEmail.text);
       return NextResponse.json(
         {
           error:
@@ -58,8 +58,9 @@ export async function POST(request: Request) {
     const staffResult = await sendMail({
       to: notifyEmail,
       replyTo: body.customer.email,
-      subject: `New reservation — ${body.customer.firstName} ${body.customer.lastName} · €${body.subtotal.toFixed(2)}`,
-      text: staffBody,
+      subject: staffEmail.subject,
+      text: staffEmail.text,
+      html: staffEmail.html,
     });
 
     if (!staffResult.ok) {
@@ -72,8 +73,9 @@ export async function POST(request: Request) {
     const customerResult = await sendMail({
       to: body.customer.email,
       replyTo: notifyEmail,
-      subject: "We received your order request — Georgian Royal Wine",
-      text: customerBody,
+      subject: customerEmail.subject,
+      text: customerEmail.text,
+      html: customerEmail.html,
     });
 
     if (!customerResult.ok) {

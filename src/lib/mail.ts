@@ -32,6 +32,7 @@ export async function sendMail(options: {
   to: string | string[];
   subject: string;
   text: string;
+  html?: string;
   replyTo?: string;
 }): Promise<{ ok: boolean; error?: string }> {
   if (!isMailConfigured()) {
@@ -49,6 +50,7 @@ export async function sendMail(options: {
       replyTo: options.replyTo,
       subject: options.subject,
       text: options.text,
+      ...(options.html ? { html: options.html } : {}),
     });
     return { ok: true };
   } catch (err) {
