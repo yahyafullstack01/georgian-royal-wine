@@ -68,6 +68,8 @@ export default function CheckoutForm() {
     company: "",
     businessType: "",
     address: "",
+    houseNumber: "",
+    apartment: "",
     city: "",
     state: "",
     zip: "",
@@ -374,6 +376,44 @@ export default function CheckoutForm() {
                 className={inputClass}
               />
             </div>
+            <div className="grid gap-4 sm:grid-cols-2">
+              <div>
+                <label
+                  htmlFor="houseNumber"
+                  className="mb-1.5 block text-sm font-medium text-stone-700 dark:text-stone-300"
+                >
+                  {t.checkout.houseNumber}
+                </label>
+                <input
+                  id="houseNumber"
+                  required
+                  value={form.houseNumber}
+                  onChange={(e) =>
+                    setForm({ ...form, houseNumber: e.target.value })
+                  }
+                  className={inputClass}
+                />
+              </div>
+              <div>
+                <label
+                  htmlFor="apartment"
+                  className="mb-1.5 block text-sm font-medium text-stone-700 dark:text-stone-300"
+                >
+                  {t.checkout.apartment}
+                  <span className="ml-1 font-normal text-stone-500 dark:text-stone-400">
+                    ({t.checkout.apartmentHint})
+                  </span>
+                </label>
+                <input
+                  id="apartment"
+                  value={form.apartment ?? ""}
+                  onChange={(e) =>
+                    setForm({ ...form, apartment: e.target.value })
+                  }
+                  className={inputClass}
+                />
+              </div>
+            </div>
             <div className="grid gap-4 sm:grid-cols-3">
               <div>
                 <label
@@ -497,9 +537,8 @@ export default function CheckoutForm() {
           <p className="font-medium">
             {hasFreeDelivery
               ? t.cart.freeDeliveryEligible
-              : t.cart.deliveryBoxPromo}
+              : t.cart.deliveryTorrevieja}
           </p>
-          <p className="mt-1 text-xs opacity-90">{t.cart.deliveryTorrevieja}</p>
         </div>
 
         <div className="mt-4 max-h-64 space-y-3 overflow-y-auto">

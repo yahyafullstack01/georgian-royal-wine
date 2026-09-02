@@ -16,13 +16,32 @@ export default function ContactForm() {
   const [status, setStatus] = useState<
     "idle" | "submitting" | "success" | "error"
   >("idle");
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setStatus("submitting");
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    setStatus("success");
-    setForm({ name: "", email: "", phone: "", subject: "", message: "" });
+    setErrorMessage("");
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+
+      if (!response.ok) {
+        setStatus("error");
+        setErrorMessage(t.contact.sendError);
+        return;
+      }
+
+      setStatus("success");
+      setForm({ name: "", email: "", phone: "", subject: "", message: "" });
+    } catch {
+      setStatus("error");
+      setErrorMessage(t.contact.sendError);
+    }
   };
 
   const inputClass =
@@ -157,6 +176,12 @@ export default function ContactForm() {
           className={inputClass}
         />
       </div>
+
+      {status === "error" && (
+        <p className="rounded bg-red-50 px-4 py-3 text-sm text-red-700 dark:bg-red-950/30 dark:text-red-400">
+          {errorMessage}
+        </p>
+      )}
 
       <button
         type="submit"

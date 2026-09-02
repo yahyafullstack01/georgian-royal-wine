@@ -22,17 +22,53 @@ export interface OrderRequestPayload {
   subtotal: number;
 }
 
+export function formatDeliveryAddress(customer: CheckoutFormData): string[] {
+  const streetLine = [customer.address, customer.houseNumber]
+    .map((part) => part.trim())
+    .filter(Boolean)
+    .join(" ");
+
+  const lines = [streetLine];
+  const apartment = customer.apartment?.trim();
+  if (apartment) {
+    lines.push(`Apartment / Restaurant: ${apartment}`);
+  }
+  lines.push(`${customer.city}, ${customer.state} ${customer.zip}`);
+  lines.push(customer.country);
+  return lines;
+}
+
 export function formatOrderRequestEmail(payload: OrderRequestPayload): string {
   const { customer, items, subtotal } = payload;
+  const totalBoxes = items.reduce((sum, item) => sum + item.boxes, 0);
+  const totalSingleBottles = items.reduce((sum, item) => sum + item.bottles, 0);
+  const totalBottlesShipped = items.reduce(
+    (sum, item) => sum + item.bottlesTotal,
+    0
+  );
+  const orderedAt = new Date().toLocaleString("en-GB", {
+    dateStyle: "full",
+    timeStyle: "short",
+    timeZone: "Europe/Madrid",
+  });
+
+  const deliveryNote =
+    totalBoxes >= 1
+      ? "Delivery: FREE (order includes at least 1 box)"
+      : "Delivery: In Torrevieja, Spain — €3 for 1–4 bottles (confirm address)";
+
   const lines = [
-    "NEW ORDER REQUEST — Georgian Royal Wine",
-    "========================================",
+    "NEW WINE RESERVATION — Georgian Royal Wine",
+    "==========================================",
     "",
-    "CUSTOMER",
+    `Received: ${orderedAt}`,
+    "",
+    "CLIENT DETAILS",
+    "--------------",
     `Type: ${customer.customerType === "business" ? "Business / Partner" : "Individual"}`,
     `Name: ${customer.firstName} ${customer.lastName}`,
     `Email: ${customer.email}`,
-    `Phone: ${customer.phone}`,
+    `Phone: ${customer.phone || "—"}`,
     customer.customerType === "business" && customer.company
       ? `Company: ${customer.company}`
       : null,
@@ -41,26 +77,43 @@ export function formatOrderRequestEmail(payload: OrderRequestPayload): string {
       : null,
     "",
     "DELIVERY ADDRESS",
-    customer.address,
-    `${customer.city}, ${customer.state} ${customer.zip}`,
-    customer.country,
+    "----------------",
+    ...formatDeliveryAddress(customer),
     "",
-    "ORDER ITEMS",
-    ...items.map((item) => {
+    "RESERVATION / ORDER",
+    "-------------------",
+    ...items.map((item, index) => {
       const parts = [
         item.bottles > 0 ? `${item.bottles} bottle(s)` : null,
         item.boxes > 0
           ? `${item.boxes} box(es) (${BOX_PAID_BOTTLES} paid + ${BOX_FREE_BOTTLES} free each)`
           : null,
       ].filter(Boolean);
-      return `- ${item.name}${item.vintage ? ` (${item.vintage})` : ""} · ${item.region}\n  ${parts.join(" + ")}\n  Bottles: ${item.bottlesTotal} total (${item.bottlesPaid} paid${item.bottlesFree ? `, ${item.bottlesFree} free` : ""})\n  Line total: €${item.lineTotal.toFixed(2)}`;
+
+      return [
+        `${index + 1}. ${item.name}${item.vintage ? ` (${item.vintage})` : ""}`,
+        `   Region: ${item.region}`,
+        `   Ordered: ${parts.join(" + ") || "—"}`,
+        `   Unit price: €${item.unitBottlePrice.toFixed(2)} / bottle · €${item.unitBoxPrice.toFixed(2)} / box`,
+        `   Client receives: ${item.bottlesTotal} bottle(s) (${item.bottlesPaid} paid${item.bottlesFree ? `, ${item.bottlesFree} free` : ""})`,
+        `   Line total: €${item.lineTotal.toFixed(2)}`,
+      ].join("\n");
     }),
     "",
-    `SUBTOTAL: €${subtotal.toFixed(2)}`,
+    "PRICING SUMMARY",
+    "---------------",
+    `Wine subtotal: €${subtotal.toFixed(2)}`,
+    deliveryNote,
+    `(Shipping cost to be confirmed with client if outside free delivery)`,
     "",
-    customer.notes ? `NOTES:\n${customer.notes}` : null,
+    `ORDER TOTAL (wines): €${subtotal.toFixed(2)}`,
+    "",
+    `Totals: ${totalSingleBottles} single bottle(s) · ${totalBoxes} box(es) · ${totalBottlesShipped} bottle(s) to ship`,
+    "",
+    customer.notes ? `CLIENT NOTES\n------------\n${customer.notes}` : null,
     "",
     "---",
+    "Reply directly to the client email above to confirm the reservation.",
     "Submitted via georgian-royal-wine website",
   ];
 
@@ -94,9 +147,7 @@ export function formatCustomerConfirmationEmail(
     "(Final total including shipping will be confirmed by our team.)",
     "",
     "DELIVERY ADDRESS",
-    customer.address,
-    `${customer.city}, ${customer.state} ${customer.zip}`,
-    customer.country,
+    ...formatDeliveryAddress(customer),
     "",
     customer.notes ? `Your notes:\n${customer.notes}\n` : null,
     "If you have any questions, reply to this email or contact us at info@grw-wine.com / +34 607 609 474.",

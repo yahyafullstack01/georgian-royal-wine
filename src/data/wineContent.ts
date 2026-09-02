@@ -305,6 +305,123 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       pairing: "Запечена риба, свіжі салати",
     },
   },
+  "rezos-wine-tvishi": {
+    en: {
+      name: "REZO’S WINE – Tvishi",
+      classification: "Naturally Semi-Sweet White (PDO)",
+      region: "Racha-Lechkhumi",
+      subregion: "Racha-Lechkhumi viticulture region",
+      microzone: "Tvishi specific viticulture zone (SVZ)",
+      country: "Georgia",
+      grape: "Tsolikouri 100%",
+      grapesSourced: "Tvishi microzone",
+      alcohol: "11%–12%",
+      servingTemperature: "+10°C to +12°C",
+      storageTemperature: "+5°C to +18°C",
+      color: "Light golden with greenish reflections",
+      aroma:
+        "Delicate yet expressive aromas of ripe pear, white peach, apricot and citrus fruits are complemented by floral notes and hints of honey. Subtle mineral characteristics derived from the unique Tvishi microzone contribute additional complexity and freshness.",
+      taste:
+        "Naturally semi-sweet, harmonious and exceptionally refreshing. The palate displays flavors of pear, quince, apricot and citrus balanced by lively natural acidity. The sweetness is elegant and integrated rather than dominant, creating a refined and balanced wine. The finish is long, fruity and pleasantly refreshing.",
+      tastingNotes:
+        "Climate: Moderate continental with humid mountain influence · Wine category: Protected Designation of Origin · Sugar: 18–45 g/l · Crop capacity: 8 ton/hectare",
+      pairing: "Fresh fruit, soft cheeses, light desserts, and spicy Asian cuisine.",
+      vinification:
+        "Grapes are hand-picked at the peak of their maturity. Soft de-stemming and crushing is followed by fermentation at controlled temperature (23°C–28°C) in stainless steel tanks. Wine is fermented using cultural yeast strains, by délestage and remontage method. After 5–7 days of maceration, when the desired level of residual sugar is reached, fermentation is stopped by cooling to maintain the natural sweetness and freshness of the wine. Before bottling, wine is kept cold in isothermal reservoirs at −2°C to +2°C.",
+    },
+    ru: {
+      name: "REZO’S WINE — Tvishi",
+      classification: "Природно полусладкое белое (ЗНМП)",
+      region: "Рача-Лечхуми",
+      subregion: "Винодельческий регион Рача-Лечхуми",
+      microzone: "Специфическая виноградарская зона Твиши (СВЗ)",
+      country: "Грузия",
+      grape: "Цоликоури 100%",
+      grapesSourced: "Микрозона Твиши",
+      alcohol: "11%–12%",
+      servingTemperature: "+10°C — +12°C",
+      storageTemperature: "+5°C — +18°C",
+      color: "Светло-золотистый с зеленоватыми отблесками",
+      aroma:
+        "Нежные, но выразительные ароматы спелой груши, белого персика, абрикоса и цитрусов дополняются цветочными нотами и оттенками мёда. Тонкие минеральные характеристики уникальной микрозоны Твиши придают вину дополнительную сложность и свежесть.",
+      taste:
+        "Природно полусладкое, гармоничное и исключительно освежающее. Во вкусе — груша, айва, абрикос и цитрусы, сбалансированные живой натуральной кислотностью. Сладость элегантная и органичная, а не доминирующая. Длинное фруктовое послевкусие.",
+      tastingNotes:
+        "Климат: умеренно-континентальный с влажным горным влиянием · Категория: вино с защищённым наименованием места происхождения · Сахар: 18–45 г/л · Урожайность: 8 т/га",
+      pairing: "Свежие фрукты, мягкие сыры, лёгкие десерты и пряная азиатская кухня.",
+      vinification:
+        "Виноград собирают вручную в полной зрелости. Мягкое гребнеотделение и дробление, затем ферментация при контролируемой температуре (23°C–28°C) в нержавеющих ёмкостях с культурными дрожжами методом délestage и remontage. Через 5–7 дней мацерации, когда достигнут нужный уровень остаточного сахара, ферментацию останавливают охлаждением. Перед розливом вино хранят в изотермических резервуарах при −2°C…+2°C.",
+    },
+    es: {
+      name: "REZO’S WINE – Tvishi",
+      classification: "Blanco semiseco natural (DOP)",
+      region: "Racha-Lechkhumi",
+      subregion: "Región vitivinícola de Racha-Lechkhumi",
+      microzone: "Zona vitivinícola específica de Tvishi (SVZ)",
+      country: "Georgia",
+      grape: "Tsolikouri 100%",
+      grapesSourced: "Microzona de Tvishi",
+      alcohol: "11%–12%",
+      servingTemperature: "+10°C a +12°C",
+      storageTemperature: "+5°C a +18°C",
+      color: "Dorado claro con reflejos verdosos",
+      aroma:
+        "Aromas delicados pero expresivos de pera madura, melocotón blanco, albaricoque y cítricos, complementados con notas florales y matices de miel. Sutiles características minerales de la microzona de Tvishi aportan complejidad y frescura.",
+      taste:
+        "Naturalmente semiseco, armonioso y excepcionalmente refrescante. En boca, pera, membrillo, albaricoque y cítricos equilibrados por una viva acidez natural. Dulzor elegante e integrado. Final largo, afrutado y refrescante.",
+      tastingNotes:
+        "Clima: continental moderado con influencia montañosa húmeda · Categoría: denominación de origen protegida · Azúcar: 18–45 g/l · Rendimiento: 8 t/ha",
+      pairing: "Fruta fresca, quesos suaves, postres ligeros y cocina asiática especiada.",
+      vinification:
+        "Uvas cosechadas a mano en plena madurez. Despalillado y estrujado suave, fermentación a temperatura controlada (23°C–28°C) en tanques de acero con levaduras seleccionadas, por délestage y remontage. Tras 5–7 días de maceración, cuando se alcanza el azúcar residual deseado, se detiene la fermentación por enfriamiento. Antes del embotellado, el vino se conserva en frío en depósitos isotérmicos a −2°C…+2°C.",
+    },
+    fr: {
+      name: "REZO’S WINE – Tvishi",
+      classification: "Blanc demi-doux naturel (AOP)",
+      region: "Racha-Lechkhumi",
+      subregion: "Région viticole de Racha-Lechkhumi",
+      microzone: "Zone viticole spécifique de Tvishi (SVZ)",
+      country: "Géorgie",
+      grape: "Tsolikouri 100%",
+      grapesSourced: "Microzone de Tvishi",
+      alcohol: "11 % – 12 %",
+      servingTemperature: "+10°C à +12°C",
+      storageTemperature: "+5°C à +18°C",
+      color: "Doré clair aux reflets verdâtres",
+      aroma:
+        "Arômes délicats mais expressifs de poire mûre, pêche blanche, abricot et agrumes, complétés par des notes florales et des touches de miel. De subtiles notes minérales propres à la microzone de Tvishi apportent complexité et fraîcheur.",
+      taste:
+        "Naturellement demi-doux, harmonieux et exceptionnellement rafraîchissant. Bouche de poire, coing, abricot et agrumes, équilibrée par une acidité naturelle vive. Douceur élégante et intégrée. Finale longue, fruitée et agréablement rafraîchissante.",
+      tastingNotes:
+        "Climat : continental modéré avec influence montagneuse humide · Catégorie : appellation d’origine protégée · Sucre : 18–45 g/l · Rendement : 8 t/ha",
+      pairing: "Fruits frais, fromages doux, desserts légers et cuisine asiatique épicée.",
+      vinification:
+        "Raisins récoltés à la main à maturité optimale. Égrappage et foulage doux, fermentation à température contrôlée (23°C–28°C) en cuve inox avec levures sélectionnées, par délestage et remontage. Après 5 à 7 jours de macération, lorsque le sucre résiduel souhaité est atteint, la fermentation est arrêtée par refroidissement. Avant la mise en bouteille, le vin est conservé au froid en cuves isothermes à −2°C…+2°C.",
+    },
+    uk: {
+      name: "REZO’S WINE – Tvishi",
+      classification: "Природно напівсолодке біле (ЗНМП)",
+      region: "Рача-Лечхумі",
+      subregion: "Виноробний регіон Рача-Лечхумі",
+      microzone: "Специфічна виноградарська зона Tvishi (СВЗ)",
+      country: "Грузія",
+      grape: "Цолікоурі 100%",
+      grapesSourced: "Мікрозона Tvishi",
+      alcohol: "11%–12%",
+      servingTemperature: "+10°C — +12°C",
+      storageTemperature: "+5°C — +18°C",
+      color: "Світло-золотистий із зеленуватими відблисками",
+      aroma:
+        "Ніжні, але виразні аромати стиглої груші, білого персика, абрикоса та цитрусових доповнюються квітковими нотами та відтінками меду. Тонкі мінеральні характеристики унікальної мікрозони Tvishi надають вину додаткової складності та свіжості.",
+      taste:
+        "Природно напівсолодке, гармонійне та надзвичайно освіжаюче. У смаку — груша, айва, абрикос і цитруси, збалансовані живою природною кислотністю. Солодкість елегантна та органічна. Довге фруктове післясмак.",
+      tastingNotes:
+        "Клімат: помірно-континентальний з вологим гірським впливом · Категорія: вино з охоронюваним найменуванням · Цукор: 18–45 г/л · Урожайність: 8 т/га",
+      pairing: "Свіжі фрукти, м’які сири, легкі десерти та пряна азіатська кухня.",
+      vinification:
+        "Виноград збирають вручну в повній зрілості. М’яке гребеневідділення та дроблення, далі ферментація при контрольованій температурі (23°C–28°C) у нержавіючих ємностях з культурними дрожжами методом délestage та remontage. Після 5–7 днів мацерації, коли досягнуто потрібний рівень залишкового цукру, ферментацію зупиняють охолодженням. Перед розливом вино зберігають у ізотермічних резервуарах при −2°C…+2°C.",
+    },
+  },
   "grw-kisi": {
     en: {
       name: "KISI",
@@ -1027,6 +1144,118 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       taste:
         "Відчувається м’яка солодкість, у якій домінують ноти ожинового джему та стиглого граната. Вино збалансоване, з довгим післясмаком",
       vintage: "2023",
+    },
+  },
+  "grw-saperavi-qvevri": {
+    en: {
+      name: "SAPERAVI QVEVRI",
+      classification: "Qvevri Red Dry",
+      region: "Kakheti",
+      subregion: "Kakheti viticulture region",
+      country: "Georgia",
+      grape: "Saperavi 100%",
+      grapesSourced: "100% own vineyards",
+      alcohol: "12.5%–14.0%",
+      servingTemperature: "+16°C to +18°C",
+      storageTemperature: "+5°C to +20°C",
+      color: "Deep ruby red",
+      aroma:
+        "The bouquet reveals concentrated aromas of blackberry, black cherry, ripe plum and forest berries. These fruit-driven characteristics are complemented by hints of black pepper, clove, cocoa, tobacco leaf and subtle earthy nuances. With aging, the wine develops additional complexity expressed through leather, dried fruits and dark chocolate notes.",
+      taste:
+        "Powerful and full-bodied with outstanding concentration and structure. Rich dark fruit flavors dominate the palate, supported by firm but polished tannins. The wine demonstrates excellent balance between fruit, acidity and tannic backbone. Long and persistent finish showcases black berries, spices and elegant mineral undertones.",
+      tastingNotes:
+        "Climate: Moderate continental · Wine category: Qvevri wine · Sugar: <4 g/l · Crop capacity: 8–10 ton/hectare",
+      pairing: "Grilled meats, hearty stews, and aged cheeses.",
+      vinification:
+        "Grapes are hand-picked at the peak of their maturity. Soft de-stemming and crushing is followed by fermentation at controlled temperature (23°C–28°C) in qvevri. After 8–10 days of maceration, the wine is racked clean, transferred for malolactic fermentation and aged in qvevri for 5 months.",
+    },
+    ru: {
+      name: "SAPERAVI QVEVRI",
+      classification: "Красное сухое вино квеври",
+      region: "Кахетия",
+      subregion: "Винодельческий регион Кахетия",
+      country: "Грузия",
+      grape: "Саперави 100%",
+      grapesSourced: "100% виноград с собственных виноградников",
+      alcohol: "12,5%–14,0%",
+      servingTemperature: "+16°C — +18°C",
+      storageTemperature: "+5°C — +20°C",
+      color: "Насыщенный рубиново-красный",
+      aroma:
+        "Букет раскрывается концентрированными ароматами ежевики, черешни, спелой сливы и лесных ягод. Фруктовые ноты дополняются оттенками черного перца, гвоздики, какао, табачного листа и тонкими землистыми нюансами. При выдержке вино обретает дополнительную сложность — кожа, сухофрукты и темный шоколад.",
+      taste:
+        "Мощное, полнотелое вино с выдающейся концентрацией и структурой. Во вкусе доминируют насыщенные темные фрукты, поддержанные плотными, но отполированными танинами. Отличный баланс фруктов, кислотности и танинного каркаса. Длинное, стойкое послевкусие с нотами черных ягод, специй и элегантными минеральными оттенками.",
+      tastingNotes:
+        "Климат: умеренно-континентальный · Категория: вино квеври · Сахар: <4 г/л · Урожайность: 8–10 т/га",
+      pairing: "Мясо на гриле, насыщенные рагу и выдержанные сыры.",
+      vinification:
+        "Виноград собирают вручную в полной зрелости. Мягкое гребнеотделение и дробление, затем ферментация при контролируемой температуре (23°C–28°C) в квеври. После 8–10 дней мацерации вино сливают, проводят малолактическую ферментацию и выдерживают в квеври 5 месяцев.",
+    },
+    es: {
+      name: "SAPERAVI QVEVRI",
+      classification: "Tinto seco de qvevri",
+      region: "Kajetia",
+      subregion: "Región vitivinícola de Kajetia",
+      country: "Georgia",
+      grape: "Saperavi 100%",
+      grapesSourced: "100% uvas de viñedos propios",
+      alcohol: "12,5%–14,0%",
+      servingTemperature: "+16°C a +18°C",
+      storageTemperature: "+5°C a +20°C",
+      color: "Rojo rubí intenso",
+      aroma:
+        "El bouquet revela aromas concentrados de mora, cereza negra, ciruela madura y frutos del bosque. Estas notas frutales se complementan con pimienta negra, clavo, cacao, hoja de tabaco y sutiles matices terrosos. Con la crianza aparecen cuero, frutos secos y chocolate negro.",
+      taste:
+        "Potente y corpulento, con gran concentración y estructura. Predominan frutos negros maduros, apoyados por taninos firmes pero pulidos. Excelente equilibrio entre fruta, acidez y estructura tanínica. Final largo y persistente con bayas negras, especias y elegantes matices minerales.",
+      tastingNotes:
+        "Clima: continental moderado · Categoría: vino de qvevri · Azúcar: <4 g/l · Rendimiento: 8–10 t/ha",
+      pairing: "Carnes a la parrilla, guisos contundentes y quesos curados.",
+      vinification:
+        "Uvas cosechadas a mano en su punto óptimo de madurez. Despalillado y estrujado suave, fermentación a temperatura controlada (23°C–28°C) en qvevri. Tras 8–10 días de maceración, el vino se trasiega, pasa la fermentación maloláctica y envejece en qvevri 5 meses.",
+    },
+    fr: {
+      name: "SAPERAVI QVEVRI",
+      classification: "Rouge sec de qvevri",
+      region: "Kakhétie",
+      subregion: "Région viticole de Kakhétie",
+      country: "Géorgie",
+      grape: "Saperavi 100%",
+      grapesSourced: "100 % de vignobles propres",
+      alcohol: "12,5 % – 14,0 %",
+      servingTemperature: "+16°C à +18°C",
+      storageTemperature: "+5°C à +20°C",
+      color: "Rouge rubis profond",
+      aroma:
+        "Le bouquet dévoile des arômes concentrés de mûre, cerise noire, prune mûre et baies des bois. Ces notes fruitées s’accompagnent de poivre noir, clou de girofle, cacao, feuille de tabac et de nuances terreuses subtiles. Avec l’âge, le vin gagne en complexité — cuir, fruits secs et chocolat noir.",
+      taste:
+        "Puissant et corsé, d’une concentration et d’une structure remarquables. Les fruits noirs dominent le palais, soutenus par des tanins fermes mais polis. Excellent équilibre entre fruit, acidité et structure tannique. Finale longue et persistante aux notes de baies noires, d’épices et de minéraux élégants.",
+      tastingNotes:
+        "Climat : continental modéré · Catégorie : vin de qvevri · Sucre : <4 g/l · Rendement : 8–10 t/ha",
+      pairing: "Viandes grillées, plats mijotés copieux et fromages affinés.",
+      vinification:
+        "Raisins récoltés à la main à parfaite maturité. Égrappage et foulage doux, fermentation à température contrôlée (23°C–28°C) en qvevri. Après 8 à 10 jours de macération, le vin est soutiré, subit la fermentation malolactique et est élevé en qvevri pendant 5 mois.",
+    },
+    uk: {
+      name: "SAPERAVI QVEVRI",
+      classification: "Червоне сухе вино квеврі",
+      region: "Кахетія",
+      subregion: "Виноробний регіон Кахетія",
+      country: "Грузія",
+      grape: "Сапераві 100%",
+      grapesSourced: "100% виноград із власних виноградників",
+      alcohol: "12,5%–14,0%",
+      servingTemperature: "+16°C — +18°C",
+      storageTemperature: "+5°C — +20°C",
+      color: "Насичений рубіново-червоний",
+      aroma:
+        "Букет розкриває концентровані аромати ожини, чорної вишні, стиглої сливи та лісових ягід. Фруктові ноти доповнюються чорним перцем, гвоздикою, какао, тютюновим листом і тонкими землистими відтінками. З витримкою з’являються шкіра, сухофрукти та темний шоколад.",
+      taste:
+        "Потужне, насичене вино з виразною концентрацією та структурою. У смаку домінують темні фрукти, підтримані щільними, але полірованими танінами. Чудовий баланс фруктів, кислотності та танінного каркасу. Довге, стійке післясмак з нотами чорних ягід, спецій і елегантними мінеральними відтінками.",
+      tastingNotes:
+        "Клімат: помірно-континентальний · Категорія: вино квеврі · Цукор: <4 г/л · Урожайність: 8–10 т/га",
+      pairing: "М’ясо на грилі, наваристі рагу та витримані сири.",
+      vinification:
+        "Виноград збирають вручну в повній зрилості. М’яке гребеневідділення та дроблення, далі ферментація при контрольованій температурі (23°C–28°C) у квеврі. Після 8–10 днів мацерації вино зливають, проводять малолактичну ферментацію та витримують у квеврі 5 місяців.",
     },
   },
   "grw-saperavi": {

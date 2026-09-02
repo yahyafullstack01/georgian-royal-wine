@@ -70,6 +70,8 @@ export interface CheckoutFormData {
   company: string;
   businessType: BusinessType | "";
   address: string;
+  houseNumber: string;
+  apartment?: string;
   city: string;
   state: string;
   zip: string;

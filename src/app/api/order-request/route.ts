@@ -4,6 +4,7 @@ import {
   formatOrderRequestEmail,
   type OrderRequestPayload,
 } from "@/lib/order";
+import { getNotificationEmail, isMailConfigured, sendMail } from "@/lib/mail";
 
 function isValidPayload(body: unknown): body is OrderRequestPayload {
   if (!body || typeof body !== "object") return false;
@@ -20,35 +21,6 @@ function isValidPayload(body: unknown): body is OrderRequestPayload {
   );
 }
 
-async function sendResendEmail(options: {
-  apiKey: string;
-  from: string;
-  to: string[];
-  replyTo?: string;
-  subject: string;
-  text: string;
-}): Promise<{ ok: boolean; errorText?: string }> {
-  const response = await fetch("https://api.resend.com/emails", {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${options.apiKey}`,
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      from: options.from,
-      to: options.to,
-      reply_to: options.replyTo,
-      subject: options.subject,
-      text: options.text,
-    }),
-  });
-
-  if (!response.ok) {
-    return { ok: false, errorText: await response.text() };
-  }
-  return { ok: true };
-}
-
 export async function POST(request: Request) {
   try {
     const body = await request.json();
@@ -62,51 +34,50 @@ export async function POST(request: Request) {
 
     const staffBody = formatOrderRequestEmail(body);
     const customerBody = formatCustomerConfirmationEmail(body);
-    const resendKey = process.env.RESEND_API_KEY;
-    const notifyEmail = process.env.ORDER_NOTIFICATION_EMAIL;
-    const fromEmail =
-      process.env.ORDER_FROM_EMAIL ?? "onboarding@resend.dev";
-    const from = `Georgian Royal Wine <${fromEmail}>`;
+    const notifyEmail = getNotificationEmail();
 
-    if (!resendKey) {
+    if (!isMailConfigured()) {
       console.log("Order request received (email not configured):\n", staffBody);
-      return NextResponse.json({ success: true });
+      return NextResponse.json(
+        {
+          error:
+            "Email is not configured on the server. Please contact us by phone or email.",
+        },
+        { status: 503 }
+      );
     }
 
-    // 1) Notify GRW team
-    if (notifyEmail) {
-      const staffResult = await sendResendEmail({
-        apiKey: resendKey,
-        from,
-        to: [notifyEmail],
-        replyTo: body.customer.email,
-        subject: `Order request — ${body.customer.firstName} ${body.customer.lastName}`,
-        text: staffBody,
-      });
-
-      if (!staffResult.ok) {
-        console.error("Resend staff email error:", staffResult.errorText);
-        return NextResponse.json(
-          { error: "Failed to send order request. Please try again." },
-          { status: 502 }
-        );
-      }
+    if (!notifyEmail) {
+      console.error("NOTIFICATION_EMAIL is not set — cannot notify company inbox.");
+      return NextResponse.json(
+        { error: "Failed to send order request. Please try again." },
+        { status: 502 }
+      );
     }
 
-    // 2) Confirm to the client
-    const customerResult = await sendResendEmail({
-      apiKey: resendKey,
-      from,
-      to: [body.customer.email],
-      replyTo: notifyEmail || undefined,
+    const staffResult = await sendMail({
+      to: notifyEmail,
+      replyTo: body.customer.email,
+      subject: `New reservation — ${body.customer.firstName} ${body.customer.lastName} · €${body.subtotal.toFixed(2)}`,
+      text: staffBody,
+    });
+
+    if (!staffResult.ok) {
+      return NextResponse.json(
+        { error: "Failed to send order request. Please try again." },
+        { status: 502 }
+      );
+    }
+
+    const customerResult = await sendMail({
+      to: body.customer.email,
+      replyTo: notifyEmail,
       subject: "We received your order request — Georgian Royal Wine",
       text: customerBody,
     });
 
     if (!customerResult.ok) {
-      console.error("Resend customer email error:", customerResult.errorText);
-      // Staff already notified — still report success so checkout is not blocked,
-      // but log the customer email failure.
+      console.error("Customer confirmation email error:", customerResult.error);
     }
 
     return NextResponse.json({ success: true });

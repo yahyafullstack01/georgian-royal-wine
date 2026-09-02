@@ -215,9 +215,8 @@ export default function CartContent() {
           <p className="font-medium">
             {hasFreeDelivery
               ? t.cart.freeDeliveryEligible
-              : t.cart.deliveryBoxPromo}
+              : t.cart.deliveryTorrevieja}
           </p>
-          <p className="mt-1 text-xs opacity-90">{t.cart.deliveryTorrevieja}</p>
         </div>
 
         <div className="mt-4 space-y-3 text-sm">
