@@ -1518,6 +1518,118 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       vintage: "2023",
     },
   },
+  "grw-rose": {
+    en: {
+      name: "ROSE",
+      classification: "Semi-dry Rosé",
+      region: "Kakheti",
+      subregion: "Kakheti viticulture region",
+      country: "Georgia",
+      grape: "Saperavi 40%, Rkatsiteli 60%",
+      grapesSourced: "100% own vineyards",
+      alcohol: "11.0%–12.5%",
+      servingTemperature: "+8°C to +10°C",
+      storageTemperature: "+5°C to +20°C",
+      color: "Brilliant salmon-pink with delicate coral reflections",
+      aroma:
+        "Fresh aromas of wild strawberry, raspberry and red cherry are complemented by subtle floral notes and delicate citrus nuances inherited from Rkatsiteli.",
+      taste:
+        "Elegant and refreshing palate with balanced natural sweetness and vibrant acidity. Notes of red berries, pomegranate and ripe peach create a harmonious and fruit-driven profile with a pleasant and persistent finish.",
+      tastingNotes:
+        "Climate: Moderate continental · Wine category: Table wine · Sugar: 8–15 g/l · Crop capacity: 8–10 ton/hectare",
+      pairing: "Light salads, seafood, soft cheeses, and summer dishes.",
+      vinification:
+        "The grapes are harvested separately at optimal maturity and carefully sorted. Following gentle crushing, short skin contact with Saperavi grapes provides the wine with its delicate pink color. Fermentation takes place in temperature-controlled stainless-steel tanks at 14°C–16°C to preserve freshness and aromatic intensity. Fermentation is stopped at the desired sugar level to retain natural fruitiness and achieve a balanced semi-dry style. The wine is aged in stainless steel tanks before bottling under controlled temperature and humidity conditions.",
+    },
+    ru: {
+      name: "ROSE",
+      classification: "Полусухое розовое",
+      region: "Кахетия",
+      subregion: "Винодельческий регион Кахетия",
+      country: "Грузия",
+      grape: "Саперави 40%, Ркацители 60%",
+      grapesSourced: "100% виноград с собственных виноградников",
+      alcohol: "11,0%–12,5%",
+      servingTemperature: "+8°C — +10°C",
+      storageTemperature: "+5°C — +20°C",
+      color: "Яркий лососево-розовый с нежными коралловыми отблесками",
+      aroma:
+        "Свежие ароматы лесной земляники, малины и красной вишни дополняются тонкими цветочными нотами и деликатными цитрусовыми нюансами, унаследованными от Ркацители.",
+      taste:
+        "Элегантный и освежающий вкус со сбалансированной естественной сладостью и яркой кислотностью. Ноты красных ягод, граната и спелого персика создают гармоничный фруктовый профиль с приятным и стойким послевкусием.",
+      tastingNotes:
+        "Климат: умеренно-континентальный · Категория: столовое вино · Сахар: 8–15 г/л · Урожайность: 8–10 т/га",
+      pairing: "Лёгкие салаты, морепродукты, мягкие сыры и летние блюда.",
+      vinification:
+        "Виноград собирают отдельно при оптимальной зрелости и тщательно сортируют. После мягкого дробления краткий контакт с кожицей Саперави придаёт вину нежный розовый цвет. Ферментация проходит в нержавеющих резервуарах с контролируемой температурой 14°C–16°C для сохранения свежести и ароматической интенсивности. Ферментацию останавливают на нужном уровне сахара, чтобы сохранить естественную фруктовость и получить сбалансированный полусухой стиль. Перед розливом вино выдерживают в нержавеющих резервуарах при контролируемых температуре и влажности.",
+    },
+    es: {
+      name: "ROSE",
+      classification: "Rosado semiseco",
+      region: "Kajetia",
+      subregion: "Región vitivinícola de Kajetia",
+      country: "Georgia",
+      grape: "Saperavi 40%, Rkatsiteli 60%",
+      grapesSourced: "100% uvas de viñedos propios",
+      alcohol: "11,0%–12,5%",
+      servingTemperature: "+8°C a +10°C",
+      storageTemperature: "+5°C a +20°C",
+      color: "Rosa salmón brillante con delicados reflejos coral",
+      aroma:
+        "Aromas frescos de fresa silvestre, frambuesa y cereza roja, complementados por sutiles notas florales y delicados matices cítricos heredados del Rkatsiteli.",
+      taste:
+        "Paladar elegante y refrescante, con dulzor natural equilibrado y acidez vibrante. Notas de frutos rojos, granada y melocotón maduro crean un perfil armonioso y afrutado, con un final agradable y persistente.",
+      tastingNotes:
+        "Clima: continental moderado · Categoría: vino de mesa · Azúcar: 8–15 g/l · Rendimiento: 8–10 t/ha",
+      pairing: "Ensaladas ligeras, mariscos, quesos suaves y platos de verano.",
+      vinification:
+        "Las uvas se vendimian por separado en su madurez óptima y se seleccionan con cuidado. Tras un estrujado suave, un breve contacto con los hollejos de Saperavi aporta el delicado color rosado. La fermentación se realiza en depósitos de acero inoxidable a temperatura controlada (14°C–16°C) para preservar la frescura y la intensidad aromática. Se detiene al nivel de azúcar deseado para conservar la frutalidad natural y lograr un estilo semiseco equilibrado. El vino envejece en acero inoxidable antes del embotellado en condiciones controladas de temperatura y humedad.",
+    },
+    fr: {
+      name: "ROSE",
+      classification: "Rosé demi-sec",
+      region: "Kakhétie",
+      subregion: "Région viticole de Kakhétie",
+      country: "Géorgie",
+      grape: "Saperavi 40 %, Rkatsiteli 60 %",
+      grapesSourced: "100 % de vignobles propres",
+      alcohol: "11,0 % – 12,5 %",
+      servingTemperature: "+8°C à +10°C",
+      storageTemperature: "+5°C à +20°C",
+      color: "Rose saumon brillant aux délicats reflets corail",
+      aroma:
+        "Arômes frais de fraise des bois, framboise et cerise rouge, complétés par de subtiles notes florales et de délicates nuances d’agrumes héritées du Rkatsiteli.",
+      taste:
+        "Palais élégant et rafraîchissant, à la douceur naturelle équilibrée et à l’acidité vive. Notes de fruits rouges, de grenade et de pêche mûre pour un profil harmonieux et fruité, à la finale agréable et persistante.",
+      tastingNotes:
+        "Climat : continental modéré · Catégorie : vin de table · Sucre : 8–15 g/l · Rendement : 8–10 t/ha",
+      pairing: "Salades légères, fruits de mer, fromages doux et plats d’été.",
+      vinification:
+        "Les raisins sont vendangés séparément à maturité optimale et soigneusement triés. Après un foulage doux, un court contact avec les peaux de Saperavi confère la délicate couleur rose. La fermentation se déroule en cuves inox thermo-régulées à 14°C–16°C pour préserver fraîcheur et intensité aromatique. Elle est arrêtée au niveau de sucre souhaité afin de conserver le fruité naturel et d’obtenir un style demi-sec équilibré. Le vin est élevé en inox avant mise en bouteille dans des conditions de température et d’humidité contrôlées.",
+    },
+    uk: {
+      name: "ROSE",
+      classification: "Напівсухе рожеве",
+      region: "Кахетія",
+      subregion: "Виноробний регіон Кахетія",
+      country: "Грузія",
+      grape: "Сапераві 40%, Ркацителі 60%",
+      grapesSourced: "100% виноград із власних виноградників",
+      alcohol: "11,0%–12,5%",
+      servingTemperature: "+8°C — +10°C",
+      storageTemperature: "+5°C — +20°C",
+      color: "Яскравий лососево-рожевий із ніжними кораловими відблисками",
+      aroma:
+        "Свіжі аромати лісової суниці, малини та червоної вишні доповнюються тонкими квітковими нотами й делікатними цитрусовими нюансами, успадкованими від Ркацителі.",
+      taste:
+        "Елегантний і освіжаючий смак зі збалансованою природною солодкістю та яскравою кислотністю. Ноти червоних ягід, граната та стиглого персика створюють гармонійний фруктовий профіль із приємним і стійким післясмаком.",
+      tastingNotes:
+        "Клімат: помірно-континентальний · Категорія: столове вино · Цукор: 8–15 г/л · Урожайність: 8–10 т/га",
+      pairing: "Легкі салати, морепродукти, м’які сири та літні страви.",
+      vinification:
+        "Виноград збирають окремо при оптимальній зрилості та ретельно сортують. Після м’якого дроблення короткий контакт зі шкіркою Сапераві надає вину ніжний рожевий колір. Ферментація відбувається в нержавіючих резервуарах за контрольованої температури 14°C–16°C для збереження свіжості та ароматичної інтенсивності. Ферментацію зупиняють на потрібному рівні цукру, щоб зберегти природну фруктовість і отримати збалансований напівсухий стиль. Перед розливом вино витримують у нержавіючих резервуарах за контрольованих температури та вологості.",
+    },
+  },
 };
 
 export function getWineContent(slug: string, locale: Locale): WineContent {

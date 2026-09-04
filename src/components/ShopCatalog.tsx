@@ -40,7 +40,7 @@ function ShopContent() {
 
   return (
     <>
-      <div className="mb-6 rounded-lg border border-gold-500/30 bg-gold-500/10 px-4 py-3 text-sm text-burgundy-900 dark:border-gold-500/20 dark:bg-gold-500/10 dark:text-gold-300">
+      <div className="mb-6 rounded-lg border border-gold-500/30 bg-gold-500/10 px-4 py-3 text-sm text-burgundy-900 dark:border-gold-500/20 dark:bg-gold-500/10 dark:text-gold-400">
         {t.shop.deliveryNote}
       </div>
 

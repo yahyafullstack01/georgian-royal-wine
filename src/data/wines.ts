@@ -219,6 +219,18 @@ export const wines: Wine[] = [
     featured: true,
     inStock: true,
   },
+  {
+    id: "18",
+    slug: "grw-rose",
+    category: "rose",
+    collections: [],
+    price: 18.3,
+    alcohol: "11.0%–12.5%",
+    volume: "0.75L",
+    image: "/wines/grw-rose.jpg",
+    featured: true,
+    inStock: true,
+  },
 ];
 
 export function getWineBySlug(slug: string): Wine | undefined {
