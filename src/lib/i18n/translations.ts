@@ -14,6 +14,7 @@ const translations = {
       home: "Home",
       shop: "Shop",
       about: "About",
+      testimonials: "Reviews",
       contact: "Contact",
       cart: "Cart",
     },
@@ -95,6 +96,11 @@ const translations = {
         "Wine lists for restaurants",
       ],
       servicesCta: "Contact Us",
+      testimonialsEyebrow: "Client voices",
+      testimonialsTitle: "What our clients say",
+      testimonialsSubtitle:
+        "Real feedback from wine lovers in Spain — taste, delivery, and authentic Georgian character.",
+      testimonialsCta: "Read all reviews",
     },
     about: {
       title: "About Us",
@@ -207,6 +213,25 @@ const translations = {
         "Questions about delivery to your city or country? Our team is ready to help.",
       contactCta: "Contact us",
       shopCta: "Browse wines",
+    },
+    testimonialsPage: {
+      title: "Client Reviews",
+      subtitle:
+        "Words from our clients in Spain — about taste, delivery, and real Georgian wine.",
+      reviewsTitle: "What they wrote",
+      storiesTitle: "From Instagram",
+      storiesSubtitle: "Moments shared by our clients after delivery.",
+      reviews: [
+        "Thank you for the wine — it is delicious. Special thanks for the delivery: they brought it within an hour.",
+        "The wine is superb. It reminded me of the Georgian wine I tasted back in Georgia. I will be your regular customer. Good luck!",
+        "I have not tasted such delicious Georgian wine in a long time. I will order only from you! So glad that good Georgian wine is now available in Spain.",
+        "I bought Kindzmarauli from you and was delighted by the taste and aroma. Thank you. I will order a whole box a little later.",
+      ],
+      contactTitle: "Share your experience",
+      contactText:
+        "Ordered with us? We would love to hear from you — or discover the wines our clients love most.",
+      contactCta: "Contact us",
+      shopCta: "Shop wines",
     },
     cart: {
       title: "Shopping Cart",
@@ -335,6 +360,7 @@ const translations = {
       company: "Company",
       ourStory: "About Us",
       contactUs: "Contact Us",
+      testimonials: "Reviews",
       delivery: "Conditions & Delivery",
       visitUs: "Contact",
       address1: "Calle Paseo Vistalegre nº8, 6º derecha",
@@ -348,6 +374,7 @@ const translations = {
       home: "Inicio",
       shop: "Tienda",
       about: "Nosotros",
+      testimonials: "Opiniones",
       contact: "Contacto",
       cart: "Carrito",
     },
@@ -424,6 +451,11 @@ const translations = {
         "Cartas de vinos para restaurantes",
       ],
       servicesCta: "Contáctenos",
+      testimonialsEyebrow: "Voces de clientes",
+      testimonialsTitle: "Lo que dicen nuestros clientes",
+      testimonialsSubtitle:
+        "Opiniones reales de amantes del vino en España — sabor, entrega y auténtico carácter georgiano.",
+      testimonialsCta: "Ver todas las opiniones",
     },
     about: {
       title: "Sobre Nosotros",
@@ -533,6 +565,25 @@ const translations = {
       contactTitle: "¿Necesita ayuda?",
       contactText:
         "¿Preguntas sobre la entrega a su ciudad o país? Nuestro equipo está listo para ayudar.",
+      contactCta: "Contáctenos",
+      shopCta: "Ver vinos",
+    },
+    testimonialsPage: {
+      title: "Opiniones de clientes",
+      subtitle:
+        "Palabras de nuestros clientes en España — sobre el sabor, la entrega y el auténtico vino georgiano.",
+      reviewsTitle: "Lo que escribieron",
+      storiesTitle: "Desde Instagram",
+      storiesSubtitle: "Momentos compartidos por nuestros clientes tras la entrega.",
+      reviews: [
+        "Gracias por el vino, está muy rico. Un agradecimiento especial por la entrega: lo trajeron en menos de una hora.",
+        "El vino es genial. Me recordó el vino georgiano que probé en Georgia. Seré su cliente habitual. ¡Éxito!",
+        "Hacía mucho que no bebía un vino georgiano tan rico. ¡Pediré solo con ustedes! Me alegra que ahora en España se pueda comprar buen vino georgiano.",
+        "Compré Kindzmarauli con ustedes y quedé encantada con el sabor y el aroma. Gracias. Más adelante pediré una caja entera.",
+      ],
+      contactTitle: "Cuéntenos su experiencia",
+      contactText:
+        "¿Ha pedido con nosotros? Nos encantaría saberlo — o descubra los vinos que más gustan a nuestros clientes.",
       contactCta: "Contáctenos",
       shopCta: "Ver vinos",
     },
@@ -661,6 +712,7 @@ const translations = {
       company: "Empresa",
       ourStory: "Nuestra Historia",
       contactUs: "Contáctenos",
+      testimonials: "Opiniones",
       delivery: "Condiciones y entrega",
       visitUs: "Visítenos",
       address1: "Calle Paseo Vistalegre nº8, 6º derecha",
@@ -674,6 +726,7 @@ const translations = {
       home: "Главная",
       shop: "Магазин",
       about: "О нас",
+      testimonials: "Отзывы",
       contact: "Контакты",
       cart: "Корзина",
     },
@@ -750,6 +803,11 @@ const translations = {
         "Винные карты для ресторанов",
       ],
       servicesCta: "Связаться с нами",
+      testimonialsEyebrow: "Голоса клиентов",
+      testimonialsTitle: "Что говорят наши клиенты",
+      testimonialsSubtitle:
+        "Настоящие отзывы любителей вина в Испании — о вкусе, доставке и подлинном грузинском характере.",
+      testimonialsCta: "Читать все отзывы",
     },
     about: {
       title: "О нас",
@@ -859,6 +917,25 @@ const translations = {
       contactTitle: "Нужна помощь?",
       contactText:
         "Вопросы о доставке в ваш город или страну? Наша команда готова помочь.",
+      contactCta: "Связаться с нами",
+      shopCta: "Смотреть вина",
+    },
+    testimonialsPage: {
+      title: "Отзывы клиентов",
+      subtitle:
+        "Слова наших клиентов в Испании — о вкусе, доставке и настоящем грузинском вине.",
+      reviewsTitle: "Что написали",
+      storiesTitle: "Из Instagram",
+      storiesSubtitle: "Моменты, которыми поделились клиенты после доставки.",
+      reviews: [
+        "Спасибо за вино, вкусное очень. Отдельное спасибо за доставку), в течении часа привезли.",
+        "Вино супер 👍🏻 вспомнил то грузинское как пробовал еще в Грузии. Буду вашим постоянным покупателем. Удачи вам!",
+        "Такого вкусного грузинского вина давно не пила. Буду заказывать только у вас! 😀Рада что теперь в Испании можно купить хорошие грузинское вино.",
+        "Купила у вас Киндзмараули и была в восторге от вкуса аромата. Спасибо вам. Закажу немного позже целый ящик. 😊",
+      ],
+      contactTitle: "Поделитесь впечатлением",
+      contactText:
+        "Заказывали у нас? Нам будет приятно услышать вас — или откройте вина, которые любят наши клиенты.",
       contactCta: "Связаться с нами",
       shopCta: "Смотреть вина",
     },
@@ -987,6 +1064,7 @@ const translations = {
       company: "Компания",
       ourStory: "Наша История",
       contactUs: "Контакты",
+      testimonials: "Отзывы",
       delivery: "Условия и доставка",
       visitUs: "Посетите Нас",
       address1: "Calle Paseo Vistalegre nº8, 6º derecha",
@@ -1000,6 +1078,7 @@ const translations = {
       home: "Accueil",
       shop: "Boutique",
       about: "À propos",
+      testimonials: "Avis",
       contact: "Contact",
       cart: "Panier",
     },
@@ -1076,6 +1155,11 @@ const translations = {
         "Cartes des vins pour restaurants",
       ],
       servicesCta: "Nous contacter",
+      testimonialsEyebrow: "Voix de clients",
+      testimonialsTitle: "Ce que disent nos clients",
+      testimonialsSubtitle:
+        "Vrais retours d’amateurs de vin en Espagne — goût, livraison et authentique caractère géorgien.",
+      testimonialsCta: "Lire tous les avis",
     },
     about: {
       title: "À Propos",
@@ -1185,6 +1269,25 @@ const translations = {
       contactTitle: "Besoin d'aide ?",
       contactText:
         "Des questions sur la livraison vers votre ville ou pays ? Notre équipe est prête à vous aider.",
+      contactCta: "Nous contacter",
+      shopCta: "Voir les vins",
+    },
+    testimonialsPage: {
+      title: "Avis clients",
+      subtitle:
+        "Les mots de nos clients en Espagne — sur le goût, la livraison et le vrai vin géorgien.",
+      reviewsTitle: "Ce qu’ils ont écrit",
+      storiesTitle: "Depuis Instagram",
+      storiesSubtitle: "Moments partagés par nos clients après la livraison.",
+      reviews: [
+        "Merci pour le vin, il est délicieux. Un grand merci pour la livraison : ils l’ont apporté en moins d’une heure.",
+        "Le vin est super. Ça m’a rappelé le vin géorgien que j’avais goûté en Géorgie. Je serai votre client fidèle. Bonne chance !",
+        "Je n’avais pas bu un vin géorgien aussi bon depuis longtemps. Je commanderai uniquement chez vous ! Contente qu’on puisse enfin trouver du bon vin géorgien en Espagne.",
+        "J’ai acheté chez vous du Kindzmarauli et j’ai adoré le goût et l’arôme. Merci. Je commanderai bientôt une caisse entière.",
+      ],
+      contactTitle: "Partagez votre expérience",
+      contactText:
+        "Vous avez commandé chez nous ? Nous serions ravis de vous lire — ou découvrez les vins que nos clients préfèrent.",
       contactCta: "Nous contacter",
       shopCta: "Voir les vins",
     },
@@ -1313,6 +1416,7 @@ const translations = {
       company: "Entreprise",
       ourStory: "Notre Histoire",
       contactUs: "Contactez-nous",
+      testimonials: "Avis",
       delivery: "Conditions et livraison",
       visitUs: "Nous Rendre Visite",
       address1: "Calle Paseo Vistalegre nº8, 6º derecha",
@@ -1326,6 +1430,7 @@ const translations = {
       home: "Головна",
       shop: "Магазин",
       about: "Про нас",
+      testimonials: "Відгуки",
       contact: "Контакти",
       cart: "Кошик",
     },
@@ -1402,6 +1507,11 @@ const translations = {
         "Винні карти для ресторанів",
       ],
       servicesCta: "Зв'язатися з нами",
+      testimonialsEyebrow: "Голоси клієнтів",
+      testimonialsTitle: "Що кажуть наші клієнти",
+      testimonialsSubtitle:
+        "Справжні відгуки любителів вина в Іспанії — про смак, доставку та автентичний грузинський характер.",
+      testimonialsCta: "Читати всі відгуки",
     },
     about: {
       title: "Про нас",
@@ -1511,6 +1621,25 @@ const translations = {
       contactTitle: "Потрібна допомога?",
       contactText:
         "Питання про доставку до вашого міста чи країни? Наша команда готова допомогти.",
+      contactCta: "Зв'язатися з нами",
+      shopCta: "Переглянути вина",
+    },
+    testimonialsPage: {
+      title: "Відгуки клієнтів",
+      subtitle:
+        "Слова наших клієнтів в Іспанії — про смак, доставку та справжнє грузинське вино.",
+      reviewsTitle: "Що написали",
+      storiesTitle: "З Instagram",
+      storiesSubtitle: "Моменти, якими поділилися клієнти після доставки.",
+      reviews: [
+        "Дякую за вино, дуже смачне. Окрема подяка за доставку — привезли протягом години.",
+        "Вино супер. Нагадало те грузинське, яке пробував ще в Грузії. Буду вашим постійним покупцем. Успіхів вам!",
+        "Такого смачного грузинського вина давно не пила. Замовлятиму лише у вас! Рада, що тепер в Іспанії можна купити добре грузинське вино.",
+        "Купила у вас Кіндзмараулі і була в захваті від смаку й аромату. Дякую вам. Трохи пізніше замовлю цілу коробку.",
+      ],
+      contactTitle: "Поділіться враженнями",
+      contactText:
+        "Замовляли у нас? Нам буде приємно почути вас — або відкрийте вина, які люблять наші клієнти.",
       contactCta: "Зв'язатися з нами",
       shopCta: "Переглянути вина",
     },
@@ -1639,6 +1768,7 @@ const translations = {
       company: "Компанія",
       ourStory: "Наша Історія",
       contactUs: "Контакти",
+      testimonials: "Відгуки",
       delivery: "Умови та доставка",
       visitUs: "Відвідайте Нас",
       address1: "Calle Paseo Vistalegre nº8, 6º derecha",

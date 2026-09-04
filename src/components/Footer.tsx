@@ -64,6 +64,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/testimonials" className="hover:text-gold-400">
+                  {t.footer.testimonials}
+                </Link>
+              </li>
+              <li>
                 <Link href="/contact" className="hover:text-gold-400">
                   {t.footer.contactUs}
                 </Link>

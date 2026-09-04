@@ -9,6 +9,7 @@ import GeorgianDivider from "@/components/GeorgianDivider";
 import HomeHeroMedia from "@/components/HomeHeroMedia";
 import HomePromoSections from "@/components/HomePromoSections";
 import HomeKakhetiSection from "@/components/HomeKakhetiSection";
+import HomeTestimonials from "@/components/HomeTestimonials";
 
 const PRESENTATION_URL =
   "https://grw-wine.com/wp-content/uploads/2025/05/Georgian-Wine_Presentation_2024-.pdf";
@@ -199,6 +200,8 @@ export default function HomeContent() {
       </section>
 
       <HomePromoSections />
+
+      <HomeTestimonials />
 
       <section className="relative overflow-hidden bg-burgundy-950 py-20 dark:bg-stone-900">
         <div className="absolute inset-0 opacity-20">
