@@ -54,11 +54,10 @@ const translations = {
       rose: "Rose",
       rezos: "Rezo's",
       qvevri: "Qvevri",
-      downloadPresentation: "Download\nPresentation",
-      presentationTitle: "Georgian Royal Wine",
-      presentationSubtitle: "Premium Georgian Wines With A Rich History",
-      presentationDesc:
-        "GRW wines are crafted with a blend of tradition and innovation, offering exceptional quality and distinct flavors. Produced in Georgia's renowned Kakheti region, our wines showcase the rich terroir and centuries-old winemaking expertise, delivering a premium experience in every bottle.",
+      qualityTitle: "Guarantee of authenticity and quality",
+      qualitySubtitle: "Certified standards · International recognition",
+      qualityDesc:
+        "GRW is certified to ISO 22000:2018 food safety management based on HACCP principles, and recognized with the Qvevri WineHunter Award Georgia 2022 for Rkatsiteli 2019.",
       kakheti: {
         title: "Premium Georgian wines — directly from Kakheti",
         introBefore:
@@ -124,10 +123,10 @@ const translations = {
         "Georgia is the world's cradle of winemaking. During excavations in Georgia, the ancient city of Colchis was discovered, and in the layers of rock from the 7th century BC – fragments of surviving vessels with chemical elements of wine.",
       fact3Title: "UNESCO Qvevri Heritage",
       fact3:
-        "One of the oldest methods of making wine in Georgia, in qvevri, is included in the list of UNESCO intangible cultural heritage.",
+        "One of the oldest methods of making wine in Georgia, in qvevri, is included in the list of UNESCO cultural heritage.",
       fact4Title: "Global Recognition",
       fact4:
-        "Georgian wines are supplied to 80 countries around the world. In 2020, the country exported 125 million bottles, of which 85 million went to major importers such as Russia and the CIS countries. The remaining 40 million bottles were distributed around the world, with the bulk of the shipments going to EU countries. This suggests that the conquest of world markets and recognition of Georgian wine is steadily growing around the world.",
+        "Georgian wines are supplied to 80 countries around the world. In 2020, the country exported 125 million bottles, of which 85 million went to major importers. The remaining 40 million bottles were distributed around the world, with the bulk of the shipments going to EU countries. This suggests that the conquest of world markets and recognition of Georgian wine is steadily growing around the world.",
       explore: "Explore Our Collection",
     },
     shop: {
@@ -155,7 +154,7 @@ const translations = {
         "Partner with GRW to bring premium Georgian wines to your customers across Europe. Whether you're a retailer, restaurant, or distributor — our team is ready to help.",
       visitTasting: "Headquarters",
       hours: "Business Hours",
-      hoursValue: "Mon–Fri: 9am – 6pm (GET)\nSat: 10am – 2pm",
+      hoursValue: "Mon–Fri: 10:00 – 19:00\nSat–Sun: Closed",
       getInTouch: "Get in Touch",
       sendMessage: "Send a Message",
       formIntro: "Fill out the form below and we'll respond within 24 hours.",
@@ -409,11 +408,10 @@ const translations = {
       rose: "Rosé",
       rezos: "Rezo's",
       qvevri: "Qvevri",
-      downloadPresentation: "Descargar\nPresentación",
-      presentationTitle: "Georgian Royal Wine",
-      presentationSubtitle: "Vinos Georgianos Premium con una Rica Historia",
-      presentationDesc:
-        "Los vinos GRW se elaboran con una mezcla de tradición e innovación, ofreciendo una calidad excepcional y sabores distintivos. Producidos en la reconocida región de Kakheti en Georgia, nuestros vinos muestran el rico terroir y siglos de experiencia vinícola, ofreciendo una experiencia premium en cada botella.",
+      qualityTitle: "Garantía de autenticidad y calidad",
+      qualitySubtitle: "Estándares certificados · Reconocimiento internacional",
+      qualityDesc:
+        "GRW está certificado según ISO 22000:2018 de seguridad alimentaria basado en principios HACCP, y reconocido con el Qvevri WineHunter Award Georgia 2022 por Rkatsiteli 2019.",
       kakheti: {
         title: "Vinos georgianos premium — directamente de Kakheti",
         introBefore:
@@ -479,10 +477,10 @@ const translations = {
         "Georgia es la cuna mundial de la viticultura. Durante excavaciones se descubrió la antigua ciudad de Colchis, y en capas de roca del siglo VII a.C. – fragmentos de vasijas con elementos químicos del vino.",
       fact3Title: "Patrimonio Qvevri UNESCO",
       fact3:
-        "Uno de los métodos más antiguos de elaborar vino en Georgia, en qvevri, está incluido en la lista del patrimonio cultural inmaterial de la UNESCO.",
+        "Uno de los métodos más antiguos de elaborar vino en Georgia, en qvevri, está incluido en la lista del patrimonio cultural de la UNESCO.",
       fact4Title: "Reconocimiento Global",
       fact4:
-        "Los vinos georgianos se suministran a 80 países del mundo. En 2020, el país exportó 125 millones de botellas, de las cuales 85 millones fueron a importadores importantes como Rusia y países de la CEI.",
+        "Los vinos georgianos se suministran a 80 países del mundo. En 2020, el país exportó 125 millones de botellas, de las cuales 85 millones fueron a importadores importantes.",
       explore: "Explorar Nuestra Colección",
     },
     shop: {
@@ -510,7 +508,7 @@ const translations = {
         "Nos encantaría saber de usted. Ya sea una pregunta sobre nuestros vinos, ayuda con un pedido o planificar una cata privada.",
       visitTasting: "Visite Nuestra Sala de Cata",
       hours: "Horario",
-      hoursValue: "Lun–Sáb: 10am – 7pm\nDomingo: 11am – 5pm",
+      hoursValue: "Lun–Vie: 10:00 – 19:00\nSáb–Dom: Cerrado",
       getInTouch: "Póngase en Contacto",
       sendMessage: "Enviar un Mensaje",
       formIntro: "Complete el formulario y responderemos en 24 horas.",
@@ -761,11 +759,10 @@ const translations = {
       rose: "Розовое",
       rezos: "Rezo's",
       qvevri: "Квеври",
-      downloadPresentation: "Скачать\nПрезентацию",
-      presentationTitle: "Georgian Royal Wine",
-      presentationSubtitle: "Премиальные Грузинские Вина с Богатой Историей",
-      presentationDesc:
-        "Вина GRW создаются сочетанием традиций и инноваций, предлагая исключительное качество и неповторимые вкусы. Произведённые в знаменитом регионе Кахетия в Грузии, наши вина раскрывают богатый терруар и многовековой опыт виноделия, обеспечивая премиальный опыт в каждой бутылке.",
+      qualityTitle: "Гарантия подлинности и качества",
+      qualitySubtitle: "Сертифицированные стандарты · Международное признание",
+      qualityDesc:
+        "GRW сертифицирован по ISO 22000:2018 (система менеджмента безопасности пищевой продукции на принципах HACCP) и отмечен наградой Qvevri WineHunter Award Georgia 2022 за Rkatsiteli 2019.",
       kakheti: {
         title: "Премиальные грузинские вина — напрямую из Кахетии",
         introBefore:
@@ -831,10 +828,10 @@ const translations = {
         "Грузия — колыбель виноделия мира. При раскопках была обнаружена древний город Колхида, а в слоях пород VII века до н.э. — фрагменты сосудов с химическими элементами вина.",
       fact3Title: "Наследие Qvevri ЮНЕСКО",
       fact3:
-        "Один из древнейших методов виноделия в Грузии в qvevri включён в список немaterialного культурного наследия ЮНЕСКО.",
-      fact4Title: "Мировое Признание",
+        "Один из древнейших методов виноделия в Грузии в qvevri включён в список культурного наследия ЮНЕСКО.",
+      fact4Title: "Мировое признание",
       fact4:
-        "Грузинские вина поставляются в 80 стран мира. В 2020 году страна экспортировала 125 миллионов бутылок, из которых 85 миллионов пошли крупным импортёрам, таким как Россия и страны СНГ.",
+        "Грузинские вина поставляются в 80 стран мира. В 2020 году страна экспортировала 125 миллионов бутылок, из которых 85 миллионов пошли крупным импортёрам.",
       explore: "Изучить Коллекцию",
     },
     shop: {
@@ -862,7 +859,7 @@ const translations = {
         "Мы будем рады услышать вас. Вопрос о винах, помощь с заказом или планирование дегустации — мы всегда готовы помочь.",
       visitTasting: "Посетите Нашу Дегустационную",
       hours: "Часы Работы",
-      hoursValue: "Пн–Сб: 10:00 – 19:00\nВоскресенье: 11:00 – 17:00",
+      hoursValue: "Пн–Пт: 10:00 – 19:00\nСб–Вс: Закрыто",
       getInTouch: "Связаться",
       sendMessage: "Отправить Сообщение",
       formIntro: "Заполните форму, и мы ответим в течение 24 часов.",
@@ -1113,11 +1110,10 @@ const translations = {
       rose: "Rosé",
       rezos: "Rezo's",
       qvevri: "Qvevri",
-      downloadPresentation: "Télécharger la\nPrésentation",
-      presentationTitle: "Georgian Royal Wine",
-      presentationSubtitle: "Vins Géorgiens Premium à l'Histoire Riche",
-      presentationDesc:
-        "Les vins GRW sont élaborés en alliant tradition et innovation, offrant une qualité exceptionnelle et des saveurs distinctives. Produits dans la célèbre région de Kakheti en Géorgie, nos vins mettent en valeur le riche terroir et des siècles d'expertise viticole, pour une expérience premium dans chaque bouteille.",
+      qualityTitle: "Garantie d'authenticité et de qualité",
+      qualitySubtitle: "Normes certifiées · Reconnaissance internationale",
+      qualityDesc:
+        "GRW est certifié ISO 22000:2018 (sécurité alimentaire basée sur les principes HACCP) et récompensé par le Qvevri WineHunter Award Georgia 2022 pour Rkatsiteli 2019.",
       kakheti: {
         title: "Vins géorgiens premium — directement de Kakheti",
         introBefore:
@@ -1183,10 +1179,10 @@ const translations = {
         "La Géorgie est le berceau mondial de la viticulture. Lors de fouilles, l'ancienne ville de Colchis a été découverte, et dans les strates rocheuses du VIIe siècle av. J.-C. — des fragments de récipients contenant des éléments chimiques du vin.",
       fact3Title: "Patrimoine Qvevri UNESCO",
       fact3:
-        "L'une des plus anciennes méthodes de vinification en Géorgie, en qvevri, est inscrite sur la liste du patrimoine culturel immaterial de l'UNESCO.",
+        "L'une des plus anciennes méthodes de vinification en Géorgie, en qvevri, est inscrite sur la liste du patrimoine culturel de l'UNESCO.",
       fact4Title: "Reconnaissance Mondiale",
       fact4:
-        "Les vins géorgiens sont fournis à 80 pays dans le monde. En 2020, le pays a exporté 125 millions de bouteilles, dont 85 millions vers des importateurs majeurs comme la Russie et les pays de la CEI.",
+        "Les vins géorgiens sont fournis à 80 pays dans le monde. En 2020, le pays a exporté 125 millions de bouteilles, dont 85 millions vers des importateurs majeurs.",
       explore: "Explorer Notre Collection",
     },
     shop: {
@@ -1214,7 +1210,7 @@ const translations = {
         "Nous serions ravis de vous entendre. Question sur nos vins, aide avec une commande ou organisation d'une dégustation privée.",
       visitTasting: "Visitez Notre Salle de Dégustation",
       hours: "Horaires",
-      hoursValue: "Lun–Sam : 10h – 19h\nDimanche : 11h – 17h",
+      hoursValue: "Lun–Ven : 10:00 – 19:00\nSam–Dim : Fermé",
       getInTouch: "Nous Contacter",
       sendMessage: "Envoyer un Message",
       formIntro: "Remplissez le formulaire et nous répondrons sous 24 heures.",
@@ -1465,11 +1461,10 @@ const translations = {
       rose: "Рожеве",
       rezos: "Rezo's",
       qvevri: "Квеврі",
-      downloadPresentation: "Завантажити\nПрезентацію",
-      presentationTitle: "Georgian Royal Wine",
-      presentationSubtitle: "Преміальні Грузинські Вина з Багатою Історією",
-      presentationDesc:
-        "Вина GRW створюються поєднанням традицій та інновацій, пропонуючи виняткову якість і неповторні смаки. Вироблені у знаменитому регіоні Кахетія в Грузії, наші вина розкривають багатий терруар і багатовіковий досвід виноробства, забезпечуючи преміальний досвід у кожній пляшці.",
+      qualityTitle: "Гарантія справжності та якості",
+      qualitySubtitle: "Сертифіковані стандарти · Міжнародне визнання",
+      qualityDesc:
+        "GRW сертифіковано за ISO 22000:2018 (система менеджменту безпечності харчових продуктів на принципах HACCP) та відзначено нагородою Qvevri WineHunter Award Georgia 2022 за Rkatsiteli 2019.",
       kakheti: {
         title: "Преміальні грузинські вина — безпосередньо з Кахетії",
         introBefore:
@@ -1535,10 +1530,10 @@ const translations = {
         "Грузія — колиска виноробства світу. Під час розкопок було виявлено давнє місто Колхіда, а в шарах порід VII століття до н.е. — фрагменти посудин з хімічними елементами вина.",
       fact3Title: "Спадщина Qvevri ЮНЕСКО",
       fact3:
-        "Один із найдавніших методів виготовлення вина в Грузії в qvevri включено до списку немaterialної культурної спадщини ЮНЕСКО.",
-      fact4Title: "Світове Визнання",
+        "Один із найдавніших методів виготовлення вина в Грузії в qvevri включено до списку культурної спадщини ЮНЕСКО.",
+      fact4Title: "Світове визнання",
       fact4:
-        "Грузинські вина постачаються до 80 країн світу. У 2020 році країна експортувала 125 мільйонів пляшок, з яких 85 мільйонів пішли великим імпортерам, таким як Росія та країни СНД.",
+        "Грузинські вина постачаються до 80 країн світу. У 2020 році країна експортувала 125 мільйонів пляшок, з яких 85 мільйонів пішли великим імпортерам.",
       explore: "Дослідити Колекцію",
     },
     shop: {
@@ -1566,7 +1561,7 @@ const translations = {
         "Ми будемо раді почути вас. Питання про вина, допомога з замовленням або планування дегустації — ми завжди готові допомогти.",
       visitTasting: "Відвідайте Нашу Дегустаційну",
       hours: "Години Роботи",
-      hoursValue: "Пн–Сб: 10:00 – 19:00\nНеділя: 11:00 – 17:00",
+      hoursValue: "Пн–Пт: 10:00 – 19:00\nСб–Нд: Закрито",
       getInTouch: "Зв'язатися",
       sendMessage: "Надіслати Повідомлення",
       formIntro: "Заповніть форму, і ми відповімо протягом 24 годин.",

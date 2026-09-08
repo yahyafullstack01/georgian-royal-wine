@@ -11,34 +11,20 @@ import HomePromoSections from "@/components/HomePromoSections";
 import HomeKakhetiSection from "@/components/HomeKakhetiSection";
 import HomeTestimonials from "@/components/HomeTestimonials";
 
-const PRESENTATION_URL =
-  "https://grw-wine.com/wp-content/uploads/2025/05/Georgian-Wine_Presentation_2024-.pdf";
-
-function PdfIcon() {
-  return (
-    <svg
-      viewBox="0 0 32 40"
-      aria-hidden="true"
-      className="h-10 w-8 shrink-0 text-stone-700 dark:text-stone-300"
-    >
-      <path
-        fill="currentColor"
-        d="M2 0h18l12 12v28a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm16 2.5V12h9.5L18 2.5zM7 18h18v2H7v-2zm0 6h18v2H7v-2zm0 6h12v2H7v-2z"
-      />
-      <text
-        x="16"
-        y="30"
-        textAnchor="middle"
-        fill="white"
-        fontSize="7"
-        fontWeight="700"
-        fontFamily="system-ui, sans-serif"
-      >
-        PDF
-      </text>
-    </svg>
-  );
-}
+const CERTIFICATES = [
+  {
+    src: "/certificates/iso-22000-haccp.jpg",
+    alt: "ISO 22000:2018 / HACCP — Russian Register",
+  },
+  {
+    src: "/certificates/iso-iqnet.jpg",
+    alt: "ISO 22000:2018 / HACCP — IQNet Certificate",
+  },
+  {
+    src: "/certificates/qvevri-winehunter-award.png",
+    alt: "Qvevri WineHunter Award Georgia 2022 — GRW Rkatsiteli",
+  },
+] as const;
 
 export default function HomeContent() {
   const { t } = useLocale();
@@ -108,39 +94,42 @@ export default function HomeContent() {
       </section>
 
       <section className="border-b border-stone-200 bg-white py-16 sm:py-20 dark:border-stone-800 dark:bg-stone-900">
-        <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
-          <GeorgianDivider className="mb-10" />
-          <div className="flex flex-col items-center justify-center gap-8 sm:flex-row sm:gap-10">
-            <Image
-              src="/grw-logo.png"
-              alt="Georgian Royal Wine"
-              width={280}
-              height={96}
-              className="h-20 w-auto object-contain sm:h-24"
-              style={{ width: "auto" }}
-            />
-            <a
-              href={PRESENTATION_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group inline-flex items-center gap-4 text-stone-800 transition-colors hover:text-burgundy-700 dark:text-stone-200 dark:hover:text-gold-400"
-            >
-              <PdfIcon />
-              <span className="whitespace-pre-line text-left text-sm leading-snug tracking-wide uppercase">
-                {t.home.downloadPresentation}
-              </span>
-            </a>
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl text-center">
+            <GeorgianDivider className="mb-8" />
+            <h2 className="font-serif text-3xl text-burgundy-950 sm:text-4xl dark:text-cream-100">
+              {t.home.qualityTitle}
+            </h2>
+            <p className="mt-4 text-base text-stone-600 sm:text-lg dark:text-stone-300">
+              {t.home.qualitySubtitle}
+            </p>
+            <p className="mx-auto mt-5 max-w-2xl text-sm leading-relaxed text-stone-500 sm:text-base dark:text-stone-400">
+              {t.home.qualityDesc}
+            </p>
           </div>
 
-          <h2 className="mt-12 text-2xl font-semibold tracking-[0.2em] text-stone-900 uppercase sm:text-3xl dark:text-cream-100">
-            {t.home.presentationTitle}
-          </h2>
-          <p className="mt-4 text-base text-stone-600 sm:text-lg dark:text-stone-300">
-            {t.home.presentationSubtitle}
-          </p>
-          <p className="mx-auto mt-8 max-w-3xl text-sm leading-relaxed text-stone-500 sm:text-base dark:text-stone-400">
-            {t.home.presentationDesc}
-          </p>
+          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {CERTIFICATES.map((cert, index) => (
+              <a
+                key={cert.src}
+                href={cert.src}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="testimonial-rise group relative block overflow-hidden bg-cream-50 ring-1 ring-burgundy-900/10 transition-shadow hover:shadow-lg hover:ring-gold-500/40 dark:bg-stone-950 dark:ring-gold-500/15 dark:hover:ring-gold-500/40"
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                <div className="relative aspect-[3/4] sm:aspect-[4/5]">
+                  <Image
+                    src={cert.src}
+                    alt={cert.alt}
+                    fill
+                    className="object-contain p-3 transition-transform duration-500 group-hover:scale-[1.02] sm:p-4"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  />
+                </div>
+              </a>
+            ))}
+          </div>
         </div>
       </section>
 
