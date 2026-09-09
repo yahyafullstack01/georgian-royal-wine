@@ -121,6 +121,9 @@ export default function AddToCartButton({
           <p className="text-sm font-medium text-burgundy-800 dark:text-gold-400">
             {t.product.freeDeliveryNote}
           </p>
+          <p className="text-sm text-stone-600 dark:text-stone-300">
+            {t.product.corkscrewGiftNote}
+          </p>
           <div className="flex flex-col gap-2 sm:flex-row">
             <QtyStepper
               label={t.product.packBottle}

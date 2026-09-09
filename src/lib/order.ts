@@ -107,6 +107,14 @@ function buildOrderSummary(payload: OrderRequestPayload) {
       : "Доставка: в Торревьехе, Испания — €3 за 1–4 бутылки (уточнить адрес)";
   const deliveryNoteShort =
     totalBoxes >= 1 ? "Бесплатная доставка" : "€3 в Торревьехе (1–4 бут.)";
+  const giftNote =
+    totalBoxes >= 1
+      ? "ПОДАРОК: штопор — положить в заказ"
+      : null;
+  const giftNoteEn =
+    totalBoxes >= 1
+      ? "Gift included: a corkscrew"
+      : null;
 
   return {
     customer,
@@ -118,6 +126,8 @@ function buildOrderSummary(payload: OrderRequestPayload) {
     orderedAt,
     deliveryNote,
     deliveryNoteShort,
+    giftNote,
+    giftNoteEn,
   };
 }
 
@@ -179,6 +189,7 @@ export function formatStaffOrderEmail(
     "-----",
     `Подитог (вино): ${formatEur(subtotal)}`,
     summary.deliveryNote,
+    summary.giftNote,
     "(Стоимость доставки уточняется с клиентом, если не входит в бесплатную)",
     "",
     `ИТОГО ЗАКАЗА (вино): ${formatEur(subtotal)}`,
@@ -315,6 +326,14 @@ export function formatStaffOrderEmail(
                       <td style="padding:6px 0;color:#57534e;font-size:14px;">Доставка</td>
                       <td style="padding:6px 0;text-align:right;font-size:14px;font-weight:600;color:${summary.totalBoxes >= 1 ? "#15803d" : "#57534e"};">${escapeHtml(summary.deliveryNoteShort)}</td>
                     </tr>
+                    ${
+                      summary.giftNote
+                        ? `<tr>
+                      <td style="padding:6px 0;color:#15803d;font-size:14px;">Подарок</td>
+                      <td style="padding:6px 0;text-align:right;font-size:14px;font-weight:600;color:#15803d;">Штопор</td>
+                    </tr>`
+                        : ""
+                    }
                     <tr><td colspan="2" style="padding:10px 0 6px;"><div style="border-top:2px solid #e8e0d8;"></div></td></tr>
                     <tr>
                       <td style="padding:6px 0;color:#3d1519;font-size:16px;font-weight:700;">Итого заказа (вино)</td>
@@ -402,6 +421,7 @@ export function formatCustomerConfirmationEmail(
     "",
     `Wine subtotal: ${formatEur(subtotal)}`,
     `Delivery: ${deliveryNoteEn}`,
+    summary.giftNoteEn ? summary.giftNoteEn : null,
     "(Final total including shipping will be confirmed by our team.)",
     "",
     "DELIVERY ADDRESS",
@@ -494,6 +514,14 @@ export function formatCustomerConfirmationEmail(
                       <td style="padding:6px 0;color:#57534e;font-size:14px;">Delivery</td>
                       <td style="padding:6px 0;text-align:right;font-size:14px;font-weight:600;color:${summary.totalBoxes >= 1 ? "#15803d" : "#57534e"};">${escapeHtml(deliveryNoteEn)}</td>
                     </tr>
+                    ${
+                      summary.giftNoteEn
+                        ? `<tr>
+                      <td style="padding:6px 0;color:#15803d;font-size:14px;">Gift</td>
+                      <td style="padding:6px 0;text-align:right;font-size:14px;font-weight:600;color:#15803d;">Corkscrew</td>
+                    </tr>`
+                        : ""
+                    }
                   </table>
                   <div style="margin-top:12px;color:#a8a29e;font-size:12px;">Final total including shipping will be confirmed by our team.</div>
                 </td>

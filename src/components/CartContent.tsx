@@ -217,6 +217,11 @@ export default function CartContent() {
               ? t.cart.freeDeliveryEligible
               : t.cart.deliveryTorrevieja}
           </p>
+          {hasFreeDelivery ? (
+            <p className="mt-1.5 text-sm font-medium">{t.cart.corkscrewGiftEligible}</p>
+          ) : (
+            <p className="mt-1.5 text-sm">{t.product.cardCorkscrewGift}</p>
+          )}
         </div>
 
         <div className="mt-4 space-y-3 text-sm">

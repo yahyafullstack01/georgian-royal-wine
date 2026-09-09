@@ -56,6 +56,9 @@ export default function ProductCard({ wine }: ProductCardProps) {
         <p className="mt-2 rounded border border-green-600/20 bg-green-50 px-2 py-1 text-[10px] font-medium leading-snug text-green-800 sm:text-xs dark:border-green-500/25 dark:bg-green-950/40 dark:text-green-400">
           {t.product.cardFreeDelivery}
         </p>
+        <p className="mt-1 rounded border border-gold-500/25 bg-gold-500/10 px-2 py-1 text-[10px] font-medium leading-snug text-burgundy-900 sm:text-xs dark:border-gold-500/25 dark:bg-gold-500/10 dark:text-gold-400">
+          {t.product.cardCorkscrewGift}
+        </p>
         <div className="mt-auto flex items-center justify-between gap-2 pt-3 sm:pt-4">
           <span className="font-serif text-base text-burgundy-900 sm:text-xl dark:text-gold-400">
             {formatPrice(wine.price)}

@@ -146,7 +146,8 @@ const translations = {
       wines: "wines",
       noWines: "No wines found in this category.",
       loading: "Loading...",
-      deliveryNote: "Torrevieja: €3 for 1–4 bottles · 1 box — free delivery",
+      deliveryNote:
+        "Torrevieja: €3 for 1–4 bottles · 1 box — free delivery + corkscrew",
     },
     contact: {
       title: "Contact Us",
@@ -245,6 +246,7 @@ const translations = {
       free: "Free",
       freeShipping: "Order one box for free delivery",
       freeDeliveryEligible: "Free delivery included",
+      corkscrewGiftEligible: "Free gift: a corkscrew.",
       deliveryTorrevieja: "In Torrevieja, Spain: €3 delivery for 1–4 bottles",
       deliveryBoxPromo: "Reserve 1 box or more — delivery is free",
       checkout: "Request Order",
@@ -347,8 +349,11 @@ const translations = {
       packBoxSummary: "Total: {price} · you receive {total} bottles",
       choosePack: "How many do you want?",
       chooseQtyHint: "Choose bottles and/or boxes (both can be combined).",
-      freeDeliveryNote: "Order one box or more — delivery is free.",
+      freeDeliveryNote:
+        "Order one box or more — free delivery and a corkscrew.",
       cardFreeDelivery: "1 box — free delivery",
+      cardCorkscrewGift: "1 box — free corkscrew",
+      corkscrewGiftNote: "Order one box and get a corkscrew free.",
       comboSummary:
         "{bottles} bottle(s) + {boxes} box(es) · pay for {paid} · get {total} bottles ({free} free) · {price}",
     },
@@ -500,7 +505,8 @@ const translations = {
       wines: "vinos",
       noWines: "No se encontraron vinos en esta categoría.",
       loading: "Cargando...",
-      deliveryNote: "Torrevieja: 3 € por 1–4 botellas · 1 caja — entrega gratuita",
+      deliveryNote:
+        "Torrevieja: 3 € por 1–4 botellas · 1 caja — entrega gratuita + sacacorchos",
     },
     contact: {
       title: "Contáctenos",
@@ -598,6 +604,7 @@ const translations = {
       free: "Gratis",
       freeShipping: "Añada una caja para envío gratis",
       freeDeliveryEligible: "Envío gratuito incluido",
+      corkscrewGiftEligible: "Regalo: un sacacorchos.",
       deliveryTorrevieja: "En Torrevieja, España: 3 € de entrega para 1–4 botellas",
       deliveryBoxPromo: "Reserve 1 caja o más — entrega gratuita",
       checkout: "Solicitar Pedido",
@@ -698,8 +705,11 @@ const translations = {
       packBoxSummary: "Total: {price} · recibes {total} botellas",
       choosePack: "¿Cuántas quieres?",
       chooseQtyHint: "Elige botellas y/o cajas (se pueden combinar).",
-      freeDeliveryNote: "Una caja o más — entrega gratuita.",
+      freeDeliveryNote:
+        "Una caja o más — entrega gratuita y un sacacorchos.",
       cardFreeDelivery: "1 caja — entrega gratuita",
+      cardCorkscrewGift: "1 caja — sacacorchos gratis",
+      corkscrewGiftNote: "Pide una caja y recibe un sacacorchos gratis.",
       comboSummary:
         "{bottles} botella(s) + {boxes} caja(s) · paga {paid} · recibe {total} botellas ({free} gratis) · {price}",
     },
@@ -851,7 +861,8 @@ const translations = {
       wines: "вин",
       noWines: "В этой категории вина не найдены.",
       loading: "Загрузка...",
-      deliveryNote: "Торревьеха: 3 € за 1–4 бутылки · от 1 коробки — доставка бесплатная",
+      deliveryNote:
+        "Торревьеха: 3 € за 1–4 бутылки · от 1 коробки — бесплатная доставка + штопор",
     },
     contact: {
       title: "Свяжитесь с Нами",
@@ -949,6 +960,7 @@ const translations = {
       free: "Бесплатно",
       freeShipping: "Добавьте 1 коробку для бесплатной доставки",
       freeDeliveryEligible: "Бесплатная доставка включена",
+      corkscrewGiftEligible: "Подарок: штопор.",
       deliveryTorrevieja: "В Торревьехе, Испания: 3 € за доставку при заказе 1–4 бутылок",
       deliveryBoxPromo: "Закажите от 1 коробки — доставка бесплатная",
       checkout: "Запросить Заказ",
@@ -1049,8 +1061,11 @@ const translations = {
       packBoxSummary: "Итого: {price} · вы получите {total} бутылок",
       choosePack: "Сколько хотите?",
       chooseQtyHint: "Выберите бутылки и/или коробки (можно вместе).",
-      freeDeliveryNote: "От 1 коробки — доставка бесплатная.",
+      freeDeliveryNote:
+        "От 1 коробки — бесплатная доставка и штопор.",
       cardFreeDelivery: "1 коробка — бесплатная доставка",
+      cardCorkscrewGift: "1 коробка — штопор в подарок",
+      corkscrewGiftNote: "Закажите одну коробку — штопор в подарок.",
       comboSummary:
         "{bottles} бут. + {boxes} кор. · оплата за {paid} · получите {total} бут. ({free} в подарок) · {price}",
     },
@@ -1202,7 +1217,8 @@ const translations = {
       wines: "vins",
       noWines: "Aucun vin trouvé dans cette catégorie.",
       loading: "Chargement...",
-      deliveryNote: "Torrevieja : 3 € pour 1–4 bouteilles · 1 caisse — livraison gratuite",
+      deliveryNote:
+        "Torrevieja : 3 € pour 1–4 bouteilles · 1 caisse — livraison gratuite + tire-bouchon",
     },
     contact: {
       title: "Contactez-nous",
@@ -1300,6 +1316,7 @@ const translations = {
       free: "Gratuit",
       freeShipping: "Ajoutez une caisse pour la livraison gratuite",
       freeDeliveryEligible: "Livraison gratuite incluse",
+      corkscrewGiftEligible: "Cadeau : un tire-bouchon.",
       deliveryTorrevieja: "À Torrevieja, Espagne : 3 € de livraison pour 1–4 bouteilles",
       deliveryBoxPromo: "Commandez 1 caisse ou plus — livraison gratuite",
       checkout: "Demander un Devis",
@@ -1400,8 +1417,11 @@ const translations = {
       packBoxSummary: "Total : {price} · vous recevez {total} bouteilles",
       choosePack: "Combien en voulez-vous ?",
       chooseQtyHint: "Choisissez bouteilles et/ou cartons (combinables).",
-      freeDeliveryNote: "Une caisse ou plus — livraison gratuite.",
+      freeDeliveryNote:
+        "Une caisse ou plus — livraison gratuite et un tire-bouchon.",
       cardFreeDelivery: "1 caisse — livraison gratuite",
+      cardCorkscrewGift: "1 caisse — tire-bouchon offert",
+      corkscrewGiftNote: "Commandez une caisse et recevez un tire-bouchon offert.",
       comboSummary:
         "{bottles} bouteille(s) + {boxes} carton(s) · payez {paid} · recevez {total} bouteilles ({free} offerte) · {price}",
     },
@@ -1553,7 +1573,8 @@ const translations = {
       wines: "вин",
       noWines: "У цій категорії вина не знайдено.",
       loading: "Завантаження...",
-      deliveryNote: "Торрев'єха: 3 € за 1–4 пляшки · від 1 коробки — доставка безкоштовна",
+      deliveryNote:
+        "Торрев'єха: 3 € за 1–4 пляшки · від 1 коробки — безкоштовна доставка + штопор",
     },
     contact: {
       title: "Зв'яжіться з Нами",
@@ -1651,6 +1672,7 @@ const translations = {
       free: "Безкоштовно",
       freeShipping: "Додайте 1 коробку для безкоштовної доставки",
       freeDeliveryEligible: "Безкоштовна доставка включена",
+      corkscrewGiftEligible: "Подарунок: штопор.",
       deliveryTorrevieja: "У Торрев'єсі, Іспанія: 3 € за доставку при замовленні 1–4 пляшок",
       deliveryBoxPromo: "Замовте від 1 коробки — доставка безкоштовна",
       checkout: "Запросити Замовлення",
@@ -1751,8 +1773,11 @@ const translations = {
       packBoxSummary: "Разом: {price} · ви отримаєте {total} пляшок",
       choosePack: "Скільки бажаєте?",
       chooseQtyHint: "Оберіть пляшки та/або коробки (можна разом).",
-      freeDeliveryNote: "Від 1 коробки — доставка безкоштовна.",
+      freeDeliveryNote:
+        "Від 1 коробки — безкоштовна доставка та штопор.",
       cardFreeDelivery: "1 коробка — безкоштовна доставка",
+      cardCorkscrewGift: "1 коробка — штопор у подарунок",
+      corkscrewGiftNote: "Замовте одну коробку — штопор у подарунок.",
       comboSummary:
         "{bottles} пляш. + {boxes} кор. · оплата за {paid} · отримаєте {total} пляш. ({free} у подарунок) · {price}",
     },
