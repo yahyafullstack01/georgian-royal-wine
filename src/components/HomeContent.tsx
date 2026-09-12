@@ -13,10 +13,6 @@ import HomeTestimonials from "@/components/HomeTestimonials";
 
 const CERTIFICATES = [
   {
-    src: "/certificates/iso-22000-haccp.jpg",
-    alt: "ISO 22000:2018 / HACCP — Russian Register",
-  },
-  {
     src: "/certificates/iso-iqnet.jpg",
     alt: "ISO 22000:2018 / HACCP — IQNet Certificate",
   },
@@ -89,46 +85,6 @@ export default function HomeContent() {
             >
               {t.home.ourStory}
             </Link>
-          </div>
-        </div>
-      </section>
-
-      <section className="border-b border-stone-200 bg-white py-16 sm:py-20 dark:border-stone-800 dark:bg-stone-900">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl text-center">
-            <GeorgianDivider className="mb-8" />
-            <h2 className="font-serif text-3xl text-burgundy-950 sm:text-4xl dark:text-cream-100">
-              {t.home.qualityTitle}
-            </h2>
-            <p className="mt-4 text-base text-stone-600 sm:text-lg dark:text-stone-300">
-              {t.home.qualitySubtitle}
-            </p>
-            <p className="mx-auto mt-5 max-w-2xl text-sm leading-relaxed text-stone-500 sm:text-base dark:text-stone-400">
-              {t.home.qualityDesc}
-            </p>
-          </div>
-
-          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {CERTIFICATES.map((cert, index) => (
-              <a
-                key={cert.src}
-                href={cert.src}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="testimonial-rise group relative block overflow-hidden bg-cream-50 ring-1 ring-burgundy-900/10 transition-shadow hover:shadow-lg hover:ring-gold-500/40 dark:bg-stone-950 dark:ring-gold-500/15 dark:hover:ring-gold-500/40"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
-                <div className="relative aspect-[3/4] sm:aspect-[4/5]">
-                  <Image
-                    src={cert.src}
-                    alt={cert.alt}
-                    fill
-                    className="object-contain p-3 transition-transform duration-500 group-hover:scale-[1.02] sm:p-4"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  />
-                </div>
-              </a>
-            ))}
           </div>
         </div>
       </section>
@@ -248,6 +204,46 @@ export default function HomeContent() {
                   </h3>
                 </div>
               </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-stone-200 bg-white py-16 sm:py-20 dark:border-stone-800 dark:bg-stone-900">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl text-center">
+            <GeorgianDivider className="mb-8" />
+            <h2 className="font-serif text-3xl text-burgundy-950 sm:text-4xl dark:text-cream-100">
+              {t.home.qualityTitle}
+            </h2>
+            <p className="mt-4 text-base text-stone-600 sm:text-lg dark:text-stone-300">
+              {t.home.qualitySubtitle}
+            </p>
+            <p className="mx-auto mt-5 max-w-2xl text-sm leading-relaxed text-stone-500 sm:text-base dark:text-stone-400">
+              {t.home.qualityDesc}
+            </p>
+          </div>
+
+          <div className="mx-auto mt-12 grid max-w-4xl gap-5 sm:grid-cols-2">
+            {CERTIFICATES.map((cert, index) => (
+              <a
+                key={cert.src}
+                href={cert.src}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="testimonial-rise group relative block overflow-hidden bg-cream-50 ring-1 ring-burgundy-900/10 transition-shadow hover:shadow-lg hover:ring-gold-500/40 dark:bg-stone-950 dark:ring-gold-500/15 dark:hover:ring-gold-500/40"
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                <div className="relative aspect-[3/4] sm:aspect-[4/5]">
+                  <Image
+                    src={cert.src}
+                    alt={cert.alt}
+                    fill
+                    className="object-contain p-3 transition-transform duration-500 group-hover:scale-[1.02] sm:p-4"
+                    sizes="(max-width: 640px) 100vw, 50vw"
+                  />
+                </div>
+              </a>
             ))}
           </div>
         </div>
