@@ -124,6 +124,21 @@ h1, h2, h3, h4, h5, h6 {
   animation: testimonial-rise 0.85s ease-out both;
 }
 
+@keyframes quality-cert-rise {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.quality-cert-rise {
+  animation: quality-cert-rise 0.95s ease-out both;
+}
+
 @keyframes contact-hero-rise {
   from {
     opacity: 0;
@@ -215,7 +230,9 @@ h1, h2, h3, h4, h5, h6 {
   .contact-hero-sweep,
   .contact-hero-line,
   .contact-hero-rise,
-  .contact-glow {
+  .contact-glow,
+  .quality-cert-rise,
+  .testimonial-rise {
     animation: none !important;
   }
 }

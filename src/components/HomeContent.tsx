@@ -15,10 +15,14 @@ const CERTIFICATES = [
   {
     src: "/certificates/iso-iqnet.jpg",
     alt: "ISO 22000:2018 / HACCP — IQNet Certificate",
+    label: "ISO 22000:2018",
+    caption: "IQNet · HACCP",
   },
   {
     src: "/certificates/qvevri-winehunter-award.png",
     alt: "Qvevri WineHunter Award Georgia 2022 — GRW Rkatsiteli",
+    label: "WineHunter Award",
+    caption: "Qvevri · Georgia 2022",
   },
 ] as const;
 
@@ -209,39 +213,62 @@ export default function HomeContent() {
         </div>
       </section>
 
-      <section className="border-b border-stone-200 bg-white py-16 sm:py-20 dark:border-stone-800 dark:bg-stone-900">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <section className="relative overflow-hidden border-b border-gold-500/15 bg-burgundy-950 py-20 dark:border-stone-800 dark:bg-stone-950 sm:py-28">
+        <div
+          className="pointer-events-none absolute inset-0 opacity-40"
+          aria-hidden
+        >
+          <div className="absolute -left-24 top-1/4 h-72 w-72 rounded-full bg-gold-500/10 blur-3xl" />
+          <div className="absolute -right-16 bottom-0 h-80 w-80 rounded-full bg-burgundy-700/40 blur-3xl" />
+        </div>
+        <div
+          className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-gold-500/50 to-transparent"
+          aria-hidden
+        />
+
+        <div className="relative z-10 mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
-            <GeorgianDivider className="mb-8" />
-            <h2 className="font-serif text-3xl text-burgundy-950 sm:text-4xl dark:text-cream-100">
-              {t.home.qualityTitle}
-            </h2>
-            <p className="mt-4 text-base text-stone-600 sm:text-lg dark:text-stone-300">
+            <p className="text-xs tracking-[0.35em] text-gold-400 uppercase">
               {t.home.qualitySubtitle}
             </p>
-            <p className="mx-auto mt-5 max-w-2xl text-sm leading-relaxed text-stone-500 sm:text-base dark:text-stone-400">
+            <h2 className="mt-4 font-serif text-3xl leading-tight text-cream-100 sm:text-4xl lg:text-5xl">
+              {t.home.qualityTitle}
+            </h2>
+            <GeorgianDivider className="my-7" />
+            <p className="text-base leading-relaxed text-cream-200/75 sm:text-lg">
               {t.home.qualityDesc}
             </p>
           </div>
 
-          <div className="mx-auto mt-12 grid max-w-4xl gap-5 sm:grid-cols-2">
+          <div className="mx-auto mt-14 grid max-w-5xl gap-8 sm:grid-cols-2 sm:gap-10">
             {CERTIFICATES.map((cert, index) => (
               <a
                 key={cert.src}
                 href={cert.src}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="testimonial-rise group relative block overflow-hidden bg-cream-50 ring-1 ring-burgundy-900/10 transition-shadow hover:shadow-lg hover:ring-gold-500/40 dark:bg-stone-950 dark:ring-gold-500/15 dark:hover:ring-gold-500/40"
-                style={{ animationDelay: `${index * 100}ms` }}
+                className="quality-cert-rise group block"
+                style={{ animationDelay: `${index * 140}ms` }}
               >
-                <div className="relative aspect-[3/4] sm:aspect-[4/5]">
-                  <Image
-                    src={cert.src}
-                    alt={cert.alt}
-                    fill
-                    className="object-contain p-3 transition-transform duration-500 group-hover:scale-[1.02] sm:p-4"
-                    sizes="(max-width: 640px) 100vw, 50vw"
-                  />
+                <div className="relative overflow-hidden border border-gold-500/25 bg-cream-50/95 p-3 shadow-[0_24px_60px_-28px_rgba(0,0,0,0.65)] transition-all duration-500 group-hover:-translate-y-1.5 group-hover:border-gold-400/60 group-hover:shadow-[0_32px_70px_-24px_rgba(201,168,76,0.35)] dark:bg-cream-100">
+                  <div className="pointer-events-none absolute inset-x-6 top-0 h-px bg-gradient-to-r from-transparent via-gold-500/70 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+                  <div className="relative aspect-[3/4] overflow-hidden bg-white">
+                    <Image
+                      src={cert.src}
+                      alt={cert.alt}
+                      fill
+                      className="object-contain p-4 transition-transform duration-700 ease-out group-hover:scale-[1.03] sm:p-5"
+                      sizes="(max-width: 640px) 100vw, 40vw"
+                    />
+                  </div>
+                </div>
+                <div className="mt-5 text-center">
+                  <p className="font-serif text-lg text-cream-100 transition-colors group-hover:text-gold-400">
+                    {cert.label}
+                  </p>
+                  <p className="mt-1 text-xs tracking-[0.2em] text-cream-300/60 uppercase">
+                    {cert.caption}
+                  </p>
                 </div>
               </a>
             ))}
