@@ -22,6 +22,10 @@ const translations = {
       light: "Light mode",
       dark: "Dark mode",
     },
+    notFound: {
+      title: "Page not found",
+      desc: "This link may be from our old website. Continue to the shop or homepage.",
+    },
     home: {
       est: "Kakheti · Georgia",
       heroTitle1: "Authentic Georgian",
@@ -383,6 +387,10 @@ const translations = {
       cart: "Carrito",
     },
     theme: { light: "Modo claro", dark: "Modo oscuro" },
+    notFound: {
+      title: "Página no encontrada",
+      desc: "Este enlace puede ser del sitio anterior. Continúe a la tienda o al inicio.",
+    },
     home: {
       est: "Desde 1987",
       heroTitle1: "Vinos que",
@@ -739,6 +747,10 @@ const translations = {
       cart: "Корзина",
     },
     theme: { light: "Светлая тема", dark: "Тёмная тема" },
+    notFound: {
+      title: "Страница не найдена",
+      desc: "Эта ссылка может быть со старого сайта. Перейдите в магазин или на главную.",
+    },
     home: {
       est: "С 1987 года",
       heroTitle1: "Вина, Которыми",
@@ -1095,6 +1107,10 @@ const translations = {
       cart: "Panier",
     },
     theme: { light: "Mode clair", dark: "Mode sombre" },
+    notFound: {
+      title: "Page introuvable",
+      desc: "Ce lien peut provenir de l'ancien site. Continuez vers la boutique ou l'accueil.",
+    },
     home: {
       est: "Depuis 1987",
       heroTitle1: "Des Vins qui",
@@ -1451,6 +1467,10 @@ const translations = {
       cart: "Кошик",
     },
     theme: { light: "Світла тема", dark: "Темна тема" },
+    notFound: {
+      title: "Сторінку не знайдено",
+      desc: "Це посилання може бути зі старого сайту. Перейдіть до магазину або на головну.",
+    },
     home: {
       est: "З 1987 року",
       heroTitle1: "Вина, якими",
