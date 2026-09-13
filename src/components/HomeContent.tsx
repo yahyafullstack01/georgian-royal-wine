@@ -11,18 +11,34 @@ import HomePromoSections from "@/components/HomePromoSections";
 import HomeKakhetiSection from "@/components/HomeKakhetiSection";
 import HomeTestimonials from "@/components/HomeTestimonials";
 
-const CERTIFICATES = [
+const QUALITY_IMAGES = [
+  {
+    src: "/certificates/iso-22000-russian-register.jpg",
+    alt: "ISO 22000:2018 / HACCP — Russian Register Certificate",
+    label: "ISO 22000:2018",
+    caption: "Russian Register · HACCP",
+    aspect: "portrait",
+  },
   {
     src: "/certificates/iso-iqnet.jpg",
     alt: "ISO 22000:2018 / HACCP — IQNet Certificate",
-    label: "ISO 22000:2018",
-    caption: "IQNet · HACCP",
+    label: "IQNet Certificate",
+    caption: "ISO 22000:2018 · HACCP",
+    aspect: "portrait",
   },
   {
-    src: "/certificates/qvevri-winehunter-award.png",
-    alt: "Qvevri WineHunter Award Georgia 2022 — GRW Rkatsiteli",
-    label: "WineHunter Award",
-    caption: "Qvevri · Georgia 2022",
+    src: "/news/grw-rkatsiteli-2019.jpg",
+    alt: "GRW Rkatsiteli 2019 — Qvevri WineHunter Award Georgia 2022",
+    label: "GRW Rkatsiteli 2019",
+    caption: "Qvevri WineHunter · Georgia 2022",
+    aspect: "landscape",
+  },
+  {
+    src: "/news/grw-kisi-2019.jpg",
+    alt: "GRW Kisi 2019 — Qvevri WineHunter Award Georgia 2022",
+    label: "GRW Kisi 2019",
+    caption: "Qvevri WineHunter · Georgia 2022",
+    aspect: "landscape",
   },
 ] as const;
 
@@ -241,21 +257,27 @@ export default function HomeContent() {
           </div>
 
           <div className="mx-auto mt-14 grid max-w-5xl gap-8 sm:grid-cols-2 sm:gap-10">
-            {CERTIFICATES.map((cert, index) => (
+            {QUALITY_IMAGES.map((item, index) => (
               <a
-                key={cert.src}
-                href={cert.src}
+                key={item.src}
+                href={item.src}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="quality-cert-rise group block"
-                style={{ animationDelay: `${index * 140}ms` }}
+                style={{ animationDelay: `${index * 120}ms` }}
               >
                 <div className="relative overflow-hidden border border-gold-500/25 bg-cream-50/95 p-3 shadow-[0_24px_60px_-28px_rgba(0,0,0,0.65)] transition-all duration-500 group-hover:-translate-y-1.5 group-hover:border-gold-400/60 group-hover:shadow-[0_32px_70px_-24px_rgba(201,168,76,0.35)] dark:bg-cream-100">
                   <div className="pointer-events-none absolute inset-x-6 top-0 h-px bg-gradient-to-r from-transparent via-gold-500/70 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-                  <div className="relative aspect-[3/4] overflow-hidden bg-white">
+                  <div
+                    className={`relative overflow-hidden bg-white ${
+                      item.aspect === "landscape"
+                        ? "aspect-[4/3]"
+                        : "aspect-[3/4]"
+                    }`}
+                  >
                     <Image
-                      src={cert.src}
-                      alt={cert.alt}
+                      src={item.src}
+                      alt={item.alt}
                       fill
                       className="object-contain p-4 transition-transform duration-700 ease-out group-hover:scale-[1.03] sm:p-5"
                       sizes="(max-width: 640px) 100vw, 40vw"
@@ -264,10 +286,10 @@ export default function HomeContent() {
                 </div>
                 <div className="mt-5 text-center">
                   <p className="font-serif text-lg text-cream-100 transition-colors group-hover:text-gold-400">
-                    {cert.label}
+                    {item.label}
                   </p>
                   <p className="mt-1 text-xs tracking-[0.2em] text-cream-300/60 uppercase">
-                    {cert.caption}
+                    {item.caption}
                   </p>
                 </div>
               </a>

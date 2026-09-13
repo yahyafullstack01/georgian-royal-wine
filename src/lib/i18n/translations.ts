@@ -57,7 +57,7 @@ const translations = {
       qualityTitle: "Guarantee of authenticity and quality",
       qualitySubtitle: "Certified standards · International recognition",
       qualityDesc:
-        "GRW is certified to ISO 22000:2018 food safety management based on HACCP principles, and recognized with the Qvevri WineHunter Award Georgia 2022 for Rkatsiteli 2019.",
+        "GRW is certified to ISO 22000:2018 food safety management based on HACCP principles, and recognized with the Qvevri WineHunter Award Georgia 2022 for Rkatsiteli 2019 and Kisi 2019.",
       kakheti: {
         title: "Premium Georgian wines — directly from Kakheti",
         introBefore:
@@ -416,7 +416,7 @@ const translations = {
       qualityTitle: "Garantía de autenticidad y calidad",
       qualitySubtitle: "Estándares certificados · Reconocimiento internacional",
       qualityDesc:
-        "GRW está certificado según ISO 22000:2018 de seguridad alimentaria basado en principios HACCP, y reconocido con el Qvevri WineHunter Award Georgia 2022 por Rkatsiteli 2019.",
+        "GRW está certificado según ISO 22000:2018 de seguridad alimentaria basado en principios HACCP, y reconocido con el Qvevri WineHunter Award Georgia 2022 por Rkatsiteli 2019 y Kisi 2019.",
       kakheti: {
         title: "Vinos georgianos premium — directamente de Kakheti",
         introBefore:
@@ -772,7 +772,7 @@ const translations = {
       qualityTitle: "Гарантия подлинности и качества",
       qualitySubtitle: "Сертифицированные стандарты · Международное признание",
       qualityDesc:
-        "GRW сертифицирован по ISO 22000:2018 (система менеджмента безопасности пищевой продукции на принципах HACCP) и отмечен наградой Qvevri WineHunter Award Georgia 2022 за Rkatsiteli 2019.",
+        "GRW сертифицирован по ISO 22000:2018 (система менеджмента безопасности пищевой продукции на принципах HACCP) и отмечен наградой Qvevri WineHunter Award Georgia 2022 за Rkatsiteli 2019 и Kisi 2019.",
       kakheti: {
         title: "Премиальные грузинские вина — напрямую из Кахетии",
         introBefore:
@@ -1128,7 +1128,7 @@ const translations = {
       qualityTitle: "Garantie d'authenticité et de qualité",
       qualitySubtitle: "Normes certifiées · Reconnaissance internationale",
       qualityDesc:
-        "GRW est certifié ISO 22000:2018 (sécurité alimentaire basée sur les principes HACCP) et récompensé par le Qvevri WineHunter Award Georgia 2022 pour Rkatsiteli 2019.",
+        "GRW est certifié ISO 22000:2018 (sécurité alimentaire basée sur les principes HACCP) et récompensé par le Qvevri WineHunter Award Georgia 2022 pour Rkatsiteli 2019 et Kisi 2019.",
       kakheti: {
         title: "Vins géorgiens premium — directement de Kakheti",
         introBefore:
@@ -1484,7 +1484,7 @@ const translations = {
       qualityTitle: "Гарантія справжності та якості",
       qualitySubtitle: "Сертифіковані стандарти · Міжнародне визнання",
       qualityDesc:
-        "GRW сертифіковано за ISO 22000:2018 (система менеджменту безпечності харчових продуктів на принципах HACCP) та відзначено нагородою Qvevri WineHunter Award Georgia 2022 за Rkatsiteli 2019.",
+        "GRW сертифіковано за ISO 22000:2018 (система менеджменту безпечності харчових продуктів на принципах HACCP) та відзначено нагородою Qvevri WineHunter Award Georgia 2022 за Rkatsiteli 2019 та Kisi 2019.",
       kakheti: {
         title: "Преміальні грузинські вина — безпосередньо з Кахетії",
         introBefore:
