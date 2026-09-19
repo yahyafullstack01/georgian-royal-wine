@@ -1,8 +1,8 @@
 export type Locale = "en" | "es" | "ru" | "fr" | "uk";
 
 export const locales: { code: Locale; label: string; flag: string }[] = [
-  { code: "en", label: "English", flag: "🇬🇧" },
   { code: "es", label: "Español", flag: "🇪🇸" },
+  { code: "en", label: "English", flag: "🇬🇧" },
   { code: "ru", label: "Русский", flag: "🇷🇺" },
   { code: "fr", label: "Français", flag: "🇫🇷" },
   { code: "uk", label: "Українська", flag: "🇺🇦" },
@@ -27,9 +27,9 @@ const translations = {
       desc: "This link may be from our old website. Continue to the shop or homepage.",
     },
     home: {
-      est: "Kakheti · Georgia",
-      heroTitle1: "Authentic Georgian",
-      heroTitle2: "Royal Wine",
+      est: "Since 1987",
+      heroTitle1: "Wines worth",
+      heroTitle2: "enjoying",
       heroDesc:
         "Premium traditional wines from the renowned Kakheti and Racha regions. Crafted with centuries of winemaking heritage, delivered to businesses across Europe.",
       shopCollection: "Shop Collection",
@@ -37,9 +37,9 @@ const translations = {
       curatedTitle: "Premium Quality",
       curatedDesc:
         "Triple quality control — laboratory tested at source, export, and customs for guaranteed excellence.",
-      shippingTitle: "Free Delivery",
+      shippingTitle: "Free Delivery in Spain",
       shippingDesc:
-        "Torrevieja: €3 for 1–4 bottles · Order one box or more for free delivery.",
+        "Torrevieja: €3 for 1–4 bottles · 1 box or more — free delivery in Spain only.",
       satisfactionTitle: "Authentic Terroir",
       satisfactionDesc:
         "Direct partnerships with Kakheti producers — unique Georgian grape varieties you won't find elsewhere.",
@@ -86,9 +86,9 @@ const translations = {
       deliveryBenefits: [
         "Express delivery",
         "Torrevieja, Spain: €3 delivery for orders of 1–4 bottles",
-        "Free delivery when you order one box or more",
+        "Free delivery in Spain only when you order one box or more",
         "Delivery across Spain within 48 hours on weekdays",
-        "Delivery service across Europe",
+        "Delivery service across Europe (shipping quoted separately)",
       ],
       deliveryCta: "View Catalog",
       deliveryConditionsCta: "Conditions & Delivery",
@@ -151,7 +151,7 @@ const translations = {
       noWines: "No wines found in this category.",
       loading: "Loading...",
       deliveryNote:
-        "Torrevieja: €3 for 1–4 bottles · 1 box — free delivery + corkscrew",
+        "Spain only: Torrevieja €3 for 1–4 bottles · 1 box — free delivery + corkscrew"
     },
     contact: {
       title: "Contact Us",
@@ -196,9 +196,9 @@ const translations = {
         "Express delivery available",
         "Delivery in Torrevieja, Spain",
         "1–4 bottles in Torrevieja: €3 delivery fee",
-        "1 box or more: free delivery",
+        "1 box or more: free delivery in Spain only",
         "Delivery across Spain within 48 hours on weekdays",
-        "Delivery service across Europe",
+        "Delivery across Europe — shipping cost confirmed separately",
       ],
       stockTitle: "Always in stock",
       stockText:
@@ -248,11 +248,11 @@ const translations = {
       tax: "Tax (est.)",
       total: "Total",
       free: "Free",
-      freeShipping: "Order one box for free delivery",
-      freeDeliveryEligible: "Free delivery included",
+      freeShipping: "Order one box for free delivery in Spain",
+      freeDeliveryEligible: "Free delivery in Spain included",
       corkscrewGiftEligible: "Free gift: a corkscrew.",
       deliveryTorrevieja: "In Torrevieja, Spain: €3 delivery for 1–4 bottles",
-      deliveryBoxPromo: "Reserve 1 box or more — delivery is free",
+      deliveryBoxPromo: "Reserve 1 box or more — free delivery in Spain only",
       checkout: "Request Order",
       continue: "Continue Shopping",
       remove: "Remove",
@@ -354,8 +354,8 @@ const translations = {
       choosePack: "How many do you want?",
       chooseQtyHint: "Choose bottles and/or boxes (both can be combined).",
       freeDeliveryNote:
-        "Order one box or more — free delivery and a corkscrew.",
-      cardFreeDelivery: "1 box — free delivery",
+        "Order one box or more — free delivery in Spain only, plus a corkscrew.",
+      cardFreeDelivery: "1 box — free delivery in Spain",
       cardCorkscrewGift: "1 box — free corkscrew",
       corkscrewGiftNote: "Order one box and get a corkscrew free.",
       comboSummary:
@@ -394,16 +394,16 @@ const translations = {
     home: {
       est: "Desde 1987",
       heroTitle1: "Vinos que",
-      heroTitle2: "Merecen ser Saboreados",
+      heroTitle2: "merecen ser saboreados",
       heroDesc:
-        "Botellas seleccionadas a mano de los viñedos más celebrados del mundo. Desde audaces Bordeaux hasta crujientes Sauvignon Blanc de Marlborough.",
+        "Vinos tradicionales premium de las reconocidas regiones de Kajeti y Racha. Elaborados con siglos de herencia vinícola, entregados a negocios en toda Europa.",
       shopCollection: "Ver Colección",
       ourStory: "Nuestra Historia",
       curatedTitle: "Selección Curada",
       curatedDesc:
         "Cada vino probado y aprobado personalmente por nuestro equipo de sommeliers.",
-      shippingTitle: "Envío Gratis",
-      shippingDesc: "Torrevieja: 3 € por 1–4 botellas · 1 caja o más — entrega gratuita.",
+      shippingTitle: "Envío gratis en España",
+      shippingDesc: "Torrevieja: 3 € por 1–4 botellas · 1 caja o más — entrega gratuita solo en España.",
       satisfactionTitle: "Satisfacción Garantizada",
       satisfactionDesc: "¿No está satisfecho? Lo solucionaremos.",
       featured: "Destacados",
@@ -449,9 +449,9 @@ const translations = {
       deliveryBenefits: [
         "Entrega express",
         "Torrevieja, España: 3 € de entrega para pedidos de 1 a 4 botellas",
-        "Entrega gratuita al pedir una caja o más",
+        "Entrega gratuita solo en España al pedir una caja o más",
         "Entrega en España en 48 horas laborables",
-        "Servicio de entrega en Europa",
+        "Servicio de entrega en Europa (coste de envío a confirmar)",
       ],
       deliveryCta: "Ver catálogo",
       deliveryConditionsCta: "Condiciones y entrega",
@@ -514,7 +514,7 @@ const translations = {
       noWines: "No se encontraron vinos en esta categoría.",
       loading: "Cargando...",
       deliveryNote:
-        "Torrevieja: 3 € por 1–4 botellas · 1 caja — entrega gratuita + sacacorchos",
+        "Solo España: Torrevieja 3 € por 1–4 botellas · 1 caja — entrega gratuita + sacacorchos",
     },
     contact: {
       title: "Contáctenos",
@@ -558,9 +558,9 @@ const translations = {
         "Entrega express disponible",
         "Entrega en Torrevieja, España",
         "1–4 botellas en Torrevieja: 3 € de entrega",
-        "1 caja o más: entrega gratuita",
+        "1 caja o más: entrega gratuita solo en España",
         "Entrega en España en 48 horas laborables",
-        "Servicio de entrega en Europa",
+        "Entrega en Europa — coste de envío a confirmar",
       ],
       stockTitle: "Siempre disponible",
       stockText:
@@ -610,11 +610,11 @@ const translations = {
       tax: "Impuesto (est.)",
       total: "Total",
       free: "Gratis",
-      freeShipping: "Añada una caja para envío gratis",
-      freeDeliveryEligible: "Envío gratuito incluido",
+      freeShipping: "Añada una caja para envío gratis solo en España",
+      freeDeliveryEligible: "Envío gratuito en España incluido",
       corkscrewGiftEligible: "Regalo: un sacacorchos.",
       deliveryTorrevieja: "En Torrevieja, España: 3 € de entrega para 1–4 botellas",
-      deliveryBoxPromo: "Reserve 1 caja o más — entrega gratuita",
+      deliveryBoxPromo: "Reserve 1 caja o más — entrega gratuita solo en España",
       checkout: "Solicitar Pedido",
       continue: "Seguir Comprando",
       remove: "Eliminar",
@@ -714,8 +714,8 @@ const translations = {
       choosePack: "¿Cuántas quieres?",
       chooseQtyHint: "Elige botellas y/o cajas (se pueden combinar).",
       freeDeliveryNote:
-        "Una caja o más — entrega gratuita y un sacacorchos.",
-      cardFreeDelivery: "1 caja — entrega gratuita",
+        "Una caja o más — entrega gratuita solo en España, más un sacacorchos.",
+      cardFreeDelivery: "1 caja — entrega gratuita en España",
       cardCorkscrewGift: "1 caja — sacacorchos gratis",
       corkscrewGiftNote: "Pide una caja y recibe un sacacorchos gratis.",
       comboSummary:
@@ -753,17 +753,17 @@ const translations = {
     },
     home: {
       est: "С 1987 года",
-      heroTitle1: "Вина, Которыми",
-      heroTitle2: "Стоит Наслаждаться",
+      heroTitle1: "Вина, которыми",
+      heroTitle2: "стоит наслаждаться",
       heroDesc:
-        "Тщательно отобранные бутылки с самых знаменитых виноградников мира. От смелых бордо до свежих совиньон блан из Мальборо.",
+        "Премиальные традиционные вина из знаменитых регионов Кахетия и Рача. Созданы веками винодельческого наследия и доставляются бизнесу по всей Европе.",
       shopCollection: "Смотреть Коллекцию",
       ourStory: "Наша История",
       curatedTitle: "Кураторский Отбор",
       curatedDesc:
         "Каждое вино лично дегустировано и одобрено нашей командой сомелье.",
-      shippingTitle: "Бесплатная Доставка",
-      shippingDesc: "Торревьеха: 3 € за 1–4 бутылки · от 1 коробки — доставка бесплатная.",
+      shippingTitle: "Бесплатная доставка по Испании",
+      shippingDesc: "Торревьеха: 3 € за 1–4 бутылки · от 1 коробки — бесплатная доставка только по Испании.",
       satisfactionTitle: "Гарантия Удовлетворения",
       satisfactionDesc: "Недовольны покупкой? Мы всё исправим.",
       featured: "Избранное",
@@ -809,9 +809,9 @@ const translations = {
       deliveryBenefits: [
         "Экспресс доставка",
         "Торревьеха, Испания: 3 € за доставку при заказе 1–4 бутылок",
-        "Бесплатная доставка при заказе от 1 коробки",
+        "Бесплатная доставка только по Испании при заказе от 1 коробки",
         "Доставка по Испании в течение 48 часов по будням",
-        "Служба доставки по Европе",
+        "Служба доставки по Европе (стоимость уточняется отдельно)",
       ],
       deliveryCta: "Смотреть каталог",
       deliveryConditionsCta: "Условия и доставка",
@@ -874,7 +874,7 @@ const translations = {
       noWines: "В этой категории вина не найдены.",
       loading: "Загрузка...",
       deliveryNote:
-        "Торревьеха: 3 € за 1–4 бутылки · от 1 коробки — бесплатная доставка + штопор",
+        "Только Испания: Торревьеха 3 € за 1–4 бутылки · от 1 коробки — бесплатная доставка + штопор",
     },
     contact: {
       title: "Свяжитесь с Нами",
@@ -918,9 +918,9 @@ const translations = {
         "Экспресс доставка",
         "Доставка по г. Торревьеха, Испания",
         "1–4 бутылки в Торревьехе: 3 € за доставку",
-        "От 1 коробки: доставка бесплатная",
+        "От 1 коробки: бесплатная доставка только по Испании",
         "Доставка по Испании в течение 48 часов по будням",
-        "Служба доставки по Европе",
+        "Доставка по Европе — стоимость уточняется отдельно",
       ],
       stockTitle: "Всегда в наличии",
       stockText:
@@ -970,11 +970,11 @@ const translations = {
       tax: "Налог (прим.)",
       total: "Итого",
       free: "Бесплатно",
-      freeShipping: "Добавьте 1 коробку для бесплатной доставки",
-      freeDeliveryEligible: "Бесплатная доставка включена",
+      freeShipping: "Добавьте 1 коробку для бесплатной доставки по Испании",
+      freeDeliveryEligible: "Бесплатная доставка по Испании включена",
       corkscrewGiftEligible: "Подарок: штопор.",
       deliveryTorrevieja: "В Торревьехе, Испания: 3 € за доставку при заказе 1–4 бутылок",
-      deliveryBoxPromo: "Закажите от 1 коробки — доставка бесплатная",
+      deliveryBoxPromo: "Закажите от 1 коробки — бесплатная доставка только по Испании",
       checkout: "Запросить Заказ",
       continue: "Продолжить Покупки",
       remove: "Удалить",
@@ -1074,8 +1074,8 @@ const translations = {
       choosePack: "Сколько хотите?",
       chooseQtyHint: "Выберите бутылки и/или коробки (можно вместе).",
       freeDeliveryNote:
-        "От 1 коробки — бесплатная доставка и штопор.",
-      cardFreeDelivery: "1 коробка — бесплатная доставка",
+        "От 1 коробки — бесплатная доставка только по Испании и штопор.",
+      cardFreeDelivery: "1 коробка — бесплатная доставка по Испании",
       cardCorkscrewGift: "1 коробка — штопор в подарок",
       corkscrewGiftNote: "Закажите одну коробку — штопор в подарок.",
       comboSummary:
@@ -1113,17 +1113,17 @@ const translations = {
     },
     home: {
       est: "Depuis 1987",
-      heroTitle1: "Des Vins qui",
-      heroTitle2: "Méritent d'être Savoureés",
+      heroTitle1: "Vin qui",
+      heroTitle2: "mérite d'être savouré",
       heroDesc:
-        "Bouteilles sélectionnées à la main des vignobles les plus célèbres du monde. Du Bordeaux audacieux au Sauvignon Blanc vif de Marlborough.",
+        "Vins traditionnels premium des célèbres régions de Kakhétie et de Racha. Façonnés par des siècles de patrimoine viticole, livrés aux entreprises à travers l'Europe.",
       shopCollection: "Voir la Collection",
       ourStory: "Notre Histoire",
       curatedTitle: "Sélection Curatée",
       curatedDesc:
         "Chaque vin goûté et approuvé personnellement par notre équipe de sommeliers.",
-      shippingTitle: "Livraison Gratuite",
-      shippingDesc: "Torrevieja : 3 € pour 1–4 bouteilles · 1 caisse ou plus — livraison gratuite.",
+      shippingTitle: "Livraison gratuite en Espagne",
+      shippingDesc: "Torrevieja : 3 € pour 1–4 bouteilles · 1 caisse ou plus — livraison gratuite en Espagne uniquement.",
       satisfactionTitle: "Satisfaction Garantie",
       satisfactionDesc: "Pas satisfait ? Nous trouverons une solution.",
       featured: "À la Une",
@@ -1169,9 +1169,9 @@ const translations = {
       deliveryBenefits: [
         "Livraison express",
         "Torrevieja, Espagne : 3 € de livraison pour 1 à 4 bouteilles",
-        "Livraison gratuite dès une caisse commandée",
+        "Livraison gratuite en Espagne uniquement dès une caisse commandée",
         "Livraison en Espagne sous 48 h ouvrées",
-        "Service de livraison en Europe",
+        "Service de livraison en Europe (frais confirmés séparément)",
       ],
       deliveryCta: "Voir le catalogue",
       deliveryConditionsCta: "Conditions et livraison",
@@ -1234,7 +1234,7 @@ const translations = {
       noWines: "Aucun vin trouvé dans cette catégorie.",
       loading: "Chargement...",
       deliveryNote:
-        "Torrevieja : 3 € pour 1–4 bouteilles · 1 caisse — livraison gratuite + tire-bouchon",
+        "Espagne uniquement : Torrevieja 3 € pour 1–4 bouteilles · 1 caisse — livraison gratuite + tire-bouchon",
     },
     contact: {
       title: "Contactez-nous",
@@ -1278,9 +1278,9 @@ const translations = {
         "Livraison express disponible",
         "Livraison à Torrevieja, Espagne",
         "1–4 bouteilles à Torrevieja : 3 € de livraison",
-        "1 caisse ou plus : livraison gratuite",
+        "1 caisse ou plus : livraison gratuite en Espagne uniquement",
         "Livraison en Espagne sous 48 h ouvrées",
-        "Service de livraison en Europe",
+        "Livraison en Europe — frais confirmés séparément",
       ],
       stockTitle: "Toujours en stock",
       stockText:
@@ -1330,11 +1330,11 @@ const translations = {
       tax: "Taxe (est.)",
       total: "Total",
       free: "Gratuit",
-      freeShipping: "Ajoutez une caisse pour la livraison gratuite",
-      freeDeliveryEligible: "Livraison gratuite incluse",
+      freeShipping: "Ajoutez une caisse pour la livraison gratuite en Espagne",
+      freeDeliveryEligible: "Livraison gratuite en Espagne incluse",
       corkscrewGiftEligible: "Cadeau : un tire-bouchon.",
       deliveryTorrevieja: "À Torrevieja, Espagne : 3 € de livraison pour 1–4 bouteilles",
-      deliveryBoxPromo: "Commandez 1 caisse ou plus — livraison gratuite",
+      deliveryBoxPromo: "Commandez 1 caisse ou plus — livraison gratuite en Espagne uniquement",
       checkout: "Demander un Devis",
       continue: "Continuer les Achats",
       remove: "Supprimer",
@@ -1434,8 +1434,8 @@ const translations = {
       choosePack: "Combien en voulez-vous ?",
       chooseQtyHint: "Choisissez bouteilles et/ou cartons (combinables).",
       freeDeliveryNote:
-        "Une caisse ou plus — livraison gratuite et un tire-bouchon.",
-      cardFreeDelivery: "1 caisse — livraison gratuite",
+        "Une caisse ou plus — livraison gratuite en Espagne uniquement, plus un tire-bouchon.",
+      cardFreeDelivery: "1 caisse — livraison gratuite en Espagne",
       cardCorkscrewGift: "1 caisse — tire-bouchon offert",
       corkscrewGiftNote: "Commandez une caisse et recevez un tire-bouchon offert.",
       comboSummary:
@@ -1474,16 +1474,16 @@ const translations = {
     home: {
       est: "З 1987 року",
       heroTitle1: "Вина, якими",
-      heroTitle2: "Варто Насолоджуватися",
+      heroTitle2: "варто насолоджуватися",
       heroDesc:
-        "Ретельно відібрані пляшки з найвідоміших виноградників світу. Від сміливих бордо до свіжих совіньйон блан з Мальборо.",
+        "Преміальні традиційні вина з відомих регіонів Кахетія та Рача. Створені століттями виноробної спадщини та доставляються бізнесу по всій Європі.",
       shopCollection: "Дивитися Колекцію",
       ourStory: "Наша Історія",
       curatedTitle: "Кураторський Відбір",
       curatedDesc:
         "Кожне вино особисто дегустоване та схвалене нашою командою сомельє.",
-      shippingTitle: "Безкоштовна Доставка",
-      shippingDesc: "Торрев'єха: 3 € за 1–4 пляшки · від 1 коробки — доставка безкоштовна.",
+      shippingTitle: "Безкоштовна доставка Іспанією",
+      shippingDesc: "Торрев'єха: 3 € за 1–4 пляшки · від 1 коробки — безкоштовна доставка тільки по Іспанії.",
       satisfactionTitle: "Гарантія Задоволення",
       satisfactionDesc: "Незадоволені покупкою? Ми все виправимо.",
       featured: "Обране",
@@ -1529,9 +1529,9 @@ const translations = {
       deliveryBenefits: [
         "Експрес-доставка",
         "Торрев'єха, Іспанія: 3 € за доставку при замовленні 1–4 пляшок",
-        "Безкоштовна доставка при замовленні від 1 коробки",
+        "Безкоштовна доставка тільки по Іспанії при замовленні від 1 коробки",
         "Доставка Іспанією протягом 48 годин у будні",
-        "Служба доставки Європою",
+        "Служба доставки Європою (вартість уточнюється окремо)",
       ],
       deliveryCta: "Переглянути каталог",
       deliveryConditionsCta: "Умови та доставка",
@@ -1594,7 +1594,7 @@ const translations = {
       noWines: "У цій категорії вина не знайдено.",
       loading: "Завантаження...",
       deliveryNote:
-        "Торрев'єха: 3 € за 1–4 пляшки · від 1 коробки — безкоштовна доставка + штопор",
+        "Тільки Іспанія: Торрев'єха 3 € за 1–4 пляшки · від 1 коробки — безкоштовна доставка + штопор",
     },
     contact: {
       title: "Зв'яжіться з Нами",
@@ -1638,9 +1638,9 @@ const translations = {
         "Експрес-доставка",
         "Доставка по м. Торрев'єха, Іспанія",
         "1–4 пляшки в Торрев'єсі: 3 € за доставку",
-        "Від 1 коробки: доставка безкоштовна",
+        "Від 1 коробки: безкоштовна доставка тільки по Іспанії",
         "Доставка Іспанією протягом 48 годин у будні",
-        "Служба доставки Європою",
+        "Доставка Європою — вартість уточнюється окремо",
       ],
       stockTitle: "Завжди в наявності",
       stockText:
@@ -1690,11 +1690,11 @@ const translations = {
       tax: "Податок (орієнт.)",
       total: "Разом",
       free: "Безкоштовно",
-      freeShipping: "Додайте 1 коробку для безкоштовної доставки",
-      freeDeliveryEligible: "Безкоштовна доставка включена",
+      freeShipping: "Додайте 1 коробку для безкоштовної доставки Іспанією",
+      freeDeliveryEligible: "Безкоштовна доставка Іспанією включена",
       corkscrewGiftEligible: "Подарунок: штопор.",
       deliveryTorrevieja: "У Торрев'єсі, Іспанія: 3 € за доставку при замовленні 1–4 пляшок",
-      deliveryBoxPromo: "Замовте від 1 коробки — доставка безкоштовна",
+      deliveryBoxPromo: "Замовте від 1 коробки — безкоштовна доставка тільки по Іспанії",
       checkout: "Запросити Замовлення",
       continue: "Продовжити Покупки",
       remove: "Видалити",
@@ -1794,8 +1794,8 @@ const translations = {
       choosePack: "Скільки бажаєте?",
       chooseQtyHint: "Оберіть пляшки та/або коробки (можна разом).",
       freeDeliveryNote:
-        "Від 1 коробки — безкоштовна доставка та штопор.",
-      cardFreeDelivery: "1 коробка — безкоштовна доставка",
+        "Від 1 коробки — безкоштовна доставка тільки по Іспанії та штопор.",
+      cardFreeDelivery: "1 коробка — безкоштовна доставка Іспанією",
       cardCorkscrewGift: "1 коробка — штопор у подарунок",
       corkscrewGiftNote: "Замовте одну коробку — штопор у подарунок.",
       comboSummary:

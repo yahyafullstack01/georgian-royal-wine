@@ -8,7 +8,7 @@ import { useLocale } from "@/context/LocaleContext";
 
 const PHONE_DISPLAY = "+34 607 609 474";
 const PHONE_TEL = "+34607609474";
-const EMAIL = "info@grw-wine.com";
+const EMAIL = "sbs@sb-servicio.com";
 const WHATSAPP = "https://wa.me/34607609474";
 const INSTAGRAM =
   "https://www.instagram.com/georgianwine.es?igsi=MWsxOTYwbWlmZXp4OQ%3D%3D&utm_source=qr";

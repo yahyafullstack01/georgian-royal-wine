@@ -23,7 +23,7 @@ interface LocaleContextValue {
 const LocaleContext = createContext<LocaleContextValue | null>(null);
 
 export function LocaleProvider({ children }: { children: React.ReactNode }) {
-  const [locale, setLocaleState] = useState<Locale>("en");
+  const [locale, setLocaleState] = useState<Locale>("es");
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -31,6 +31,8 @@ export function LocaleProvider({ children }: { children: React.ReactNode }) {
     if (stored && ["en", "es", "ru", "fr", "uk"].includes(stored)) {
       setLocaleState(stored);
       document.documentElement.lang = stored === "uk" ? "uk" : stored;
+    } else {
+      document.documentElement.lang = "es";
     }
     setMounted(true);
   }, []);

@@ -95,10 +95,10 @@ export default function Footer() {
               </p>
               <p>
                 <a
-                  href="mailto:info@grw-wine.com"
+                  href="mailto:sbs@sb-servicio.com"
                   className="hover:text-gold-400"
                 >
-                  info@grw-wine.com
+                  sbs@sb-servicio.com
                 </a>
               </p>
               <p className="pt-2">

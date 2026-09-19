@@ -103,10 +103,12 @@ function buildOrderSummary(payload: OrderRequestPayload) {
   const orderedAt = formatOrderedAt();
   const deliveryNote =
     totalBoxes >= 1
-      ? "Доставка: БЕСПЛАТНО (в заказе есть минимум 1 коробка)"
+      ? "Доставка: БЕСПЛАТНО только по Испании (в заказе есть минимум 1 коробка)"
       : "Доставка: в Торревьехе, Испания — €3 за 1–4 бутылки (уточнить адрес)";
   const deliveryNoteShort =
-    totalBoxes >= 1 ? "Бесплатная доставка" : "€3 в Торревьехе (1–4 бут.)";
+    totalBoxes >= 1
+      ? "Бесплатная доставка по Испании"
+      : "€3 в Торревьехе (1–4 бут.)";
   const giftNote =
     totalBoxes >= 1
       ? "ПОДАРОК: штопор — положить в заказ"
@@ -397,7 +399,7 @@ export function formatCustomerConfirmationEmail(
   const { customer, items, subtotal } = summary;
   const deliveryNoteEn =
     summary.totalBoxes >= 1
-      ? "Free delivery (order includes at least 1 box)"
+      ? "Free delivery in Spain only (order includes at least 1 box)"
       : "€3 delivery in Torrevieja, Spain (1–4 bottles)";
 
   const text = [
@@ -429,7 +431,7 @@ export function formatCustomerConfirmationEmail(
     ...formatDeliveryAddress(customer, "en"),
     "",
     customer.notes ? `YOUR NOTES\n----------\n${customer.notes}\n` : null,
-    "If you have any questions, reply to this email or contact us at info@grw-wine.com / +34 607 609 474.",
+    "If you have any questions, reply to this email or contact us at sbs@sb-servicio.com / +34 607 609 474.",
     "",
     "Kind regards,",
     "Georgian Royal Wine",
@@ -542,7 +544,7 @@ export function formatCustomerConfirmationEmail(
           <td style="padding:20px 32px 28px;background:#faf7f4;border-top:1px solid #e8e0d8;">
             <div style="color:#57534e;font-size:13px;line-height:1.6;margin-bottom:8px;">
               Questions? Reply to this email or contact us at
-              <a href="mailto:info@grw-wine.com" style="color:#722f37;font-weight:600;">info@grw-wine.com</a>
+              <a href="mailto:sbs@sb-servicio.com" style="color:#722f37;font-weight:600;">sbs@sb-servicio.com</a>
               / <a href="tel:+34607609474" style="color:#722f37;font-weight:600;">+34 607 609 474</a>.
             </div>
             <div style="color:#3d1519;font-size:14px;font-weight:600;margin-top:12px;">Kind regards,<br>Georgian Royal Wine</div>

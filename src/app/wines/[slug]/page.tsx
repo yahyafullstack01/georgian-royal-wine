@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const wine = getWineBySlug(slug);
   if (!wine) return { title: "Wine Not Found" };
-  const content = getWineContent(wine.slug, "en");
+  const content = getWineContent(wine.slug, "es");
   return {
     title: content.name,
     description: content.taste,

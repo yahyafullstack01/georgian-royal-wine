@@ -81,18 +81,26 @@ export default function HomeContent() {
         <HomeHeroMedia />
         <div className="absolute inset-0 bg-burgundy-950/60" />
         <div className="relative z-10 mx-auto max-w-4xl px-4 text-center">
-          <p className="text-sm tracking-[0.4em] text-gold-400 uppercase">
+          <div className="mx-auto mb-6 sm:mb-8">
+            <p className="font-serif text-6xl leading-none tracking-[0.06em] text-cream-100 sm:text-7xl lg:text-8xl">
+              GRW
+            </p>
+            <p className="mt-3 font-serif text-sm tracking-[0.45em] text-cream-100 uppercase sm:mt-4 sm:text-base sm:tracking-[0.5em] lg:text-lg lg:tracking-[0.55em]">
+              Georgian Royal Wine
+            </p>
+          </div>
+          <p className="text-[10px] tracking-[0.35em] text-gold-400 uppercase sm:text-xs">
             {t.home.est}
           </p>
-          <h1 className="mt-4 font-serif text-5xl leading-tight text-cream-100 sm:text-6xl lg:text-7xl">
+          <h1 className="mt-3 font-serif text-2xl leading-snug text-cream-100 sm:mt-4 sm:text-3xl lg:text-4xl">
             {t.home.heroTitle1}
             <br />
             <span className="text-gold-400">{t.home.heroTitle2}</span>
           </h1>
-          <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-cream-200/90">
+          <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-cream-200/90 sm:mt-5 sm:text-base">
             {t.home.heroDesc}
           </p>
-          <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:mt-10 sm:flex-row">
             <Link
               href="/shop"
               className="rounded bg-gold-500 px-8 py-3.5 text-sm font-medium tracking-wide text-burgundy-950 uppercase transition-colors hover:bg-gold-400"
