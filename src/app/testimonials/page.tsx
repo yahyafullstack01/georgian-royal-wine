@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import TestimonialsPageContent from "@/components/TestimonialsPageContent";
 
 export const metadata: Metadata = {
-  title: "Client Reviews",
+  title: "Opiniones de clientes en España",
   description:
-    "Real client reviews of Georgian Royal Wine — taste, delivery, and authentic Georgian wines in Spain.",
+    "Reseñas reales de clientes de Georgian Royal Wine en España: sabor, entrega y auténtico vino georgiano desde Torrevieja.",
+  alternates: { canonical: "/testimonials" },
 };
 
 export default function TestimonialsPage() {
