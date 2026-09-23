@@ -17,6 +17,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       taste:
         "Balanced flavor profile with soft tannins, pleasant acidity, and a long, smooth finish. The prolonged maceration at 20°C enhances the deep, fruity notes.",
       pairing: "Ideal with grilled meats, rich stews, and mature cheeses",
+      vintage: "2023",
     },
     ru: {
       name: "REZO’S WINE — Saperavi",
@@ -33,6 +34,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
         "Сбалансированный профиль со мягкими танинами, приятной кислотностью и долгим, гладким послевкусием. Продолжительная мацерация при 20°C усиливает насыщенные фруктовые нотки.",
       pairing:
         "Идеально подходит к блюдам на гриле, наваристым рагу и выдержанным сырам",
+      vintage: "2023",
     },
     es: {
       name: "REZO’S WINE – Saperavi",
@@ -48,6 +50,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       taste:
         "Perfil equilibrado con taninos suaves, acidez agradable y un final largo y suave. La maceración prolongada a 20°C realza las notas frutales profundas.",
       pairing: "Ideal con carnes a la parrilla, estofados ricos y quesos curados",
+      vintage: "2023",
     },
     fr: {
       name: "REZO’S WINE – Saperavi",
@@ -64,6 +67,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
         "Profil équilibré avec des tanins souples, une acidité agréable et une finale longue et soyeuse. La macération prolongée à 20°C intensifie les notes fruitées profondes.",
       pairing:
         "Idéal avec viandes grillées, ragoûts riches et fromages affinés",
+      vintage: "2023",
     },
     uk: {
       name: "REZO’S WINE – Saperavi",
@@ -80,6 +84,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
         "Збалансований профіль з м’якими танінами, приємною кислотністю та довгим гладким післясмаком. Тривала мацерація при 20°C підсилює глибокі фруктові ноти.",
       pairing:
         "Ідеально з м’ясом на грилі, наваристими рагу та витриманими сирами",
+      vintage: "2023",
     },
   },
   "rezos-wine-kindzmarauli": {
@@ -440,6 +445,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
         "It hits the palate as a crisp, balanced wine, with hints of citrus, pineapple, pear, apple and peach.",
       pairing:
         "Best with grilled white fish, poultry and light meat, dishes with green herbs, mozzarella, feta and more.",
+      vintage: "2021",
     },
     ru: {
       name: "KISI",
@@ -458,6 +464,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
         "Вино раскрывается свежим, сбалансированным вкусом с «хрустящей» кислотностью и оттенками цитрусовых, ананаса, груши, яблока и персика.",
       pairing:
         "Лучше всего сочетается с белой рыбой на гриле, птицей и легким мясом. Прекрасно подходит к блюдам с зеленой зеленью, а также к сырам Моцарелла, Фета и т.д",
+      vintage: "2021",
     },
     es: {
       name: "KISI",
@@ -476,6 +483,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
         "En paladar es un vino fresco y equilibrado, con matices de cítricos, piña, pera, manzana y melocotón.",
       pairing:
         "Ideal con pescado blanco a la parrilla, aves y carnes ligeras, platos con hierbas verdes, mozzarella, feta y más.",
+      vintage: "2021",
     },
     fr: {
       name: "KISI",
@@ -494,6 +502,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
         "En bouche, un vin vif et équilibré, aux notes d’agrumes, d’ananas, de poire, de pomme et de pêche.",
       pairing:
         "Idéal avec poisson blanc grillé, volaille et viandes légères, plats aux herbes vertes, mozzarella, feta et plus encore.",
+      vintage: "2021",
     },
     uk: {
       name: "KISI",
@@ -512,6 +521,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
         "Вино розкривається свіжим, збалансованим смаком із хрусткою кислотністю та відтінками цитрусових, ананаса, груші, яблука та персика.",
       pairing:
         "Найкраще з білою рибою на грилі, птицею та легким м’ясом. Добре пасує до страв із зеленою зеленню, а також до сирів моцарела, фета тощо.",
+      vintage: "2021",
     },
   },
   "grw-khikhvi-qvevri": {
@@ -643,7 +653,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
         "Идеально подходит к насыщенным блюдам, мясу на гриле и выдержанным сырам.",
       vinification:
         "Вино производится по традиционному грузинскому методу в квеври — больших глиняных сосудах, закопанных в землю, где проходят ферментация и выдержка. Этот древний способ придаёт вину глубину и уникальный характер, делая его настоящей находкой для ценителей аутентичных и благородных красных вин.",
-      vintage: "2011",
+      vintage: "2022",
     },
     es: {
       name: "KVARELI QVEVRI",
@@ -707,7 +717,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
         "Ідеально до насичених страв, м’яса на грилі та витриманих сирів.",
       vinification:
         "Вино виробляється за традиційним грузинським методом у квеврі — великих глиняних посудинах, заглиблених у землю, де відбуваються ферментація та витримка. Цей давній спосіб надає вину глибини й унікального характеру.",
-      vintage: "2011",
+      vintage: "2022",
     },
   },
   "grw-kisi-qvevri": {
@@ -726,7 +736,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       taste:
         "Well structured, pleasant bouquet of various fruits with long aftertaste",
       pairing: "Best with steak, lamb and barbecue",
-      vintage: "2021",
+      vintage: "2024",
     },
     ru: {
       name: "KISI QVEVRI",
@@ -744,7 +754,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
         "Хорошо структурированный, приятный букет из различных фруктов с длительным послевкусием",
       pairing:
         "Лучше всего подходит с мясом утки, курицы, барбекю также с выдержанными сырами",
-      vintage: "2021",
+      vintage: "2024",
     },
     es: {
       name: "KISI QVEVRI",
@@ -761,7 +771,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       taste:
         "Bien estructurado, agradable bouquet de frutas diversas y un largo retrogusto",
       pairing: "Ideal con bistec, cordero y barbacoa",
-      vintage: "2021",
+      vintage: "2024",
     },
     fr: {
       name: "KISI QVEVRI",
@@ -778,7 +788,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       taste:
         "Bien structuré, bouquet fruité agréable et longue persistance",
       pairing: "Idéal avec steak, agneau et barbecue",
-      vintage: "2021",
+      vintage: "2024",
     },
     uk: {
       name: "KISI QVEVRI",
@@ -796,7 +806,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
         "Добре структурований, приємний букет різних фруктів із тривалим післясмаком",
       pairing:
         "Найкраще пасує до качки, курки, барбекю, а також до витриманих сирів",
-      vintage: "2021",
+      vintage: "2024",
     },
   },
   "grw-alazani-valley": {
@@ -814,7 +824,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       taste:
         "The taste is fresh and harmonious with mild acidity and candied quince tones.",
       pairing: "Recommended together with fruit salads and dessert",
-      vintage: "2023",
+      vintage: "2024",
     },
     ru: {
       name: "ALAZANI VALLEY",
@@ -829,7 +839,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       taste:
         "Свежий и гармоничный, с мягкой кислотностью и оттенками цукатированной айвы.",
       pairing: "Рекомендуется к фруктовым салатам и десертам.",
-      vintage: "2023",
+      vintage: "2024",
     },
     es: {
       name: "ALAZANI VALLEY",
@@ -845,7 +855,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       taste:
         "Fresco y armonioso, con acidez suave y notas de membrillo confitado.",
       pairing: "Recomendado con ensaladas de fruta y postres",
-      vintage: "2023",
+      vintage: "2024",
     },
     fr: {
       name: "ALAZANI VALLEY",
@@ -861,7 +871,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       taste:
         "Frais et harmonieux, avec une acidité douce et des notes de coing confit.",
       pairing: "Recommandé avec salades de fruits et desserts",
-      vintage: "2023",
+      vintage: "2024",
     },
     uk: {
       name: "ALAZANI VALLEY",
@@ -876,7 +886,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       taste:
         "Свіжий і гармонійний, з м’якою кислотністю та відтінками цукатованої айви.",
       pairing: "Рекомендується до фруктових салатів і десертів.",
-      vintage: "2023",
+      vintage: "2024",
     },
   },
   "grw-khvanchkara": {
@@ -898,7 +908,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
         "The palate mirrors the aroma notes. It has good balance of sweetness and acidity, texture is smooth and round",
       pairing:
         "The wine is a good accompaniment to ham, slightly spicy food, pork, fruits, and desserts",
-      vintage: "2023",
+      vintage: "2024",
     },
     ru: {
       name: "KHVANCHKARA",
@@ -919,7 +929,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
         "Вкус повторяет ароматический профиль. Вино отличается хорошим балансом сладости и кислотности, а также мягкой, округлой текстурой",
       pairing:
         "Хорошо подходит с ветчиной, умеренно острыми блюдами, свининой, фруктами и десертами.",
-      vintage: "2023",
+      vintage: "2024",
     },
     es: {
       name: "KHVANCHKARA",
@@ -939,7 +949,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
         "El paladar refleja el aroma. Buen equilibrio de dulzor y acidez, con una textura suave y redonda",
       pairing:
         "Acompaña bien jamón, platos ligeramente picantes, cerdo, frutas y postres",
-      vintage: "2023",
+      vintage: "2024",
     },
     fr: {
       name: "KHVANCHKARA",
@@ -959,7 +969,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
         "Le palais reprend les notes aromatiques. Bel équilibre sucré-acide, texture souple et ronde",
       pairing:
         "S’accorde avec jambon, plats légèrement épicés, porc, fruits et desserts",
-      vintage: "2023",
+      vintage: "2024",
     },
     uk: {
       name: "KHVANCHKARA",
@@ -980,7 +990,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
         "Смак повторює ароматичний профіль. Вино вирізняється добрим балансом солодощі й кислотності та м’якою округлою текстурою",
       pairing:
         "Добре пасує до шинки, помірно гострих страв, свинини, фруктів і десертів.",
-      vintage: "2023",
+      vintage: "2024",
     },
   },
   "grw-alazani-valley-red": {
@@ -997,7 +1007,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       aroma:
         "The wine has rich fruit tones authentic for Saperavi such as various red and black fruits",
       taste: "Dark forest fruits, undertone of jams",
-      vintage: "2023",
+      vintage: "2025",
     },
     ru: {
       name: "ALAZANI VALLEY",
@@ -1013,7 +1023,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
         "Богат фруктовыми тонами, характерными для сорта Саперави — сочные чёрные ягоды, вишня, чернослив, шелковица и т.д.",
       taste:
         "Главный акцент — это спелая ежевика, черная смородина и шелковица, нотки джема. Вино очень сбалансированное с приятным послевкусием",
-      vintage: "2023",
+      vintage: "2025",
     },
     es: {
       name: "ALAZANI VALLEY",
@@ -1028,7 +1038,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       aroma:
         "Rico en tonos frutales auténticos del Saperavi, con frutos rojos y negros",
       taste: "Frutos del bosque oscuros, con un fondo de mermeladas",
-      vintage: "2023",
+      vintage: "2025",
     },
     fr: {
       name: "ALAZANI VALLEY",
@@ -1043,7 +1053,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       aroma:
         "Riche en notes fruitées typiques du Saperavi, fruits rouges et noirs",
       taste: "Fruits noirs des bois, avec un fond de confitures",
-      vintage: "2023",
+      vintage: "2025",
     },
     uk: {
       name: "ALAZANI VALLEY",
@@ -1059,7 +1069,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
         "Багатий фруктовими тонами, характерними для сорту Сапераві — соковиті чорні ягоди, вишня, чорнослив, шовковиця тощо.",
       taste:
         "Головний акцент — стигла ожина, чорна смородина і шовковиця, нотки джему. Вино дуже збалансоване з приємним післясмаком",
-      vintage: "2023",
+      vintage: "2025",
     },
   },
   "grw-kindzmarauli": {
@@ -1077,7 +1087,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
         "Wine is very expressive. The most immediate scents are of ripe, dark fruits and delicate floral signature.",
       taste:
         "A soft, honeyed sweetness hints, dominated by blackberry jam and ripe pomegranate",
-      vintage: "2023",
+      vintage: "2025",
     },
     ru: {
       name: "KINDZMARAULI",
@@ -1094,7 +1104,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
         "Вино гармоничное, ярко выраженный и богатый букет тёмных фруктов, оттенки фиолетовых цветов и шоколада",
       taste:
         "Ощущается мягкая сладость, в которой доминируют ноты ежевичного джема и спелого граната. Вино сбалансированное, с долгим послевкусием",
-      vintage: "2023",
+      vintage: "2025",
     },
     es: {
       name: "KINDZMARAULI",
@@ -1110,7 +1120,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
         "Vino muy expresivo. Los aromas más inmediatos son de frutos negros maduros y una delicada firma floral.",
       taste:
         "Dulzor suave con un toque de miel, dominado por mermelada de mora y granada madura",
-      vintage: "2023",
+      vintage: "2025",
     },
     fr: {
       name: "KINDZMARAULI",
@@ -1126,7 +1136,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
         "Vin très expressif. Les premiers arômes sont de fruits noirs mûrs et d’une délicate signature florale.",
       taste:
         "Douceur mielée et souple, dominée par la confiture de mûre et la grenade mûre",
-      vintage: "2023",
+      vintage: "2025",
     },
     uk: {
       name: "KINDZMARAULI",
@@ -1143,7 +1153,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
         "Вино гармонійне, яскраво виражений і багатий букет темних фруктів, відтінки фіолетових квітів і шоколаду",
       taste:
         "Відчувається м’яка солодкість, у якій домінують ноти ожинового джему та стиглого граната. Вино збалансоване, з довгим післясмаком",
-      vintage: "2023",
+      vintage: "2025",
     },
   },
   "grw-saperavi-qvevri": {
@@ -1273,7 +1283,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
         "The wine is defined by dominant, inky dark fruit aromas—notably blackberry and black plum—layered with elegant undertones of black pepper and violet.",
       taste:
         "Well structured, powerful wine with medium to long finish. The dark fruit from the nose translates directly to the tongue",
-      vintage: "2023",
+      vintage: "2025",
     },
     ru: {
       name: "SAPERAVI",
@@ -1289,7 +1299,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
         "Вино определяется доминирующими ароматами темных фруктов — особенно ежевики и черной сливы, дополненными элегантными нотками специи, кожи и фиалки.",
       taste:
         "Хорошо структурированное. Мощное, яркое вино с насыщенным вкусом и долгим послевкусием",
-      vintage: "2023",
+      vintage: "2025",
     },
     es: {
       name: "SAPERAVI",
@@ -1305,7 +1315,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
         "Aromas dominantes de fruta negra tinta —mora y ciruela negra— con elegantes matices de pimienta negra y violeta.",
       taste:
         "Vino bien estructurado y potente, con un final medio a largo. La fruta negra de la nariz se traduce directamente en boca",
-      vintage: "2023",
+      vintage: "2025",
     },
     fr: {
       name: "SAPERAVI",
@@ -1321,7 +1331,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
         "Arômes dominants de fruits noirs encreux — mûre et prune noire — avec d’élégantes notes de poivre noir et de violette.",
       taste:
         "Vin puissant, bien structuré, à la finale moyenne à longue. Les fruits noirs du nez se retrouvent directement en bouche",
-      vintage: "2023",
+      vintage: "2025",
     },
     uk: {
       name: "SAPERAVI",
@@ -1337,7 +1347,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
         "Вино визначається домінуючими ароматами темних фруктів — особливо ожини та чорної сливи, доповненими елегантними нотками спецій, шкіри та фіалки.",
       taste:
         "Добре структуроване. Потужне, яскраве вино з насиченим смаком і довгим післясмаком",
-      vintage: "2023",
+      vintage: "2025",
     },
   },
   "grw-mukuzani": {
@@ -1357,7 +1367,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       taste:
         "Corpulent and full with fruit tones, with round medium tannins and extended taste.",
       pairing: "Best with steak, lamb, barbecue and blue or aged cheese",
-      vintage: "2022",
+      vintage: "2025",
     },
     ru: {
       name: "MUKUZANI",
@@ -1377,7 +1387,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
         "Вино плотное и насыщенное фруктовыми тонами с округлыми танинами и длительным послевкусием.",
       pairing:
         "Лучше всего сочетается со стейком, ягненком, барбекю, а также с голубыми или выдержанными сырами.",
-      vintage: "2022",
+      vintage: "2025",
     },
     es: {
       name: "MUKUZANI",
@@ -1395,7 +1405,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       taste:
         "Corpulento y pleno, con tonos frutales, taninos medios redondos y un sabor persistente.",
       pairing: "Ideal con bistec, cordero, barbacoa y quesos azules o curados",
-      vintage: "2022",
+      vintage: "2025",
     },
     fr: {
       name: "MUKUZANI",
@@ -1413,7 +1423,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       taste:
         "Corpulent et ample, aux tons fruités, tanins moyens ronds et une persistance étendue.",
       pairing: "Idéal avec steak, agneau, barbecue et fromages bleus ou affinés",
-      vintage: "2022",
+      vintage: "2025",
     },
     uk: {
       name: "MUKUZANI",
@@ -1433,7 +1443,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
         "Вино щільне й насичене фруктовими тонами, з округлими танінами та тривалим післясмаком.",
       pairing:
         "Найкраще пасує до стейка, ягнятини, барбекю, а також до блакитних або витриманих сирів.",
-      vintage: "2022",
+      vintage: "2025",
     },
   },
   "grw-pirosmani": {
@@ -1451,7 +1461,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       aroma:
         "While fresh berries dominate, you’ll often find a hint of sun-dried fruit, giving it a concentrated, jammy depth.",
       taste: "Wine is silky, soft in tannins with fruity finish",
-      vintage: "2023",
+      vintage: "2025",
     },
     ru: {
       name: "PIROSMANI",
@@ -1467,7 +1477,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       aroma:
         "Это вино обладает густым, насыщенным и глубоким букетом черной смородины, ежевики и спелой вишни.",
       taste: "Вино шелковистое, с мягкими танинами и фруктовым послевкусием.",
-      vintage: "2023",
+      vintage: "2025",
     },
     es: {
       name: "PIROSMANI",
@@ -1483,7 +1493,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       aroma:
         "Dominan las bayas frescas, a menudo con un toque de fruta seca al sol que aporta profundidad confitada.",
       taste: "Seda en boca, taninos suaves y un final afrutado",
-      vintage: "2023",
+      vintage: "2025",
     },
     fr: {
       name: "PIROSMANI",
@@ -1499,7 +1509,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       aroma:
         "Les baies fraîches dominent, souvent avec une touche de fruit séché au soleil, pour une profondeur confiturée.",
       taste: "Soyeux, aux tanins souples et à la finale fruitée",
-      vintage: "2023",
+      vintage: "2025",
     },
     uk: {
       name: "PIROSMANI",
@@ -1515,7 +1525,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       aroma:
         "Це вино має густий, насичений і глибокий букет чорної смородини, ожини та стиглої вишні.",
       taste: "Вино шовковисте, з м’якими танінами та фруктовим післясмаком.",
-      vintage: "2023",
+      vintage: "2025",
     },
   },
   "grw-rose": {
