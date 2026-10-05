@@ -1,6 +1,6 @@
 import type { NextConfig } from "next";
 
-const locales = ["en", "es", "ru", "fr", "uk", "ge", "ka"] as const;
+const locales = ["en", "es", "ru", "fr", "uk", "bg", "ge", "ka"] as const;
 
 const pageMap: Record<string, string> = {
   "": "/",

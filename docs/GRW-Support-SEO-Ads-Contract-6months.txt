@@ -1,0 +1,136 @@
+FREELANCE SERVICE AGREEMENT
+Website Support · SEO · Google Ads
+€500 / month (+ IVA if applicable) · Minimum 6 months
+
+This Agreement starts on 01/10/2026 and ends on 01/04/2027
+(the "Term": six months).
+
+────────────────────────────────────────────────────────
+PARTIES
+
+Freelancer:
+Name: Alloucha Yahya (Yas)
+Passport number: PL6913974
+Email: yahyawebdev01@gmail.com
+("Freelancer")
+
+Client:
+Name / Company: Georgian Royal Wine / ______________________________
+Address: Calle Paseo Vistalegre nº8, 6º derecha, Torrevieja, Spain
+Email / Phone: _________________________________________________
+Websites: grw-wine.com, grw-wine.bg, grw-wine.es (and related domains)
+("Client")
+
+────────────────────────────────────────────────────────
+1. WHAT I DO
+I am a freelance web developer, SEO specialist, and Google Ads manager.
+Under this Agreement I will support Client's wine website(s), work on SEO,
+manage Google Ads with a small budget, and send one monthly statistics report.
+
+────────────────────────────────────────────────────────
+2. TERM — 01/10/2026 TO 01/04/2027
+2.1 This Agreement runs from 01/10/2026 to 01/04/2027 (six months).
+2.2 Price: €500 (five hundred euros) per month + IVA if needed / if applicable.
+2.3 Total for the Term: €3,000 + IVA if applicable.
+2.4 After 01/04/2027, the Agreement may continue month by month only if both
+    parties agree in writing (email is enough). Either side can then stop with
+    30 days' written notice.
+2.5 If Client stops before 01/04/2027, Client pays the remaining months of the
+    Term, unless both sides agree otherwise in writing.
+
+────────────────────────────────────────────────────────
+3. PRICE & PAYMENT
+3.1 Monthly fee: €500 + IVA if needed / if applicable.
+3.2 Paid in advance each month, on or before day ____ , by:
+    [ ] Bank transfer   [ ] Bizum   [ ] Other: _______________
+3.3 Bank / payment details: _______________________________________________
+3.4 Google Ads advertising money (budget paid to Google for clicks) is NOT
+    included in the €500. Client pays Google directly.
+3.5 Client's Google Ads budget (optional, can change): €________ / month.
+
+────────────────────────────────────────────────────────
+4. SERVICES INCLUDED (€500 / month)
+A) Website support — small fixes
+- Fix small problems on the website when Client reports them
+- Small updates and simple changes
+- Help with common issues (forms, display problems, simple text changes,
+  domain / DNS guidance for the live site)
+- Help with hosting / deployment when needed (e.g. Vercel)
+
+B) SEO
+- Basic SEO checks (titles, descriptions, important technical points)
+- Tracking setup / review (Google Analytics, Search Console)
+- Monitoring for agreed markets (e.g. Spain, Torrevieja, Georgian wine)
+- SEO improvements as part of the monthly work
+
+C) Google Ads — small budget
+- Set up or improve Google Ads for a small budget
+- Keywords, ads, and targeting (Spain and agreed cities)
+- Light ongoing optimization
+- Conversion tracking where possible (orders / leads / WhatsApp)
+
+D) Statistics — 1 report per month
+- One monthly report with, when data is available:
+  • Website traffic
+  • SEO / Search Console summary
+  • Google Ads results (spend, clicks, results)
+  • Short recommendations for next month
+
+────────────────────────────────────────────────────────
+5. EXTRA WORK — ADDITIONAL PAYMENT
+Anything outside Section 4 (for example big redesigns, large new features,
+or other platforms/campaigns not listed here) is not included in €500/month.
+
+Extra work will be agreed first by email, and will have an additional payment,
+separate from the monthly fee.
+
+────────────────────────────────────────────────────────
+6. CLIENT MUST
+- Give access to the website, domains, Analytics, Search Console, and Google Ads
+- Reply to approvals (texts/ads) within a few business days
+- Keep products, prices, and stock correct
+- Pay Google Ads budget directly to Google
+- Pay the monthly fee on time
+- Approve extra work and its additional payment before it starts
+
+────────────────────────────────────────────────────────
+7. NO GUARANTEES
+I will work professionally and honestly. I do not guarantee specific sales numbers,
+Google rankings, or advertising profit. Results depend on budget, competition,
+season, product, and Client cooperation.
+
+────────────────────────────────────────────────────────
+8. OWNERSHIP & ACCESS
+- Client owns the website, domains, content, Google Ads account, and data.
+- I only use access to do the work in this Agreement.
+- When the Agreement ends, I will help return / remove my access if asked.
+
+────────────────────────────────────────────────────────
+9. CONFIDENTIALITY
+Both sides keep passwords, customer data, and business information private.
+
+────────────────────────────────────────────────────────
+10. LIABILITY
+Except for serious intentional wrongdoing, Freelancer's total liability is limited
+to the fees paid by Client in the last three (3) months before a claim.
+
+────────────────────────────────────────────────────────
+11. LAW
+This Agreement follows the laws of Spain.
+Disputes: courts of Alicante / Torrevieja, unless the law requires otherwise.
+
+────────────────────────────────────────────────────────
+12. FULL AGREEMENT
+This is the full agreement. Changes must be agreed in writing (email is enough).
+
+SIGNED:
+
+Freelancer — Alloucha Yahya (Yas)
+Passport: PL6913974
+Email: yahyawebdev01@gmail.com
+Signature: ______________________________     Date: ______________
+
+
+Client — Georgian Royal Wine / ______________________________
+Name & position: ________________________
+Signature: ______________________________     Date: ______________
