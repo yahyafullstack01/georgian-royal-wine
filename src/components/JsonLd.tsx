@@ -62,7 +62,7 @@ export default function JsonLd() {
     "@id": `${siteConfig.url}/#website`,
     name: siteConfig.name,
     url: siteConfig.url,
-    inLanguage: ["es", "en", "ru", "fr", "uk"],
+    inLanguage: ["es", "en", "ru", "fr", "uk", "bg"],
     publisher: { "@id": `${siteConfig.url}/#business` },
   };
 
