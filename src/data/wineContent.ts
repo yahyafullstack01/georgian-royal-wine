@@ -270,7 +270,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
     },
     bg: {
       name: "REZO’S WINE – Kisi",
-      classification: "Квеври янтарно сухо",
+      classification: "Квеври кехлибарено сухо",
       region: "Кахетия",
       country: "Грузия",
       grape: "Киси 100%",
@@ -704,7 +704,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
     },
     bg: {
       name: "KHIKHVI QVEVRI",
-      classification: "Квеври янтарно сухо",
+      classification: "Квеври кехлибарено сухо",
       region: "Кахетия",
       country: "Грузия",
       grape: "Хихви 100%",
@@ -937,7 +937,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
     },
     bg: {
       name: "KISI QVEVRI",
-      classification: "Квеври янтарно сухо",
+      classification: "Квеври кехлибарено сухо",
       region: "Кахетия",
       country: "Грузия",
       grape: "Киси 100%",
