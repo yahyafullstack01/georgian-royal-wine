@@ -103,7 +103,7 @@ export default function Footer() {
               </p>
               <p className="pt-2">
                 <a
-                  href="https://www.instagram.com/georgianwine.es?igsi=MWsxOTYwbWlmZXp4OQ%3D%3D&utm_source=qr"
+                  href="https://www.instagram.com/wine.grw.es?stkn=MXI1OTF4NHY4cTF4OA%3D%3D&utm_source=qr"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 hover:text-gold-400"

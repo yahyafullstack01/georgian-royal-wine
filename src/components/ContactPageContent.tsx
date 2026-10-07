@@ -11,7 +11,7 @@ const PHONE_TEL = "+34607609474";
 const EMAIL = "sbs@sb-servicio.com";
 const WHATSAPP = "https://wa.me/34607609474";
 const INSTAGRAM =
-  "https://www.instagram.com/georgianwine.es?igsi=MWsxOTYwbWlmZXp4OQ%3D%3D&utm_source=qr";
+  "https://www.instagram.com/wine.grw.es?stkn=MXI1OTF4NHY4cTF4OA%3D%3D&utm_source=qr";
 
 export default function ContactPageContent() {
   const { t } = useLocale();

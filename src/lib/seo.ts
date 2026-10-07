@@ -15,7 +15,7 @@ export const siteConfig = {
     latitude: 37.9787,
     longitude: -0.6822,
   },
-  instagram: "https://www.instagram.com/georgianwine.es",
+  instagram: "https://www.instagram.com/wine.grw.es",
   defaultTitle:
     "Comprar vino online en España | Georgian Royal Wine — Torrevieja",
   defaultDescription:
