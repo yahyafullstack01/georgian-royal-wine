@@ -55,10 +55,10 @@ export const metadata: Metadata = {
     description: siteConfig.defaultDescription,
     images: [
       {
-        url: absoluteUrl("/grw-logo.png"),
-        width: 512,
-        height: 260,
-        alt: "Georgian Royal Wine — logo",
+        url: absoluteUrl("/banner/Home1.jpg"),
+        width: 1280,
+        height: 853,
+        alt: "Georgian Royal Wine — vinos de Kakheti en España",
       },
     ],
   },
@@ -66,8 +66,11 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: siteConfig.defaultTitle,
     description: siteConfig.defaultDescription,
-    images: [absoluteUrl("/grw-logo.png")],
+    images: [absoluteUrl("/banner/Home1.jpg")],
   },
+  verification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
+    ? { google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION }
+    : undefined,
   robots: {
     index: true,
     follow: true,

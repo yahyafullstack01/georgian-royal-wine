@@ -4,9 +4,10 @@ import Link from "next/link";
 import { useLocale } from "@/context/LocaleContext";
 import Logo from "@/components/Logo";
 import GeorgianDivider from "@/components/GeorgianDivider";
+import { cities, getGuideContent, guides } from "@/data/localSeo";
 
 export default function Footer() {
-  const { t } = useLocale();
+  const { t, locale } = useLocale();
 
   return (
     <footer className="mt-auto border-t border-gold-500/20 bg-burgundy-950 text-cream-200 dark:border-stone-800 dark:bg-stone-900">
@@ -121,6 +122,35 @@ export default function Footer() {
               </p>
             </address>
           </div>
+        </div>
+
+        <div className="mt-10 border-t border-cream-200/10 pt-8">
+          <h4 className="text-sm font-medium tracking-widest text-gold-400 uppercase">
+            {t.footer.delivery}
+          </h4>
+          <ul className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-sm">
+            {cities.map((city) => (
+              <li key={city.slug}>
+                <Link href={`/vino/${city.slug}`} className="hover:text-gold-400">
+                  {city.name}
+                </Link>
+              </li>
+            ))}
+            {guides.map((guide) => {
+              const content =
+                getGuideContent(guide.slug, locale) ?? guide.locales.es;
+              return (
+                <li key={guide.slug}>
+                  <Link
+                    href={`/guias/${guide.slug}`}
+                    className="hover:text-gold-400"
+                  >
+                    {content.title}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
         </div>
 
         <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-cream-200/10 pt-8 sm:flex-row">

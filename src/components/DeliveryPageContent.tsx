@@ -4,10 +4,17 @@ import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import GeorgianDivider from "@/components/GeorgianDivider";
 import { useLocale } from "@/context/LocaleContext";
+import {
+  cities,
+  getDeliveryFaqs,
+  seoUi,
+} from "@/data/localSeo";
 
 export default function DeliveryPageContent() {
-  const { t } = useLocale();
+  const { t, locale } = useLocale();
   const page = t.deliveryPage;
+  const deliveryFaqs = getDeliveryFaqs(locale);
+  const ui = seoUi[locale] ?? seoUi.es;
 
   return (
     <>
@@ -69,6 +76,40 @@ export default function DeliveryPageContent() {
             <p className="mt-3 text-base leading-relaxed text-stone-700 dark:text-stone-300">
               {page.stockText}
             </p>
+          </section>
+
+          <section className="mt-14">
+            <h2 className="font-serif text-2xl text-burgundy-950 dark:text-cream-100 sm:text-3xl">
+              {ui.faqTitle}
+            </h2>
+            <GeorgianDivider className="my-6 justify-start" />
+            <div className="space-y-3">
+              {deliveryFaqs.map((faq) => (
+                <details
+                  key={faq.question}
+                  className="border border-burgundy-900/10 bg-white px-5 py-4 dark:border-gold-500/15 dark:bg-stone-900"
+                >
+                  <summary className="cursor-pointer font-medium text-burgundy-950 dark:text-cream-100">
+                    {faq.question}
+                  </summary>
+                  <p className="mt-3 text-sm leading-relaxed text-stone-700 dark:text-stone-300">
+                    {faq.answer}
+                  </p>
+                </details>
+              ))}
+            </div>
+            <ul className="mt-8 flex flex-wrap gap-x-4 gap-y-2 text-sm">
+              {cities.map((city) => (
+                <li key={city.slug}>
+                  <Link
+                    href={`/vino/${city.slug}`}
+                    className="text-burgundy-800 underline-offset-4 hover:underline dark:text-gold-400"
+                  >
+                    {ui.wineIn.replace("{city}", city.name)}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </section>
 
           <section className="mt-16 border border-burgundy-900/10 bg-white px-6 py-10 text-center dark:border-gold-500/15 dark:bg-stone-900 sm:px-10">

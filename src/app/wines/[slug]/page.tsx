@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import { wines, getWineBySlug } from "@/data/wines";
 import { getWineContent } from "@/data/wineContent";
 import WineDetailContent from "@/components/WineDetailContent";
+import JsonLdScript from "@/components/JsonLdScript";
+import { breadcrumbJsonLd, wineProductJsonLd } from "@/lib/structuredData";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -50,5 +52,21 @@ export default async function WineDetailPage({ params }: Props) {
     .filter((w) => w.category === wine.category && w.id !== wine.id)
     .slice(0, 3);
 
-  return <WineDetailContent wine={wine} related={related} />;
+  const content = getWineContent(wine.slug, "es");
+
+  return (
+    <>
+      <JsonLdScript
+        data={[
+          wineProductJsonLd(wine),
+          breadcrumbJsonLd([
+            { name: "Inicio", path: "/" },
+            { name: "Tienda", path: "/shop" },
+            { name: content.name, path: `/wines/${wine.slug}` },
+          ]),
+        ]}
+      />
+      <WineDetailContent wine={wine} related={related} />
+    </>
+  );
 }

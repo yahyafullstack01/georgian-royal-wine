@@ -9,9 +9,9 @@ export default function JsonLd() {
     alternateName: ["GRW", "Georgian Royal Wine España"],
     description: siteConfig.defaultDescription,
     url: siteConfig.url,
-    image: absoluteUrl("/grw-logo.png"),
+    image: absoluteUrl("/banner/Home1.jpg"),
     logo: absoluteUrl("/grw-logo.png"),
-    telephone: siteConfig.phoneDisplay,
+    telephone: siteConfig.phone,
     email: siteConfig.email,
     priceRange: "€€",
     currenciesAccepted: "EUR",
@@ -38,8 +38,10 @@ export default function JsonLd() {
       { "@type": "City", name: "Barcelona" },
       { "@type": "City", name: "Valencia" },
       { "@type": "City", name: "Málaga" },
+      { "@type": "City", name: "Benidorm" },
     ],
-    sameAs: [siteConfig.instagram],
+    sameAs: ["https://www.instagram.com/wine.grw.es"],
+    hasMap: "https://maps.google.com/?q=Calle+Paseo+Vistalegre+8+Torrevieja",
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import DeliveryPageContent from "@/components/DeliveryPageContent";
+import JsonLdScript from "@/components/JsonLdScript";
 import { siteConfig } from "@/lib/seo";
+import { breadcrumbJsonLd, deliveryFaqs, faqJsonLd } from "@/lib/structuredData";
 
 export const metadata: Metadata = {
   title: "Envío de vino a domicilio en España",
@@ -27,5 +29,18 @@ export const metadata: Metadata = {
 };
 
 export default function DeliveryPage() {
-  return <DeliveryPageContent />;
+  return (
+    <>
+      <JsonLdScript
+        data={[
+          faqJsonLd(deliveryFaqs),
+          breadcrumbJsonLd([
+            { name: "Inicio", path: "/" },
+            { name: "Entrega", path: "/delivery" },
+          ]),
+        ]}
+      />
+      <DeliveryPageContent />
+    </>
+  );
 }

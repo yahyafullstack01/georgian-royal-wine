@@ -1,5 +1,10 @@
 import type { Metadata } from "next";
+import JsonLdScript from "@/components/JsonLdScript";
 import { siteConfig } from "@/lib/seo";
+import {
+  breadcrumbJsonLd,
+  shopItemListJsonLd,
+} from "@/lib/structuredData";
 
 export const metadata: Metadata = {
   title: "Tienda de vinos online en España",
@@ -31,5 +36,18 @@ export default function ShopLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return children;
+  return (
+    <>
+      <JsonLdScript
+        data={[
+          shopItemListJsonLd(),
+          breadcrumbJsonLd([
+            { name: "Inicio", path: "/" },
+            { name: "Tienda", path: "/shop" },
+          ]),
+        ]}
+      />
+      {children}
+    </>
+  );
 }
