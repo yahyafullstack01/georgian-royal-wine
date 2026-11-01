@@ -20,7 +20,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: { absolute: `${content.title} | Georgian Royal Wine` },
     description: content.description,
-    alternates: { canonical: `/guias/${slug}` },
+    alternates: {
+      canonical: `/guias/${slug}`,
+      languages: {
+        "es-ES": `/guias/${slug}`,
+        "ru-RU": `/ru/guias/${slug}`,
+      },
+    },
     openGraph: {
       title: content.title,
       description: content.description,

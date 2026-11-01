@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import { Playfair_Display, Lato } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
@@ -6,6 +7,7 @@ import Footer from "@/components/Footer";
 import Providers from "@/components/Providers";
 import JsonLd from "@/components/JsonLd";
 import { absoluteUrl, siteConfig } from "@/lib/seo";
+import type { Locale } from "@/lib/i18n/translations";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -90,20 +92,23 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const requestHeaders = await headers();
+  const routeLocale = requestHeaders.get("x-locale") as Locale | null;
+
   return (
     <html
-      lang="es"
+      lang={routeLocale ?? "es"}
       suppressHydrationWarning
       className={`${playfair.variable} ${lato.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-cream-50 text-stone-800 dark:bg-stone-950 dark:text-cream-100">
         <JsonLd />
-        <Providers>
+        <Providers initialLocale={routeLocale ?? undefined}>
           <Header />
           <main className="flex-1">{children}</main>
           <Footer />

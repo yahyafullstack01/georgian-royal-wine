@@ -7,15 +7,16 @@ import { useLocale } from "@/context/LocaleContext";
 import ThemeToggle from "@/components/ThemeToggle";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import Logo from "@/components/Logo";
+import { localizedHref } from "@/lib/i18n/routes";
 
 export default function Header() {
   const { totalItems } = useCart();
-  const { t } = useLocale();
+  const { t, locale } = useLocale();
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const navLinks = [
-    { href: "/", label: t.nav.home },
-    { href: "/shop", label: t.nav.shop },
+    { href: localizedHref("/", locale), label: t.nav.home },
+    { href: localizedHref("/shop", locale), label: t.nav.shop },
     { href: "/about", label: t.nav.about },
     { href: "/testimonials", label: t.nav.testimonials },
     { href: "/contact", label: t.nav.contact },

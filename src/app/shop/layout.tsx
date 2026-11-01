@@ -22,7 +22,13 @@ export const metadata: Metadata = {
     "купить вино онлайн Испания",
     ...siteConfig.keywords,
   ],
-  alternates: { canonical: "/shop" },
+  alternates: {
+    canonical: "/shop",
+    languages: {
+      "es-ES": "/shop",
+      "ru-RU": "/ru/shop",
+    },
+  },
   openGraph: {
     title: "Tienda de vinos online en España | Georgian Royal Wine",
     description:

@@ -10,6 +10,7 @@ import HomeHeroMedia from "@/components/HomeHeroMedia";
 import HomePromoSections from "@/components/HomePromoSections";
 import HomeKakhetiSection from "@/components/HomeKakhetiSection";
 import HomeTestimonials from "@/components/HomeTestimonials";
+import { localizedHref } from "@/lib/i18n/routes";
 
 const QUALITY_IMAGES = [
   {
@@ -43,7 +44,7 @@ const QUALITY_IMAGES = [
 ] as const;
 
 export default function HomeContent() {
-  const { t } = useLocale();
+  const { t, locale } = useLocale();
   const featured = getFeaturedWines();
 
   const features = [
@@ -102,7 +103,7 @@ export default function HomeContent() {
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:mt-10 sm:flex-row">
             <Link
-              href="/shop"
+              href={localizedHref("/shop", locale)}
               className="rounded bg-gold-500 px-8 py-3.5 text-sm font-medium tracking-wide text-burgundy-950 uppercase transition-colors hover:bg-gold-400"
             >
               {t.home.shopCollection}
@@ -163,7 +164,7 @@ export default function HomeContent() {
 
           <div className="mt-12 text-center">
             <Link
-              href="/shop"
+              href={localizedHref("/shop", locale)}
               className="inline-block rounded border border-burgundy-900 px-8 py-3 text-sm font-medium tracking-wide text-burgundy-900 uppercase transition-colors hover:bg-burgundy-900 hover:text-cream-100 dark:border-gold-500 dark:text-cream-100 dark:hover:bg-gold-500 dark:hover:text-burgundy-950"
             >
               {t.home.viewAllWines}

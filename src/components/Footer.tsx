@@ -5,6 +5,7 @@ import { useLocale } from "@/context/LocaleContext";
 import Logo from "@/components/Logo";
 import GeorgianDivider from "@/components/GeorgianDivider";
 import { cities, getGuideContent, guides } from "@/data/localSeo";
+import { localizedHref } from "@/lib/i18n/routes";
 
 export default function Footer() {
   const { t, locale } = useLocale();
@@ -27,27 +28,42 @@ export default function Footer() {
             </h4>
             <ul className="mt-4 space-y-2 text-sm">
               <li>
-                <Link href="/shop?category=red" className="hover:text-gold-400">
+                <Link
+                  href={localizedHref("/shop?category=red", locale)}
+                  className="hover:text-gold-400"
+                >
                   {t.shop.red}
                 </Link>
               </li>
               <li>
-                <Link href="/shop?category=white" className="hover:text-gold-400">
+                <Link
+                  href={localizedHref("/shop?category=white", locale)}
+                  className="hover:text-gold-400"
+                >
                   {t.shop.white}
                 </Link>
               </li>
               <li>
-                <Link href="/shop?category=rose" className="hover:text-gold-400">
+                <Link
+                  href={localizedHref("/shop?category=rose", locale)}
+                  className="hover:text-gold-400"
+                >
                   {t.shop.rose}
                 </Link>
               </li>
               <li>
-                <Link href="/shop?category=rezos" className="hover:text-gold-400">
+                <Link
+                  href={localizedHref("/shop?category=rezos", locale)}
+                  className="hover:text-gold-400"
+                >
                   {t.shop.rezos}
                 </Link>
               </li>
               <li>
-                <Link href="/shop?category=qvevri" className="hover:text-gold-400">
+                <Link
+                  href={localizedHref("/shop?category=qvevri", locale)}
+                  className="hover:text-gold-400"
+                >
                   {t.shop.qvevri}
                 </Link>
               </li>
@@ -131,7 +147,10 @@ export default function Footer() {
           <ul className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-sm">
             {cities.map((city) => (
               <li key={city.slug}>
-                <Link href={`/vino/${city.slug}`} className="hover:text-gold-400">
+                <Link
+                  href={localizedHref(`/vino/${city.slug}`, locale)}
+                  className="hover:text-gold-400"
+                >
                   {city.name}
                 </Link>
               </li>
@@ -142,7 +161,7 @@ export default function Footer() {
               return (
                 <li key={guide.slug}>
                   <Link
-                    href={`/guias/${guide.slug}`}
+                    href={localizedHref(`/guias/${guide.slug}`, locale)}
                     className="hover:text-gold-400"
                   >
                     {content.title}

@@ -8,6 +8,7 @@ import AddToCartButton from "@/components/AddToCartButton";
 import GeorgianDivider from "@/components/GeorgianDivider";
 import { useLocale } from "@/context/LocaleContext";
 import { getWineContent } from "@/data/wineContent";
+import { localizedHref } from "@/lib/i18n/routes";
 
 interface WineDetailContentProps {
   wine: Wine;
@@ -49,7 +50,7 @@ export default function WineDetailContent({
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <nav className="mb-8 text-sm text-stone-500 dark:text-stone-400">
           <Link
-            href="/shop"
+            href={localizedHref("/shop", locale)}
             className="hover:text-burgundy-700 dark:hover:text-gold-400"
           >
             {t.nav.shop}
@@ -139,7 +140,7 @@ export default function WineDetailContent({
                 return (
                   <Link
                     key={w.id}
-                    href={`/wines/${w.slug}`}
+                    href={localizedHref(`/wines/${w.slug}`, locale)}
                     className="group flex gap-4 rounded-lg border border-burgundy-900/5 bg-white p-4 ring-1 ring-gold-500/10 transition-shadow hover:shadow-md dark:border-stone-700 dark:bg-stone-900"
                   >
                     <div className="relative h-24 w-16 shrink-0 overflow-hidden rounded bg-white">

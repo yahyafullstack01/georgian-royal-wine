@@ -97,7 +97,10 @@ function buildLegacyRedirects() {
     { source: "/contacto", destination: "/contact", permanent: true },
   );
 
-  return redirects;
+  // Real, indexable Russian pages now live at these paths — don't redirect
+  // them away to the Spanish-only root (see src/app/ru/**).
+  const reclaimed = new Set(["/ru", "/ru/shop", "/ru/wines/:slug"]);
+  return redirects.filter((redirect) => !reclaimed.has(redirect.source));
 }
 
 const nextConfig: NextConfig = {

@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useLocale } from "@/context/LocaleContext";
+import { localizedHref } from "@/lib/i18n/routes";
 
 function GrapeBullet() {
   return (
@@ -21,7 +22,7 @@ function GrapeBullet() {
 }
 
 export default function HomePromoSections() {
-  const { t } = useLocale();
+  const { t, locale } = useLocale();
 
   return (
     <>
@@ -116,7 +117,7 @@ export default function HomePromoSections() {
 
               <div className="mt-9 flex flex-wrap gap-3">
                 <Link
-                  href="/shop"
+                  href={localizedHref("/shop", locale)}
                   className="inline-flex items-center gap-3 border border-burgundy-900 px-7 py-3 text-sm font-medium tracking-wide text-burgundy-900 uppercase transition-colors hover:bg-burgundy-900 hover:text-cream-100 dark:border-gold-500 dark:text-gold-400 dark:hover:bg-gold-500 dark:hover:text-burgundy-950"
                 >
                   {t.home.deliveryCta}

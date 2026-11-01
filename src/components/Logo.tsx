@@ -1,5 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useLocale } from "@/context/LocaleContext";
+import { localizedHref } from "@/lib/i18n/routes";
 
 interface LogoProps {
   size?: "sm" | "md" | "lg";
@@ -20,6 +24,7 @@ export default function Logo({
   badge = false,
   className = "",
 }: LogoProps) {
+  const { locale } = useLocale();
   const { width, height, className: sizeClass } = sizes[size];
 
   const image = (
@@ -45,7 +50,10 @@ export default function Logo({
   if (!linked) return content;
 
   return (
-    <Link href="/" className="inline-flex shrink-0 items-center">
+    <Link
+      href={localizedHref("/", locale)}
+      className="inline-flex shrink-0 items-center"
+    >
       {content}
     </Link>
   );

@@ -7,7 +7,13 @@ export const metadata: Metadata = {
   title: "Guías de vino georgiano",
   description:
     "Guías para comprar vino georgiano en España: qvevri, Saperavi, Kindzmarauli, Khvanchkara y cómo pedir una caja con entrega gratuita.",
-  alternates: { canonical: "/guias" },
+  alternates: {
+    canonical: "/guias",
+    languages: {
+      "es-ES": "/guias",
+      "ru-RU": "/ru/guias",
+    },
+  },
   openGraph: {
     title: "Guías de vino georgiano | Georgian Royal Wine",
     description:

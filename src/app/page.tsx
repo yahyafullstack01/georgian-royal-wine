@@ -9,7 +9,13 @@ export const metadata: Metadata = {
   },
   description: siteConfig.defaultDescription,
   keywords: [...siteConfig.keywords],
-  alternates: { canonical: "/" },
+  alternates: {
+    canonical: "/",
+    languages: {
+      "es-ES": "/",
+      "ru-RU": "/ru",
+    },
+  },
   openGraph: {
     title:
       "Comprar vino online en España | Georgian Royal Wine — Torrevieja",

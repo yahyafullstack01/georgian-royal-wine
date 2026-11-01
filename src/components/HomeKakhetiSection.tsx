@@ -4,9 +4,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { useLocale } from "@/context/LocaleContext";
 import GeorgianDivider from "@/components/GeorgianDivider";
+import { localizedHref } from "@/lib/i18n/routes";
 
 export default function HomeKakhetiSection() {
-  const { t } = useLocale();
+  const { t, locale } = useLocale();
   const k = t.home.kakheti;
 
   return (
@@ -49,7 +50,7 @@ export default function HomeKakhetiSection() {
 
         <div className="mx-auto mt-14 max-w-3xl text-center">
           <Link
-            href="/shop?category=red"
+            href={localizedHref("/shop?category=red", locale)}
             className="inline-flex items-center gap-2 border border-burgundy-900 px-8 py-3.5 text-sm font-medium tracking-wide text-burgundy-900 uppercase transition-colors hover:bg-burgundy-900 hover:text-cream-100 dark:border-gold-500 dark:text-gold-400 dark:hover:bg-gold-500 dark:hover:text-burgundy-950"
           >
             {k.cta}

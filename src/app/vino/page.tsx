@@ -7,7 +7,13 @@ export const metadata: Metadata = {
   title: "Vino georgiano por ciudad en España",
   description:
     "Envío de vino georgiano a Torrevieja, Alicante, Marbella, Madrid, Barcelona, Valencia, Málaga y Benidorm. Entrega gratis en España desde 1 caja.",
-  alternates: { canonical: "/vino" },
+  alternates: {
+    canonical: "/vino",
+    languages: {
+      "es-ES": "/vino",
+      "ru-RU": "/ru/vino",
+    },
+  },
   openGraph: {
     title: "Vino georgiano por ciudad en España | Georgian Royal Wine",
     description:

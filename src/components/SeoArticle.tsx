@@ -12,6 +12,7 @@ import {
   seoUi,
   type LocalizedSeoCopy,
 } from "@/data/localSeo";
+import { localizedHref } from "@/lib/i18n/routes";
 
 export default function SeoArticle({
   titleName,
@@ -70,7 +71,7 @@ export default function SeoArticle({
 
           <div className="mt-12 flex flex-col gap-3 sm:flex-row">
             <Link
-              href="/shop"
+              href={localizedHref("/shop", locale)}
               className="inline-flex items-center justify-center bg-burgundy-900 px-8 py-3.5 text-sm font-medium tracking-wide text-cream-100 uppercase transition-colors hover:bg-burgundy-800 dark:bg-gold-500 dark:text-burgundy-950 dark:hover:bg-gold-400"
             >
               {ui.shopCta}
@@ -91,7 +92,7 @@ export default function SeoArticle({
               {cities.map((city) => (
                 <li key={city.slug}>
                   <Link
-                    href={`/vino/${city.slug}`}
+                    href={localizedHref(`/vino/${city.slug}`, locale)}
                     className="text-burgundy-800 underline-offset-4 hover:underline dark:text-gold-400"
                   >
                     {ui.wineIn.replace("{city}", city.name)}
@@ -109,7 +110,7 @@ export default function SeoArticle({
                 return (
                   <li key={guide.slug}>
                     <Link
-                      href={`/guias/${guide.slug}`}
+                      href={localizedHref(`/guias/${guide.slug}`, locale)}
                       className="text-burgundy-800 underline-offset-4 hover:underline dark:text-gold-400"
                     >
                       {guideContent.title}

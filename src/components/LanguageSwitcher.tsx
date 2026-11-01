@@ -1,13 +1,34 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
+import { usePathname, useRouter } from "next/navigation";
 import { useLocale } from "@/context/LocaleContext";
 import { locales, type Locale } from "@/lib/i18n/translations";
+import { localizedHref, unlocalizedHref } from "@/lib/i18n/routes";
 
 export default function LanguageSwitcher() {
   const { locale, setLocale, mounted } = useLocale();
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
+  const router = useRouter();
+  const pathname = usePathname();
+
+  function selectLocale(code: Locale) {
+    const currentPath = pathname.startsWith("/ru")
+      ? unlocalizedHref(pathname)
+      : pathname;
+
+    if (code === "ru") {
+      const target = localizedHref(currentPath, "ru");
+      setLocale("ru");
+      if (target !== pathname) router.push(target);
+    } else if (pathname.startsWith("/ru")) {
+      setLocale(code);
+      router.push(currentPath);
+    } else {
+      setLocale(code);
+    }
+  }
 
   const current = locales.find((l) => l.code === locale) ?? locales[0];
 
@@ -59,7 +80,7 @@ export default function LanguageSwitcher() {
             <button
               key={lang.code}
               onClick={() => {
-                setLocale(lang.code as Locale);
+                selectLocale(lang.code as Locale);
                 setOpen(false);
               }}
               className={`flex w-full items-center gap-3 px-4 py-2.5 text-left text-sm transition-colors hover:bg-burgundy-900/5 dark:hover:bg-cream-100/5 ${

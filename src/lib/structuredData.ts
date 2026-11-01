@@ -8,6 +8,7 @@ import {
 import { getWineContent } from "@/data/wineContent";
 import { wines } from "@/data/wines";
 import type { Wine } from "@/types/wine";
+import type { Locale } from "@/lib/i18n/translations";
 import { absoluteUrl, siteConfig } from "@/lib/seo";
 
 export function breadcrumbJsonLd(items: { name: string; path: string }[]) {
@@ -38,18 +39,48 @@ export function faqJsonLd(faqs: SeoFaq[]) {
   };
 }
 
-export function wineProductJsonLd(wine: Wine) {
-  const content = getWineContent(wine.slug, "es");
+const PRODUCT_DESCRIPTION_SUFFIX: Record<Locale, string> = {
+  es: "Vino georgiano con envío desde Torrevieja a toda España.",
+  ru: "Грузинское вино с доставкой из Торревьехи по всей Испании.",
+  en: "Georgian wine shipped from Torrevieja across Spain.",
+  fr: "Vin géorgien expédié depuis Torrevieja partout en Espagne.",
+  uk: "Грузинське вино з доставкою з Торревьєхи по всій Іспанії.",
+  bg: "Грузинско вино с доставка от Торевиеха до цяла Испания.",
+};
+
+const SHOP_LIST_NAME: Partial<Record<Locale, string>> = {
+  es: "Tienda de vinos Georgian Royal Wine",
+  ru: "Магазин вина Georgian Royal Wine",
+};
+
+const CITY_INDEX_NAME: Partial<Record<Locale, string>> = {
+  es: "Envío de vino georgiano por ciudad",
+  ru: "Доставка грузинского вина по городам",
+};
+
+const GUIDE_INDEX_NAME: Partial<Record<Locale, string>> = {
+  es: "Guías de vino georgiano",
+  ru: "Гиды по грузинскому вину",
+};
+
+const WINE_IN_PREFIX: Partial<Record<Locale, string>> = {
+  es: "Vino en",
+  ru: "Вино в",
+};
+
+export function wineProductJsonLd(wine: Wine, locale: Locale = "es") {
+  const content = getWineContent(wine.slug, locale);
   const description =
     content.taste?.trim() ||
     content.tastingNotes?.trim() ||
     content.classification;
+  const path = locale === "ru" ? `/ru/wines/${wine.slug}` : `/wines/${wine.slug}`;
 
   return {
     "@context": "https://schema.org",
     "@type": "Product",
     name: content.name,
-    description: `${content.name}. ${description} Vino georgiano con envío desde Torrevieja a toda España.`.slice(
+    description: `${content.name}. ${description} ${PRODUCT_DESCRIPTION_SUFFIX[locale]}`.slice(
       0,
       500,
     ),
@@ -65,7 +96,7 @@ export function wineProductJsonLd(wine: Wine) {
     countryOfOrigin: "Georgia",
     offers: {
       "@type": "Offer",
-      url: absoluteUrl(`/wines/${wine.slug}`),
+      url: absoluteUrl(path),
       priceCurrency: "EUR",
       price: wine.price.toFixed(2),
       availability: wine.inStock
@@ -77,17 +108,19 @@ export function wineProductJsonLd(wine: Wine) {
   };
 }
 
-export function shopItemListJsonLd() {
+export function shopItemListJsonLd(locale: Locale = "es") {
   return {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "Tienda de vinos Georgian Royal Wine",
+    name: SHOP_LIST_NAME[locale] ?? SHOP_LIST_NAME.es,
     itemListElement: wines.map((wine, index) => {
-      const content = getWineContent(wine.slug, "es");
+      const content = getWineContent(wine.slug, locale);
+      const path =
+        locale === "ru" ? `/ru/wines/${wine.slug}` : `/wines/${wine.slug}`;
       return {
         "@type": "ListItem",
         position: index + 1,
-        url: absoluteUrl(`/wines/${wine.slug}`),
+        url: absoluteUrl(path),
         name: content.name,
       };
     }),
@@ -96,32 +129,36 @@ export function shopItemListJsonLd() {
 
 export const deliveryFaqs: SeoFaq[] = deliveryFaqsByLocale.es;
 
-export function cityIndexJsonLd() {
+export function cityIndexJsonLd(locale: Locale = "es") {
   return {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "Envío de vino georgiano por ciudad",
+    name: CITY_INDEX_NAME[locale] ?? CITY_INDEX_NAME.es,
     itemListElement: cities.map((city, index) => ({
       "@type": "ListItem",
       position: index + 1,
-      name: `Vino en ${city.name}`,
-      url: absoluteUrl(`/vino/${city.slug}`),
+      name: `${WINE_IN_PREFIX[locale] ?? WINE_IN_PREFIX.es} ${city.name}`,
+      url: absoluteUrl(
+        locale === "ru" ? `/ru/vino/${city.slug}` : `/vino/${city.slug}`,
+      ),
     })),
   };
 }
 
-export function guideIndexJsonLd() {
+export function guideIndexJsonLd(locale: Locale = "es") {
   return {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "Guías de vino georgiano",
+    name: GUIDE_INDEX_NAME[locale] ?? GUIDE_INDEX_NAME.es,
     itemListElement: guides.map((guide, index) => {
-      const content = getGuideContent(guide.slug, "es") ?? guide.locales.es;
+      const content = getGuideContent(guide.slug, locale) ?? guide.locales.es;
       return {
         "@type": "ListItem",
         position: index + 1,
         name: content.title,
-        url: absoluteUrl(`/guias/${guide.slug}`),
+        url: absoluteUrl(
+          locale === "ru" ? `/ru/guias/${guide.slug}` : `/guias/${guide.slug}`,
+        ),
       };
     }),
   };

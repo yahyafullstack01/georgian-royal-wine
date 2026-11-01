@@ -43,11 +43,27 @@ function applyDocumentLang(locale: Locale) {
   document.documentElement.lang = locale;
 }
 
-export function LocaleProvider({ children }: { children: React.ReactNode }) {
-  const [locale, setLocaleState] = useState<Locale>("es");
-  const [mounted, setMounted] = useState(false);
+export function LocaleProvider({
+  children,
+  initialLocale,
+}: {
+  children: React.ReactNode;
+  /**
+   * Set by routes that have a dedicated, indexable locale URL (e.g. /ru/*).
+   * When present, it seeds the initial render so server-rendered HTML is
+   * already in that language — no client-side flash, and crawlers that
+   * don't execute JS still see the right content.
+   */
+  initialLocale?: Locale;
+}) {
+  const [locale, setLocaleState] = useState<Locale>(initialLocale ?? "es");
+  const [mounted, setMounted] = useState(Boolean(initialLocale));
 
   useEffect(() => {
+    if (initialLocale) {
+      applyDocumentLang(initialLocale);
+      return;
+    }
     const host = getHostKey();
     const domainDefault = getDomainDefaultLocale(host);
     const stored = localStorage.getItem(storageKey(host)) as Locale | null;
@@ -56,7 +72,7 @@ export function LocaleProvider({ children }: { children: React.ReactNode }) {
     setLocaleState(next);
     applyDocumentLang(next);
     setMounted(true);
-  }, []);
+  }, [initialLocale]);
 
   const setLocale = useCallback((next: Locale) => {
     setLocaleState(next);

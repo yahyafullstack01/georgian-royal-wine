@@ -7,6 +7,7 @@ import { formatPrice } from "@/lib/format";
 import AddToCartButton from "./AddToCartButton";
 import { useLocale } from "@/context/LocaleContext";
 import { getWineContent } from "@/data/wineContent";
+import { localizedHref } from "@/lib/i18n/routes";
 
 interface ProductCardProps {
   wine: Wine;
@@ -15,11 +16,12 @@ interface ProductCardProps {
 export default function ProductCard({ wine }: ProductCardProps) {
   const { t, locale } = useLocale();
   const content = getWineContent(wine.slug, locale);
+  const href = localizedHref(`/wines/${wine.slug}`, locale);
 
   return (
     <article className="group flex flex-col overflow-hidden rounded-lg border border-burgundy-900/5 bg-white shadow-sm ring-1 ring-gold-500/10 transition-all hover:shadow-lg hover:ring-gold-500/25 dark:border-gold-500/10 dark:bg-stone-900 dark:shadow-stone-950/50 dark:ring-gold-500/15">
       <Link
-        href={`/wines/${wine.slug}`}
+        href={href}
         className="relative aspect-[3/4] overflow-hidden bg-white dark:bg-stone-950"
       >
         <Image
@@ -43,7 +45,7 @@ export default function ProductCard({ wine }: ProductCardProps) {
         <p className="text-[10px] tracking-widest text-burgundy-600 uppercase sm:text-xs dark:text-gold-400">
           {content.region}, {content.country}
         </p>
-        <Link href={`/wines/${wine.slug}`}>
+        <Link href={href}>
           <h3 className="mt-1 font-serif text-sm leading-snug text-burgundy-950 transition-colors hover:text-burgundy-700 sm:text-lg dark:text-cream-100 dark:hover:text-gold-400">
             {content.name}
           </h3>

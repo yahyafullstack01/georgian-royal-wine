@@ -9,6 +9,7 @@ import {
   getGuideContent,
   seoIndex,
 } from "@/data/localSeo";
+import { localizedHref } from "@/lib/i18n/routes";
 
 export function CityIndexContent() {
   const { locale } = useLocale();
@@ -24,7 +25,7 @@ export function CityIndexContent() {
             return (
               <li key={city.slug}>
                 <Link
-                  href={`/vino/${city.slug}`}
+                  href={localizedHref(`/vino/${city.slug}`, locale)}
                   className="block border border-burgundy-900/10 bg-white p-6 transition-colors hover:border-gold-500/50 dark:border-gold-500/15 dark:bg-stone-900"
                 >
                   <h2 className="font-serif text-2xl text-burgundy-950 dark:text-cream-100">
@@ -58,7 +59,7 @@ export function GuideIndexContent() {
             return (
               <li key={guide.slug}>
                 <Link
-                  href={`/guias/${guide.slug}`}
+                  href={localizedHref(`/guias/${guide.slug}`, locale)}
                   className="block border border-burgundy-900/10 bg-white p-6 transition-colors hover:border-gold-500/50 dark:border-gold-500/15 dark:bg-stone-900"
                 >
                   <h2 className="font-serif text-2xl text-burgundy-950 dark:text-cream-100">
