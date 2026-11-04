@@ -9,31 +9,40 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       region: "Kakheti",
       country: "Georgia",
       grape: "Saperavi 100%",
-      grapesSourced: "Locally from Kakheti vineyards.",
-      servingTemperature: "+16°C to +18°C",
+      grapesSourced:
+        "Hand-picked on the company’s own vineyards on the left bank of the Alazani River in Kakheti",
+      servingTemperature: "+15°C to +18°C",
       storageTemperature: "+5°C to +20°C",
-      color: "Dark cherry",
-      aroma: "Rich and complex with pronounced tones of black fruit",
+      tastingNotes:
+        "Rezo’s Wine Saperavi is a premium dry red wine made from 100% Saperavi grapes.",
+      color: "Deep dark ruby or dark cherry.",
+      aroma:
+        "Rich and complex. Bright tones of ripe cherry, blueberry, black plum and blackberry stand out, with light nuances of fig jam and spices.",
       taste:
-        "Balanced flavor profile with soft tannins, pleasant acidity, and a long, smooth finish. The prolonged maceration at 20°C enhances the deep, fruity notes.",
-      pairing: "Ideal with grilled meats, rich stews, and mature cheeses",
+        "Dense, harmonious and balanced. Expressive fresh acidity, velvety yet noticeable tannins, and a long, smooth finish with fruit-spice tones.",
+      vinification:
+        "Grapes are hand-picked on the company’s own vineyards in the renowned Kakheti wine region (left bank of the Alazani River). Berries are destemmed but left whole (not crushed). Fermentation and prolonged maceration of whole berries take place at controlled temperature, preserving a pure varietal aroma, deep color and soft, structured tannins.",
       vintage: "2023",
     },
     ru: {
-      name: "REZO’S WINE — Saperavi",
-      classification: "Сухое Красное",
+      name: "REZO’S WINE – Saperavi",
+      classification: "Красное сухое",
       region: "Кахетия",
       country: "Грузия",
       grape: "Саперави 100%",
-      grapesSourced: "Локально выращенный виноград из виноградников Кахетия",
-      servingTemperature: "+16°C — +18°C",
+      grapesSourced:
+        "Собран вручную на собственных виноградниках компании на левом берегу реки Алазани в Кахетии",
+      servingTemperature: "+15°C — +18°C",
       storageTemperature: "+5°C — +20°C",
-      color: "Тёмная вишня",
-      aroma: "Богатый и сложный, с ярко выраженными тонами спелой вишни",
+      tastingNotes:
+        "Rezo's Wine Saperavi — это премиальное красное сухое вино из стопроцентного винограда сорта Саперави.",
+      color: "Глубокий, темно-рубиновый или темно-вишневый.",
+      aroma:
+        "Богатый и сложный. Выделяются яркие тона спелой вишни, черники, черной сливы, ежевики, а также легкие нюансы инжирного варенья и специй.",
       taste:
-        "Сбалансированный профиль со мягкими танинами, приятной кислотностью и долгим, гладким послевкусием. Продолжительная мацерация при 20°C усиливает насыщенные фруктовые нотки.",
-      pairing:
-        "Идеально подходит к блюдам на гриле, наваристым рагу и выдержанным сырам",
+        "Плотный, гармоничный и сбалансированный. Обладает выразительной свежей кислотностью, бархатистыми, но ощутимыми танинами и долгим, гладким послевкусием с фруктово-пряными оттенками.",
+      vinification:
+        "Виноград собирают вручную на собственных виноградниках компании, расположенных в знаменитом винодельческом регионе Кахетия (на левом берегу реки Алазани). Ягоды отделяют от гребней, но оставляют целыми (не давят). Процесс ферментации и продолжительной мацерации целых ягод проходит при контролируемой температуре. Это позволяет сохранить чистый сортовой аромат, глубокий цвет и извлечь мягкие, структурированные танины.",
       vintage: "2023",
     },
     es: {
@@ -42,14 +51,19 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       region: "Kajetia",
       country: "Georgia",
       grape: "Saperavi 100%",
-      grapesSourced: "Cultivado localmente en los viñedos de Kajetia.",
-      servingTemperature: "+16°C a +18°C",
+      grapesSourced:
+        "Vendimiado a mano en los viñedos propios de la empresa en la orilla izquierda del río Alazani, Kajetia",
+      servingTemperature: "+15°C a +18°C",
       storageTemperature: "+5°C a +20°C",
-      color: "Cereza oscuro",
-      aroma: "Rico y complejo, con tonos pronunciados de fruta negra",
+      tastingNotes:
+        "Rezo’s Wine Saperavi es un tinto seco premium elaborado con 100% uva Saperavi.",
+      color: "Rubí oscuro profundo o cereza oscura.",
+      aroma:
+        "Rico y complejo. Destacan tonos vivos de cereza madura, arándano, ciruela negra y mora, con ligeros matices de mermelada de higo y especias.",
       taste:
-        "Perfil equilibrado con taninos suaves, acidez agradable y un final largo y suave. La maceración prolongada a 20°C realza las notas frutales profundas.",
-      pairing: "Ideal con carnes a la parrilla, estofados ricos y quesos curados",
+        "Denso, armonioso y equilibrado. Acidez fresca expresiva, taninos aterciopelados pero perceptibles y un final largo y suave con matices frutales y especiados.",
+      vinification:
+        "La uva se vendimia a mano en los viñedos propios de la empresa, situados en la famosa región vinícola de Kajetia (orilla izquierda del río Alazani). Las bayas se despalillan pero se dejan enteras (sin aplastar). La fermentación y la maceración prolongada de bayas enteras se realizan a temperatura controlada, lo que permite conservar un aroma varietal puro, un color profundo y extraer taninos suaves y estructurados.",
       vintage: "2023",
     },
     fr: {
@@ -58,32 +72,40 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       region: "Kakhétie",
       country: "Géorgie",
       grape: "Saperavi 100%",
-      grapesSourced: "Cultivés localement dans les vignobles de Kakhétie.",
-      servingTemperature: "+16°C à +18°C",
+      grapesSourced:
+        "Vendangé à la main sur les vignobles de la maison, rive gauche de l’Alazani en Kakhétie",
+      servingTemperature: "+15°C à +18°C",
       storageTemperature: "+5°C à +20°C",
-      color: "Cerise sombre",
-      aroma: "Riche et complexe, aux notes prononcées de fruits noirs",
+      tastingNotes:
+        "Rezo’s Wine Saperavi est un rouge sec premium élaboré à partir de 100 % Saperavi.",
+      color: "Rubis sombre profond ou cerise sombre.",
+      aroma:
+        "Riche et complexe. Se détachent des tons vifs de cerise mûre, myrtille, prune noire et mûre, avec de légères nuances de confiture de figue et d’épices.",
       taste:
-        "Profil équilibré avec des tanins souples, une acidité agréable et une finale longue et soyeuse. La macération prolongée à 20°C intensifie les notes fruitées profondes.",
-      pairing:
-        "Idéal avec viandes grillées, ragoûts riches et fromages affinés",
+        "Dense, harmonieux et équilibré. Acidité fraîche expressive, tanins veloutés mais perceptibles, et une longue finale lisse aux accents fruités et épicés.",
+      vinification:
+        "Les raisins sont vendangés à la main sur les vignobles de la maison, situés dans la célèbre région viticole de Kakhétie (rive gauche de l’Alazani). Les baies sont égrappées mais laissées entières (non foulées). La fermentation et la macération prolongée des baies entières se déroulent à température contrôlée, préservant un arôme variétal pur, une couleur profonde et extrayant des tanins souples et structurés.",
       vintage: "2023",
     },
     uk: {
       name: "REZO’S WINE – Saperavi",
-      classification: "Сухе червоне",
+      classification: "Червоне сухе",
       region: "Кахетія",
       country: "Грузія",
       grape: "Сапераві 100%",
-      grapesSourced: "Локально вирощений виноград із виноградників Кахетії",
-      servingTemperature: "+16°C — +18°C",
+      grapesSourced:
+        "Зібрано вручну на власних виноградниках компанії на лівому березі річки Алазані в Кахетії",
+      servingTemperature: "+15°C — +18°C",
       storageTemperature: "+5°C — +20°C",
-      color: "Темна вишня",
-      aroma: "Багатий і складний, з вираженими тонами чорних фруктів",
+      tastingNotes:
+        "Rezo's Wine Saperavi — преміальне червоне сухе вино зі стовідсоткового винограду сорту Сапераві.",
+      color: "Глибокий, темно-рубіновий або темно-вишневий.",
+      aroma:
+        "Багатий і складний. Виділяються яскраві тони стиглої вишні, чорниці, чорної сливи, ожини, а також легкі нюанси інжирного варення та спецій.",
       taste:
-        "Збалансований профіль з м’якими танінами, приємною кислотністю та довгим гладким післясмаком. Тривала мацерація при 20°C підсилює глибокі фруктові ноти.",
-      pairing:
-        "Ідеально з м’ясом на грилі, наваристими рагу та витриманими сирами",
+        "Щільний, гармонійний і збалансований. Має виразну свіжу кислотність, оксамитові, але відчутні таніни та довгий гладкий післясмак із фруктово-пряними відтінками.",
+      vinification:
+        "Виноград збирають вручну на власних виноградниках компанії, розташованих у знаменитому виноробному регіоні Кахетія (на лівому березі річки Алазані). Ягоди відокремлюють від гребенів, але залишають цілими (не давлять). Процес ферментації та тривалої мацерації цілих ягід проходить за контрольованої температури. Це дозволяє зберегти чистий сортовий аромат, глибокий колір і витягти м’які, структуровані таніни.",
       vintage: "2023",
     },
     bg: {
@@ -92,14 +114,19 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       region: "Кахетия",
       country: "Грузия",
       grape: "Саперави 100%",
-      grapesSourced: "От местни лозя в Кахетия.",
-      servingTemperature: "+16°C до +18°C",
+      grapesSourced:
+        "Брано на ръка на собствените лозя на компанията на левия бряг на река Алазани в Кахетия",
+      servingTemperature: "+15°C до +18°C",
       storageTemperature: "+5°C до +20°C",
-      color: "Тъмна череша",
-      aroma: "Богат и комплексен, с изразени тонове на черни плодове",
+      tastingNotes:
+        "Rezo's Wine Saperavi е премиум сухо червено вино от стопроцентово грозде Саперави.",
+      color: "Дълбок, тъмнорубинен или тъмночерешов.",
+      aroma:
+        "Богат и комплексен. Открояват се ярки тонове на узряла череша, боровинка, черна слива и къпина, както и леки нюанси на сладко от смокиня и подправки.",
       taste:
-        "Балансиран вкус с меки танини, приятна киселинност и дълъг, гладък финиш. Продължителната мацерация при 20°C подсилва дълбоките плодови нотки.",
-      pairing: "Идеално с меса на скара, наситени яхнии и зрели сирена",
+        "Плътен, хармоничен и балансиран. Има изразителна свежа киселинност, кадифени, но доловими танини и дълъг, гладък финиш с плодово-пикантни оттенъци.",
+      vinification:
+        "Гроздето се бере на ръка на собствените лозя на компанията в прочутия винарски регион Кахетия (на левия бряг на река Алазани). Зърната се отделят от чепките, но се оставят цели (не се смачкват). Ферментацията и продължителната мацерация на цели зърна протичат при контролирана температура. Това запазва чистия сортов аромат, дълбокия цвят и извлича меки, структурирани танини.",
       vintage: "2023",
     },
   },
@@ -111,29 +138,44 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       country: "Georgia",
       microzone: "Kindzmarauli PDO",
       grape: "Saperavi 100%",
-      grapesSourced: "Locally from Kakheti vineyards.",
-      servingTemperature: "+12°C to +16°C",
+      grapesSourced: "Hand-picked in the strictly limited Kindzmarauli microzone",
+      servingTemperature: "+12°C to +15°C",
       storageTemperature: "+5°C to +20°C",
-      color: "Dark cherry",
       tastingNotes:
-        "Delights the senses with its fruity and aromatic charm. This velvety wine offers a smooth and indulgent experience, perfect for sipping and savoring. Enticing aromas of rich plum jam, blackberry, biscuit, and delicate spices. With its balanced sweetness and smooth texture, Kindzmarauli promises a wine experience that is comforting, making it an ideal companion for relaxed evenings and joyful celebrations.",
-      pairing: "Spicy food, grilled meats, chocolate desserts, cheeses.",
+        "Kindzmarauli Rezo’s Wine is a high-quality Georgian naturally semi-sweet red wine of controlled designation of origin. It is made from 100% Saperavi grapes, hand-picked in the strictly limited Kindzmarauli microzone.",
+      color:
+        "Deep pomegranate-red with violet highlights.",
+      aroma:
+        "A rich and enticing bouquet with pronounced tones of dense plum jam, ripe black cherry, blackberry, fig and pomegranate. Subtle notes of biscuit, vanilla and dark chocolate.",
+      taste:
+        "Velvety, full-bodied and soft. The tannic character typical of Saperavi is smoothly balanced by natural sweetness and moderate acidity, creating an ideal taste balance.",
+      vinification:
+        "Must fermentation takes place in stainless-steel tanks at controlled temperature using délestage and remontage (for better extraction of color and tannins). When the desired residual sugar is reached, fermentation is stopped by strong cooling and filtration, without adding artificial sugar. Before bottling, the wine is held in isothermal tanks under strict temperature control (−2°C to +2°C) to preserve natural freshness, berry aroma and a soft velvety texture.",
+      vintage: "2025",
     },
     ru: {
-      name: "REZO’S WINE — Kindzmarauli",
+      name: "REZO’S WINE – Kindzmarauli",
       classification: "Природно-полусладкое красное",
       region: "Кахетия",
       country: "Грузия",
       microzone:
-        "Киндзмараули (Защищенное наименование места происхождения)",
+        "Киндзмараули (защищенное наименование места происхождения)",
       grape: "Саперави 100%",
-      grapesSourced: "Виноград собран вручную на виноградниках Кахетии",
-      servingTemperature: "+12°C — +16°C",
+      grapesSourced:
+        "Собран вручную в строго ограниченной микрозоне Киндзмараули",
+      servingTemperature: "+12°C — +15°C",
       storageTemperature: "+5°C — +20°C",
-      color: "Тёмная вишня",
       tastingNotes:
-        "Вино восхищает своим фруктовым и ароматным шармом. Это бархатистое вино дарит мягкое, богатое послевкусие, идеально подходящее для неторопливого наслаждения. В букете раскрываются соблазнительные ноты сливового джема, ежевики, бисквита и деликатных пряностей.",
-      pairing: "Острые блюда, мясо на гриле, шоколадные десерты, сыры",
+        "Киндзмараули Rezo’s Wine — это высококачественное грузинское природно-полусладкое красное вино контролируемого наименования по происхождению. Вино изготавливается из 100% винограда сорта Саперави, собранного вручную в строго ограниченной микрозоне Киндзмараули.",
+      color:
+        "Глубокий гранатово-красный с фиолетовыми переливами.",
+      aroma:
+        "Богатый и соблазнительный букет, в котором ярко выражены тона насыщенного сливового джема, спелой черной вишни, ежевики, инжира и граната. Присутствуют тонкие нотки бисквита, ванили и темного шоколада.",
+      taste:
+        "Бархатистый, полнотелый и мягкий. Характерная для Саперави танинность гармонично сглажена натуральной сладостью и умеренной кислотностью, что создает идеальный вкусовой баланс.",
+      vinification:
+        "Брожение сусла проходит в резервуарах из нержавеющей стали при контролируемой температуре с применением методов делестажа и ремонтажа (для лучшей экстракции цвета и танинов). Когда достигается нужный уровень остаточного сахара, брожение останавливают сильным охлаждением и фильтрацией, без добавления искусственного сахара. Перед розливом вино выдерживается в изотермических емкостях в условиях строгого температурного контроля (от −2°C до +2°C) для сохранения природной свежести, ягодного аромата и мягкой бархатистой текстуры.",
+      vintage: "2025",
     },
     es: {
       name: "REZO’S WINE – Kindzmarauli",
@@ -142,13 +184,21 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       country: "Georgia",
       microzone: "Kindzmarauli DOP",
       grape: "Saperavi 100%",
-      grapesSourced: "Cultivado localmente en los viñedos de Kajetia.",
-      servingTemperature: "+12°C a +16°C",
+      grapesSourced:
+        "Vendimiado a mano en la microzona estrictamente limitada de Kindzmarauli",
+      servingTemperature: "+12°C a +15°C",
       storageTemperature: "+5°C a +20°C",
-      color: "Cereza oscuro",
       tastingNotes:
-        "Encanta los sentidos con su encanto afrutado y aromático. Este vino aterciopelado ofrece una experiencia suave e indulgente. Aromas de mermelada de ciruela, mora, bizcocho y especias delicadas. Con su dulzor equilibrado y textura suave, Kindzmarauli es el compañero ideal para veladas tranquilas y celebraciones.",
-      pairing: "Comida picante, carnes a la parrilla, postres de chocolate, quesos.",
+        "Kindzmarauli Rezo’s Wine es un tinto georgiano naturalmente semidulce de alta calidad con denominación de origen controlada. Se elabora con 100% Saperavi, vendimiado a mano en la microzona estrictamente limitada de Kindzmarauli.",
+      color:
+        "Granate-rojo profundo con reflejos violetas.",
+      aroma:
+        "Bouquet rico y seductor, con tonos marcados de mermelada de ciruela intensa, cereza negra madura, mora, higo y granada. Notas finas de bizcocho, vainilla y chocolate negro.",
+      taste:
+        "Aterciopelado, de cuerpo completo y suave. La tanicidad típica del Saperavi se equilibra armoniosamente con la dulzura natural y una acidez moderada, creando un equilibrio de sabor ideal.",
+      vinification:
+        "La fermentación del mosto se realiza en depósitos de acero inoxidable a temperatura controlada con délestage y remontado (para una mejor extracción de color y taninos). Al alcanzar el nivel de azúcar residual deseado, la fermentación se detiene por fuerte enfriamiento y filtración, sin añadir azúcar artificial. Antes del embotellado, el vino se mantiene en depósitos isotérmicos bajo estricto control de temperatura (−2°C a +2°C) para conservar la frescura natural, el aroma de bayas y una textura suave y aterciopelada.",
+      vintage: "2025",
     },
     fr: {
       name: "REZO’S WINE – Kindzmarauli",
@@ -157,13 +207,21 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       country: "Géorgie",
       microzone: "Kindzmarauli AOP",
       grape: "Saperavi 100%",
-      grapesSourced: "Cultivés localement dans les vignobles de Kakhétie.",
-      servingTemperature: "+12°C à +16°C",
+      grapesSourced:
+        "Vendangé à la main dans la microzone strictement limitée de Kindzmarauli",
+      servingTemperature: "+12°C à +15°C",
       storageTemperature: "+5°C à +20°C",
-      color: "Cerise sombre",
       tastingNotes:
-        "Séduit par son charme fruité et aromatique. Ce vin velouté offre une expérience douce et gourmande. Arômes de confiture de prune, mûre, biscuit et épices délicates. Avec sa douceur équilibrée et sa texture soyeuse, le Kindzmarauli accompagne parfaitement les soirées détendues et les célébrations.",
-      pairing: "Plats épicés, viandes grillées, desserts au chocolat, fromages.",
+        "Le Kindzmarauli Rezo’s Wine est un rouge géorgien naturellement demi-doux de haute qualité à appellation d’origine contrôlée. Il est élaboré à partir de 100 % Saperavi, vendangé à la main dans la microzone strictement limitée de Kindzmarauli.",
+      color:
+        "Rouge grenat profond aux reflets violets.",
+      aroma:
+        "Bouquet riche et séduisant, aux tons marqués de confiture de prune intense, cerise noire mûre, mûre, figue et grenade. Subtiles notes de biscuit, vanille et chocolat noir.",
+      taste:
+        "Velouté, corsé et doux. La tannicité typique du Saperavi est harmonieusement adoucie par la douceur naturelle et une acidité modérée, créant un équilibre gustatif idéal.",
+      vinification:
+        "La fermentation du moût se déroule en cuves inox à température contrôlée avec délestage et remontage (pour une meilleure extraction de la couleur et des tanins). Lorsque le niveau de sucre résiduel souhaité est atteint, la fermentation est arrêtée par un fort refroidissement et une filtration, sans ajout de sucre artificiel. Avant la mise en bouteille, le vin est maintenu en cuves isothermes sous strict contrôle de température (−2°C à +2°C) pour préserver la fraîcheur naturelle, l’arôme de baies et une texture douce et veloutée.",
+      vintage: "2025",
     },
     uk: {
       name: "REZO’S WINE – Kindzmarauli",
@@ -173,13 +231,21 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       microzone:
         "Кіндзмараулі (захищена назва місця походження)",
       grape: "Сапераві 100%",
-      grapesSourced: "Виноград зібрано вручну на виноградниках Кахетії",
-      servingTemperature: "+12°C — +16°C",
+      grapesSourced:
+        "Зібрано вручну в суворо обмеженій мікрозоні Кіндзмараулі",
+      servingTemperature: "+12°C — +15°C",
       storageTemperature: "+5°C — +20°C",
-      color: "Темна вишня",
       tastingNotes:
-        "Вино захоплює фруктовим і ароматним шармом. Це оксамитове вино дарує м’яке, багате післясмак, ідеальне для неквапливого насолодження. У букеті розкриваються ноти сливового джему, ожини, бісквіта та делікатних прянощів.",
-      pairing: "Гострі страви, м’ясо на грилі, шоколадні десерти, сири",
+        "Кіндзмараулі Rezo’s Wine — високоякісне грузинське природно напівсолодке червоне вино контрольованої назви за походженням. Вино виготовляється зі 100% винограду сорту Сапераві, зібраного вручну в суворо обмеженій мікрозоні Кіндзмараулі.",
+      color:
+        "Глибокий гранатово-червоний із фіолетовими переливами.",
+      aroma:
+        "Багатий і спокусливий букет, у якому яскраво виражені тони насиченого сливового джему, стиглої чорної вишні, ожини, інжиру та граната. Присутні тонкі ноти бісквіта, ванілі та темного шоколаду.",
+      taste:
+        "Оксамитовий, повнотілий і м’який. Характерна для Сапераві танінність гармонійно згладжена натуральною солодкістю та помірною кислотністю, що створює ідеальний смаковий баланс.",
+      vinification:
+        "Бродіння сусла проходить у резервуарах з нержавіючої сталі за контрольованої температури із застосуванням методів делестажу та ремонтажу (для кращої екстракції кольору й танінів). Коли досягається потрібний рівень залишкового цукру, бродіння зупиняють сильним охолодженням і фільтрацією, без додавання штучного цукру. Перед розливом вино витримується в ізотермічних ємностях в умовах суворого температурного контролю (від −2°C до +2°C) для збереження природної свіжості, ягідного аромату та м’якої оксамитової текстури.",
+      vintage: "2025",
     },
     bg: {
       name: "REZO’S WINE – Kindzmarauli",
@@ -188,13 +254,21 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       country: "Грузия",
       microzone: "Киндзмараули (защитен географски произход)",
       grape: "Саперави 100%",
-      grapesSourced: "От местни лозя в Кахетия.",
-      servingTemperature: "+12°C до +16°C",
+      grapesSourced:
+        "Брано на ръка в строго ограничената микрозона Киндзмараули",
+      servingTemperature: "+12°C до +15°C",
       storageTemperature: "+5°C до +20°C",
-      color: "Тъмна череша",
       tastingNotes:
-        "Омайва със своя плодов и ароматен чар. Кадифено вино с мек, богат характер — идеално за спокойно наслаждение. Аромати на сливово сладко, къпина, бисквит и деликатни подправки. С балансирана сладост и гладка текстура Киндзмараули е перфектен спътник за вечери и празници.",
-      pairing: "Лютиви ястия, меса на скара, шоколадови десерти, сирена",
+        "Киндзмараули Rezo’s Wine е висококачествено грузинско естествено полусладко червено вино с контролирано наименование за произход. Виното се произвежда от 100% грозде Саперави, брано на ръка в строго ограничената микрозона Киндзмараули.",
+      color:
+        "Дълбок наратово-червен с виолетови преливания.",
+      aroma:
+        "Богат и примамлив букет с ясно изразени тонове на наситено сливово сладко, узряла черна череша, къпина, смокиня и нар. Има и фини нотки на бисквит, ванилия и тъмен шоколад.",
+      taste:
+        "Кадифен, пълнотен и мек. Характерната за Саперави таниновост е хармонично изгладена от естествена сладост и умерена киселинност, което създава идеален вкусов баланс.",
+      vinification:
+        "Ферментацията на мъстта протича в резервоари от неръждаема стомана при контролирана температура с методи делестаж и ремонтаж (за по-добра екстракция на цвят и танини). Когато се достигне нужното ниво на остатъчна захар, ферментацията се спира чрез силно охлаждане и филтрация, без добавяне на изкуствена захар. Преди бутилиране виното се държи в изотермични съдове при строг температурен контрол (от −2°C до +2°C), за да се запазят естествената свежест, плодовият аромат и меката кадифена текстура.",
+      vintage: "2025",
     },
   },
   "rezos-wine-kisi": {
@@ -205,26 +279,40 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       country: "Georgia",
       grape: "Kisi 100%",
       grapesSourced: "Locally from Kakheti vineyards",
-      servingTemperature: "+13°C to +15°C",
+      servingTemperature: "+10°C to +12°C",
       storageTemperature: "+5°C to +20°C",
+      tastingNotes:
+        "A white (amber or “orange”) dry wine made from the indigenous Kisi grape using ancient Kakhetian technology in large clay qvevri. Whites made this way are marked by remarkable density, tannic structure and a deep, unique bouquet.",
+      color:
+        "Intense, from deep dark straw to noble amber.",
       aroma:
-        "Wine is produced using the ancient Georgian Qvevri method, aging the wine six months with pomace. Perfect combination of freshness and spiciness, with aromas of dry fruits, tea and autumn yellow leaves.",
-      pairing:
-        "Duck meat, BBQ, smoked ham, lasagna, aged Bergkäse, Allgäuer Emmentaler",
+        "A vivid, complex bouquet with pronounced notes of dried apricot, dried fig, quince, honey, meadow herbs, walnut and light hints of oriental spices.",
+      taste:
+        "Deep, oily and velvety. Skin contact gives noticeable tannic astringency (as in red wines), moderate acidity and a long warming finish with honey-nut accents.",
+      vinification:
+        "Grapes are gently pressed and, together with the whole mass, poured into a large clay qvevri. The qvevri is buried vertically in the ground up to the neck, keeping a stable fermentation temperature (around 13–15 °C). After fermentation, the vessel is sealed and the wine matures on the lees for 4 to 6 months. In this period clay and grape skins give the wine a maximum of phenolic compounds. Kisi is highly aromatic on its own, and aging in qvevri turns it into a complex, full-bodied wine.",
+      vintage: "2022",
     },
     ru: {
-      name: "REZO’S WINE — Kisi",
-      classification: "Квеври Янтарное Сухое",
+      name: "REZO’S WINE – Kisi",
+      classification: "Квеври янтарное сухое",
       region: "Кахетия",
       country: "Грузия",
       grape: "Киси 100%",
       grapesSourced: "Местные виноградники Кахетии",
-      servingTemperature: "+13°C — +15°C",
+      servingTemperature: "+10°C — +12°C",
       storageTemperature: "+5°C — +20°C",
+      tastingNotes:
+        "Это белое (янтарное или «оранжевое») сухое вино, изготовленное из автохтонного сорта винограда Киси по древней кахетинской технологии в огромных глиняных кувшинах — квеври. Белые вина, созданные по этой технологии, отличаются невероятной плотностью, танинной структурой и глубоким, ни на что не похожим букетом.",
+      color:
+        "Насыщенный, от глубокого темно-соломенного до благородного янтарного.",
       aroma:
-        "Вино произведено старинным грузинским методом в квеври с выдержкой на мезге в течение шести месяцев. Идеальное сочетание свежести и пряности; в аромате чувствуются нотки сухофруктов, чая и желтых осенних листьев.",
-      pairing:
-        "Мясо утки, барбекю, копченая ветчина, лазанья, выдержанный сыр",
+        "Яркий, комплексный букет с выраженными нотами кураги, сушеного инжира, айвы, меда, полевых трав, грецкого ореха и легкими оттенками восточных пряностей.",
+      taste:
+        "Глубокий, маслянистый и бархатистый. За счет контакта с кожицей вино обладает ощутимой танинной терпкостью (как у красных вин), умеренной кислотностью и долгим согревающим послевкусием с медово-ореховыми акцентами.",
+      vinification:
+        "Виноград бережно прессуют и вместе со всей массой заливают в огромный глиняный кувшин — квеври. Квеври вкопан вертикально в землю по самое горлышко, что позволяет поддерживать стабильную температуру брожения (около 13–15 °C). После завершения брожения кувшин запечатывают, и вино созревает на осадке от 4 до 6 месяцев. В этот период глина и виноградная кожица отдают напитку максимум фенольных соединений. Сорт Киси сам по себе очень ароматный, а выдержка в квеври превращает его в сложное, полнотелое вино.",
+      vintage: "2022",
     },
     es: {
       name: "REZO’S WINE – Kisi",
@@ -233,12 +321,19 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       country: "Georgia",
       grape: "Kisi 100%",
       grapesSourced: "Viñedos locales de Kajetia",
-      servingTemperature: "+13°C a +15°C",
+      servingTemperature: "+10°C a +12°C",
       storageTemperature: "+5°C a +20°C",
+      tastingNotes:
+        "Un vino blanco (ámbar u «naranja») seco elaborado con la variedad autóctona Kisi según la antigua tecnología kajetiana en grandes qvevri de arcilla. Los blancos hechos así destacan por una densidad extraordinaria, estructura tánica y un bouquet profundo e inconfundible.",
+      color:
+        "Intenso, desde paja oscura profunda hasta un ámbar noble.",
       aroma:
-        "Elaborado con el antiguo método georgiano en qvevri, con seis meses de crianza sobre hollejos. Perfecta combinación de frescura y especias, con aromas de frutos secos, té y hojas amarillas de otoño.",
-      pairing:
-        "Carne de pato, barbacoa, jamón ahumado, lasaña, Bergkäse curado, Allgäuer Emmentaler",
+        "Bouquet vivo y complejo con notas marcadas de albaricoque seco, higo seco, membrillo, miel, hierbas de campo, nuez y ligeros matices de especias orientales.",
+      taste:
+        "Profundo, oleoso y aterciopelado. Por el contacto con los hollejos tiene una astringencia tánica perceptible (como en los tintos), acidez moderada y un final largo y cálido con acentos de miel y nuez.",
+      vinification:
+        "La uva se prensa con cuidado y, junto con toda la masa, se vierte en un gran qvevri de arcilla. El qvevri se entierra verticalmente hasta el cuello, lo que mantiene una temperatura de fermentación estable (unos 13–15 °C). Tras la fermentación se sella y el vino madura sobre lías de 4 a 6 meses. En ese periodo la arcilla y los hollejos aportan al vino el máximo de compuestos fenólicos. Kisi es muy aromático por sí mismo, y la crianza en qvevri lo convierte en un vino complejo y de cuerpo completo.",
+      vintage: "2022",
     },
     fr: {
       name: "REZO’S WINE – Kisi",
@@ -247,12 +342,19 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       country: "Géorgie",
       grape: "Kisi 100%",
       grapesSourced: "Vignobles locaux de Kakhétie",
-      servingTemperature: "+13°C à +15°C",
+      servingTemperature: "+10°C à +12°C",
       storageTemperature: "+5°C à +20°C",
+      tastingNotes:
+        "Un vin blanc (ambré ou « orange ») sec élaboré à partir du cépage autochtone Kisi selon l’ancienne technologie kakhétienne dans de grands qvevri d’argile. Les blancs ainsi obtenus se distinguent par une densité remarquable, une structure tannique et un bouquet profond, sans équivalent.",
+      color:
+        "Intense, du jaune paille sombre profond à un ambre noble.",
       aroma:
-        "Élaboré selon l’ancienne méthode géorgienne en qvevri, avec six mois d’élevage sur marc. Alliance parfaite de fraîcheur et d’épices, aux arômes de fruits secs, de thé et de feuilles jaunes d’automne.",
-      pairing:
-        "Viande de canard, barbecue, jambon fumé, lasagnes, Bergkäse affiné, Allgäuer Emmentaler",
+        "Bouquet vif et complexe aux notes marquées d’abricot sec, de figue sèche, de coing, de miel, d’herbes des champs, de noix et de légers accents d’épices orientales.",
+      taste:
+        "Profond, huileux et velouté. Grâce au contact avec les peaux, le vin présente une astringence tannique perceptible (comme les rouges), une acidité modérée et une longue finale chaleureuse aux accents miel-noix.",
+      vinification:
+        "Les raisins sont pressés avec douceur et, avec toute la masse, versés dans un grand qvevri d’argile. Le qvevri est enterré verticalement jusqu’au col, ce qui maintient une température de fermentation stable (environ 13–15 °C). Après la fermentation, le vase est scellé et le vin mûrit sur lies de 4 à 6 mois. Pendant cette période, l’argile et les peaux apportent au vin un maximum de composés phénoliques. Le Kisi est déjà très aromatique, et l’élevage en qvevri en fait un vin complexe et corsé.",
+      vintage: "2022",
     },
     uk: {
       name: "REZO’S WINE – Kisi",
@@ -261,12 +363,19 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       country: "Грузія",
       grape: "Кісі 100%",
       grapesSourced: "Місцеві виноградники Кахетії",
-      servingTemperature: "+13°C — +15°C",
+      servingTemperature: "+10°C — +12°C",
       storageTemperature: "+5°C — +20°C",
+      tastingNotes:
+        "Це біле (янтарне або «помаранчеве») сухе вино, виготовлене з автохтонного сорту Кісі за давньою кахетинською технологією у величезних глиняних квеврі. Білі вина, створені за цією технологією, вирізняються неймовірною щільністю, танінною структурою та глибоким, ні на що не схожим букетом.",
+      color:
+        "Насичений, від глибокого темно-солом’яного до благородного янтарного.",
       aroma:
-        "Вино вироблено давнім грузинським методом у квеврі з витримкою на меззі протягом шести місяців. Ідеальне поєднання свіжості та прянощів; в ароматі відчуваються ноти сухофруктів, чаю та жовтого осіннього листя.",
-      pairing:
-        "М’ясо качки, барбекю, копчена шинка, лазанья, витриманий сир",
+        "Яскравий, комплексний букет із вираженими нотами кураги, сушеного інжиру, айви, меду, польових трав, волоського горіха та легкими відтінками східних прянощів.",
+      taste:
+        "Глибокий, маслянистий і оксамитовий. Завдяки контакту зі шкіркою вино має відчутну танінну терпкість (як у червоних вин), помірну кислотність і довгий зігріваючий післясмак із медово-горіховими акцентами.",
+      vinification:
+        "Виноград обережно пресують і разом із усією масою заливають у величезний глиняний квеврі. Квеврі вкопаний вертикально в землю по саме горлечко, що дозволяє підтримувати стабільну температуру бродіння (близько 13–15 °C). Після завершення бродіння кувшин запечатують, і вино дозріває на осаді від 4 до 6 місяців. У цей період глина і виноградні шкірки віддають напою максимум фенольних сполук. Сорт Кісі сам по собі дуже ароматний, а витримка в квеврі перетворює його на складне, повнотіле вино.",
+      vintage: "2022",
     },
     bg: {
       name: "REZO’S WINE – Kisi",
@@ -275,13 +384,18 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       country: "Грузия",
       grape: "Киси 100%",
       grapesSourced: "От местни лозя в Кахетия",
-      servingTemperature: "+12°C до +16°C",
-      storageTemperature: "+5°C до +18°C",
-      color: "Кехлибар",
-      aroma: "Изразени нотки на праскова и кайсия с тревисти нюанси",
+      servingTemperature: "+10°C до +12°C",
+      storageTemperature: "+5°C до +20°C",
+      tastingNotes:
+        "Това е бяло (кехлибарено или „оранжево“) сухо вино от автохтонния сорт Киси по древната кахетска технология в огромни глинени квеври. Белите вина, създадени по тази технология, се отличават с невероятна плътност, танинова структура и дълбок, неповторим букет.",
+      color:
+        "Наситен, от дълбоко тъмносламен до благороден кехлибар.",
+      aroma:
+        "Ярък, комплексен букет с изразени нотки на сушена кайсия, сушена смокиня, дюля, мед, полски билки, орех и леки оттенъци на източни подправки.",
       taste:
-        "Виното е произведено по древния грузински метод квеври, с шестмесечна отлежалост с джибри. Перфектна комбинация от свежест и пикантност, с аромати на сушени плодове, чай и есенни жълти листа.",
-      pairing: "Най-добре със стек, агнешко и барбекю",
+        "Дълбок, маслен и кадифен. Благодарение на контакта с ципите виното има доловима танинова тръпчивост (както при червените вина), умерена киселинност и дълъг затоплящ финиш с медено-орехови акценти.",
+      vinification:
+        "Гроздето се пресова внимателно и заедно с цялата маса се налива в огромен глинен квеври. Квеври е заровен вертикално в земята до гърлото, което поддържа стабилна температура на ферментация (около 13–15 °C). След края на ферментацията съдът се запечатва и виното отлежава върху утайката от 4 до 6 месеца. В този период глината и ципите отдават на напитката максимум фенолни съединения. Сортът Киси сам по себе си е много ароматен, а отлежаването в квеври го превръща в сложно, пълнотено вино.",
       vintage: "2022",
     },
   },
@@ -294,25 +408,39 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       microzone: "Tsinandali PDO",
       grape: "Rkatsiteli and Mtsvane",
       grapesSourced: "Locally from Kakheti vineyards",
-      servingTemperature: "+13°C to +15°C",
+      servingTemperature: "+8°C to +10°C",
       storageTemperature: "+5°C to +20°C",
+      tastingNotes:
+        "Tsinandali is a legendary dry white Georgian wine from Kakheti, with a delicate light-straw color, an elegant fruit bouquet and a harmonious refreshing taste.",
+      color: "Light straw, pale yellow, with a greenish hue.",
       aroma:
-        "A classic white wine celebrated for its freshness, crispness, and herbal notes. This wine offers a refreshing and vibrant taste with a delightful array of aromas. Immerse yourself in the enticing scents of lime, lemon, peach, and refreshing mint. With its balanced herbal notes and crisp character, the wine is lively and invigorating, capturing the essence of the Kakheti terroir.",
-      pairing: "Baked fish, fresh salads",
+        "Vivid and multilayered, dominated by notes of ripe peaches, white apples, quince and citrus, with light tones of meadow flowers.",
+      taste:
+        "Light, harmonious and invigorating, with delicate acidity and a spicy bitterness at the core. Fresh, clean finish with a citrus trail.",
+      vinification:
+        "Grapes are hand-picked at peak ripeness in the last decade of September. After destemming, the grapes are cooled to 4°C–6°C and left with the skins for 8 hours, then gently pressed in a pneumatic press. The settled juice then ferments slowly in stainless-steel tanks at a strictly controlled low temperature. After fermentation, the wine is racked off the lees into another tank for further maturation. Part of the wine is aged in oak barrels. The wine is ready for bottling no earlier than the September following the harvest year.",
+      vintage: "2025",
     },
     ru: {
-      name: "REZO’S WINE — Tsinandali",
-      classification: "Белое Сухое",
+      name: "REZO’S WINE – Tsinandali",
+      classification: "Белое сухое",
       region: "Кахетия",
       country: "Грузия",
-      microzone: "Цинандали",
+      microzone: "Цинандали (защищенное географическое происхождение)",
       grape: "Ркацители и Мцване",
-      grapesSourced: "Местные виноградники Кахетия",
-      servingTemperature: "+12°C — +15°C",
+      grapesSourced: "Местные виноградники Кахетии",
+      servingTemperature: "+8°C — +10°C",
       storageTemperature: "+5°C — +20°C",
+      tastingNotes:
+        "Цинандали — это легендарное белое сухое грузинское вино из региона Кахетия, обладающее нежным светло-соломенным цветом, изысканным фруктовым букетом и гармоничным освежающим вкусом.",
+      color: "Светло-соломенный, бледно-желтый, с зеленоватым оттенком.",
       aroma:
-        "Классическое белое вино, известное своей свежестью, хрусткостью и травяными оттенками. Вкус яркий и освежающий, с выразительными ароматами лайма, лимона, персика и освежающей мяты. Гармоничное сочетание травяных нот и бодрящей кислинки передает характер терруара Кахетии.",
-      pairing: "Запеченная рыба, свежие салаты",
+        "Яркий, многослойный, с доминирующими нотами спелых персиков, белых яблок, айвы, цитрусовых и легкими тонами полевых цветов.",
+      taste:
+        "Легкий, гармоничный и бодрящий, с деликатной кислинкой и пикантной горчинкой в основе. Послевкусие свежее, чистое, с цитрусовым шлейфом.",
+      vinification:
+        "Виноград собирают вручную на пике зрелости, в последней декаде сентября. После отделения гребней виноград охлаждается до 4°C–6°C, а затем в течение 8 часов оставляется вместе с кожурой, после чего нежно отжимается в пневматическом прессе. Затем отстоянный сок медленно бродит в цистернах из нержавеющей стали при строго контролируемой низкой температуре. По завершении брожения вино отделяется от осадка и перемещается в другой резервуар для дальнейшего созревания. Часть вина выдерживается в дубовых бочках. Вино готово для розлива не ранее следующего сентября урожайного года.",
+      vintage: "2025",
     },
     es: {
       name: "REZO’S WINE – Tsinandali",
@@ -322,11 +450,18 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       microzone: "Tsinandali DOP",
       grape: "Rkatsiteli y Mtsvane",
       grapesSourced: "Viñedos locales de Kajetia",
-      servingTemperature: "+13°C a +15°C",
+      servingTemperature: "+8°C a +10°C",
       storageTemperature: "+5°C a +20°C",
+      tastingNotes:
+        "Tsinandali es un legendario blanco seco georgiano de Kajetia, de delicado color paja clara, bouquet frutal refinado y un sabor armonioso y refrescante.",
+      color: "Paja clara, amarillo pálido, con matiz verdoso.",
       aroma:
-        "Un blanco clásico, celebrado por su frescura, viveza y notas herbales. Sabor refrescante y vibrante, con aromas de lima, limón, melocotón y menta. Sus notas herbales equilibradas y su carácter crujiente capturan la esencia del terroir de Kajetia.",
-      pairing: "Pescado al horno, ensaladas frescas",
+        "Vivo y multicapa, dominado por notas de melocotones maduros, manzanas blancas, membrillo y cítricos, con ligeros tonos de flores silvestres.",
+      taste:
+        "Ligero, armonioso y vivificante, con una acidez delicada y un amargor picante de base. Final fresco y limpio, con estela cítrica.",
+      vinification:
+        "La uva se vendimia a mano en el punto óptimo de madurez, en la última década de septiembre. Tras el despalillado se enfría a 4°C–6°C y se deja 8 horas con los hollejos, luego se prensa con suavidad en prensa neumática. El mosto asentado fermenta lentamente en depósitos de acero inoxidable a baja temperatura estrictamente controlada. Tras la fermentación, el vino se trasiega a otro depósito para madurar. Parte del vino se cría en barricas de roble. El vino está listo para embotellar no antes del septiembre siguiente a la vendimia.",
+      vintage: "2025",
     },
     fr: {
       name: "REZO’S WINE – Tsinandali",
@@ -336,39 +471,59 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       microzone: "Tsinandali AOP",
       grape: "Rkatsiteli et Mtsvane",
       grapesSourced: "Vignobles locaux de Kakhétie",
-      servingTemperature: "+13°C à +15°C",
+      servingTemperature: "+8°C à +10°C",
       storageTemperature: "+5°C à +20°C",
+      tastingNotes:
+        "Le Tsinandali est un légendaire blanc sec géorgien de Kakhétie, à la délicate couleur jaune paille clair, au bouquet fruité raffiné et au goût harmonieux et rafraîchissant.",
+      color: "Jaune paille clair, jaune pâle, avec une teinte verdâtre.",
       aroma:
-        "Un blanc classique, apprécié pour sa fraîcheur, sa vivacité et ses notes herbacées. Saveur rafraîchissante, aux arômes de citron vert, citron, pêche et menthe. Ses notes herbacées équilibrées et son caractère croquant capturent l’essence du terroir de Kakhétie.",
-      pairing: "Poisson au four, salades fraîches",
+        "Vif et multicouche, dominé par des notes de pêches mûres, pommes blanches, coing et agrumes, avec de légers tons de fleurs des champs.",
+      taste:
+        "Léger, harmonieux et tonique, à l’acidité délicate et à une amertume piquante en fond. Finale fraîche et pure, avec une traîne d’agrumes.",
+      vinification:
+        "Les raisins sont vendangés à la main à pleine maturité, dans la dernière décade de septembre. Après égrappage, ils sont refroidis à 4°C–6°C, laissés 8 heures avec les peaux, puis pressés doucement au pressoir pneumatique. Le jus décanté fermente ensuite lentement en cuves inox à basse température strictement contrôlée. Après fermentation, le vin est soutiré dans une autre cuve pour poursuivre sa maturation. Une partie du vin est élevée en fûts de chêne. Le vin est prêt à la mise en bouteille au plus tôt en septembre suivant l’année de récolte.",
+      vintage: "2025",
     },
     uk: {
       name: "REZO’S WINE – Tsinandali",
       classification: "Біле сухе",
       region: "Кахетія",
       country: "Грузія",
-      microzone: "Цінандалі",
+      microzone: "Цінандалі (захищене географічне походження)",
       grape: "Ркацителі та Мцване",
       grapesSourced: "Місцеві виноградники Кахетії",
-      servingTemperature: "+12°C — +15°C",
+      servingTemperature: "+8°C — +10°C",
       storageTemperature: "+5°C — +20°C",
+      tastingNotes:
+        "Цінандалі — легендарне біле сухе грузинське вино з регіону Кахетія, з ніжним світло-солом’яним кольором, вишуканим фруктовим букетом і гармонійним освіжаючим смаком.",
+      color: "Світло-солом’яний, блідо-жовтий, із зеленуватим відтінком.",
       aroma:
-        "Класичне біле вино, відоме свіжістю, хрусткістю та трав’яними відтінками. Смак яскравий і освіжаючий, з ароматами лайма, лимона, персика та м’яти. Гармонійне поєднання трав’яних нот і бадьорої кислотності передає характер терруару Кахетії.",
-      pairing: "Запечена риба, свіжі салати",
+        "Яскравий, багатошаровий, з домінуючими нотами стиглих персиків, білих яблук, айви, цитрусових і легкими тонами польових квітів.",
+      taste:
+        "Легкий, гармонійний і бадьорий, з делікатною кислинкою та пікантною гірчинкою в основі. Післясмак свіжий, чистий, із цитрусовим шлейфом.",
+      vinification:
+        "Виноград збирають вручну на піку зрілості, в останній декаді вересня. Після відділення гребенів виноград охолоджують до 4°C–6°C, а потім протягом 8 годин залишають разом зі шкіркою, після чого м’яко віджимають у пневматичному пресі. Далі відстояний сік повільно бродить у цистернах з нержавіючої сталі за суворо контрольованої низької температури. Після завершення бродіння вино відокремлюють від осаду та переміщують в інший резервуар для подальшого дозрівання. Частина вина витримується в дубових бочках. Вино готове до розливу не раніше наступного вересня врожайного року.",
+      vintage: "2025",
     },
     bg: {
       name: "REZO’S WINE – Tsinandali",
       classification: "Сухо бяло",
       region: "Кахетия",
       country: "Грузия",
-      grape: "Ркацители, Мцване",
+      microzone: "Цинандали (защитен географски произход)",
+      grape: "Ркацители и Мцване",
       grapesSourced: "От местни лозя в Кахетия",
-      servingTemperature: "+10°C до +12°C",
-      storageTemperature: "+5°C до +18°C",
-      color: "Светлосламен",
-      aroma: "Свеж плодов аромат с цитрусови и цветни нюанси",
-      taste: "Елегантно, свежо и хармонично бяло вино с приятна киселинност и чист финиш.",
-      pairing: "Риба, птиче месо, леки салати и меки сирена",
+      servingTemperature: "+8°C до +10°C",
+      storageTemperature: "+5°C до +20°C",
+      tastingNotes:
+        "Цинандали е легендарно сухо бяло грузинско вино от регион Кахетия, с нежен светлосламен цвят, изискан плодов букет и хармоничен освежаващ вкус.",
+      color: "Светлосламен, бледожълт, със зеленикав оттенък.",
+      aroma:
+        "Ярък, многопластов, с доминиращи нотки на узрели праскови, бели ябълки, дюля, цитруси и леки тонове на полски цветя.",
+      taste:
+        "Лек, хармоничен и ободряващ, с деликатна киселинка и пикантна горчинка в основата. Финишът е свеж, чист, с цитрусова следа.",
+      vinification:
+        "Гроздето се бере на ръка в пика на зрялост, в последната декада на септември. След отделяне на чепките гроздето се охлажда до 4°C–6°C и се оставя 8 часа заедно с ципите, след което се изстисква внимателно в пневматична преса. След това утаеният сок ферментира бавно в цистерни от неръждаема стомана при строго контролирана ниска температура. След края на ферментацията виното се отделя от утайката и се премества в друг резервоар за по-нататъшно съзряване. Част от виното отлежава в дъбови бъчви. Виното е готово за бутилиране не по-рано от следващия септември на реколтната година.",
       vintage: "2025",
     },
   },
@@ -377,130 +532,138 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       name: "REZO’S WINE – Tvishi",
       classification: "Naturally Semi-Sweet White (PDO)",
       region: "Racha-Lechkhumi",
-      subregion: "Racha-Lechkhumi viticulture region",
-      microzone: "Tvishi specific viticulture zone (SVZ)",
       country: "Georgia",
+      microzone: "Tvishi (~15 km²)",
       grape: "Tsolikouri 100%",
-      grapesSourced: "Tvishi microzone",
+      grapesSourced: "Tvishi microzone, right bank of the Rioni River",
       alcohol: "11%–12%",
-      servingTemperature: "+10°C to +12°C",
+      servingTemperature: "+8°C to +10°C",
       storageTemperature: "+5°C to +18°C",
-      color: "Light golden with greenish reflections",
-      aroma:
-        "Delicate yet expressive aromas of ripe pear, white peach, apricot and citrus fruits are complemented by floral notes and hints of honey. Subtle mineral characteristics derived from the unique Tvishi microzone contribute additional complexity and freshness.",
-      taste:
-        "Naturally semi-sweet, harmonious and exceptionally refreshing. The palate displays flavors of pear, quince, apricot and citrus balanced by lively natural acidity. The sweetness is elegant and integrated rather than dominant, creating a refined and balanced wine. The finish is long, fruity and pleasantly refreshing.",
       tastingNotes:
-        "Climate: Moderate continental with humid mountain influence · Wine category: Protected Designation of Origin · Sugar: 18–45 g/l · Crop capacity: 8 ton/hectare",
-      pairing: "Fresh fruit, soft cheeses, light desserts, and spicy Asian cuisine.",
+        "Tvishi is a famous Georgian naturally semi-sweet white wine, with notes of mint, citrus and ripe quince, produced from Tsolikouri grapes in the Tvishi microzone of only about 15 km². It lies on the right bank of the Rioni River in the highland Racha-Lechkhumi region of western Georgia.",
+      color:
+        "Beautiful light straw with a slight greenish hue.",
+      aroma:
+        "Vivid, complex, very floral and tender. Notes of meadow flowers, ripe melon, quince and pear are clearly readable.",
+      taste:
+        "The palate opens with tones of apricot, peach and tropical fruit. The wine is light, with an ideal balance between natural sweetness and crisp mint-citrus acidity.",
       vinification:
-        "Grapes are hand-picked at the peak of their maturity. Soft de-stemming and crushing is followed by fermentation at controlled temperature (23°C–28°C) in stainless steel tanks. Wine is fermented using cultural yeast strains, by délestage and remontage method. After 5–7 days of maceration, when the desired level of residual sugar is reached, fermentation is stopped by cooling to maintain the natural sweetness and freshness of the wine. Before bottling, wine is kept cold in isothermal reservoirs at −2°C to +2°C.",
+        "Grapes are hand-picked at peak ripeness. After gentle destemming, the grapes are pressed and fermented in stainless-steel tanks at controlled temperature. Once the desired sugar level in the young wine is reached, fermentation is stopped by cooling and filtration, preserving the wine’s natural sweetness and freshness.",
+      vintage: "2024",
     },
     ru: {
-      name: "REZO’S WINE — Tvishi",
-      classification: "Природно полусладкое белое (ЗНМП)",
+      name: "REZO’S WINE – Tvishi",
+      classification: "Природно-полусладкое белое",
       region: "Рача-Лечхуми",
-      subregion: "Винодельческий регион Рача-Лечхуми",
-      microzone: "Специфическая виноградарская зона Твиши (СВЗ)",
       country: "Грузия",
-      grape: "Цоликоури 100%",
-      grapesSourced: "Микрозона Твиши",
+      microzone: "Твиши (~15 км²)",
+      grape: "Цоликаури 100%",
+      grapesSourced: "Микрозона Твиши, правый берег реки Риони",
       alcohol: "11%–12%",
-      servingTemperature: "+10°C — +12°C",
+      servingTemperature: "+8°C — +10°C",
       storageTemperature: "+5°C — +18°C",
-      color: "Светло-золотистый с зеленоватыми отблесками",
-      aroma:
-        "Нежные, но выразительные ароматы спелой груши, белого персика, абрикоса и цитрусов дополняются цветочными нотами и оттенками мёда. Тонкие минеральные характеристики уникальной микрозоны Твиши придают вину дополнительную сложность и свежесть.",
-      taste:
-        "Природно полусладкое, гармоничное и исключительно освежающее. Во вкусе — груша, айва, абрикос и цитрусы, сбалансированные живой натуральной кислотностью. Сладость элегантная и органичная, а не доминирующая. Длинное фруктовое послевкусие.",
       tastingNotes:
-        "Климат: умеренно-континентальный с влажным горным влиянием · Категория: вино с защищённым наименованием места происхождения · Сахар: 18–45 г/л · Урожайность: 8 т/га",
-      pairing: "Свежие фрукты, мягкие сыры, лёгкие десерты и пряная азиатская кухня.",
+        "Твиши — это знаменитое грузинское белое природно-полусладкое вино, с нотками мяты, цитрусов и спелой айвы, которое производится из винограда сорта Цоликаури в микрозоне Твиши, площадью всего около 15 км². Она расположена на правом берегу реки Риони в высокогорном регионе Рача-Лечхуми на западе Грузии.",
+      color:
+        "Вино обладает красивым светло-соломенным цветом с легким зеленоватым оттенком.",
+      aroma:
+        "Яркий, комплексный, очень цветочный и нежный. В нём отчетливо считываются ноты полевых цветов, спелой дыни, айвы и груши.",
+      taste:
+        "Вкусовая палитра раскрывается тонами абрикоса, персика и тропических фруктов. Вино лёгкое, с идеальным балансом между натуральной сладостью и хрустящей мятно-цитрусовой кислотностью.",
       vinification:
-        "Виноград собирают вручную в полной зрелости. Мягкое гребнеотделение и дробление, затем ферментация при контролируемой температуре (23°C–28°C) в нержавеющих ёмкостях с культурными дрожжами методом délestage и remontage. Через 5–7 дней мацерации, когда достигнут нужный уровень остаточного сахара, ферментацию останавливают охлаждением. Перед розливом вино хранят в изотермических резервуарах при −2°C…+2°C.",
+        "Виноград собирают вручную на пике их зрелости. После бережного гребнеотделения виноград выжимается с последующим брожением в резервуарах из нержавеющей стали при контролируемой температуре. После достижения необходимого уровня сахара в молодом вине, процесс брожения останавливается путем охлаждения и фильтрации, что позволяет сохранить в вине природную сладость и свежесть.",
+      vintage: "2024",
     },
     es: {
       name: "REZO’S WINE – Tvishi",
-      classification: "Blanco semiseco natural (DOP)",
+      classification: "Blanco naturalmente semidulce (DOP)",
       region: "Racha-Lechkhumi",
-      subregion: "Región vitivinícola de Racha-Lechkhumi",
-      microzone: "Zona vitivinícola específica de Tvishi (SVZ)",
       country: "Georgia",
+      microzone: "Tvishi (~15 km²)",
       grape: "Tsolikouri 100%",
-      grapesSourced: "Microzona de Tvishi",
+      grapesSourced: "Microzona de Tvishi, orilla derecha del río Rioni",
       alcohol: "11%–12%",
-      servingTemperature: "+10°C a +12°C",
+      servingTemperature: "+8°C a +10°C",
       storageTemperature: "+5°C a +18°C",
-      color: "Dorado claro con reflejos verdosos",
-      aroma:
-        "Aromas delicados pero expresivos de pera madura, melocotón blanco, albaricoque y cítricos, complementados con notas florales y matices de miel. Sutiles características minerales de la microzona de Tvishi aportan complejidad y frescura.",
-      taste:
-        "Naturalmente semiseco, armonioso y excepcionalmente refrescante. En boca, pera, membrillo, albaricoque y cítricos equilibrados por una viva acidez natural. Dulzor elegante e integrado. Final largo, afrutado y refrescante.",
       tastingNotes:
-        "Clima: continental moderado con influencia montañosa húmeda · Categoría: denominación de origen protegida · Azúcar: 18–45 g/l · Rendimiento: 8 t/ha",
-      pairing: "Fruta fresca, quesos suaves, postres ligeros y cocina asiática especiada.",
+        "Tvishi es un famoso blanco georgiano naturalmente semidulce, con notas de menta, cítricos y membrillo maduro, elaborado con Tsolikouri en la microzona de Tvishi, de apenas unos 15 km². Se sitúa en la orilla derecha del río Rioni, en la región montañosa de Racha-Lechkhumi, al oeste de Georgia.",
+      color:
+        "Hermoso color paja clara con un ligero matiz verdoso.",
+      aroma:
+        "Vivo, complejo, muy floral y tierno. Se leen con claridad notas de flores silvestres, melón maduro, membrillo y pera.",
+      taste:
+        "La paleta gustativa se abre con tonos de albaricoque, melocotón y frutas tropicales. El vino es ligero, con un equilibrio ideal entre dulzura natural y una acidez crujiente menta-cítrica.",
       vinification:
-        "Uvas cosechadas a mano en plena madurez. Despalillado y estrujado suave, fermentación a temperatura controlada (23°C–28°C) en tanques de acero con levaduras seleccionadas, por délestage y remontage. Tras 5–7 días de maceración, cuando se alcanza el azúcar residual deseado, se detiene la fermentación por enfriamiento. Antes del embotellado, el vino se conserva en frío en depósitos isotérmicos a −2°C…+2°C.",
+        "La uva se vendimia a mano en el punto óptimo de madurez. Tras un despalillado cuidadoso, se prensa y fermenta en depósitos de acero inoxidable a temperatura controlada. Al alcanzar el nivel de azúcar deseado en el vino joven, la fermentación se detiene por enfriamiento y filtración, conservando la dulzura y frescura naturales.",
+      vintage: "2024",
     },
     fr: {
       name: "REZO’S WINE – Tvishi",
-      classification: "Blanc demi-doux naturel (AOP)",
+      classification: "Blanc naturellement demi-doux (AOP)",
       region: "Racha-Lechkhumi",
-      subregion: "Région viticole de Racha-Lechkhumi",
-      microzone: "Zone viticole spécifique de Tvishi (SVZ)",
       country: "Géorgie",
+      microzone: "Tvishi (~15 km²)",
       grape: "Tsolikouri 100%",
-      grapesSourced: "Microzone de Tvishi",
+      grapesSourced: "Microzone de Tvishi, rive droite du Rioni",
       alcohol: "11 % – 12 %",
-      servingTemperature: "+10°C à +12°C",
+      servingTemperature: "+8°C à +10°C",
       storageTemperature: "+5°C à +18°C",
-      color: "Doré clair aux reflets verdâtres",
-      aroma:
-        "Arômes délicats mais expressifs de poire mûre, pêche blanche, abricot et agrumes, complétés par des notes florales et des touches de miel. De subtiles notes minérales propres à la microzone de Tvishi apportent complexité et fraîcheur.",
-      taste:
-        "Naturellement demi-doux, harmonieux et exceptionnellement rafraîchissant. Bouche de poire, coing, abricot et agrumes, équilibrée par une acidité naturelle vive. Douceur élégante et intégrée. Finale longue, fruitée et agréablement rafraîchissante.",
       tastingNotes:
-        "Climat : continental modéré avec influence montagneuse humide · Catégorie : appellation d’origine protégée · Sucre : 18–45 g/l · Rendement : 8 t/ha",
-      pairing: "Fruits frais, fromages doux, desserts légers et cuisine asiatique épicée.",
+        "Le Tvishi est un célèbre blanc géorgien naturellement demi-doux, aux notes de menthe, d’agrumes et de coing mûr, produit à partir de Tsolikouri dans la microzone de Tvishi, d’à peine environ 15 km². Elle se situe sur la rive droite du Rioni, dans la région montagneuse de Racha-Lechkhumi, à l’ouest de la Géorgie.",
+      color:
+        "Beau jaune paille clair avec une légère teinte verdâtre.",
+      aroma:
+        "Vif, complexe, très floral et tendre. On y lit clairement des notes de fleurs des champs, de melon mûr, de coing et de poire.",
+      taste:
+        "La palette gustative s’ouvre sur des tons d’abricot, de pêche et de fruits tropicaux. Le vin est léger, avec un équilibre idéal entre douceur naturelle et une acidité croquante menthe-agrumes.",
       vinification:
-        "Raisins récoltés à la main à maturité optimale. Égrappage et foulage doux, fermentation à température contrôlée (23°C–28°C) en cuve inox avec levures sélectionnées, par délestage et remontage. Après 5 à 7 jours de macération, lorsque le sucre résiduel souhaité est atteint, la fermentation est arrêtée par refroidissement. Avant la mise en bouteille, le vin est conservé au froid en cuves isothermes à −2°C…+2°C.",
+        "Les raisins sont vendangés à la main à pleine maturité. Après un égrappage soigneux, ils sont pressés puis fermentés en cuves inox à température contrôlée. Une fois le niveau de sucre souhaité atteint dans le vin jeune, la fermentation est arrêtée par refroidissement et filtration, préservant la douceur et la fraîcheur naturelles.",
+      vintage: "2024",
     },
     uk: {
       name: "REZO’S WINE – Tvishi",
-      classification: "Природно напівсолодке біле (ЗНМП)",
+      classification: "Природно напівсолодке біле",
       region: "Рача-Лечхумі",
-      subregion: "Виноробний регіон Рача-Лечхумі",
-      microzone: "Специфічна виноградарська зона Tvishi (СВЗ)",
       country: "Грузія",
-      grape: "Цолікоурі 100%",
-      grapesSourced: "Мікрозона Tvishi",
+      microzone: "Твіші (~15 км²)",
+      grape: "Цолікаурі 100%",
+      grapesSourced: "Мікрозона Твіші, правий берег річки Ріоні",
       alcohol: "11%–12%",
-      servingTemperature: "+10°C — +12°C",
+      servingTemperature: "+8°C — +10°C",
       storageTemperature: "+5°C — +18°C",
-      color: "Світло-золотистий із зеленуватими відблисками",
-      aroma:
-        "Ніжні, але виразні аромати стиглої груші, білого персика, абрикоса та цитрусових доповнюються квітковими нотами та відтінками меду. Тонкі мінеральні характеристики унікальної мікрозони Tvishi надають вину додаткової складності та свіжості.",
-      taste:
-        "Природно напівсолодке, гармонійне та надзвичайно освіжаюче. У смаку — груша, айва, абрикос і цитруси, збалансовані живою природною кислотністю. Солодкість елегантна та органічна. Довге фруктове післясмак.",
       tastingNotes:
-        "Клімат: помірно-континентальний з вологим гірським впливом · Категорія: вино з охоронюваним найменуванням · Цукор: 18–45 г/л · Урожайність: 8 т/га",
-      pairing: "Свіжі фрукти, м’які сири, легкі десерти та пряна азіатська кухня.",
+        "Твіші — знамените грузинське біле природно напівсолодке вино з нотками м’яти, цитрусів і стиглої айви, яке виробляється з винограду сорту Цолікаурі в мікрозоні Твіші площею лише близько 15 км². Вона розташована на правому березі річки Ріоні у високогірному регіоні Рача-Лечхумі на заході Грузії.",
+      color:
+        "Вино має гарний світло-солом’яний колір із легким зеленуватим відтінком.",
+      aroma:
+        "Яскравий, комплексний, дуже квітковий і ніжний. У ньому чітко зчитуються ноти польових квітів, стиглої дині, айви та груші.",
+      taste:
+        "Смакова палітра розкривається тонами абрикоса, персика та тропічних фруктів. Вино легке, з ідеальним балансом між натуральною солодкістю та хрусткою м’ятно-цитрусовою кислотністю.",
       vinification:
-        "Виноград збирають вручну в повній зрілості. М’яке гребеневідділення та дроблення, далі ферментація при контрольованій температурі (23°C–28°C) у нержавіючих ємностях з культурними дрожжами методом délestage та remontage. Після 5–7 днів мацерації, коли досягнуто потрібний рівень залишкового цукру, ферментацію зупиняють охолодженням. Перед розливом вино зберігають у ізотермічних резервуарах при −2°C…+2°C.",
+        "Виноград збирають вручну на піку зрілості. Після дбайливого гребеневідділення виноград віджимають із подальшим бродінням у резервуарах з нержавіючої сталі за контрольованої температури. Після досягнення потрібного рівня цукру в молодому вині процес бродіння зупиняють охолодженням і фільтрацією, що дозволяє зберегти природну солодкість і свіжість.",
+      vintage: "2024",
     },
     bg: {
       name: "REZO’S WINE – Tvishi",
       classification: "Естествено полусладко бяло",
       region: "Рача-Лечхуми",
       country: "Грузия",
-      grape: "Цоликаури",
-      grapesSourced: "От лозя в Рача-Лечхуми",
-      servingTemperature: "+10°C до +12°C",
+      microzone: "Твиши (~15 км²)",
+      grape: "Цоликаури 100%",
+      grapesSourced: "Микрозона Твиши, десен бряг на река Риони",
+      alcohol: "11%–12%",
+      servingTemperature: "+8°C до +10°C",
       storageTemperature: "+5°C до +18°C",
-      color: "Светлозлатист",
-      aroma: "Деликатни плодови и цветни аромати",
-      taste: "Естествено полусладко, меко и хармонично, с приятен плодов характер.",
-      pairing: "Плодови десерти, меки сирена, азиатска кухня",
+      tastingNotes:
+        "Твиши е известно грузинско бяло естествено полусладко вино с нотки на мента, цитруси и узряла дюля, произведено от грозде Цоликаури в микрозоната Твиши с площ само около 15 км². Тя е разположена на десния бряг на река Риони във високопланинския регион Рача-Лечхуми в западна Грузия.",
+      color:
+        "Красив светлосламен цвят с лек зеленикав оттенък.",
+      aroma:
+        "Ярък, комплексен, много цветен и нежен. Ясно се долавят нотки на полски цветя, узрял пъпеш, дюля и круша.",
+      taste:
+        "Вкусовата палитра се разкрива с тонове на кайсия, праскова и тропически плодове. Виното е леко, с идеален баланс между естествена сладост и хрупкава ментово-цитрусова киселинност.",
+      vinification:
+        "Гроздето се бере на ръка в пика на зрялост. След внимателно отделяне на чепките гроздето се изтисква и ферментира в резервоари от неръждаема стомана при контролирана температура. След достигане на нужното ниво на захар в младото вино ферментацията се спира чрез охлаждане и филтрация, което запазва естествената сладост и свежест.",
       vintage: "2024",
     },
   },
@@ -513,34 +676,40 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       grape: "Kisi 100%",
       grapesSourced:
         "100% company’s own vineyards located on the right bank of the Alazani river",
-      servingTemperature: "+12°C to +16°C",
+      servingTemperature: "+8°C to +10°C",
       storageTemperature: "+5°C to +18°C",
-      color: "Dark straw",
+      tastingNotes:
+        "Kisi dry white is an exquisite, elegant white wine from the indigenous Kakhetian Kisi grape, grown on the company’s own vineyards on the right bank of the Alazani River. Light, with notes of ripe fruit and refreshing acidity. Ideal as an aperitif and with light salads, poultry or fish dishes.",
+      color:
+        "Light straw, pale yellow, sometimes with a delicate greenish or golden hue.",
       aroma:
-        "Rich bouquet of tropical fruits accompanied with pleasant floral notes",
+        "A rich bouquet opens with tones of ripe fruit (peach, apricot), almond and white flowers.",
       taste:
-        "It hits the palate as a crisp, balanced wine, with hints of citrus, pineapple, pear, apple and peach.",
-      pairing:
-        "Best with grilled white fish, poultry and light meat, dishes with green herbs, mozzarella, feta and more.",
+        "The wine opens with a fresh, balanced taste, crisp acidity and nuances of citrus, pineapple, pear, apple and peach, finishing with an elegant long aftertaste.",
+      vinification:
+        "Made using European technology. After gentle destemming, the grapes are pressed, then fermented and aged in stainless-steel tanks at controlled temperature.",
       vintage: "2021",
     },
     ru: {
       name: "KISI",
-      classification: "Белое Сухое",
+      classification: "Белое сухое",
       region: "Кахетия",
       country: "Грузия",
       grape: "Киси 100%",
       grapesSourced:
-        "Только с собственных виноградников компании, расположенных на правом берегу реки Алазани",
-      servingTemperature: "+12°C — +16°C",
-      storageTemperature: "+16°C — +18°C",
-      color: "Тёмно-соломенный",
+        "Собственные виноградники компании на правом берегу реки Алазани",
+      servingTemperature: "+8°C — +10°C",
+      storageTemperature: "+5°C — +18°C",
+      tastingNotes:
+        "Белое сухое вино Киси — это изысканное, элегантное белое вино из автохтонного кахетинского сорта Киси, выращенного на собственных виноградниках компании, расположенных на правом берегу реки Алазани. Лёгкое, с нотами спелых фруктов и освежающей кислотностью. Идеально в качестве аперитива и сопровождения лёгких салатов, блюд из птицы или рыбы.",
+      color:
+        "Светло-соломенный, бледно-желтый, иногда с нежным зеленоватым или золотистым оттенком.",
       aroma:
-        "Богатый букет тропических фруктов в сопровождении приятных цветочных нот.",
+        "Богатый букет раскрывается тонами спелых фруктов (персик, абрикос), миндаля и белых цветов.",
       taste:
-        "Вино раскрывается свежим, сбалансированным вкусом с «хрустящей» кислотностью и оттенками цитрусовых, ананаса, груши, яблока и персика.",
-      pairing:
-        "Лучше всего сочетается с белой рыбой на гриле, птицей и легким мясом. Прекрасно подходит к блюдам с зеленой зеленью, а также к сырам Моцарелла, Фета и т.д",
+        "Вино раскрывается свежим, сбалансированным вкусом с «хрустящей» кислотностью и оттенками цитрусовых, ананаса, груши, яблока и персика, завершается элегантным долгим послевкусием.",
+      vinification:
+        "Вино создано по европейской технологии. После бережного гребнеотделения виноград выжимается с последующим брожением и выдержкой в резервуарах из нержавеющей стали при контролируемой температуре.",
       vintage: "2021",
     },
     es: {
@@ -551,15 +720,18 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       grape: "Kisi 100%",
       grapesSourced:
         "100% de los viñedos propios de la empresa, en la orilla derecha del río Alazani",
-      servingTemperature: "+12°C a +16°C",
+      servingTemperature: "+8°C a +10°C",
       storageTemperature: "+5°C a +18°C",
-      color: "Paja oscuro",
+      tastingNotes:
+        "El blanco seco Kisi es un vino blanco exquisito y elegante de la variedad autóctona kajetiana Kisi, cultivada en los viñedos propios de la empresa en la orilla derecha del río Alazani. Ligero, con notas de fruta madura y acidez refrescante. Ideal como aperitivo y con ensaladas ligeras, platos de ave o pescado.",
+      color:
+        "Paja clara, amarillo pálido, a veces con un delicado matiz verdoso o dorado.",
       aroma:
-        "Rico bouquet de frutas tropicales acompañado de agradables notas florales",
+        "Un rico bouquet se abre con tonos de fruta madura (melocotón, albaricoque), almendra y flores blancas.",
       taste:
-        "En paladar es un vino fresco y equilibrado, con matices de cítricos, piña, pera, manzana y melocotón.",
-      pairing:
-        "Ideal con pescado blanco a la parrilla, aves y carnes ligeras, platos con hierbas verdes, mozzarella, feta y más.",
+        "Se abre con un sabor fresco y equilibrado, acidez crujiente y matices de cítricos, piña, pera, manzana y melocotón, y termina con un elegante final largo.",
+      vinification:
+        "Elaborado con tecnología europea. Tras un despalillado cuidadoso, la uva se prensa y fermenta con crianza en depósitos de acero inoxidable a temperatura controlada.",
       vintage: "2021",
     },
     fr: {
@@ -570,15 +742,18 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       grape: "Kisi 100%",
       grapesSourced:
         "100 % des vignobles de la maison, sur la rive droite de l’Alazani",
-      servingTemperature: "+12°C à +16°C",
+      servingTemperature: "+8°C à +10°C",
       storageTemperature: "+5°C à +18°C",
-      color: "Paille foncée",
+      tastingNotes:
+        "Le blanc sec Kisi est un vin blanc exquis et élégant du cépage autochtone kakhétien Kisi, cultivé sur les vignobles de la maison sur la rive droite de l’Alazani. Léger, aux notes de fruits mûrs et à l’acidité rafraîchissante. Idéal en apéritif et avec des salades légères, des plats de volaille ou de poisson.",
+      color:
+        "Jaune paille clair, jaune pâle, parfois avec une délicate teinte verdâtre ou dorée.",
       aroma:
-        "Riche bouquet de fruits tropicaux accompagné de notes florales agréables",
+        "Un riche bouquet s’ouvre sur des tons de fruits mûrs (pêche, abricot), d’amande et de fleurs blanches.",
       taste:
-        "En bouche, un vin vif et équilibré, aux notes d’agrumes, d’ananas, de poire, de pomme et de pêche.",
-      pairing:
-        "Idéal avec poisson blanc grillé, volaille et viandes légères, plats aux herbes vertes, mozzarella, feta et plus encore.",
+        "Le vin s’ouvre sur un goût frais et équilibré, une acidité croquante et des nuances d’agrumes, d’ananas, de poire, de pomme et de pêche, et se termine par une longue finale élégante.",
+      vinification:
+        "Élaboré selon une technologie européenne. Après un égrappage soigneux, les raisins sont pressés, puis fermentés et élevés en cuves inox à température contrôlée.",
       vintage: "2021",
     },
     uk: {
@@ -588,16 +763,19 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       country: "Грузія",
       grape: "Кісі 100%",
       grapesSourced:
-        "Лише з власних виноградників компанії на правому березі річки Алазані",
-      servingTemperature: "+12°C — +16°C",
-      storageTemperature: "+16°C — +18°C",
-      color: "Темно-солом’яний",
+        "Власні виноградники компанії на правому березі річки Алазані",
+      servingTemperature: "+8°C — +10°C",
+      storageTemperature: "+5°C — +18°C",
+      tastingNotes:
+        "Біле сухе вино Кісі — вишукане, елегантне біле вино з автохтонного кахетинського сорту Кісі, вирощеного на власних виноградниках компанії на правому березі річки Алазані. Легке, з нотами стиглих фруктів і освіжаючою кислотністю. Ідеально як аперитив і до легких салатів, страв із птиці або риби.",
+      color:
+        "Світло-солом’яний, блідо-жовтий, іноді з ніжним зеленуватим або золотистим відтінком.",
       aroma:
-        "Багатий букет тропічних фруктів у супроводі приємних квіткових нот.",
+        "Багатий букет розкривається тонами стиглих фруктів (персик, абрикос), мигдалю та білих квітів.",
       taste:
-        "Вино розкривається свіжим, збалансованим смаком із хрусткою кислотністю та відтінками цитрусових, ананаса, груші, яблука та персика.",
-      pairing:
-        "Найкраще з білою рибою на грилі, птицею та легким м’ясом. Добре пасує до страв із зеленою зеленню, а також до сирів моцарела, фета тощо.",
+        "Вино розкривається свіжим, збалансованим смаком із «хрусткою» кислотністю та відтінками цитрусових, ананаса, груші, яблука й персика, завершується елегантним довгим післясмаком.",
+      vinification:
+        "Вино створене за європейською технологією. Після дбайливого гребеневідділення виноград віджимають із подальшим бродінням і витримкою в резервуарах з нержавіючої сталі за контрольованої температури.",
       vintage: "2021",
     },
     bg: {
@@ -607,100 +785,121 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       country: "Грузия",
       grape: "Киси 100%",
       grapesSourced: "100% собствени лозя на десния бряг на река Алазани",
-      servingTemperature: "+12°C до +16°C",
+      servingTemperature: "+8°C до +10°C",
       storageTemperature: "+5°C до +18°C",
-      color: "Тъмносламен",
-      aroma: "Богат букет от тропически плодове с приятни цветни нотки",
-      taste: "Свежо и балансирано, с нюанси на цитрус, ананас, круша, ябълка и праскова.",
-      pairing: "Бяла риба на скара, птиче и леко месо, ястия със зелени билки, моцарела, фета",
+      tastingNotes:
+        "Сухото бяло вино Киси е изискано, елегантно бяло вино от автохтонния кахетски сорт Киси, отгледан на собствените лозя на компанията на десния бряг на река Алазани. Леко, с нотки на узрели плодове и освежаваща киселинност. Идеално като аперитив и към леки салати, ястия от птиче или риба.",
+      color:
+        "Светлосламен, бледожълт, понякога с нежен зеленикав или позлатен оттенък.",
+      aroma:
+        "Богатият букет се разкрива с тонове на узрели плодове (праскова, кайсия), бадем и бели цветя.",
+      taste:
+        "Виното се разкрива със свеж, балансиран вкус, „хрупкава“ киселинност и нюанси на цитрус, ананас, круша, ябълка и праскова, и завършва с елегантен дълъг финиш.",
+      vinification:
+        "Виното е създадено по европейска технология. След внимателно отделяне на чепките гроздето се изтисква с последваща ферментация и отлежаване в резервоари от неръждаема стомана при контролирана температура.",
       vintage: "2021",
     },
   },
   "grw-khikhvi-qvevri": {
     en: {
       name: "KHIKHVI QVEVRI",
-      classification: "Qvevri White Dry",
+      classification: "Qvevri Amber Dry",
       region: "Kakheti",
       country: "Georgia",
       grape: "Khikhvi 100%",
       grapesSourced: "Company’s own vineyards",
-      servingTemperature: "+13°C to +16°C",
+      servingTemperature: "+10°C to +12°C",
       storageTemperature: "+5°C to +20°C",
-      color: "Pale golden yellow",
+      tastingNotes:
+        "Khikhvi Qvevri is an exquisite orange (amber) dry wine made from the rare indigenous Khikhvi grape. Vinification follows ancient Kakhetian tradition in clay qvevri buried in the ground. Skin contact gives the wine its rich amber color, firm tannins and a complex bouquet.",
+      color: "Deep, intense dark pomegranate.",
       aroma:
-        "Aromas of fresh herbs, wildflowers, and subtle notes of ripe yellow fruit",
+        "A rich bouquet opens with notes of ripe fruit (apricot, peach, quince), honey, almond and dried herbs.",
       taste:
-        "A complex yet balanced profile with a crisp finish. It blends delicate floral tones with flavors of dried fruits, providing a smooth, refreshing taste that is both elegant and versatile.",
-      pairing:
-        "This wine pairs beautifully with seafood dishes, white meats, and Mediterranean salads, making it a great choice for varied dining occasions.",
+        "High extract, roundness and a long, astringent finish.",
+      vinification:
+        "Grapes are hand-picked at peak ripeness. Fermentation at controlled temperature in qvevri, followed by aging in qvevri for 5 months.",
+      vintage: "2025",
     },
     ru: {
       name: "KHIKHVI QVEVRI",
-      classification: "Белое Сухое — Квеври",
+      classification: "Квеври янтарное сухое",
       region: "Кахетия",
       country: "Грузия",
       grape: "Хихви 100%",
       grapesSourced: "Собственные виноградники",
-      servingTemperature: "+13°C — +16°C",
+      servingTemperature: "+10°C — +12°C",
       storageTemperature: "+5°C — +20°C",
-      color: "Бледно-золотистый",
+      tastingNotes:
+        "Хихви Квеври — это изысканное оранжевое (янтарное) сухое вино, созданное из редкого автохтонного сорта винограда Хихви. Винификация проходит по древней кахетинской технологии в глиняных кувшинах квеври, закопанных в землю. Благодаря контакту с мезгой, напиток приобретает насыщенный янтарный цвет, плотные танины и сложный букет.",
+      color: "Глубокий, насыщенный, темно-гранатовый.",
       aroma:
-        "Ароматы трав и полевых цветов, дополненные тонкими нотками спелых желтых фруктов",
+        "Богатый букет раскрывается нотами спелых фруктов (абрикос, персик, айва), меда, миндаля и сушеных трав.",
       taste:
-        "Сбалансированный профиль с освежающим послевкусием. В нем гармонично сочетаются нежные цветочные тона и оттенки сухофруктов, создавая мягкий, бодрящий элегантный вкус.",
-      pairing:
-        "Прекрасно сочетается с лёгкими блюдами из морепродуктов, белым мясом и средиземноморскими салатами, что делает его универсальным выбором для различных блюд.",
+        "Во вкусе ощущается высокая экстрактивность, округлость и долгое, терпкое послевкусие.",
+      vinification:
+        "Виноград собирают вручную на пике зрелости. Ферментация при контролируемой температуре в квеври. С последующей выдержкой в квеври в течение 5 месяцев.",
+      vintage: "2025",
     },
     es: {
       name: "KHIKHVI QVEVRI",
-      classification: "Blanco seco de qvevri",
+      classification: "Ámbar seco de qvevri",
       region: "Kajetia",
       country: "Georgia",
       grape: "Khikhvi 100%",
       grapesSourced: "Viñedos propios de la empresa",
-      servingTemperature: "+13°C a +16°C",
+      servingTemperature: "+10°C a +12°C",
       storageTemperature: "+5°C a +20°C",
-      color: "Amarillo dorado pálido",
+      tastingNotes:
+        "Khikhvi Qvevri es un exquisito vino naranja (ámbar) seco elaborado con la rara variedad autóctona Khikhvi. La vinificación sigue la antigua tradición kajetiana en qvevri de arcilla enterrados en la tierra. El contacto con los hollejos aporta un color ámbar intenso, taninos firmes y un bouquet complejo.",
+      color: "Granate oscuro profundo e intenso.",
       aroma:
-        "Aromas de hierbas frescas, flores silvestres y sutiles notas de fruta amarilla madura",
+        "Un bouquet rico se abre con notas de fruta madura (albaricoque, melocotón, membrillo), miel, almendra y hierbas secas.",
       taste:
-        "Perfil complejo y equilibrado, con un final fresco. Combina tonos florales delicados con sabores de frutos secos, para un gusto suave, elegante y versátil.",
-      pairing:
-        "Marida a la perfección con mariscos, carnes blancas y ensaladas mediterráneas.",
+        "Alta extractividad, redondez y un final largo y astringente.",
+      vinification:
+        "La uva se vendimia a mano en el punto óptimo de madurez. Fermentación a temperatura controlada en qvevri, seguida de crianza en qvevri durante 5 meses.",
+      vintage: "2025",
     },
     fr: {
       name: "KHIKHVI QVEVRI",
-      classification: "Blanc sec de qvevri",
+      classification: "Ambré sec de qvevri",
       region: "Kakhétie",
       country: "Géorgie",
       grape: "Khikhvi 100%",
       grapesSourced: "Vignobles de la maison",
-      servingTemperature: "+13°C à +16°C",
+      servingTemperature: "+10°C à +12°C",
       storageTemperature: "+5°C à +20°C",
-      color: "Jaune doré pâle",
+      tastingNotes:
+        "Le Khikhvi Qvevri est un raffiné vin orange (ambré) sec élaboré à partir du rare cépage autochtone Khikhvi. La vinification suit la tradition kakhétienne ancestrale dans des qvevri d’argile enterrés. Le contact avec les peaux donne au vin sa couleur ambrée intense, des tanins fermes et un bouquet complexe.",
+      color: "Grenat sombre profond et intense.",
       aroma:
-        "Arômes d’herbes fraîches, de fleurs des champs et de subtiles notes de fruits jaunes mûrs",
+        "Un bouquet riche s’ouvre sur des notes de fruits mûrs (abricot, pêche, coing), de miel, d’amande et d’herbes séchées.",
       taste:
-        "Profil complexe et équilibré, à la finale vive. Il allie des tons floraux délicats aux saveurs de fruits secs, pour un goût souple, élégant et polyvalent.",
-      pairing:
-        "S’accorde parfaitement avec fruits de mer, viandes blanches et salades méditerranéennes.",
+        "Forte extractivité, rondeur et une longue finale astringente.",
+      vinification:
+        "Les raisins sont vendangés à la main à pleine maturité. Fermentation à température contrôlée en qvevri, suivie d’un élevage en qvevri pendant 5 mois.",
+      vintage: "2025",
     },
     uk: {
       name: "KHIKHVI QVEVRI",
-      classification: "Біле сухе — квеврі",
+      classification: "Квеврі янтарне сухе",
       region: "Кахетія",
       country: "Грузія",
       grape: "Хіхві 100%",
       grapesSourced: "Власні виноградники",
-      servingTemperature: "+13°C — +16°C",
+      servingTemperature: "+10°C — +12°C",
       storageTemperature: "+5°C — +20°C",
-      color: "Блідо-золотистий",
+      tastingNotes:
+        "Хіхві Квеврі — вишукане помаранчеве (янтарне) сухе вино з рідкісного автохтонного сорту Хіхві. Виніфікація відбувається за давньою кахетинською технологією в глиняних квеврі, закопаних у землю. Завдяки контакту з мезгою напій набуває насиченого янтарного кольору, щільних танінів і складного букета.",
+      color: "Глибокий, насичений, темно-гранатовий.",
       aroma:
-        "Аромати трав і польових квітів, доповнені тонкими нотами стиглих жовтих фруктів",
+        "Багатий букет розкривається нотами стиглих фруктів (абрикос, персик, айва), меду, мигдалю та сушених трав.",
       taste:
-        "Збалансований профіль з освіжаючим післясмаком. Гармонійно поєднуються ніжні квіткові тони та відтінки сухофруктів, створюючи м’який, бадьорий елегантний смак.",
-      pairing:
-        "Чудово пасує до легких страв з морепродуктів, білого м’яса та середземноморських салатів.",
+        "У смаку відчувається висока екстрактивність, округлість і довгий терпкий післясмак.",
+      vinification:
+        "Виноград збирають вручну на піку зрілості. Ферментація за контрольованої температури в квеврі з подальшою витримкою в квеврі протягом 5 місяців.",
+      vintage: "2025",
     },
     bg: {
       name: "KHIKHVI QVEVRI",
@@ -708,13 +907,18 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       region: "Кахетия",
       country: "Грузия",
       grape: "Хихви 100%",
-      grapesSourced: "От лозя в Кахетия",
-      servingTemperature: "+12°C до +16°C",
-      storageTemperature: "+5°C до +18°C",
-      color: "Кехлибар",
-      aroma: "Сложни аромати на сушени плодове, мед и подправки",
-      taste: "Плътно и структурирано квеври вино с дълъг финиш.",
-      pairing: "Меса на скара, зрели сирена, традиционна грузинска кухня",
+      grapesSourced: "Собствени лозя на компанията",
+      servingTemperature: "+10°C до +12°C",
+      storageTemperature: "+5°C до +20°C",
+      tastingNotes:
+        "Хихви Квеври е изискано оранжево (кехлибарено) сухо вино от редкия автохтонен сорт Хихви. Винификацията следва древната кахетска технология в глинени квеври, заровени в земята. Благодарение на контакта с джибрите виното придобива наситен кехлибарен цвят, плътни танини и сложен букет.",
+      color: "Дълбок, наситен, тъмнонаратов.",
+      aroma:
+        "Богатият букет се разкрива с нотки на узрели плодове (кайсия, праскова, дюля), мед, бадем и сушени билки.",
+      taste:
+        "Във вкуса се усеща висока екстрактивност, закръгленост и дълъг тръпчив финиш.",
+      vinification:
+        "Гроздето се бере на ръка в пика на зрялост. Ферментация при контролирана температура в квеври, последвана от отлежаване в квеври в продължение на 5 месеца.",
       vintage: "2025",
     },
   },
@@ -726,40 +930,41 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       country: "Georgia",
       microzone: "Kvareli PDO",
       grape: "Saperavi 100%",
-      grapesSourced: "Only from the best vineyards in Kakheti",
+      grapesSourced: "From the strictly limited Kvareli microzone",
       alcohol: "12%",
-      servingTemperature: "+16°C to +18°C",
+      servingTemperature: "+15°C to +18°C",
       storageTemperature: "+5°C to +20°C",
-      color: "Deep ruby",
+      tastingNotes:
+        "Kvareli is a classic Georgian vintage dry red wine with protected geographical indication, made from Saperavi using the ancient traditional Georgian method in clay qvevri buried in the ground. It takes its name from the Kvareli district in Kakheti, where grapes for this wine are grown on a strictly limited microzone territory.",
+      color: "Deep, intense dark pomegranate.",
       aroma:
-        "The wine reveals aromas of ripe cherry, mixed with soft hints of dark berries.",
+        "A vivid, complex and varietal bouquet. Dominated by pronounced notes of ripe cherry, blackberry and forest berries, with light spicy nuances of vanilla and clove.",
       taste:
-        "Smooth and harmonious, balanced with soft tannins and a pleasant acidity, which adds a long and refined finish.",
-      pairing: "Hearty meals, grilled meats, and aged cheeses.",
+        "Velvety, dense and full-bodied. Pleasant astringency and powerful yet rounded tannins, balanced acidity and a long dry finish.",
       vinification:
-        "This wine is crafted using the traditional Georgian qvevri method and after aged in oak barrel at least six months. This contributes to the wine’s unique depth and character, making it a standout selection for lovers of refined, authentic red wines.",
+        "Grapes are hand-picked at peak ripeness. Fermentation at controlled temperature in qvevri, followed by aging in qvevri for 5 months.",
       vintage: "2022",
     },
     ru: {
       name: "KVARELI QVEVRI",
-      classification: "Красное сухое вино",
+      classification: "Квеври красное сухое",
       region: "Кахетия",
       country: "Грузия",
-      microzone: "Кварели, Кахетия",
+      microzone: "Кварели (защищенное географическое происхождение)",
       grape: "Саперави 100%",
-      grapesSourced: "Виноград из лучших виноградников Кахетии",
-      alcohol: "13%",
-      servingTemperature: "+16°C — +18°C",
+      grapesSourced: "Из строго ограниченной микрозоны Кварели",
+      alcohol: "12%",
+      servingTemperature: "+15°C — +18°C",
       storageTemperature: "+5°C — +20°C",
-      color: "Темно-вишневый",
+      tastingNotes:
+        "Кварели — это классическое грузинское марочное сухое красное вино, защищенное по географическому происхождению, изготовленное из сорта Саперави по древнему традиционному грузинскому методу в глиняных сосудах квеври, врытых в землю. Свое название оно получило в честь Кварельского района в Кахетии, где на строго ограниченной территории микрозоны выращивают виноград для этого вина.",
+      color: "Глубокий, насыщенный, темно-гранатовый.",
       aroma:
-        "Вино раскрывает насыщенные ароматы спелой вишни с мягкими оттенками темных ягод.",
+        "Яркий, сложный и сортовой букет. Преобладают выраженные ноты спелой вишни, ежевики и лесных ягод. Присутствуют легкие пикантные нюансы ванили и гвоздики.",
       taste:
-        "Гладкое и гармоничное, сбалансированное мягкими танинами и приятной кислотностью, создающими долгий и изысканный послевкусие.",
-      pairing:
-        "Идеально подходит к насыщенным блюдам, мясу на гриле и выдержанным сырам.",
+        "Бархатистый, густой и полнотелый. Вино обладает приятной терпкостью и мощными, но округлыми танинами, сбалансированной кислотностью и долгим сухим послевкусием.",
       vinification:
-        "Вино производится по традиционному грузинскому методу в квеври — больших глиняных сосудах, закопанных в землю, где проходят ферментация и выдержка. Этот древний способ придаёт вину глубину и уникальный характер, делая его настоящей находкой для ценителей аутентичных и благородных красных вин.",
+        "Виноград собирают вручную на пике зрелости. Ферментация при контролируемой температуре в квеври. С последующей выдержкой в квеври в течение 5 месяцев.",
       vintage: "2022",
     },
     es: {
@@ -769,18 +974,19 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       country: "Georgia",
       microzone: "Kvareli DOP",
       grape: "Saperavi 100%",
-      grapesSourced: "Solo de los mejores viñedos de Kajetia",
+      grapesSourced: "De la microzona estrictamente limitada de Kvareli",
       alcohol: "12%",
-      servingTemperature: "+16°C a +18°C",
+      servingTemperature: "+15°C a +18°C",
       storageTemperature: "+5°C a +20°C",
-      color: "Rubí profundo",
+      tastingNotes:
+        "Kvareli es un tinto seco de crianza georgiano clásico, con indicación geográfica protegida, elaborado con Saperavi según el antiguo método tradicional georgiano en qvevri de arcilla enterrados. Toma su nombre del distrito de Kvareli en Kajetia, donde las uvas para este vino se cultivan en un territorio de microzona estrictamente limitado.",
+      color: "Granate oscuro profundo e intenso.",
       aroma:
-        "Aromas de cereza madura, con suaves matices de frutos negros.",
+        "Bouquet vivo, complejo y varietal. Dominan notas marcadas de cereza madura, mora y bayas del bosque, con ligeros matices especiados de vainilla y clavo.",
       taste:
-        "Suave y armonioso, equilibrado con taninos blandos y una acidez agradable que aporta un final largo y refinado.",
-      pairing: "Platos contundentes, carnes a la parrilla y quesos curados.",
+        "Aterciopelado, denso y de cuerpo completo. Agradable astringencia y taninos potentes pero redondos, acidez equilibrada y un final seco y largo.",
       vinification:
-        "Elaborado con el método tradicional georgiano en qvevri y posteriormente envejecido en barrica de roble al menos seis meses, lo que aporta profundidad y carácter.",
+        "La uva se vendimia a mano en el punto óptimo de madurez. Fermentación a temperatura controlada en qvevri, seguida de crianza en qvevri durante 5 meses.",
       vintage: "2022",
     },
     fr: {
@@ -790,60 +996,63 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       country: "Géorgie",
       microzone: "Kvareli AOP",
       grape: "Saperavi 100%",
-      grapesSourced: "Uniquement des meilleurs vignobles de Kakhétie",
+      grapesSourced: "De la microzone strictement limitée de Kvareli",
       alcohol: "12%",
-      servingTemperature: "+16°C à +18°C",
+      servingTemperature: "+15°C à +18°C",
       storageTemperature: "+5°C à +20°C",
-      color: "Rubis profond",
+      tastingNotes:
+        "Le Kvareli est un rouge sec de cru géorgien classique, à indication géographique protégée, élaboré à partir de Saperavi selon l’ancienne méthode traditionnelle géorgienne dans des qvevri d’argile enterrés. Il doit son nom au district de Kvareli en Kakhétie, où les raisins destinés à ce vin sont cultivés sur un territoire de microzone strictement limité.",
+      color: "Grenat sombre profond et intense.",
       aroma:
-        "Arômes de cerise mûre, mêlés de douces notes de baies noires.",
+        "Bouquet vif, complexe et variétal. Dominent des notes marquées de cerise mûre, de mûre et de baies des bois, avec de légères nuances épicées de vanille et de clou de girofle.",
       taste:
-        "Souple et harmonieux, équilibré par des tanins doux et une acidité agréable, pour une finale longue et raffinée.",
-      pairing: "Plats copieux, viandes grillées et fromages affinés.",
+        "Velouté, dense et corsé. Agréable astringence et tanins puissants mais ronds, acidité équilibrée et longue finale sèche.",
       vinification:
-        "Élaboré selon la méthode traditionnelle géorgienne en qvevri, puis élevé en fût de chêne au moins six mois, pour plus de profondeur et de caractère.",
+        "Les raisins sont vendangés à la main à pleine maturité. Fermentation à température contrôlée en qvevri, suivie d’un élevage en qvevri pendant 5 mois.",
       vintage: "2022",
     },
     uk: {
       name: "KVARELI QVEVRI",
-      classification: "Червоне сухе вино",
+      classification: "Квеврі червоне сухе",
       region: "Кахетія",
       country: "Грузія",
-      microzone: "Кварелі, Кахетія",
+      microzone: "Кварелі (захищене географічне походження)",
       grape: "Сапераві 100%",
-      grapesSourced: "Виноград із найкращих виноградників Кахетії",
-      alcohol: "13%",
-      servingTemperature: "+16°C — +18°C",
+      grapesSourced: "Із суворо обмеженої мікрозони Кварелі",
+      alcohol: "12%",
+      servingTemperature: "+15°C — +18°C",
       storageTemperature: "+5°C — +20°C",
-      color: "Темно-вишневий",
+      tastingNotes:
+        "Кварелі — класичне грузинське марочне сухе червоне вино із захищеним географічним походженням, виготовлене зі сорту Сапераві за давнім традиційним грузинським методом у глиняних квеврі, вкопаних у землю. Свою назву воно отримало на честь Кварельського району в Кахетії, де на суворо обмеженій території мікрозони вирощують виноград для цього вина.",
+      color: "Глибокий, насичений, темно-гранатовий.",
       aroma:
-        "Вино розкриває насичені аромати стиглої вишні з м’якими відтінками темних ягід.",
+        "Яскравий, складний і сортовий букет. Переважають виражені ноти стиглої вишні, ожини та лісових ягід. Присутні легкі пікантні нюанси ванілі та гвоздики.",
       taste:
-        "Гладке й гармонійне, збалансоване м’якими танінами та приємною кислотністю, що створюють довгий вишуканий післясмак.",
-      pairing:
-        "Ідеально до насичених страв, м’яса на грилі та витриманих сирів.",
+        "Оксамитовий, густий і повнотілий. Вино має приємну терпкість і потужні, але округлі таніни, збалансовану кислотність і довгий сухий післясмак.",
       vinification:
-        "Вино виробляється за традиційним грузинським методом у квеврі — великих глиняних посудинах, заглиблених у землю, де відбуваються ферментація та витримка. Цей давній спосіб надає вину глибини й унікального характеру.",
+        "Виноград збирають вручну на піку зрілості. Ферментація за контрольованої температури в квеврі з подальшою витримкою в квеврі протягом 5 місяців.",
       vintage: "2022",
     },
     bg: {
       name: "KVARELI QVEVRI",
-      classification: "Сухо червено",
+      classification: "Квеври сухо червено",
       region: "Кахетия",
       country: "Грузия",
-      microzone: "Кварели PDO",
+      microzone: "Кварели (защитен географски произход)",
       grape: "Саперави 100%",
-      grapesSourced: "Само от най-добрите лозя в Кахетия",
+      grapesSourced: "От строго ограничената микрозона Кварели",
       alcohol: "12%",
-      servingTemperature: "+16°C до +18°C",
+      servingTemperature: "+15°C до +18°C",
       storageTemperature: "+5°C до +20°C",
-      color: "Дълбок рубин",
-      aroma: "Аромати на зряла череша с меки нюанси на тъмни плодове.",
+      tastingNotes:
+        "Кварели е класическо грузинско марково сухо червено вино със защитено географско наименование, произведено от сорта Саперави по древния традиционен грузински метод в глинени квеври, заровени в земята. Името си носи от района Кварели в Кахетия, където на строго ограничена територия на микрозоната се отглежда гроздето за това вино.",
+      color: "Дълбок, наситен, тъмнонаратов.",
+      aroma:
+        "Ярък, сложен и сортов букет. Преобладават изразени нотки на узряла череша, къпина и горски плодове. Има леки пикантни нюанси на ванилия и карамфил.",
       taste:
-        "Гладко и хармонично, балансирано с меки танини и приятна киселинност за дълъг, изискан финиш.",
-      pairing: "Наситени ястия, меса на скара и зрели сирена.",
+        "Кадифен, гъст и пълнотен. Виното има приятна тръпчивост и мощни, но закръглени танини, балансирана киселинност и дълъг сух финиш.",
       vinification:
-        "Произведено по традиционния грузински метод в квеври и след това отлежало в дъбова бъчва поне шест месеца, което придава дълбочина и характер.",
+        "Гроздето се бере на ръка в пика на зрялост. Ферментация при контролирана температура в квеври, последвана от отлежаване в квеври в продължение на 5 месеца.",
       vintage: "2022",
     },
   },
@@ -856,31 +1065,40 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       grape: "Kisi 100%",
       grapesSourced:
         "Company’s own vineyards located on the right bank of Alazani river",
-      servingTemperature: "+13°C to +16°C",
+      servingTemperature: "+10°C to +12°C",
       storageTemperature: "+5°C to +18°C",
+      tastingNotes:
+        "A white (amber or “orange”) dry wine made from the indigenous Kisi grape using ancient Kakhetian technology in large clay qvevri. Whites made this way are marked by remarkable density, tannic structure and a deep, unique bouquet.",
+      color:
+        "Intense, from deep dark straw to noble amber.",
       aroma:
-        "Pronounced stone fruit notes such as peach, apricot, accompanied with herbal, zest hue",
+        "A vivid, complex bouquet with pronounced notes of dried apricot, dried fig, quince, honey, meadow herbs, walnut and light hints of oriental spices.",
       taste:
-        "Well structured, pleasant bouquet of various fruits with long aftertaste",
-      pairing: "Best with steak, lamb and barbecue",
+        "Deep, oily and velvety. Skin contact gives noticeable tannic astringency (as in red wines), moderate acidity and a long warming finish with honey-nut accents.",
+      vinification:
+        "Grapes are gently pressed and, together with the whole mass, poured into a large clay qvevri. The qvevri is buried vertically in the ground up to the neck, keeping a stable fermentation temperature (around 13–15 °C). After fermentation, the vessel is sealed and the wine matures on the lees for 4 to 6 months. In this period clay and grape skins give the wine a maximum of phenolic compounds. Kisi is highly aromatic on its own, and aging in qvevri turns it into a complex, full-bodied wine.",
       vintage: "2024",
     },
     ru: {
       name: "KISI QVEVRI",
-      classification: "Квеври Янтарное Сухое",
+      classification: "Квеври янтарное сухое",
       region: "Кахетия",
       country: "Грузия",
       grape: "Киси 100%",
       grapesSourced:
         "Собственные виноградники компании, расположенные на правом берегу реки Алазани",
-      servingTemperature: "+12°C — +16°C",
+      servingTemperature: "+10°C — +12°C",
       storageTemperature: "+5°C — +18°C",
+      tastingNotes:
+        "Это белое (янтарное или «оранжевое») сухое вино, изготовленное из автохтонного сорта винограда Киси по древней кахетинской технологии в огромных глиняных кувшинах — квеври. Белые вина, созданные по этой технологии, отличаются невероятной плотностью, танинной структурой и глубоким, ни на что не похожим букетом.",
+      color:
+        "Насыщенный, от глубокого темно-соломенного до благородного янтарного.",
       aroma:
-        "Ярко выраженные ноты персика и абрикоса в сочетании с травяными оттенками и нюансами цедры.",
+        "Яркий, комплексный букет с выраженными нотами кураги, сушеного инжира, айвы, меда, полевых трав, грецкого ореха и легкими оттенками восточных пряностей.",
       taste:
-        "Хорошо структурированный, приятный букет из различных фруктов с длительным послевкусием",
-      pairing:
-        "Лучше всего подходит с мясом утки, курицы, барбекю также с выдержанными сырами",
+        "Глубокий, маслянистый и бархатистый. За счет контакта с кожицей вино обладает ощутимой танинной терпкостью (как у красных вин), умеренной кислотностью и долгим согревающим послевкусием с медово-ореховыми акцентами.",
+      vinification:
+        "Виноград бережно прессуют и вместе со всей массой заливают в огромный глиняный кувшин — квеври. Квеври вкопан вертикально в землю по самое горлышко, что позволяет поддерживать стабильную температуру брожения (около 13–15 °C). После завершения брожения кувшин запечатывают, и вино созревает на осадке от 4 до 6 месяцев. В этот период глина и виноградная кожица отдают напитку максимум фенольных соединений. Сорт Киси сам по себе очень ароматный, а выдержка в квеври превращает его в сложное, полнотелое вино.",
       vintage: "2024",
     },
     es: {
@@ -891,13 +1109,18 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       grape: "Kisi 100%",
       grapesSourced:
         "Viñedos propios de la empresa, en la orilla derecha del río Alazani",
-      servingTemperature: "+13°C a +16°C",
+      servingTemperature: "+10°C a +12°C",
       storageTemperature: "+5°C a +18°C",
+      tastingNotes:
+        "Un vino blanco (ámbar u «naranja») seco elaborado con la variedad autóctona Kisi según la antigua tecnología kajetiana en grandes qvevri de arcilla. Los blancos hechos así destacan por una densidad extraordinaria, estructura tánica y un bouquet profundo e inconfundible.",
+      color:
+        "Intenso, desde paja oscura profunda hasta un ámbar noble.",
       aroma:
-        "Notas pronunciadas de fruta de hueso como melocotón y albaricoque, con matices herbales y de cítricos",
+        "Bouquet vivo y complejo con notas marcadas de albaricoque seco, higo seco, membrillo, miel, hierbas de campo, nuez y ligeros matices de especias orientales.",
       taste:
-        "Bien estructurado, agradable bouquet de frutas diversas y un largo retrogusto",
-      pairing: "Ideal con bistec, cordero y barbacoa",
+        "Profundo, oleoso y aterciopelado. Por el contacto con los hollejos tiene una astringencia tánica perceptible (como en los tintos), acidez moderada y un final largo y cálido con acentos de miel y nuez.",
+      vinification:
+        "La uva se prensa con cuidado y, junto con toda la masa, se vierte en un gran qvevri de arcilla. El qvevri se entierra verticalmente hasta el cuello, lo que mantiene una temperatura de fermentación estable (unos 13–15 °C). Tras la fermentación se sella y el vino madura sobre lías de 4 a 6 meses. En ese periodo la arcilla y los hollejos aportan al vino el máximo de compuestos fenólicos. Kisi es muy aromático por sí mismo, y la crianza en qvevri lo convierte en un vino complejo y de cuerpo completo.",
       vintage: "2024",
     },
     fr: {
@@ -908,13 +1131,18 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       grape: "Kisi 100%",
       grapesSourced:
         "Vignobles de la maison, sur la rive droite de l’Alazani",
-      servingTemperature: "+13°C à +16°C",
+      servingTemperature: "+10°C à +12°C",
       storageTemperature: "+5°C à +18°C",
+      tastingNotes:
+        "Un vin blanc (ambré ou « orange ») sec élaboré à partir du cépage autochtone Kisi selon l’ancienne technologie kakhétienne dans de grands qvevri d’argile. Les blancs ainsi obtenus se distinguent par une densité remarquable, une structure tannique et un bouquet profond, sans équivalent.",
+      color:
+        "Intense, du jaune paille sombre profond à un ambre noble.",
       aroma:
-        "Notes marquées de fruits à noyau — pêche, abricot — accompagnées d’accents herbacés et d’écorce d’agrumes",
+        "Bouquet vif et complexe aux notes marquées d’abricot sec, de figue sèche, de coing, de miel, d’herbes des champs, de noix et de légers accents d’épices orientales.",
       taste:
-        "Bien structuré, bouquet fruité agréable et longue persistance",
-      pairing: "Idéal avec steak, agneau et barbecue",
+        "Profond, huileux et velouté. Grâce au contact avec les peaux, le vin présente une astringence tannique perceptible (comme les rouges), une acidité modérée et une longue finale chaleureuse aux accents miel-noix.",
+      vinification:
+        "Les raisins sont pressés avec douceur et, avec toute la masse, versés dans un grand qvevri d’argile. Le qvevri est enterré verticalement jusqu’au col, ce qui maintient une température de fermentation stable (environ 13–15 °C). Après la fermentation, le vase est scellé et le vin mûrit sur lies de 4 à 6 mois. Pendant cette période, l’argile et les peaux apportent au vin un maximum de composés phénoliques. Le Kisi est déjà très aromatique, et l’élevage en qvevri en fait un vin complexe et corsé.",
       vintage: "2024",
     },
     uk: {
@@ -925,14 +1153,18 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       grape: "Кісі 100%",
       grapesSourced:
         "Власні виноградники компанії на правому березі річки Алазані",
-      servingTemperature: "+12°C — +16°C",
+      servingTemperature: "+10°C — +12°C",
       storageTemperature: "+5°C — +18°C",
+      tastingNotes:
+        "Це біле (янтарне або «помаранчеве») сухе вино, виготовлене з автохтонного сорту Кісі за давньою кахетинською технологією у величезних глиняних квеврі. Білі вина, створені за цією технологією, вирізняються неймовірною щільністю, танінною структурою та глибоким, ні на що не схожим букетом.",
+      color:
+        "Насичений, від глибокого темно-солом’яного до благородного янтарного.",
       aroma:
-        "Яскраво виражені ноти персика й абрикоса в поєднанні з трав’яними відтінками та нюансами цедри.",
+        "Яскравий, комплексний букет із вираженими нотами кураги, сушеного інжиру, айви, меду, польових трав, волоського горіха та легкими відтінками східних прянощів.",
       taste:
-        "Добре структурований, приємний букет різних фруктів із тривалим післясмаком",
-      pairing:
-        "Найкраще пасує до качки, курки, барбекю, а також до витриманих сирів",
+        "Глибокий, маслянистий і оксамитовий. Завдяки контакту зі шкіркою вино має відчутну танінну терпкість (як у червоних вин), помірну кислотність і довгий зігріваючий післясмак із медово-горіховими акцентами.",
+      vinification:
+        "Виноград обережно пресують і разом із усією масою заливають у величезний глиняний квеврі. Квеврі вкопаний вертикально в землю по саме горлечко, що дозволяє підтримувати стабільну температуру бродіння (близько 13–15 °C). Після завершення бродіння кувшин запечатують, і вино дозріває на осаді від 4 до 6 місяців. У цей період глина і виноградні шкірки віддають напою максимум фенольних сполук. Сорт Кісі сам по собі дуже ароматний, а витримка в квеврі перетворює його на складне, повнотіле вино.",
       vintage: "2024",
     },
     bg: {
@@ -942,105 +1174,140 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       country: "Грузия",
       grape: "Киси 100%",
       grapesSourced: "Собствени лозя на десния бряг на река Алазани",
-      servingTemperature: "+13°C до +16°C",
+      servingTemperature: "+10°C до +12°C",
       storageTemperature: "+5°C до +18°C",
-      aroma: "Изразени нотки на праскова и кайсия с тревисти и цитрусови нюанси",
-      taste: "Добре структурирано, приятен плодов букет с дълъг послевкус",
-      pairing: "Идеално със стек, агнешко и барбекю",
+      tastingNotes:
+        "Това е бяло (кехлибарено или „оранжево“) сухо вино от автохтонния сорт Киси по древната кахетска технология в огромни глинени квеври. Белите вина, създадени по тази технология, се отличават с невероятна плътност, танинова структура и дълбок, неповторим букет.",
+      color:
+        "Наситен, от дълбоко тъмносламен до благороден кехлибар.",
+      aroma:
+        "Ярък, комплексен букет с изразени нотки на сушена кайсия, сушена смокиня, дюля, мед, полски билки, орех и леки оттенъци на източни подправки.",
+      taste:
+        "Дълбок, маслен и кадифен. Благодарение на контакта с ципите виното има доловима танинова тръпчивост (както при червените вина), умерена киселинност и дълъг затоплящ финиш с медено-орехови акценти.",
+      vinification:
+        "Гроздето се пресова внимателно и заедно с цялата маса се налива в огромен глинен квеври. Квеври е заровен вертикално в земята до гърлото, което поддържа стабилна температура на ферментация (около 13–15 °C). След края на ферментацията съдът се запечатва и виното отлежава върху утайката от 4 до 6 месеца. В този период глината и ципите отдават на напитката максимум фенолни съединения. Сортът Киси сам по себе си е много ароматен, а отлежаването в квеври го превръща в сложно, пълнотено вино.",
       vintage: "2024",
     },
   },
   "grw-alazani-valley": {
     en: {
       name: "ALAZANI VALLEY",
-      classification: "Semi-Sweet White",
+      classification: "Naturally Semi-Sweet White",
       region: "Kakheti",
       country: "Georgia",
-      grape: "Rkatsiteli 100%",
-      grapesSourced: "Company’s own vineyards",
-      servingTemperature: "+10°C to +14°C",
+      grape: "Rkatsiteli with Mtsvane",
+      grapesSourced: "Company’s own vineyards in the Alazani Valley",
+      servingTemperature: "+8°C to +10°C",
       storageTemperature: "+5°C to +20°C",
+      tastingNotes:
+        "Traditional Georgian white, naturally semi-sweet wine from Rkatsiteli with a touch of Mtsvane, grown in the Alazani Valley on the company’s own vineyards.",
+      color: "Light straw with a golden hue.",
       aroma:
-        "Distinguished by a tender aroma with expressed tones of quince and melon",
+        "Bright, intense and fruit-floral. The bouquet is dominated by notes of ripe yellow apple, pear, melon, peach, quince and white flowers.",
       taste:
-        "The taste is fresh and harmonious with mild acidity and candied quince tones.",
-      pairing: "Recommended together with fruit salads and dessert",
+        "Soft, harmonious and rounded, with a silky texture. Natural sweetness is balanced by moderate, refreshing acidity. The palate reveals tones of baked apple, candied fruit, raisins and honey notes. The finish is soft and even.",
+      vinification:
+        "Grapes are hand-picked at peak ripeness. After gentle destemming, the grapes are pressed and fermented in stainless-steel tanks at controlled temperature. Once the desired sugar level in the young wine is reached, fermentation is stopped by cooling and filtration, preserving the wine’s natural sweetness and freshness. Bottling usually takes place a few months after harvest.",
       vintage: "2024",
     },
     ru: {
       name: "ALAZANI VALLEY",
-      classification: "Белое полусладкое",
+      classification: "Природно-полусладкое белое",
       region: "Кахетия",
       country: "Грузия",
-      grape: "Ркацители 100%",
-      grapesSourced: "Виноград с собственных виноградников",
-      servingTemperature: "+10°C — +14°C",
+      grape: "Ркацители с добавлением Мцване",
+      grapesSourced: "Собственные виноградники компании в Алазанской долине",
+      servingTemperature: "+8°C — +10°C",
       storageTemperature: "+5°C — +20°C",
-      aroma: "Отличается нежным ароматом с выраженными тонами айвы и дыни",
+      tastingNotes:
+        "Традиционное грузинское белое, природно-полусладкое вино, из сорта Ркацители с добавлением Мцване, выращенных в Алазанской долине, на собственных виноградниках компании.",
+      color: "Светло-соломенный с золотистым оттенком.",
+      aroma:
+        "Яркий, насыщенный и фруктово-цветочный. В букете преобладают ноты спелого желтого яблока, груши, дыни, персика, айвы и белых цветов.",
       taste:
-        "Свежий и гармоничный, с мягкой кислотностью и оттенками цукатированной айвы.",
-      pairing: "Рекомендуется к фруктовым салатам и десертам.",
+        "Мягкий, гармоничный и округлый, с шелковистой текстурой. Природная сладость сбалансирована умеренной, освежающей кислотностью. В палитре раскрываются тона печеного яблока, цукатов, изюма и медовые мотивы. Послевкусие мягкое и ровное.",
+      vinification:
+        "Виноград собирают вручную на пике их зрелости. После нежного гребнеотделения виноград выжимается с последующим брожением в резервуарах из нержавеющей стали при контролируемой температуре. После достижения необходимого уровня сахара в молодом вине, процесс брожения останавливается путем охлаждения и фильтрации, что позволяет сохранить в вине природную сладость и свежесть. Как правило, розлив вина происходит спустя несколько месяцев после сбора урожая.",
       vintage: "2024",
     },
     es: {
       name: "ALAZANI VALLEY",
-      classification: "Blanco semidulce",
+      classification: "Blanco naturalmente semidulce",
       region: "Kajetia",
       country: "Georgia",
-      grape: "Rkatsiteli 100%",
-      grapesSourced: "Viñedos propios de la empresa",
-      servingTemperature: "+10°C a +14°C",
+      grape: "Rkatsiteli con Mtsvane",
+      grapesSourced: "Viñedos propios de la empresa en el valle de Alazani",
+      servingTemperature: "+8°C a +10°C",
       storageTemperature: "+5°C a +20°C",
+      tastingNotes:
+        "Blanco georgiano tradicional, naturalmente semidulce, de Rkatsiteli con un toque de Mtsvane, cultivado en el valle de Alazani en los viñedos propios de la empresa.",
+      color: "Paja clara con matices dorados.",
       aroma:
-        "Se distingue por un aroma tierno, con tonos expresivos de membrillo y melón",
+        "Intenso, brillante y frutal-floral. En el bouquet predominan notas de manzana amarilla madura, pera, melón, melocotón, membrillo y flores blancas.",
       taste:
-        "Fresco y armonioso, con acidez suave y notas de membrillo confitado.",
-      pairing: "Recomendado con ensaladas de fruta y postres",
+        "Suave, armonioso y redondo, con textura sedosa. La dulzura natural se equilibra con una acidez moderada y refrescante. En el paladar aparecen tonos de manzana asada, frutas confitadas, pasas y matices de miel. El final es suave y equilibrado.",
+      vinification:
+        "La uva se vendimia a mano en el punto óptimo de madurez. Tras un despalillado suave, se prensa y fermenta en depósitos de acero inoxidable a temperatura controlada. Al alcanzar el nivel de azúcar deseado en el vino joven, la fermentación se detiene por enfriamiento y filtración, conservando la dulzura y frescura naturales. El embotellado suele realizarse unos meses después de la vendimia.",
       vintage: "2024",
     },
     fr: {
       name: "ALAZANI VALLEY",
-      classification: "Blanc moelleux",
+      classification: "Blanc naturellement demi-doux",
       region: "Kakhétie",
       country: "Géorgie",
-      grape: "Rkatsiteli 100%",
-      grapesSourced: "Vignobles de la maison",
-      servingTemperature: "+10°C à +14°C",
+      grape: "Rkatsiteli avec Mtsvane",
+      grapesSourced: "Vignobles de la maison dans la vallée de l’Alazani",
+      servingTemperature: "+8°C à +10°C",
       storageTemperature: "+5°C à +20°C",
+      tastingNotes:
+        "Blanc géorgien traditionnel, naturellement demi-doux, à base de Rkatsiteli avec une touche de Mtsvane, cultivé dans la vallée de l’Alazani sur les vignobles de la maison.",
+      color: "Jaune paille clair aux reflets dorés.",
       aroma:
-        "Se distingue par un arôme tendre aux notes marquées de coing et de melon",
+        "Vif, intense et fruité-floral. Le bouquet est dominé par des notes de pomme jaune mûre, poire, melon, pêche, coing et fleurs blanches.",
       taste:
-        "Frais et harmonieux, avec une acidité douce et des notes de coing confit.",
-      pairing: "Recommandé avec salades de fruits et desserts",
+        "Doux, harmonieux et rond, à la texture soyeuse. La douceur naturelle est équilibrée par une acidité modérée et rafraîchissante. Le palais révèle des tons de pomme cuite, fruits confits, raisins secs et notes de miel. La finale est douce et régulière.",
+      vinification:
+        "Les raisins sont vendangés à la main à pleine maturité. Après un égrappage doux, ils sont pressés puis fermentés en cuves inox à température contrôlée. Une fois le niveau de sucre souhaité atteint dans le vin jeune, la fermentation est arrêtée par refroidissement et filtration, préservant la douceur et la fraîcheur naturelles. La mise en bouteille a généralement lieu quelques mois après la vendange.",
       vintage: "2024",
     },
     uk: {
       name: "ALAZANI VALLEY",
-      classification: "Біле напівсолодке",
+      classification: "Природно напівсолодке біле",
       region: "Кахетія",
       country: "Грузія",
-      grape: "Ркацителі 100%",
-      grapesSourced: "Виноград із власних виноградників",
-      servingTemperature: "+10°C — +14°C",
+      grape: "Ркацителі з додаванням Мцване",
+      grapesSourced: "Власні виноградники компанії в Алазанській долині",
+      servingTemperature: "+8°C — +10°C",
       storageTemperature: "+5°C — +20°C",
-      aroma: "Відрізняється ніжним ароматом із вираженими тонами айви та дині",
+      tastingNotes:
+        "Традиційне грузинське біле, природно напівсолодке вино зі сорту Ркацителі з додаванням Мцване, вирощених в Алазанській долині на власних виноградниках компанії.",
+      color: "Світло-солом’яний із золотистим відтінком.",
+      aroma:
+        "Яскравий, насичений і фруктово-квітковий. У букеті переважають ноти стиглого жовтого яблука, груші, дині, персика, айви та білих квітів.",
       taste:
-        "Свіжий і гармонійний, з м’якою кислотністю та відтінками цукатованої айви.",
-      pairing: "Рекомендується до фруктових салатів і десертів.",
+        "М’який, гармонійний і округлий, з шовковистою текстурою. Природна солодкість збалансована помірною, освіжаючою кислотністю. У палітрі розкриваються тони печеного яблука, цукатів, родзинок і медові мотиви. Післясмак м’який і рівний.",
+      vinification:
+        "Виноград збирають вручну на піку зрілості. Після ніжного гребеневідділення виноград віджимають із подальшим бродінням у резервуарах з нержавіючої сталі за контрольованої температури. Після досягнення потрібного рівня цукру в молодому вині процес бродіння зупиняють охолодженням і фільтрацією, що дозволяє зберегти природну солодкість і свіжість. Як правило, розлив відбувається за кілька місяців після збору врожаю.",
       vintage: "2024",
     },
     bg: {
       name: "ALAZANI VALLEY",
-      classification: "Полусладко бяло",
+      classification: "Естествено полусладко бяло",
       region: "Кахетия",
       country: "Грузия",
-      grape: "Ркацители 100%",
-      grapesSourced: "Собствени лозя на компанията",
-      servingTemperature: "+10°C до +14°C",
+      grape: "Ркацители с добавка Мцване",
+      grapesSourced: "Собствени лозя на компанията в долината Алазани",
+      servingTemperature: "+8°C до +10°C",
       storageTemperature: "+5°C до +20°C",
-      aroma: "Нежен аромат с изразени тонове на дюля и пъпеш",
-      taste: "Свеж и хармоничен, с мека киселинност и нотки на захаросана дюля.",
-      pairing: "Препоръчва се с плодови салати и десерти",
+      tastingNotes:
+        "Традиционно грузинско бяло, естествено полусладко вино от сорта Ркацители с добавка Мцване, отгледани в долината Алазани на собствените лозя на компанията.",
+      color: "Светлосламен с позлатен оттенък.",
+      aroma:
+        "Ярък, наситен и плодово-цветен. В букета преобладават нотки на узряла жълта ябълка, круша, пъпеш, праскова, дюля и бели цветя.",
+      taste:
+        "Мек, хармоничен и закръглен, с копринена текстура. Естествената сладост е балансирана от умерена, освежаваща киселинност. В палитрата се разкриват тонове на печена ябълка, захаросани плодове, стафиди и медени мотиви. Финишът е мек и равен.",
+      vinification:
+        "Гроздето се бере на ръка в пика на зрялост. След нежно отделяне на чепките гроздето се изтисква и ферментира в резервоари от неръждаема стомана при контролирана температура. След достигане на нужното ниво на захар в младото вино ферментацията се спира чрез охлаждане и филтрация, което запазва естествената сладост и свежест. Обикновено бутилирането е няколко месеца след реколтата.",
       vintage: "2024",
     },
   },
@@ -1057,12 +1324,15 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       alcohol: "11,5%",
       servingTemperature: "+12°C to +15°C",
       storageTemperature: "+5°C to +20°C",
+      tastingNotes:
+        "Khvanchkara is a famous naturally semi-sweet red wine from Georgia, produced in the Ambrolauri district of the highland Racha region. It is made from the indigenous Aleksandrouli and Mujuretuli grape varieties.",
+      color: "Light cornelian cherry.",
       aroma:
-        "The wine has a dominant character of red and black berries, delicate floral and slightly of sweet spicy notes.",
+        "Complex and refined. The signature of its aromatic profile is notes of woodland violet, velvet rose, raspberry and wild strawberry.",
       taste:
-        "The palate mirrors the aroma notes. It has good balance of sweetness and acidity, texture is smooth and round",
-      pairing:
-        "The wine is a good accompaniment to ham, slightly spicy food, pork, fruits, and desserts",
+        "Harmonious and rounded, with soft tannins and a light, finely woven acidity. The palate is dominated by floral tones, berry notes and dried-fruit nuances with a characteristically long finish.",
+      vinification:
+        "At the end of October to early November, grapes are hand-picked at peak ripeness. After careful destemming and crushing, fermentation begins in stainless-steel tanks at controlled temperature. After 5–7 days of maceration, when the desired residual sugar is reached, fermentation is stopped by cooling and filtration, preserving the grape aroma, natural sweetness and freshness.",
       vintage: "2024",
     },
     ru: {
@@ -1078,17 +1348,20 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       alcohol: "11,5%",
       servingTemperature: "+12°C — +15°C",
       storageTemperature: "+5°C — +20°C",
+      tastingNotes:
+        "Хванчкара — это знаменитое природно-полусладкое красное вино из Грузии, производимое в Амбролаурском районе высокогорного региона Рача. Создается из автохтонных сортов винограда Александраули и Муджуретули.",
+      color: "Светло-кизиловый.",
       aroma:
-        "Доминируют ноты красных и черных ягод, присутствуют нежные цветочные нюансы и легкие оттенки сладких специй.",
+        "Сложный и изысканный. Визитной карточкой ароматного профиля этого вина считаются ноты лесной фиалки, бархатной розы, малины и земляники.",
       taste:
-        "Вкус повторяет ароматический профиль. Вино отличается хорошим балансом сладости и кислотности, а также мягкой, округлой текстурой",
-      pairing:
-        "Хорошо подходит с ветчиной, умеренно острыми блюдами, свининой, фруктами и десертами.",
+        "Гармоничный и округлый, с мягкими танинами и лёгкой гармонично переплетающейся кислотностью. В палитре преобладают цветочные тона, ягодные нотки и оттенки сухофруктов с характерным долгим послевкусием.",
+      vinification:
+        "Под конец октября – начало ноября месяца виноград собирают вручную на пике зрелости. После осторожного отделения гребней и дробления винограда начинается брожение в резервуарах из нержавеющей стали при контролируемой температуре. После 5–7-дневной мацерации, когда достигается желаемый уровень остаточного сахара, процесс брожения останавливается путем охлаждения и фильтрации вина, тем самым в нем сохраняется виноградный аромат, природная сладость и свежесть.",
       vintage: "2024",
     },
     es: {
       name: "KHVANCHKARA",
-      classification: "Tinto semidulce natural",
+      classification: "Tinto naturalmente semidulce",
       region: "Racha",
       country: "Georgia",
       subregion: "Ambrolauri",
@@ -1098,17 +1371,20 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       alcohol: "11,5%",
       servingTemperature: "+12°C a +15°C",
       storageTemperature: "+5°C a +20°C",
+      tastingNotes:
+        "Khvanchkara es un famoso tinto georgiano naturalmente semidulce, elaborado en el distrito de Ambrolauri de la región montañosa de Racha. Se crea a partir de las variedades autóctonas Aleksandrouli y Mujuretuli.",
+      color: "Cornejo claro.",
       aroma:
-        "Carácter dominante de frutos rojos y negros, con notas florales delicadas y un toque de especias dulces.",
+        "Complejo y refinado. La seña de identidad de su perfil aromático son notas de violeta de bosque, rosa aterciopelada, frambuesa y fresa silvestre.",
       taste:
-        "El paladar refleja el aroma. Buen equilibrio de dulzor y acidez, con una textura suave y redonda",
-      pairing:
-        "Acompaña bien jamón, platos ligeramente picantes, cerdo, frutas y postres",
+        "Armonioso y redondo, con taninos suaves y una acidez ligera finamente entrelazada. En el paladar predominan tonos florales, notas de bayas y matices de frutos secos, con un final característicamente largo.",
+      vinification:
+        "A finales de octubre e inicios de noviembre la uva se vendimia a mano en el punto óptimo de madurez. Tras un cuidadoso despalillado y triturado, comienza la fermentación en depósitos de acero inoxidable a temperatura controlada. Tras 5–7 días de maceración, al alcanzar el nivel de azúcar residual deseado, la fermentación se detiene por enfriamiento y filtración, conservando el aroma de la uva, la dulzura natural y la frescura.",
       vintage: "2024",
     },
     fr: {
       name: "KHVANCHKARA",
-      classification: "Rouge moelleux naturel",
+      classification: "Rouge naturellement demi-doux",
       region: "Ratcha",
       country: "Géorgie",
       subregion: "Ambrolauri",
@@ -1118,17 +1394,20 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       alcohol: "11,5%",
       servingTemperature: "+12°C à +15°C",
       storageTemperature: "+5°C à +20°C",
+      tastingNotes:
+        "Le Khvanchkara est un célèbre rouge géorgien naturellement demi-doux, produit dans le district d’Ambrolauri de la région montagneuse de Ratcha. Il est élaboré à partir des cépages autochtones Aleksandrouli et Mujuretuli.",
+      color: "Cornouiller clair.",
       aroma:
-        "Caractère dominant de baies rouges et noires, notes florales délicates et une légère touche d’épices douces.",
+        "Complexe et raffiné. La carte de visite de son profil aromatique : notes de violette des bois, rose veloutée, framboise et fraise des bois.",
       taste:
-        "Le palais reprend les notes aromatiques. Bel équilibre sucré-acide, texture souple et ronde",
-      pairing:
-        "S’accorde avec jambon, plats légèrement épicés, porc, fruits et desserts",
+        "Harmonieux et rond, aux tanins souples et à une acidité légère finement entrelacée. Le palais est dominé par des tons floraux, des notes de baies et des nuances de fruits secs, avec une longue finale caractéristique.",
+      vinification:
+        "Fin octobre – début novembre, les raisins sont vendangés à la main à pleine maturité. Après un égrappage et un foulage soigneux, la fermentation démarre en cuves inox à température contrôlée. Après 5–7 jours de macération, lorsque le niveau de sucre résiduel souhaité est atteint, la fermentation est arrêtée par refroidissement et filtration, préservant l’arôme du raisin, la douceur naturelle et la fraîcheur.",
       vintage: "2024",
     },
     uk: {
       name: "KHVANCHKARA",
-      classification: "Природно-напівсолодке червоне",
+      classification: "Природно напівсолодке червоне",
       region: "Рача",
       country: "Грузія",
       subregion: "Амбролаурі",
@@ -1139,12 +1418,15 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       alcohol: "11,5%",
       servingTemperature: "+12°C — +15°C",
       storageTemperature: "+5°C — +20°C",
+      tastingNotes:
+        "Хванчкара — знамените природно напівсолодке червоне вино з Грузії, що виробляється в Амбролаурському районі високогірного регіону Рача. Створюється з автохтонних сортів Александраулі та Муджуретулі.",
+      color: "Світло-кизиловий.",
       aroma:
-        "Домінують ноти червоних і чорних ягід, ніжні квіткові нюанси та легкі відтінки солодких спецій.",
+        "Складний і вишуканий. Візитівкою ароматного профілю цього вина вважаються ноти лісової фіалки, бархатної троянди, малини та суниці.",
       taste:
-        "Смак повторює ароматичний профіль. Вино вирізняється добрим балансом солодощі й кислотності та м’якою округлою текстурою",
-      pairing:
-        "Добре пасує до шинки, помірно гострих страв, свинини, фруктів і десертів.",
+        "Гармонійний і округлий, з м’якими танінами та легкою гармонійно переплетеною кислотністю. У палітрі переважають квіткові тони, ягідні нотки та відтінки сухофруктів із характерним довгим післясмаком.",
+      vinification:
+        "Наприкінці жовтня – на початку листопада виноград збирають вручну на піку зрілості. Після обережного відділення гребенів і дроблення винограду починається бродіння в резервуарах з нержавіючої сталі за контрольованої температури. Після 5–7-денної мацерації, коли досягається бажаний рівень залишкового цукру, процес бродіння зупиняють охолодженням і фільтрацією вина, зберігаючи виноградний аромат, природну солодкість і свіжість.",
       vintage: "2024",
     },
     bg: {
@@ -1159,103 +1441,149 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       alcohol: "11,5%",
       servingTemperature: "+12°C до +15°C",
       storageTemperature: "+5°C до +20°C",
-      aroma: "Доминират червени и черни плодове, нежни цветни и леко сладко-пикантни нотки.",
-      taste: "Вкусът следва аромата. Добър баланс между сладост и киселинност, гладка и кръгла текстура.",
-      pairing: "Подхожда към шунка, леко лютиви ястия, свинско, плодове и десерти",
+      tastingNotes:
+        "Хванчкара е известно естествено полусладко червено вино от Грузия, произвеждано в района Амбролаури на високопланинския регион Рача. Създава се от автохтонните сортове Александраули и Муджуретули.",
+      color: "Светлодрянов.",
+      aroma:
+        "Сложен и изискан. Визитната картичка на ароматния профил са нотки на горска теменуга, кадифена роза, малина и горска ягода.",
+      taste:
+        "Хармоничен и закръглен, с меки танини и лека хармонично преплетена киселинност. В палитрата преобладават цветни тонове, плодови нотки и оттенъци на сушени плодове с характерен дълъг финиш.",
+      vinification:
+        "В края на октомври – началото на ноември гроздето се бере на ръка в пика на зрялост. След внимателно отделяне на чепките и смачкване започва ферментация в резервоари от неръждаема стомана при контролирана температура. След 5–7-дневна мацерация, когато се достигне желаното ниво на остатъчна захар, ферментацията се спира чрез охлаждане и филтрация, като се запазват гроздовият аромат, естествената сладост и свежест.",
       vintage: "2024",
     },
   },
   "grw-alazani-valley-red": {
     en: {
       name: "ALAZANI VALLEY",
-      classification: "Semi-Sweet Red",
+      classification: "Naturally Semi-Sweet Red",
       region: "Kakheti",
       country: "Georgia",
       grape: "Saperavi 100%",
-      grapesSourced: "Company’s own vineyards",
+      grapesSourced: "Company’s own vineyards in Kakheti",
       alcohol: "11,5%",
-      servingTemperature: "+12°C to +15°C",
+      servingTemperature: "+10°C to +12°C",
       storageTemperature: "+5°C to +20°C",
+      tastingNotes:
+        "Traditional Georgian red — soft and velvety, naturally semi-sweet — made from 100% Saperavi grapes grown in Kakheti on the company’s own vineyards.",
+      color:
+        "Intense, almost opaque dark pomegranate with a violet hue.",
       aroma:
-        "The wine has rich fruit tones authentic for Saperavi such as various red and black fruits",
-      taste: "Dark forest fruits, undertone of jams",
+        "Dominated by blackcurrant, blackberry and cherry aromas.",
+      taste:
+        "Full-bodied wine with flavors of very ripe red berries and fruit, light acidity and a barely perceptible astringency, a balanced sweet finish with notes of berry jam or confiture.",
+      vinification:
+        "Grapes are hand-picked at peak ripeness. After gentle destemming, the grapes are pressed and fermented in stainless-steel tanks at controlled temperature. Once the desired sugar level in the young wine is reached, fermentation is stopped by cooling and filtration, preserving the wine’s natural sweetness and freshness. Bottling usually takes place a few months after harvest.",
       vintage: "2025",
     },
     ru: {
       name: "ALAZANI VALLEY",
-      classification: "Красное полусладкое",
+      classification: "Природно-полусладкое красное",
       region: "Кахетия",
       country: "Грузия",
       grape: "Саперави 100%",
-      grapesSourced: "Виноград с собственных виноградников",
+      grapesSourced: "Собственные виноградники компании в регионе Кахетия",
       alcohol: "11,5%",
-      servingTemperature: "+12°C — +15°C",
+      servingTemperature: "+10°C — +12°C",
       storageTemperature: "+5°C — +20°C",
+      tastingNotes:
+        "Традиционное грузинское красное, мягкое и бархатистое, природно-полусладкое вино, сделанное из 100% винограда сорта Саперави, выращенного в регионе Кахетия, на собственных виноградниках компании.",
+      color:
+        "Насыщенный, почти непрозрачный, темно-гранатовый с фиолетовым отливом.",
       aroma:
-        "Богат фруктовыми тонами, характерными для сорта Саперави — сочные чёрные ягоды, вишня, чернослив, шелковица и т.д.",
+        "Доминируют ароматы чёрной смородины, ежевики и черешни.",
       taste:
-        "Главный акцент — это спелая ежевика, черная смородина и шелковица, нотки джема. Вино очень сбалансированное с приятным послевкусием",
+        "Полнотелое вино со вкусом очень спелых красных ягод и фруктов, с лёгкой кислотностью и едва уловимой терпкостью, сбалансированным и сладким послевкусием с нотами ягодного джема или конфитюра.",
+      vinification:
+        "Виноград собирают вручную на пике их зрелости. После нежного гребнеотделения виноград выжимается с последующим брожением в резервуарах из нержавеющей стали при контролируемой температуре. После достижения необходимого уровня сахара в молодом вине, процесс брожения останавливается путем охлаждения и фильтрации, что позволяет сохранить в вине природную сладость и свежесть. Как правило, розлив вина происходит спустя несколько месяцев после сбора урожая.",
       vintage: "2025",
     },
     es: {
       name: "ALAZANI VALLEY",
-      classification: "Tinto semidulce",
+      classification: "Tinto naturalmente semidulce",
       region: "Kajetia",
       country: "Georgia",
       grape: "Saperavi 100%",
-      grapesSourced: "Viñedos propios de la empresa",
+      grapesSourced: "Viñedos propios de la empresa en Kajetia",
       alcohol: "11,5%",
-      servingTemperature: "+12°C a +15°C",
+      servingTemperature: "+10°C a +12°C",
       storageTemperature: "+5°C a +20°C",
+      tastingNotes:
+        "Tinto georgiano tradicional — suave y aterciopelado, naturalmente semidulce — elaborado con 100% Saperavi cultivado en Kajetia en los viñedos propios de la empresa.",
+      color:
+        "Intenso, casi opaco, granate oscuro con reflejos violetas.",
       aroma:
-        "Rico en tonos frutales auténticos del Saperavi, con frutos rojos y negros",
-      taste: "Frutos del bosque oscuros, con un fondo de mermeladas",
+        "Dominan aromas de grosella negra, mora y cereza.",
+      taste:
+        "Vino de cuerpo completo con sabor a bayas y frutas rojas muy maduras, acidez ligera y una astringencia apenas perceptible, final dulce y equilibrado con notas de mermelada o confitura de bayas.",
+      vinification:
+        "La uva se vendimia a mano en el punto óptimo de madurez. Tras un despalillado suave, se prensa y fermenta en depósitos de acero inoxidable a temperatura controlada. Al alcanzar el nivel de azúcar deseado en el vino joven, la fermentación se detiene por enfriamiento y filtración, conservando la dulzura y frescura naturales. El embotellado suele realizarse unos meses después de la vendimia.",
       vintage: "2025",
     },
     fr: {
       name: "ALAZANI VALLEY",
-      classification: "Rouge moelleux",
+      classification: "Rouge naturellement demi-doux",
       region: "Kakhétie",
       country: "Géorgie",
       grape: "Saperavi 100%",
-      grapesSourced: "Vignobles de la maison",
+      grapesSourced: "Vignobles de la maison en Kakhétie",
       alcohol: "11,5%",
-      servingTemperature: "+12°C à +15°C",
+      servingTemperature: "+10°C à +12°C",
       storageTemperature: "+5°C à +20°C",
+      tastingNotes:
+        "Rouge géorgien traditionnel — doux et velouté, naturellement demi-doux — élaboré à partir de 100 % Saperavi cultivé en Kakhétie sur les vignobles de la maison.",
+      color:
+        "Intense, presque opaque, grenat sombre aux reflets violets.",
       aroma:
-        "Riche en notes fruitées typiques du Saperavi, fruits rouges et noirs",
-      taste: "Fruits noirs des bois, avec un fond de confitures",
+        "Dominent les arômes de cassis, de mûre et de cerise.",
+      taste:
+        "Vin corsé aux saveurs de baies et fruits rouges très mûrs, acidité légère et astringence à peine perceptible, finale douce et équilibrée avec des notes de confiture de baies.",
+      vinification:
+        "Les raisins sont vendangés à la main à pleine maturité. Après un égrappage doux, ils sont pressés puis fermentés en cuves inox à température contrôlée. Une fois le niveau de sucre souhaité atteint dans le vin jeune, la fermentation est arrêtée par refroidissement et filtration, préservant la douceur et la fraîcheur naturelles. La mise en bouteille a généralement lieu quelques mois après la vendange.",
       vintage: "2025",
     },
     uk: {
       name: "ALAZANI VALLEY",
-      classification: "Червоне напівсолодке",
+      classification: "Природно напівсолодке червоне",
       region: "Кахетія",
       country: "Грузія",
       grape: "Сапераві 100%",
-      grapesSourced: "Виноград із власних виноградників",
+      grapesSourced: "Власні виноградники компанії в регіоні Кахетія",
       alcohol: "11,5%",
-      servingTemperature: "+12°C — +15°C",
+      servingTemperature: "+10°C — +12°C",
       storageTemperature: "+5°C — +20°C",
+      tastingNotes:
+        "Традиційне грузинське червоне, м’яке й оксамитове, природно напівсолодке вино, зроблене зі 100% винограду сорту Сапераві, вирощеного в регіоні Кахетія на власних виноградниках компанії.",
+      color:
+        "Насичений, майже непрозорий, темно-гранатовий із фіолетовим відтінком.",
       aroma:
-        "Багатий фруктовими тонами, характерними для сорту Сапераві — соковиті чорні ягоди, вишня, чорнослив, шовковиця тощо.",
+        "Домінують аромати чорної смородини, ожини та черешні.",
       taste:
-        "Головний акцент — стигла ожина, чорна смородина і шовковиця, нотки джему. Вино дуже збалансоване з приємним післясмаком",
+        "Повнотіле вино зі смаком дуже стиглих червоних ягід і фруктів, з легкою кислотністю та ледь помітною терпкістю, збалансованим солодким післясмаком із нотами ягідного джему або конфітюру.",
+      vinification:
+        "Виноград збирають вручну на піку зрілості. Після ніжного гребеневідділення виноград віджимають із подальшим бродінням у резервуарах з нержавіючої сталі за контрольованої температури. Після досягнення потрібного рівня цукру в молодому вині процес бродіння зупиняють охолодженням і фільтрацією, що дозволяє зберегти природну солодкість і свіжість. Як правило, розлив відбувається за кілька місяців після збору врожаю.",
       vintage: "2025",
     },
     bg: {
-      name: "ALAZANI VALLEY RED",
-      classification: "Полусладко червено",
+      name: "ALAZANI VALLEY",
+      classification: "Естествено полусладко червено",
       region: "Кахетия",
       country: "Грузия",
-      grape: "Саперави",
-      grapesSourced: "От лозя в долината Алазани",
-      servingTemperature: "+14°C до +16°C",
+      grape: "Саперави 100%",
+      grapesSourced: "Собствени лозя на компанията в регион Кахетия",
+      alcohol: "11,5%",
+      servingTemperature: "+10°C до +12°C",
       storageTemperature: "+5°C до +20°C",
-      color: "Рубинен",
-      aroma: "Плодови аромати на червени плодове",
-      taste: "Меко, полусладко червено с хармоничен и приятен финиш.",
-      pairing: "Сирена, плодове, леки месни ястия",
+      tastingNotes:
+        "Традиционно грузинско червено, меко и кадифено, естествено полусладко вино, направено от 100% грозде Саперави, отгледано в регион Кахетия на собствените лозя на компанията.",
+      color:
+        "Наситен, почти непрозрачен, тъмнонаратов с виолетов оттенък.",
+      aroma:
+        "Доминират аромати на касис, къпина и череша.",
+      taste:
+        "Пълнотено вино с вкус на много узрели червени плодове, с лека киселинност и едва доловима тръпчивост, балансиран сладък финиш с нотки на плодово сладко или конфитюр.",
+      vinification:
+        "Гроздето се бере на ръка в пика на зрялост. След нежно отделяне на чепките гроздето се изтисква и ферментира в резервоари от неръждаема стомана при контролирана температура. След достигане на нужното ниво на захар в младото вино ферментацията се спира чрез охлаждане и филтрация, което запазва естествената сладост и свежест. Обикновено бутилирането е няколко месеца след реколтата.",
       vintage: "2025",
     },
   },
@@ -1268,78 +1596,108 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       microzone: "Kindzmarauli PDO",
       grape: "Saperavi 100%",
       grapesSourced: "100% Company’s own vineyards",
-      servingTemperature: "+13°C to +16°C",
+      servingTemperature: "+10°C to +12°C",
       storageTemperature: "+5°C to +20°C",
+      tastingNotes:
+        "Kindzmarauli is Georgia’s most famous naturally semi-sweet red wine with protected designation of origin. Thanks to the unique mineral composition of the soils in the Kindzmarauli microzone, it has no equal in the world. Its signature is a deep ink-pomegranate color and a harmonious balance of natural berry sweetness with light tannic astringency.",
+      color:
+        "Dense, intense pomegranate or ripe-cherry color with violet highlights.",
       aroma:
-        "Wine is very expressive. The most immediate scents are of ripe, dark fruits and delicate floral signature.",
+        "A vivid bouquet dominated by notes of overripe cherry, blackberry and blackcurrant, with light hints of pomegranate peel and cornelian cherry.",
       taste:
-        "A soft, honeyed sweetness hints, dominated by blackberry jam and ripe pomegranate",
+        "Full and velvety, where the juiciness of dark berries and delicate sweetness are balanced by pleasant lively acidity and a soft, unobtrusive astringency of grape seed. Long, warming finish with clear tones of prune and spices.",
+      vinification:
+        "Grapes are hand-picked at peak ripeness. After gentle destemming, the grapes are pressed and fermented in stainless-steel tanks at controlled temperature. Once the desired sugar level in the young wine is reached, fermentation is stopped by cooling and filtration, preserving the wine’s natural sweetness and freshness. Bottling usually takes place a few months after harvest.",
       vintage: "2025",
     },
     ru: {
       name: "KINDZMARAULI",
       classification: "Природно-полусладкое красное",
-      region: "Кварели",
+      region: "Кахетия",
       country: "Грузия",
       microzone:
         "Киндзмараули (защищенное наименование места происхождения)",
       grape: "Саперави 100%",
       grapesSourced: "Виноград с собственных виноградников",
-      servingTemperature: "+12°C — +16°C",
+      servingTemperature: "+10°C — +12°C",
       storageTemperature: "+5°C — +20°C",
+      tastingNotes:
+        "Киндзмараули — это самое знаменитое грузинское красное природно-полусладкое вино с защищенным наименованием по происхождению, которое благодаря уникальному минеральному составу почвы в микрозоне Киндзмараули, не имеет аналогов в мире. Его визитной карточкой является глубокий, чернильно-гранатовый цвет и гармоничный баланс естественной сладости ягод с легкой танинной терпкостью.",
+      color:
+        "Густой, насыщенный гранатовый или цвет спелой вишни с фиолетовыми переливами.",
       aroma:
-        "Вино гармоничное, ярко выраженный и богатый букет тёмных фруктов, оттенки фиолетовых цветов и шоколада",
+        "Яркий букет с доминирующими нотами переспелой вишни, ежевики, черной смородины и легкими оттенками гранатовой корки и кизила.",
       taste:
-        "Ощущается мягкая сладость, в которой доминируют ноты ежевичного джема и спелого граната. Вино сбалансированное, с долгим послевкусием",
+        "Полный и бархатистый, в котором сочность темных ягод и деликатная сладость компенсируются приятной живой кислотностью и мягкой, ненавязчивой терпкостью виноградной косточки. Послевкусие длительное, согревающее, с отчетливыми тонами чернослива и специй.",
+      vinification:
+        "Виноград собирают вручную на пике их зрелости. После нежного гребнеотделения виноград выжимается с последующим брожением в резервуарах из нержавеющей стали при контролируемой температуре. После достижения необходимого уровня сахара в молодом вине, процесс брожения останавливается путем охлаждения и фильтрации, что позволяет сохранить в вине природную сладость и свежесть. Как правило, розлив вина происходит спустя несколько месяцев после сбора урожая.",
       vintage: "2025",
     },
     es: {
       name: "KINDZMARAULI",
-      classification: "Tinto semidulce natural",
+      classification: "Tinto naturalmente semidulce",
       region: "Kajetia",
       country: "Georgia",
       microzone: "Kindzmarauli DOP",
       grape: "Saperavi 100%",
       grapesSourced: "100% viñedos propios de la empresa",
-      servingTemperature: "+13°C a +16°C",
+      servingTemperature: "+10°C a +12°C",
       storageTemperature: "+5°C a +20°C",
+      tastingNotes:
+        "Kindzmarauli es el tinto georgiano naturalmente semidulce más famoso, con denominación de origen protegida. Gracias a la composición mineral única de los suelos de la microzona Kindzmarauli, no tiene igual en el mundo. Su seña de identidad es un color granate-tinta profundo y un equilibrio armonioso entre la dulzura natural de las bayas y una ligera astringencia tánica.",
+      color:
+        "Granate denso e intenso o color de cereza madura con reflejos violetas.",
       aroma:
-        "Vino muy expresivo. Los aromas más inmediatos son de frutos negros maduros y una delicada firma floral.",
+        "Bouquet intenso dominado por notas de cereza sobremadura, mora y grosella negra, con ligeros matices de cáscara de granada y cornejo.",
       taste:
-        "Dulzor suave con un toque de miel, dominado por mermelada de mora y granada madura",
+        "Completo y aterciopelado, donde la jugosidad de las bayas oscuras y una dulzura delicada se equilibran con una acidez viva y agradable y una astringencia suave e discreta de pepita de uva. Final largo y cálido con tonos claros de ciruela pasa y especias.",
+      vinification:
+        "La uva se vendimia a mano en el punto óptimo de madurez. Tras un despalillado suave, se prensa y fermenta en depósitos de acero inoxidable a temperatura controlada. Al alcanzar el nivel de azúcar deseado en el vino joven, la fermentación se detiene por enfriamiento y filtración, conservando la dulzura y frescura naturales. El embotellado suele realizarse unos meses después de la vendimia.",
       vintage: "2025",
     },
     fr: {
       name: "KINDZMARAULI",
-      classification: "Rouge moelleux naturel",
+      classification: "Rouge naturellement demi-doux",
       region: "Kakhétie",
       country: "Géorgie",
       microzone: "Kindzmarauli AOP",
       grape: "Saperavi 100%",
       grapesSourced: "100 % vignobles de la maison",
-      servingTemperature: "+13°C à +16°C",
+      servingTemperature: "+10°C à +12°C",
       storageTemperature: "+5°C à +20°C",
+      tastingNotes:
+        "Le Kindzmarauli est le rouge géorgien naturellement demi-doux le plus célèbre, à appellation d’origine protégée. Grâce à la composition minérale unique des sols de la microzone Kindzmarauli, il n’a pas d’équivalent au monde. Sa carte de visite est une couleur grenat-encre profonde et un équilibre harmonieux entre la douceur naturelle des baies et une légère astringence tannique.",
+      color:
+        "Grenat dense et intense ou couleur de cerise mûre aux reflets violets.",
       aroma:
-        "Vin très expressif. Les premiers arômes sont de fruits noirs mûrs et d’une délicate signature florale.",
+        "Bouquet vif dominé par des notes de cerise très mûre, de mûre et de cassis, avec de légers accents d’écorce de grenade et de cornouiller.",
       taste:
-        "Douceur mielée et souple, dominée par la confiture de mûre et la grenade mûre",
+        "Plein et velouté, où la jutosité des baies noires et une douceur délicate sont compensées par une acidité vive et agréable et une astringence douce et discrète du pépin de raisin. Finale longue et chaleureuse aux tons distincts de pruneau et d’épices.",
+      vinification:
+        "Les raisins sont vendangés à la main à pleine maturité. Après un égrappage doux, ils sont pressés puis fermentés en cuves inox à température contrôlée. Une fois le niveau de sucre souhaité atteint dans le vin jeune, la fermentation est arrêtée par refroidissement et filtration, préservant la douceur et la fraîcheur naturelles. La mise en bouteille a généralement lieu quelques mois après la vendange.",
       vintage: "2025",
     },
     uk: {
       name: "KINDZMARAULI",
-      classification: "Природно-напівсолодке червоне",
-      region: "Кварелі",
+      classification: "Природно напівсолодке червоне",
+      region: "Кахетія",
       country: "Грузія",
       microzone:
         "Кіндзмараулі (захищена назва місця походження)",
       grape: "Сапераві 100%",
       grapesSourced: "Виноград із власних виноградників",
-      servingTemperature: "+12°C — +16°C",
+      servingTemperature: "+10°C — +12°C",
       storageTemperature: "+5°C — +20°C",
+      tastingNotes:
+        "Кіндзмараулі — найвідоміше грузинське червоне природно напівсолодке вино із захищеною назвою за походженням, яке завдяки унікальному мінеральному складу ґрунтів у мікрозоні Кіндзмараулі не має аналогів у світі. Його візитівкою є глибокий чорнильно-гранатовий колір і гармонійний баланс природної солодкості ягід із легкою танінною терпкістю.",
+      color:
+        "Густий, насичений гранатовий або колір стиглої вишні з фіолетовими переливами.",
       aroma:
-        "Вино гармонійне, яскраво виражений і багатий букет темних фруктів, відтінки фіолетових квітів і шоколаду",
+        "Яскравий букет із домінуючими нотами переспілої вишні, ожини, чорної смородини та легкими відтінками гранатової шкірки й кизилу.",
       taste:
-        "Відчувається м’яка солодкість, у якій домінують ноти ожинового джему та стиглого граната. Вино збалансоване, з довгим післясмаком",
+        "Повний і оксамитовий, у якому соковитість темних ягід і делікатна солодкість компенсуються приємною живою кислотністю та м’якою, ненав’язливою терпкістю виноградного насіння. Післясмак тривалий, зігріваючий, із виразними тонами чорносливу та спецій.",
+      vinification:
+        "Виноград збирають вручну на піку зрілості. Після ніжного гребеневідділення виноград віджимають із подальшим бродінням у резервуарах з нержавіючої сталі за контрольованої температури. Після досягнення потрібного рівня цукру в молодому вині процес бродіння зупиняють охолодженням і фільтрацією, що дозволяє зберегти природну солодкість і свіжість. Як правило, розлив відбувається за кілька місяців після збору врожаю.",
       vintage: "2025",
     },
     bg: {
@@ -1347,15 +1705,21 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       classification: "Естествено полусладко червено",
       region: "Кахетия",
       country: "Грузия",
-      microzone: "Киндзмараули",
+      microzone: "Киндзмараули (защитен географски произход)",
       grape: "Саперави 100%",
-      grapesSourced: "От микрозоната Кварели",
-      servingTemperature: "+12°C до +16°C",
+      grapesSourced: "От собствени лозя на компанията",
+      servingTemperature: "+10°C до +12°C",
       storageTemperature: "+5°C до +20°C",
-      color: "Тъмна череша",
-      aroma: "Богати плодови аромати на зрели червени плодове",
-      taste: "Кадифено, естествено полусладко, с балансирана сладост и дълъг финиш.",
-      pairing: "Меса на скара, сирена, шоколад",
+      tastingNotes:
+        "Киндзмараули е най-известното грузинско червено естествено полусладко вино със защитено наименование за произход, което благодарение на уникалния минерален състав на почвата в микрозоната Киндзмараули няма аналог в света. Неговата визитна картичка е дълбокият мастилено-наратов цвят и хармоничният баланс между естествената сладост на плодовете и леката танинова тръпчивост.",
+      color:
+        "Гъст, наситен наратов или цвят на узряла череша с виолетови преливания.",
+      aroma:
+        "Ярък букет с доминиращи нотки на преузряла череша, къпина, касис и леки оттенъци на кора от нар и дрян.",
+      taste:
+        "Пълен и кадифен, в който сочността на тъмните плодове и деликатната сладост се уравновесяват от приятна жива киселинност и мека, ненатрапчива тръпчивост от гроздови семки. Финишът е дълъг, затоплящ, с отчетливи тонове на сушени сливи и подправки.",
+      vinification:
+        "Гроздето се бере на ръка в пика на зрялост. След нежно отделяне на чепките гроздето се изтисква и ферментира в резервоари от неръждаема стомана при контролирана температура. След достигане на нужното ниво на захар в младото вино ферментацията се спира чрез охлаждане и филтрация, което запазва естествената сладост и свежест. Обикновено бутилирането е няколко месеца след реколтата.",
       vintage: "2025",
     },
   },
@@ -1364,111 +1728,106 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       name: "SAPERAVI QVEVRI",
       classification: "Qvevri Red Dry",
       region: "Kakheti",
-      subregion: "Kakheti viticulture region",
       country: "Georgia",
       grape: "Saperavi 100%",
-      grapesSourced: "100% own vineyards",
+      grapesSourced: "Company’s own vineyards in Kakheti",
       alcohol: "12.5%–14.0%",
-      servingTemperature: "+16°C to +18°C",
+      servingTemperature: "+15°C to +18°C",
       storageTemperature: "+5°C to +20°C",
-      color: "Deep ruby red",
-      aroma:
-        "The bouquet reveals concentrated aromas of blackberry, black cherry, ripe plum and forest berries. These fruit-driven characteristics are complemented by hints of black pepper, clove, cocoa, tobacco leaf and subtle earthy nuances. With aging, the wine develops additional complexity expressed through leather, dried fruits and dark chocolate notes.",
-      taste:
-        "Powerful and full-bodied with outstanding concentration and structure. Rich dark fruit flavors dominate the palate, supported by firm but polished tannins. The wine demonstrates excellent balance between fruit, acidity and tannic backbone. Long and persistent finish showcases black berries, spices and elegant mineral undertones.",
       tastingNotes:
-        "Climate: Moderate continental · Wine category: Qvevri wine · Sugar: <4 g/l · Crop capacity: 8–10 ton/hectare",
-      pairing: "Grilled meats, hearty stews, and aged cheeses.",
+        "Traditional Kakhetian dry red wine made from 100% Saperavi grown in Kakheti on the company’s own vineyards, with a vivid aroma of ripe cherry, blackberry, blackcurrant and prune. Dense, thick texture, a fleshy taste with pleasant acidity and a long berry finish. Saperavi Qvevri is marked by ripe, soft tannins and notes of cornelian cherry in a long, pleasant aftertaste.",
+      color: "Intense ruby red.",
+      aroma:
+        "The bouquet opens with concentrated aromas of ripe cherry, blackberry and prune. Fruit notes are complemented by black pepper, clove, cocoa, tobacco leaf and subtle earthy nuances.",
+      taste:
+        "Harmonious, full-bodied wine with outstanding concentration and structure. Rich dark fruit dominates, with tannins formed through very slow extraction. Excellent balance of fruit, acidity and tannic backbone. Long, persistent finish with notes of black berries, spices and elegant mineral tones.",
       vinification:
-        "Grapes are hand-picked at the peak of their maturity. Soft de-stemming and crushing is followed by fermentation at controlled temperature (23°C–28°C) in qvevri. After 8–10 days of maceration, the wine is racked clean, transferred for malolactic fermentation and aged in qvevri for 5 months.",
+        "Grapes are hand-picked at full ripeness. Fermentation at controlled temperature in qvevri, followed by aging in qvevri for 5 months.",
+      vintage: "2022",
     },
     ru: {
       name: "SAPERAVI QVEVRI",
-      classification: "Красное сухое вино квеври",
+      classification: "Квеври красное сухое",
       region: "Кахетия",
-      subregion: "Винодельческий регион Кахетия",
       country: "Грузия",
       grape: "Саперави 100%",
-      grapesSourced: "100% виноград с собственных виноградников",
+      grapesSourced: "Собственные виноградники компании в регионе Кахетия",
       alcohol: "12,5%–14,0%",
-      servingTemperature: "+16°C — +18°C",
+      servingTemperature: "+15°C — +18°C",
       storageTemperature: "+5°C — +20°C",
-      color: "Насыщенный рубиново-красный",
-      aroma:
-        "Букет раскрывается концентрированными ароматами ежевики, черешни, спелой сливы и лесных ягод. Фруктовые ноты дополняются оттенками черного перца, гвоздики, какао, табачного листа и тонкими землистыми нюансами. При выдержке вино обретает дополнительную сложность — кожа, сухофрукты и темный шоколад.",
-      taste:
-        "Мощное, полнотелое вино с выдающейся концентрацией и структурой. Во вкусе доминируют насыщенные темные фрукты, поддержанные плотными, но отполированными танинами. Отличный баланс фруктов, кислотности и танинного каркаса. Длинное, стойкое послевкусие с нотами черных ягод, специй и элегантными минеральными оттенками.",
       tastingNotes:
-        "Климат: умеренно-континентальный · Категория: вино квеври · Сахар: <4 г/л · Урожайность: 8–10 т/га",
-      pairing: "Мясо на гриле, насыщенные рагу и выдержанные сыры.",
+        "Традиционное кахетинское красное сухое вино, сделанное из 100% винограда сорта Саперави, выращенного в регионе Кахетия, на собственных виноградниках компании, с ярким ароматом спелой вишни, ежевики, черной смородины и чернослива. Вино обладает густой, плотной текстурой, мясистым вкусом с приятной кислинкой и долгим ягодным послевкусием. Саперави Квеври отличается выраженными зрелыми и мягкими танинами и нотками кизила в долгом и приятном послевкусии.",
+      color: "Насыщенный рубиново-красный.",
+      aroma:
+        "Букет раскрывается концентрированными ароматами спелой вишни, ежевики и чернослива. Фруктовые ноты дополняются оттенками черного перца, гвоздики, какао, табачного листа и тонкими землистыми нюансами.",
+      taste:
+        "Гармоничное, полнотелое вино с выдающейся концентрацией и структурой. Во вкусе доминируют насыщенные темные фрукты, с танинами, образованными в процессе очень медленной экстракции. Отличный баланс фруктов, кислотности и танинного каркаса. Длинное, стойкое послевкусие с нотами черных ягод, специй и элегантными минеральными оттенками.",
       vinification:
-        "Виноград собирают вручную в полной зрелости. Мягкое гребнеотделение и дробление, затем ферментация при контролируемой температуре (23°C–28°C) в квеври. После 8–10 дней мацерации вино сливают, проводят малолактическую ферментацию и выдерживают в квеври 5 месяцев.",
+        "Виноград собирают вручную в полной зрелости. Ферментация при контролируемой температуре в квеври. С последующей выдержкой в квеври в течение 5 месяцев.",
+      vintage: "2022",
     },
     es: {
       name: "SAPERAVI QVEVRI",
       classification: "Tinto seco de qvevri",
       region: "Kajetia",
-      subregion: "Región vitivinícola de Kajetia",
       country: "Georgia",
       grape: "Saperavi 100%",
-      grapesSourced: "100% uvas de viñedos propios",
+      grapesSourced: "Viñedos propios de la empresa en Kajetia",
       alcohol: "12,5%–14,0%",
-      servingTemperature: "+16°C a +18°C",
+      servingTemperature: "+15°C a +18°C",
       storageTemperature: "+5°C a +20°C",
-      color: "Rojo rubí intenso",
-      aroma:
-        "El bouquet revela aromas concentrados de mora, cereza negra, ciruela madura y frutos del bosque. Estas notas frutales se complementan con pimienta negra, clavo, cacao, hoja de tabaco y sutiles matices terrosos. Con la crianza aparecen cuero, frutos secos y chocolate negro.",
-      taste:
-        "Potente y corpulento, con gran concentración y estructura. Predominan frutos negros maduros, apoyados por taninos firmes pero pulidos. Excelente equilibrio entre fruta, acidez y estructura tanínica. Final largo y persistente con bayas negras, especias y elegantes matices minerales.",
       tastingNotes:
-        "Clima: continental moderado · Categoría: vino de qvevri · Azúcar: <4 g/l · Rendimiento: 8–10 t/ha",
-      pairing: "Carnes a la parrilla, guisos contundentes y quesos curados.",
+        "Tinto seco kajetiano tradicional elaborado con 100% Saperavi cultivado en Kajetia en los viñedos propios de la empresa, con un aroma vivo de cereza madura, mora, grosella negra y ciruela pasa. Textura densa y compacta, sabor carnoso con agradable acidez y un largo final de bayas. Saperavi Qvevri se distingue por taninos maduros y suaves y notas de cornejo en un final largo y agradable.",
+      color: "Rojo rubí intenso.",
+      aroma:
+        "El bouquet se abre con aromas concentrados de cereza madura, mora y ciruela pasa. Las notas frutales se complementan con pimienta negra, clavo, cacao, hoja de tabaco y sutiles matices terrosos.",
+      taste:
+        "Vino armonioso y de cuerpo completo, con gran concentración y estructura. Dominan frutos negros intensos, con taninos formados mediante una extracción muy lenta. Excelente equilibrio entre fruta, acidez y estructura tánica. Final largo y persistente con notas de bayas negras, especias y elegantes matices minerales.",
       vinification:
-        "Uvas cosechadas a mano en su punto óptimo de madurez. Despalillado y estrujado suave, fermentación a temperatura controlada (23°C–28°C) en qvevri. Tras 8–10 días de maceración, el vino se trasiega, pasa la fermentación maloláctica y envejece en qvevri 5 meses.",
+        "La uva se vendimia a mano en plena madurez. Fermentación a temperatura controlada en qvevri, seguida de crianza en qvevri durante 5 meses.",
+      vintage: "2022",
     },
     fr: {
       name: "SAPERAVI QVEVRI",
       classification: "Rouge sec de qvevri",
       region: "Kakhétie",
-      subregion: "Région viticole de Kakhétie",
       country: "Géorgie",
       grape: "Saperavi 100%",
-      grapesSourced: "100 % de vignobles propres",
+      grapesSourced: "Vignobles de la maison en Kakhétie",
       alcohol: "12,5 % – 14,0 %",
-      servingTemperature: "+16°C à +18°C",
+      servingTemperature: "+15°C à +18°C",
       storageTemperature: "+5°C à +20°C",
-      color: "Rouge rubis profond",
-      aroma:
-        "Le bouquet dévoile des arômes concentrés de mûre, cerise noire, prune mûre et baies des bois. Ces notes fruitées s’accompagnent de poivre noir, clou de girofle, cacao, feuille de tabac et de nuances terreuses subtiles. Avec l’âge, le vin gagne en complexité — cuir, fruits secs et chocolat noir.",
-      taste:
-        "Puissant et corsé, d’une concentration et d’une structure remarquables. Les fruits noirs dominent le palais, soutenus par des tanins fermes mais polis. Excellent équilibre entre fruit, acidité et structure tannique. Finale longue et persistante aux notes de baies noires, d’épices et de minéraux élégants.",
       tastingNotes:
-        "Climat : continental modéré · Catégorie : vin de qvevri · Sucre : <4 g/l · Rendement : 8–10 t/ha",
-      pairing: "Viandes grillées, plats mijotés copieux et fromages affinés.",
+        "Rouge sec kakhétien traditionnel élaboré à partir de 100 % Saperavi cultivé en Kakhétie sur les vignobles de la maison, au vif arôme de cerise mûre, mûre, cassis et pruneau. Texture dense et épaisse, goût charnu avec une agréable acidité et une longue finale de baies. Le Saperavi Qvevri se distingue par des tanins mûrs et souples et des notes de cornouiller dans une longue et agréable finale.",
+      color: "Rouge rubis intense.",
+      aroma:
+        "Le bouquet s’ouvre sur des arômes concentrés de cerise mûre, de mûre et de pruneau. Les notes fruitées sont complétées par du poivre noir, du clou de girofle, du cacao, de la feuille de tabac et de subtiles nuances terreuses.",
+      taste:
+        "Vin harmonieux et corsé, d’une concentration et d’une structure remarquables. Les fruits noirs riches dominent, avec des tanins formés par une extraction très lente. Excellent équilibre entre fruit, acidité et structure tannique. Longue finale persistante aux notes de baies noires, d’épices et de minéraux élégants.",
       vinification:
-        "Raisins récoltés à la main à parfaite maturité. Égrappage et foulage doux, fermentation à température contrôlée (23°C–28°C) en qvevri. Après 8 à 10 jours de macération, le vin est soutiré, subit la fermentation malolactique et est élevé en qvevri pendant 5 mois.",
+        "Les raisins sont vendangés à la main à pleine maturité. Fermentation à température contrôlée en qvevri, suivie d’un élevage en qvevri pendant 5 mois.",
+      vintage: "2022",
     },
     uk: {
       name: "SAPERAVI QVEVRI",
-      classification: "Червоне сухе вино квеврі",
+      classification: "Квеврі червоне сухе",
       region: "Кахетія",
-      subregion: "Виноробний регіон Кахетія",
       country: "Грузія",
       grape: "Сапераві 100%",
-      grapesSourced: "100% виноград із власних виноградників",
+      grapesSourced: "Власні виноградники компанії в регіоні Кахетія",
       alcohol: "12,5%–14,0%",
-      servingTemperature: "+16°C — +18°C",
+      servingTemperature: "+15°C — +18°C",
       storageTemperature: "+5°C — +20°C",
-      color: "Насичений рубіново-червоний",
-      aroma:
-        "Букет розкриває концентровані аромати ожини, чорної вишні, стиглої сливи та лісових ягід. Фруктові ноти доповнюються чорним перцем, гвоздикою, какао, тютюновим листом і тонкими землистими відтінками. З витримкою з’являються шкіра, сухофрукти та темний шоколад.",
-      taste:
-        "Потужне, насичене вино з виразною концентрацією та структурою. У смаку домінують темні фрукти, підтримані щільними, але полірованими танінами. Чудовий баланс фруктів, кислотності та танінного каркасу. Довге, стійке післясмак з нотами чорних ягід, спецій і елегантними мінеральними відтінками.",
       tastingNotes:
-        "Клімат: помірно-континентальний · Категорія: вино квеврі · Цукор: <4 г/л · Урожайність: 8–10 т/га",
-      pairing: "М’ясо на грилі, наваристі рагу та витримані сири.",
+        "Традиційне кахетинське червоне сухе вино зі 100% винограду сорту Сапераві, вирощеного в регіоні Кахетія на власних виноградниках компанії, з яскравим ароматом стиглої вишні, ожини, чорної смородини та чорносливу. Вино має густу, щільну текстуру, м’ясистий смак із приємною кислинкою та довгим ягідним післясмаком. Сапераві Квеврі вирізняється вираженими зрілими й м’якими танінами та нотками кизилу в довгому приємному післясмаку.",
+      color: "Насичений рубіново-червоний.",
+      aroma:
+        "Букет розкривається концентрованими ароматами стиглої вишні, ожини та чорносливу. Фруктові ноти доповнюються відтінками чорного перцю, гвоздики, какао, тютюнового листа та тонкими землистими нюансами.",
+      taste:
+        "Гармонійне, повнотіле вино з видатною концентрацією та структурою. У смаку домінують насичені темні фрукти, з танінами, утвореними в процесі дуже повільної екстракції. Відмінний баланс фруктів, кислотності та танінного каркасу. Довге, стійке післясмак із нотами чорних ягід, спецій і елегантними мінеральними відтінками.",
       vinification:
-        "Виноград збирають вручну в повній зрилості. М’яке гребеневідділення та дроблення, далі ферментація при контрольованій температурі (23°C–28°C) у квеврі. Після 8–10 днів мацерації вино зливають, проводять малолактичну ферментацію та витримують у квеврі 5 місяців.",
+        "Виноград збирають вручну в повній зрілості. Ферментація за контрольованої температури в квеврі з подальшою витримкою в квеврі протягом 5 місяців.",
+      vintage: "2022",
     },
     bg: {
       name: "SAPERAVI QVEVRI",
@@ -1476,14 +1835,19 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       region: "Кахетия",
       country: "Грузия",
       grape: "Саперави 100%",
-      grapesSourced: "От лозя в Кахетия",
+      grapesSourced: "Собствени лозя на компанията в регион Кахетия",
       alcohol: "12.5%–14.0%",
-      servingTemperature: "+16°C до +18°C",
+      servingTemperature: "+15°C до +18°C",
       storageTemperature: "+5°C до +20°C",
-      color: "Дълбок рубин",
-      aroma: "Интензивни аромати на тъмни плодове и подправки",
-      taste: "Плътно квеври вино с изразени танини и дълъг послевкус.",
-      pairing: "Стек, агнешко, зрели сирена",
+      tastingNotes:
+        "Традиционно кахетско сухо червено вино от 100% Саперави, отгледано в регион Кахетия на собствените лозя на компанията, с ярък аромат на узряла череша, къпина, касис и сушени сливи. Виното има гъста, плътна текстура, месест вкус с приятна киселинка и дълъг плодов финиш. Саперави Квеври се отличава с изразени зрели и меки танини и нотки на дрян в дългия приятен послевкус.",
+      color: "Наситен рубинено-червен.",
+      aroma:
+        "Букетът се разкрива с концентрирани аромати на узряла череша, къпина и сушени сливи. Плодовите нотки се допълват от черен пипер, карамфил, какао, тютюнев лист и фини землисти нюанси.",
+      taste:
+        "Хармонично, пълнотено вино с изключителна концентрация и структура. Във вкуса доминират наситени тъмни плодове, с танини, образувани при много бавна екстракция. Отличен баланс между плодове, киселинност и танинова структура. Дълъг, устойчив финиш с нотки на черни плодове, подправки и елегантни минерални оттенъци.",
+      vinification:
+        "Гроздето се бере на ръка в пълна зрялост. Ферментация при контролирана температура в квеври, последвана от отлежаване в квеври в продължение на 5 месеца.",
       vintage: "2022",
     },
   },
@@ -1495,13 +1859,17 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       country: "Georgia",
       grape: "Saperavi 100%",
       grapesSourced: "Company’s own vineyards",
-      servingTemperature: "+16°C to +18°C",
+      servingTemperature: "+15°C to +18°C",
       storageTemperature: "+5°C to +20°C",
-      color: "Dark ruby colour",
+      tastingNotes:
+        "Saperavi from Georgian Royal Wines is a dry red wine from the indigenous Georgian Saperavi grape, produced in Kakheti.",
+      color: "Ruby red.",
       aroma:
-        "The wine is defined by dominant, inky dark fruit aromas—notably blackberry and black plum—layered with elegant undertones of black pepper and violet.",
+        "Dominated by notes of ripe cherry, blackcurrant, blackberry and forest berries, complemented by spicy and light woody nuances.",
       taste:
-        "Well structured, powerful wine with medium to long finish. The dark fruit from the nose translates directly to the tongue",
+        "Dominated by tones of fleshy, juicy blackberry and overripe cornelian cherry; prune is also present, with full, juicy ripe and refined tannins.",
+      vinification:
+        "After destemming and crushing, the grapes ferment in stainless-steel tanks at controlled temperature. An 8–10 day maceration follows, after which the must is racked off the lees and undergoes malolactic fermentation. Most of the wine is aged in steel tanks, while another part matures in small French oak barrels for 3–4 months.",
       vintage: "2025",
     },
     ru: {
@@ -1511,13 +1879,17 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       country: "Грузия",
       grape: "Саперави 100%",
       grapesSourced: "100% виноград с собственных виноградников",
-      servingTemperature: "+16°C — +18°C",
+      servingTemperature: "+15°C — +18°C",
       storageTemperature: "+5°C — +20°C",
-      color: "Темно-рубиновый",
+      tastingNotes:
+        "Саперави от Georgian Royal Wines — это красное сухое вино из автохтонного грузинского сорта винограда Саперави, производимое в регионе Кахетия.",
+      color: "Рубиново-красный.",
       aroma:
-        "Вино определяется доминирующими ароматами темных фруктов — особенно ежевики и черной сливы, дополненными элегантными нотками специи, кожи и фиалки.",
+        "Доминируют ноты спелой вишни, черной смородины, ежевики и лесных ягод, дополненные пряными и легкими древесными нюансами.",
       taste:
-        "Хорошо структурированное. Мощное, яркое вино с насыщенным вкусом и долгим послевкусием",
+        "Доминируют тоны мясистой, сочной ежевики и перезрелого кизила, также чувствуется вкус чернослива, с полными и сочными спелыми и рафинированными танинами.",
+      vinification:
+        "После гребнеотделения и дробления виноград ферментируется в резервуарах из нержавеющей стали при контролируемой температуре. Затем производится 8–10-дневная мацерация, после которой сусло снимается с осадка и проходит яблочно-молочное брожение. Выдержка большей части вина производится в стальных цистернах, а другая часть созревает в небольших французских дубовых бочках в течение 3–4 месяцев.",
       vintage: "2025",
     },
     es: {
@@ -1527,13 +1899,17 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       country: "Georgia",
       grape: "Saperavi 100%",
       grapesSourced: "Viñedos propios de la empresa",
-      servingTemperature: "+16°C a +18°C",
+      servingTemperature: "+15°C a +18°C",
       storageTemperature: "+5°C a +20°C",
-      color: "Color rubí oscuro",
+      tastingNotes:
+        "Saperavi de Georgian Royal Wines es un tinto seco de la variedad autóctona georgiana Saperavi, elaborado en Kajetia.",
+      color: "Rojo rubí.",
       aroma:
-        "Aromas dominantes de fruta negra tinta —mora y ciruela negra— con elegantes matices de pimienta negra y violeta.",
+        "Dominan notas de cereza madura, grosella negra, mora y bayas del bosque, complementadas por matices especiados y ligeros tonos de madera.",
       taste:
-        "Vino bien estructurado y potente, con un final medio a largo. La fruta negra de la nariz se traduce directamente en boca",
+        "Dominan tonos de mora carnosa y jugosa y cornejo sobremaduro; también se percibe ciruela pasa, con taninos plenos, jugosos, maduros y refinados.",
+      vinification:
+        "Tras el despalillado y el triturado, la uva fermenta en depósitos de acero inoxidable a temperatura controlada. Sigue una maceración de 8–10 días, tras la cual el mosto se trasiega y realiza la fermentación maloláctica. La mayor parte del vino se cría en depósitos de acero y otra parte madura en pequeñas barricas de roble francés durante 3–4 meses.",
       vintage: "2025",
     },
     fr: {
@@ -1543,13 +1919,17 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       country: "Géorgie",
       grape: "Saperavi 100%",
       grapesSourced: "Vignobles de la maison",
-      servingTemperature: "+16°C à +18°C",
+      servingTemperature: "+15°C à +18°C",
       storageTemperature: "+5°C à +20°C",
-      color: "Couleur rubis sombre",
+      tastingNotes:
+        "Le Saperavi de Georgian Royal Wines est un rouge sec issu du cépage autochtone géorgien Saperavi, produit en Kakhétie.",
+      color: "Rouge rubis.",
       aroma:
-        "Arômes dominants de fruits noirs encreux — mûre et prune noire — avec d’élégantes notes de poivre noir et de violette.",
+        "Dominent des notes de cerise mûre, cassis, mûre et baies des bois, complétées par des nuances épicées et de légers accents boisés.",
       taste:
-        "Vin puissant, bien structuré, à la finale moyenne à longue. Les fruits noirs du nez se retrouvent directement en bouche",
+        "Dominent des tons de mûre charnue et juteuse et de cornouiller très mûr ; on perçoit aussi le pruneau, avec des tanins pleins, juteux, mûrs et raffinés.",
+      vinification:
+        "Après égrappage et foulage, les raisins fermentent en cuves inox à température contrôlée. Suit une macération de 8–10 jours, après laquelle le moût est soutiré et subit la fermentation malolactique. La majeure partie du vin est élevée en cuves d’acier et une autre partie mûrit en petits fûts de chêne français pendant 3–4 mois.",
       vintage: "2025",
     },
     uk: {
@@ -1559,13 +1939,17 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       country: "Грузія",
       grape: "Сапераві 100%",
       grapesSourced: "100% виноград із власних виноградників",
-      servingTemperature: "+16°C — +18°C",
+      servingTemperature: "+15°C — +18°C",
       storageTemperature: "+5°C — +20°C",
-      color: "Темно-рубіновий",
+      tastingNotes:
+        "Сапераві від Georgian Royal Wines — червоне сухе вино з автохтонного грузинського сорту Сапераві, що виробляється в регіоні Кахетія.",
+      color: "Рубіново-червоний.",
       aroma:
-        "Вино визначається домінуючими ароматами темних фруктів — особливо ожини та чорної сливи, доповненими елегантними нотками спецій, шкіри та фіалки.",
+        "Домінують ноти стиглої вишні, чорної смородини, ожини та лісових ягід, доповнені пряними й легкими деревними нюансами.",
       taste:
-        "Добре структуроване. Потужне, яскраве вино з насиченим смаком і довгим післясмаком",
+        "Домінують тони м’ясистої, соковитої ожини та переспілого кизилу; також відчувається смак чорносливу, з повними й соковитими стиглими та рафінованими танінами.",
+      vinification:
+        "Після гребеневідділення та дроблення виноград ферментується в резервуарах з нержавіючої сталі за контрольованої температури. Далі проводиться 8–10-денна мацерація, після якої сусло знімається з осаду і проходить яблучно-молочне бродіння. Витримка більшої частини вина відбувається в сталевих цистернах, а інша частина дозріває в невеликих французьких дубових бочках протягом 3–4 місяців.",
       vintage: "2025",
     },
     bg: {
@@ -1574,33 +1958,42 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       region: "Кахетия",
       country: "Грузия",
       grape: "Саперави 100%",
-      grapesSourced: "От лозя в Кахетия",
-      servingTemperature: "+16°C до +18°C",
+      grapesSourced: "Собствени лозя на компанията",
+      servingTemperature: "+15°C до +18°C",
       storageTemperature: "+5°C до +20°C",
-      color: "Тъмна череша",
-      aroma: "Зрели черни плодове и подправки",
-      taste: "Класическо сухо Саперави — плътно, с меки танини и дълъг финиш.",
-      pairing: "Меса на скара, яхнии, сирена",
+      tastingNotes:
+        "Саперави от Georgian Royal Wines е сухо червено вино от автохтонния грузински сорт Саперави, произвеждано в регион Кахетия.",
+      color: "Рубинено-червен.",
+      aroma:
+        "Доминират нотки на узряла череша, касис, къпина и горски плодове, допълнени от пикантни и леки дървесни нюанси.",
+      taste:
+        "Доминират тонове на месеста, сочна къпина и преузрял дрян; усеща се и вкус на сушени сливи, с пълни и сочни зрели и рафинирани танини.",
+      vinification:
+        "След отделяне на чепките и смачкване гроздето ферментира в резервоари от неръждаема стомана при контролирана температура. Следва 8–10-дневна мацерация, след която мъстта се отделя от утайката и преминава ябълчно-млечна ферментация. По-голямата част от виното отлежава в стоманени цистерни, а друга част съзрява в малки френски дъбови бъчви в продължение на 3–4 месеца.",
       vintage: "2025",
     },
   },
   "grw-mukuzani": {
     en: {
       name: "MUKUZANI",
-      classification: "Red Dry",
+      classification: "Dry Red",
       region: "Kakheti",
       country: "Georgia",
       microzone: "Mukuzani PDO",
       grape: "Saperavi 100%",
-      grapesSourced: "Handpicked grapes only from Mukuzani PDO",
-      servingTemperature: "+16°C to +18°C",
+      grapesSourced: "Hand-picked grapes only from the Mukuzani microzone",
+      servingTemperature: "+15°C to +18°C",
       storageTemperature: "+5°C to +20°C",
-      color: "Deep, opaque ruby",
+      tastingNotes:
+        "Mukuzani is a famous Georgian dry red wine and one of the main calling cards of Georgian winemaking. It is made from Saperavi grown in the strictly defined Mukuzani microzone in Kakheti. Its key feature is mandatory aging in oak barrels, which makes the taste more complex, dense and tannic than other Saperavi wines.",
+      color:
+        "Very dense, deep ruby-pomegranate, almost opaque.",
       aroma:
-        "A complex bouquet of black cherry, dark chocolate, and blackberry, layered with smoky notes of tobacco, vanilla, and cedar from the oak",
+        "Vivid, complex and multilayered, with notes of ripe sweet cherry, blackcurrant, blackberry and dark chocolate. Aging adds subtle nuances of vanilla, clove, light smoke and spicy oak.",
       taste:
-        "Corpulent and full with fruit tones, with round medium tannins and extended taste.",
-      pairing: "Best with steak, lamb, barbecue and blue or aged cheese",
+        "Full-bodied, deep and velvety. Pleasant tannicity and balanced acidity. Long, warming finish with clear tones of prune, spices and noble oak.",
+      vinification:
+        "Grapes are hand-picked at peak ripeness. After crushing, fermentation begins in stainless-steel tanks at controlled temperature. After 12–15 days of fermentation on cultured yeast, the wine is separated from the lees and moved into 225-liter oak barrels for aging of 9–12 months.",
       vintage: "2025",
     },
     ru: {
@@ -1608,19 +2001,22 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       classification: "Красное сухое",
       region: "Кахетия",
       country: "Грузия",
-      microzone: "Мукузани (ЗНМП)",
+      microzone: "Мукузани (защищенное географическое происхождение)",
       grape: "Саперави 100%",
       grapesSourced:
         "Виноград, собранный вручную исключительно в микрозоне Мукузани",
-      servingTemperature: "+16°C — +18°C",
+      servingTemperature: "+15°C — +18°C",
       storageTemperature: "+5°C — +20°C",
-      color: "Тёмно-рубиновый",
+      tastingNotes:
+        "Мукузани — это знаменитое грузинское сухое красное вино, которое считается одной из главных визитных карточек виноделия Грузии. Оно производится из винограда сорта Саперави, выращенного в строго определенной микрозоне Мукузани в регионе Кахетия. Главная особенность этого вина — обязательная выдержка в дубовых бочках, что делает его вкус более сложным, плотным и танинным по сравнению с другими винами из Саперави.",
+      color:
+        "Очень густой, глубокий рубиново-гранатовый, почти непрозрачный.",
       aroma:
-        "Яркий букет с нотами черной вишни, темного шоколада и ежевики, дополненный дымными оттенками табака, ванили и кедра, полученными от выдержки в дубовых бочках",
+        "Яркий, сложный и многослойный, с нотами спелой черешни, черной смородины, ежевики и темного шоколада. Выдержка добавляет тонкие нюансы ванили, гвоздики, легкого дыма и пряного дуба.",
       taste:
-        "Вино плотное и насыщенное фруктовыми тонами с округлыми танинами и длительным послевкусием.",
-      pairing:
-        "Лучше всего сочетается со стейком, ягненком, барбекю, а также с голубыми или выдержанными сырами.",
+        "Полнотелый, глубокий и бархатистый. Вино обладает приятной танинностью и сбалансированной кислотностью. Послевкусие длительное, согревающее, с отчетливыми тонами чернослива, специй и благородного дуба.",
+      vinification:
+        "Виноград собирают вручную на пике зрелости. После дробления винограда начинается брожение в резервуарах из нержавеющей стали при контролируемой температуре. После 12–15-дневного брожения на культурных дрожжах вино отделяется от осадка и перемещается в 225-литровые дубовые бочки для последующей выдержки в течение 9–12 месяцев.",
       vintage: "2025",
     },
     es: {
@@ -1630,15 +2026,19 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       country: "Georgia",
       microzone: "Mukuzani DOP",
       grape: "Saperavi 100%",
-      grapesSourced: "Uvas vendimiadas a mano únicamente de Mukuzani DOP",
-      servingTemperature: "+16°C a +18°C",
+      grapesSourced: "Uvas vendimiadas a mano únicamente de la microzona Mukuzani",
+      servingTemperature: "+15°C a +18°C",
       storageTemperature: "+5°C a +20°C",
-      color: "Rubí profundo y opaco",
+      tastingNotes:
+        "Mukuzani es un famoso tinto seco georgiano y una de las principales señas de identidad de la enología de Georgia. Se elabora con Saperavi cultivado en la microzona estrictamente definida de Mukuzani en Kajetia. Su rasgo principal es la crianza obligatoria en barricas de roble, que hace el sabor más complejo, denso y tánico que otros vinos de Saperavi.",
+      color:
+        "Muy denso, rubí-granate profundo, casi opaco.",
       aroma:
-        "Ramo complejo de cereza negra, chocolate negro y mora, con notas ahumadas de tabaco, vainilla y cedro de la crianza en roble",
+        "Vivo, complejo y multicapa, con notas de guinda madura, grosella negra, mora y chocolate negro. La crianza aporta sutiles matices de vainilla, clavo, ligero humo y roble especiado.",
       taste:
-        "Corpulento y pleno, con tonos frutales, taninos medios redondos y un sabor persistente.",
-      pairing: "Ideal con bistec, cordero, barbacoa y quesos azules o curados",
+        "De cuerpo completo, profundo y aterciopelado. Agradable tanicidad y acidez equilibrada. Final largo y cálido con tonos claros de ciruela pasa, especias y roble noble.",
+      vinification:
+        "La uva se vendimia a mano en el punto óptimo de madurez. Tras el triturado, comienza la fermentación en depósitos de acero inoxidable a temperatura controlada. Tras 12–15 días de fermentación con levaduras seleccionadas, el vino se separa de las lías y se traslada a barricas de roble de 225 litros para una crianza de 9–12 meses.",
       vintage: "2025",
     },
     fr: {
@@ -1648,15 +2048,20 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       country: "Géorgie",
       microzone: "Mukuzani AOP",
       grape: "Saperavi 100%",
-      grapesSourced: "Raisins vendangés à la main exclusivement de Mukuzani AOP",
-      servingTemperature: "+16°C à +18°C",
+      grapesSourced:
+        "Raisins vendangés à la main exclusivement dans la microzone Mukuzani",
+      servingTemperature: "+15°C à +18°C",
       storageTemperature: "+5°C à +20°C",
-      color: "Rubis profond et opaque",
+      tastingNotes:
+        "Le Mukuzani est un célèbre rouge sec géorgien et l’une des principales cartes de visite de la viticulture géorgienne. Il est élaboré à partir de Saperavi cultivé dans la microzone strictement définie de Mukuzani en Kakhétie. Sa particularité majeure est l’élevage obligatoire en fûts de chêne, qui rend le goût plus complexe, dense et tannique que d’autres vins de Saperavi.",
+      color:
+        "Très dense, rubis-grenat profond, presque opaque.",
       aroma:
-        "Bouquet complexe de cerise noire, chocolat noir et mûre, avec des notes fumées de tabac, vanille et cèdre issues du fût de chêne",
+        "Vif, complexe et multicouche, aux notes de griotte mûre, cassis, mûre et chocolat noir. L’élevage ajoute de subtiles nuances de vanille, clou de girofle, légère fumée et chêne épicé.",
       taste:
-        "Corpulent et ample, aux tons fruités, tanins moyens ronds et une persistance étendue.",
-      pairing: "Idéal avec steak, agneau, barbecue et fromages bleus ou affinés",
+        "Corsé, profond et velouté. Agréable tannicité et acidité équilibrée. Finale longue et chaleureuse aux tons distincts de pruneau, d’épices et de chêne noble.",
+      vinification:
+        "Les raisins sont vendangés à la main à pleine maturité. Après foulage, la fermentation démarre en cuves inox à température contrôlée. Après 12–15 jours de fermentation sur levures sélectionnées, le vin est séparé des lies et transféré en fûts de chêne de 225 litres pour un élevage de 9–12 mois.",
       vintage: "2025",
     },
     uk: {
@@ -1664,19 +2069,22 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       classification: "Червоне сухе",
       region: "Кахетія",
       country: "Грузія",
-      microzone: "Мукузані (ЗНМП)",
+      microzone: "Мукузані (захищене географічне походження)",
       grape: "Сапераві 100%",
       grapesSourced:
         "Виноград, зібраний вручну виключно в мікрозоні Мукузані",
-      servingTemperature: "+16°C — +18°C",
+      servingTemperature: "+15°C — +18°C",
       storageTemperature: "+5°C — +20°C",
-      color: "Темно-рубіновий",
+      tastingNotes:
+        "Мукузані — знамените грузинське сухе червоне вино, одна з головних візитівок виноробства Грузії. Воно виробляється з винограду сорту Сапераві, вирощеного в суворо визначеній мікрозоні Мукузані в регіоні Кахетія. Головна особливість цього вина — обов’язкова витримка в дубових бочках, що робить смак більш складним, щільним і танінним порівняно з іншими винами з Сапераві.",
+      color:
+        "Дуже густий, глибокий рубіново-гранатовий, майже непрозорий.",
       aroma:
-        "Яскравий букет із нотами чорної вишні, темного шоколаду та ожини, доповнений димними відтінками тютюну, ванілі та кедра від витримки в дубових бочках",
+        "Яскравий, складний і багатошаровий, з нотами стиглої черешні, чорної смородини, ожини та темного шоколаду. Витримка додає тонкі нюанси ванілі, гвоздики, легкого диму та пряного дуба.",
       taste:
-        "Вино щільне й насичене фруктовими тонами, з округлими танінами та тривалим післясмаком.",
-      pairing:
-        "Найкраще пасує до стейка, ягнятини, барбекю, а також до блакитних або витриманих сирів.",
+        "Повнотіле, глибоке й оксамитове. Вино має приємну танінність і збалансовану кислотність. Післясмак тривалий, зігріваючий, із виразними тонами чорносливу, спецій і благородного дуба.",
+      vinification:
+        "Виноград збирають вручну на піку зрілості. Після дроблення починається бродіння в резервуарах з нержавіючої сталі за контрольованої температури. Після 12–15-денного бродіння на культурних дріжджах вино відокремлюють від осаду та переміщують у 225-літрові дубові бочки для подальшої витримки протягом 9–12 місяців.",
       vintage: "2025",
     },
     bg: {
@@ -1684,248 +2092,277 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       classification: "Сухо червено",
       region: "Кахетия",
       country: "Грузия",
-      microzone: "Мукузани",
+      microzone: "Мукузани (защитен географски произход)",
       grape: "Саперави 100%",
       grapesSourced: "Грозде, берено на ръка изключително в микрозоната Мукузани",
-      servingTemperature: "+16°C до +18°C",
+      servingTemperature: "+15°C до +18°C",
       storageTemperature: "+5°C до +20°C",
-      color: "Тъмнорубинен",
+      tastingNotes:
+        "Мукузани е известно грузинско сухо червено вино и една от главните визитни картички на винарството в Грузия. Произвежда се от Саперави, отгледано в строго определената микрозона Мукузани в регион Кахетия. Главната особеност е задължителното отлежаване в дъбови бъчви, което прави вкуса по-сложен, плътен и танинов в сравнение с други вина от Саперави.",
+      color:
+        "Много гъст, дълбок рубинено-наратов, почти непрозрачен.",
       aroma:
-        "Ярък букет с нотки на черна череша, тъмен шоколад и къпина, допълнен от опушени нюанси на тютюн, ванилия и кедър от отлежаване в дъб",
-      taste: "Плътно и наситено с плодови тонове, заоблени танини и дълъг послевкус.",
-      pairing: "Най-добре със стек, агнешко, барбекю, както и със сини или зрели сирена.",
+        "Ярък, сложен и многопластов, с нотки на узряла череша, касис, къпина и тъмен шоколад. Отлежаването добавя фини нюанси на ванилия, карамфил, лек дим и пикантен дъб.",
+      taste:
+        "Пълнотено, дълбоко и кадифено. Виното има приятна таниновост и балансирана киселинност. Финишът е дълъг, затоплящ, с отчетливи тонове на сушени сливи, подправки и благороден дъб.",
+      vinification:
+        "Гроздето се бере на ръка в пика на зрялост. След смачкване започва ферментация в резервоари от неръждаема стомана при контролирана температура. След 12–15-дневна ферментация върху културни дрожди виното се отделя от утайката и се премества в 225-литрови дъбови бъчви за последващо отлежаване в продължение на 9–12 месеца.",
       vintage: "2025",
     },
   },
   "grw-pirosmani": {
     en: {
       name: "PIROSMANI",
-      classification: "Medium Dry Red",
+      classification: "Naturally Semi-Dry Red",
       region: "Kakheti",
       country: "Georgia",
       grape: "Saperavi",
       grapesSourced: "100% Company’s own vineyards",
       alcohol: "11,5%",
-      servingTemperature: "+12°C to +16°C",
+      servingTemperature: "+15°C to +18°C",
       storageTemperature: "+5°C to +20°C",
-      color: "Dark ruby colour",
+      tastingNotes:
+        "Pirosmani is a famous Georgian naturally semi-dry red wine made in Kakheti. Produced since 1981, it is named after the legendary Georgian primitivist painter Niko Pirosmani.",
+      color: "Deep, intense dark ruby.",
       aroma:
-        "While fresh berries dominate, you’ll often find a hint of sun-dried fruit, giving it a concentrated, jammy depth.",
-      taste: "Wine is silky, soft in tannins with fruity finish",
+        "An intense aroma of ripe cherry, sweet cherry, blackberry and prune, with light tones of dried herbs or spices.",
+      taste:
+        "Full-bodied and velvety, with soft silky tannins. Moderate acidity perfectly balances the residual fruit sweetness.",
+      vinification:
+        "Fermentation of the grape must is stopped by sharp cooling. As a result, part of the natural sugar does not convert into alcohol, making the taste soft without adding artificial sugar.",
       vintage: "2025",
     },
     ru: {
       name: "PIROSMANI",
-      classification: "Полусухое красное",
+      classification: "Природно-полусухое красное",
       region: "Кахетия",
       country: "Грузия",
       grape: "Саперави",
       grapesSourced: "100% виноград с собственных виноградников",
       alcohol: "11,5%",
-      servingTemperature: "+12°C — +16°C",
+      servingTemperature: "+15°C — +18°C",
       storageTemperature: "+5°C — +20°C",
-      color: "Тёмно-рубиновый",
+      tastingNotes:
+        "Пиросмани — это знаменитое грузинское природно-полусухое красное вино, создаваемое в регионе Кахетия. Вино производится с 1981 года и названо в честь легендарного грузинского художника-примитивиста Нико Пиросмани.",
+      color: "Глубокий, насыщенный, темно-рубиновый.",
       aroma:
-        "Это вино обладает густым, насыщенным и глубоким букетом черной смородины, ежевики и спелой вишни.",
-      taste: "Вино шелковистое, с мягкими танинами и фруктовым послевкусием.",
+        "Обладает интенсивным ароматом спелой вишни, черешни, ежевики и чернослива с легкими тонами сухих трав или пряностей.",
+      taste:
+        "Полнотелый, бархатистый, с мягкими шелковистыми танинами. Умеренная кислотность идеально балансирует остаточную фруктовую сладость.",
+      vinification:
+        "Брожение виноградного сусла останавливают путем резкого охлаждения. В результате часть естественного сахара не перебраживает в алкоголь, что делает вкус мягким без добавления искусственного сахара.",
       vintage: "2025",
     },
     es: {
       name: "PIROSMANI",
-      classification: "Tinto semiseco",
+      classification: "Tinto naturalmente semiseco",
       region: "Kajetia",
       country: "Georgia",
       grape: "Saperavi",
       grapesSourced: "100% viñedos propios de la empresa",
       alcohol: "11,5%",
-      servingTemperature: "+12°C a +16°C",
+      servingTemperature: "+15°C a +18°C",
       storageTemperature: "+5°C a +20°C",
-      color: "Color rubí oscuro",
+      tastingNotes:
+        "Pirosmani es un famoso tinto georgiano naturalmente semiseco elaborado en Kajetia. Se produce desde 1981 y lleva el nombre del legendario pintor primitivista georgiano Niko Pirosmani.",
+      color: "Rubí oscuro profundo e intenso.",
       aroma:
-        "Dominan las bayas frescas, a menudo con un toque de fruta seca al sol que aporta profundidad confitada.",
-      taste: "Seda en boca, taninos suaves y un final afrutado",
+        "Aroma intenso de cereza madura, guinda, mora y ciruela pasa, con ligeros tonos de hierbas secas o especias.",
+      taste:
+        "De cuerpo completo y aterciopelado, con taninos suaves y sedosos. Una acidez moderada equilibra a la perfección el dulzor frutal residual.",
+      vinification:
+        "La fermentación del mosto se detiene mediante un enfriamiento brusco. Así, parte del azúcar natural no se transforma en alcohol, lo que suaviza el sabor sin añadir azúcar artificial.",
       vintage: "2025",
     },
     fr: {
       name: "PIROSMANI",
-      classification: "Rouge demi-sec",
+      classification: "Rouge naturellement demi-sec",
       region: "Kakhétie",
       country: "Géorgie",
       grape: "Saperavi",
       grapesSourced: "100 % vignobles de la maison",
       alcohol: "11,5%",
-      servingTemperature: "+12°C à +16°C",
+      servingTemperature: "+15°C à +18°C",
       storageTemperature: "+5°C à +20°C",
-      color: "Couleur rubis sombre",
+      tastingNotes:
+        "Le Pirosmani est un célèbre rouge géorgien naturellement demi-sec élaboré en Kakhétie. Produit depuis 1981, il porte le nom du légendaire peintre primitiviste géorgien Niko Pirosmani.",
+      color: "Rubis sombre profond et intense.",
       aroma:
-        "Les baies fraîches dominent, souvent avec une touche de fruit séché au soleil, pour une profondeur confiturée.",
-      taste: "Soyeux, aux tanins souples et à la finale fruitée",
+        "Arôme intense de cerise mûre, griotte, mûre et pruneau, avec de légers tons d’herbes sèches ou d’épices.",
+      taste:
+        "Corsé et velouté, aux tanins souples et soyeux. Une acidité modérée équilibre parfaitement la douceur fruitée résiduelle.",
+      vinification:
+        "La fermentation du moût est arrêtée par un refroidissement brusque. Une partie du sucre naturel ne se transforme ainsi pas en alcool, ce qui adoucit le goût sans ajout de sucre artificiel.",
       vintage: "2025",
     },
     uk: {
       name: "PIROSMANI",
-      classification: "Напівсухе червоне",
+      classification: "Природно напівсухе червоне",
       region: "Кахетія",
       country: "Грузія",
       grape: "Сапераві",
       grapesSourced: "100% виноград із власних виноградників",
       alcohol: "11,5%",
-      servingTemperature: "+12°C — +16°C",
+      servingTemperature: "+15°C — +18°C",
       storageTemperature: "+5°C — +20°C",
-      color: "Темно-рубіновий",
+      tastingNotes:
+        "Піросмані — знамените грузинське природно напівсухе червоне вино, що створюється в регіоні Кахетія. Вино виробляється з 1981 року і назване на честь легендарного грузинського художника-примітивіста Ніко Піросмані.",
+      color: "Глибокий, насичений, темно-рубіновий.",
       aroma:
-        "Це вино має густий, насичений і глибокий букет чорної смородини, ожини та стиглої вишні.",
-      taste: "Вино шовковисте, з м’якими танінами та фруктовим післясмаком.",
+        "Має інтенсивний аромат стиглої вишні, черешні, ожини та чорносливу з легкими тонами сухих трав або прянощів.",
+      taste:
+        "Повнотіле, оксамитове, з м’якими шовковистими танінами. Помірна кислотність ідеально балансує залишкову фруктову солодкість.",
+      vinification:
+        "Бродіння виноградного сусла зупиняють шляхом різкого охолодження. У результаті частина природного цукру не перебродить в алкоголь, що робить смак м’яким без додавання штучного цукру.",
       vintage: "2025",
     },
     bg: {
       name: "PIROSMANI",
-      classification: "Полусладко червено",
+      classification: "Естествено полусухо червено",
       region: "Кахетия",
       country: "Грузия",
       grape: "Саперави",
-      grapesSourced: "От лозя в Кахетия",
-      servingTemperature: "+14°C до +16°C",
+      grapesSourced: "100% собствени лозя на компанията",
+      alcohol: "11,5%",
+      servingTemperature: "+15°C до +18°C",
       storageTemperature: "+5°C до +20°C",
-      color: "Рубинен",
-      aroma: "Плодови аромати на червени плодове",
-      taste: "Меко полусладко червено с хармоничен и приятен характер.",
-      pairing: "Сирена, плодове, леки месни ястия",
+      tastingNotes:
+        "Пиросмани е известно грузинско естествено полусухо червено вино, създавано в регион Кахетия. Произвежда се от 1981 г. и е кръстено на легендарния грузински художник-примитивист Нико Пиросмани.",
+      color: "Дълбок, наситен, тъмнорубинен.",
+      aroma:
+        "Интензивен аромат на узряла вишна, череша, къпина и сушени сливи с леки тонове на сухи билки или подправки.",
+      taste:
+        "Пълнотено, кадифено, с меки копринени танини. Умерената киселинност перфектно балансира остатъчната плодова сладост.",
+      vinification:
+        "Ферментацията на гроздовата мъст се спира чрез рязко охлаждане. В резултат част от естествената захар не се превръща в алкохол, което прави вкуса мек без добавяне на изкуствена захар.",
       vintage: "2025",
     },
   },
   "grw-rose": {
     en: {
       name: "ROSE",
-      classification: "Semi-dry Rosé",
+      classification: "Rosé",
       region: "Kakheti",
-      subregion: "Kakheti viticulture region",
       country: "Georgia",
-      grape: "Saperavi 40%, Rkatsiteli 60%",
+      grape: "Saperavi and Rkatsiteli",
       grapesSourced: "100% own vineyards",
       alcohol: "11.0%–12.5%",
       servingTemperature: "+8°C to +10°C",
       storageTemperature: "+5°C to +20°C",
-      color: "Brilliant salmon-pink with delicate coral reflections",
-      aroma:
-        "Fresh aromas of wild strawberry, raspberry and red cherry are complemented by subtle floral notes and delicate citrus nuances inherited from Rkatsiteli.",
-      taste:
-        "Elegant and refreshing palate with balanced natural sweetness and vibrant acidity. Notes of red berries, pomegranate and ripe peach create a harmonious and fruit-driven profile with a pleasant and persistent finish.",
       tastingNotes:
-        "Climate: Moderate continental · Wine category: Table wine · Sugar: 8–15 g/l · Crop capacity: 8–10 ton/hectare",
-      pairing: "Light salads, seafood, soft cheeses, and summer dishes.",
+        "Rosé is a bright, refreshing pink wine made from the legendary Georgian indigenous varieties Saperavi and Rkatsiteli, with a light, lively and elegant character.",
+      color: "Delicate pink with a raspberry hue.",
+      aroma:
+        "Expressive and berry-driven. Dominated by notes of ripe strawberry, raspberry, pomegranate and barberry, complemented by nuances of peach, red plum and rose petals.",
+      taste:
+        "Refreshing, clean and balanced. The wine has bright, invigorating acidity and a silky texture. The taste fully echoes the berry aroma profile, leaving a long, juicy finish.",
       vinification:
-        "The grapes are harvested separately at optimal maturity and carefully sorted. Following gentle crushing, short skin contact with Saperavi grapes provides the wine with its delicate pink color. Fermentation takes place in temperature-controlled stainless-steel tanks at 14°C–16°C to preserve freshness and aromatic intensity. Fermentation is stopped at the desired sugar level to retain natural fruitiness and achieve a balanced semi-dry style. The wine is aged in stainless steel tanks before bottling under controlled temperature and humidity conditions.",
+        "Made using European technology. After gentle destemming, the grapes are pressed, then fermented and aged in stainless-steel tanks at controlled temperature.",
+      vintage: "2025",
     },
     ru: {
       name: "ROSE",
-      classification: "Полусухое розовое",
+      classification: "Розовое",
       region: "Кахетия",
-      subregion: "Винодельческий регион Кахетия",
       country: "Грузия",
-      grape: "Саперави 40%, Ркацители 60%",
+      grape: "Саперави и Ркацители",
       grapesSourced: "100% виноград с собственных виноградников",
       alcohol: "11,0%–12,5%",
       servingTemperature: "+8°C — +10°C",
       storageTemperature: "+5°C — +20°C",
-      color: "Яркий лососево-розовый с нежными коралловыми отблесками",
-      aroma:
-        "Свежие ароматы лесной земляники, малины и красной вишни дополняются тонкими цветочными нотами и деликатными цитрусовыми нюансами, унаследованными от Ркацители.",
-      taste:
-        "Элегантный и освежающий вкус со сбалансированной естественной сладостью и яркой кислотностью. Ноты красных ягод, граната и спелого персика создают гармоничный фруктовый профиль с приятным и стойким послевкусием.",
       tastingNotes:
-        "Климат: умеренно-континентальный · Категория: столовое вино · Сахар: 8–15 г/л · Урожайность: 8–10 т/га",
-      pairing: "Лёгкие салаты, морепродукты, мягкие сыры и летние блюда.",
+        "Розе — это яркое, освежающее розовое вино, созданное из легендарных грузинских автохтонных сортов винограда Саперави и Ркацители, с легким, живым и элегантным характером.",
+      color: "Нежно-розовый с малиновым отливом.",
+      aroma:
+        "Экспрессивный и ягодный. Доминируют ноты спелой клубники, малины, граната и барбариса, которые дополняются нюансами персика, красной сливы и лепестков роз.",
+      taste:
+        "Освежающий, чистый и сбалансированный. Вино обладает яркой, бодрящей кислотностью и шелковистой текстурой. Вкус полностью повторяет ягодный профиль аромата, оставляя долгое, сочное послевкусие.",
       vinification:
-        "Виноград собирают отдельно при оптимальной зрелости и тщательно сортируют. После мягкого дробления краткий контакт с кожицей Саперави придаёт вину нежный розовый цвет. Ферментация проходит в нержавеющих резервуарах с контролируемой температурой 14°C–16°C для сохранения свежести и ароматической интенсивности. Ферментацию останавливают на нужном уровне сахара, чтобы сохранить естественную фруктовость и получить сбалансированный полусухой стиль. Перед розливом вино выдерживают в нержавеющих резервуарах при контролируемых температуре и влажности.",
+        "Вино создано по европейской технологии. После бережного гребнеотделения виноград выжимается с последующим брожением и выдержкой в резервуарах из нержавеющей стали при контролируемой температуре.",
+      vintage: "2025",
     },
     es: {
       name: "ROSE",
-      classification: "Rosado semiseco",
+      classification: "Rosado",
       region: "Kajetia",
-      subregion: "Región vitivinícola de Kajetia",
       country: "Georgia",
-      grape: "Saperavi 40%, Rkatsiteli 60%",
+      grape: "Saperavi y Rkatsiteli",
       grapesSourced: "100% uvas de viñedos propios",
       alcohol: "11,0%–12,5%",
       servingTemperature: "+8°C a +10°C",
       storageTemperature: "+5°C a +20°C",
-      color: "Rosa salmón brillante con delicados reflejos coral",
-      aroma:
-        "Aromas frescos de fresa silvestre, frambuesa y cereza roja, complementados por sutiles notas florales y delicados matices cítricos heredados del Rkatsiteli.",
-      taste:
-        "Paladar elegante y refrescante, con dulzor natural equilibrado y acidez vibrante. Notas de frutos rojos, granada y melocotón maduro crean un perfil armonioso y afrutado, con un final agradable y persistente.",
       tastingNotes:
-        "Clima: continental moderado · Categoría: vino de mesa · Azúcar: 8–15 g/l · Rendimiento: 8–10 t/ha",
-      pairing: "Ensaladas ligeras, mariscos, quesos suaves y platos de verano.",
+        "El Rosé es un vino rosado brillante y refrescante, elaborado con las legendarias variedades autóctonas georgianas Saperavi y Rkatsiteli, de carácter ligero, vivo y elegante.",
+      color: "Rosa delicado con reflejo de frambuesa.",
+      aroma:
+        "Expresivo y afrutado. Dominan notas de fresa madura, frambuesa, granada y agracejo, complementadas por matices de melocotón, ciruela roja y pétalos de rosa.",
+      taste:
+        "Refrescante, limpio y equilibrado. Posee una acidez brillante y vivaz y una textura sedosa. El sabor refleja por completo el perfil de bayas del aroma, con un final largo y jugoso.",
       vinification:
-        "Las uvas se vendimian por separado en su madurez óptima y se seleccionan con cuidado. Tras un estrujado suave, un breve contacto con los hollejos de Saperavi aporta el delicado color rosado. La fermentación se realiza en depósitos de acero inoxidable a temperatura controlada (14°C–16°C) para preservar la frescura y la intensidad aromática. Se detiene al nivel de azúcar deseado para conservar la frutalidad natural y lograr un estilo semiseco equilibrado. El vino envejece en acero inoxidable antes del embotellado en condiciones controladas de temperatura y humedad.",
+        "Elaborado con tecnología europea. Tras un despalillado cuidadoso, la uva se prensa y fermenta con crianza en depósitos de acero inoxidable a temperatura controlada.",
+      vintage: "2025",
     },
     fr: {
       name: "ROSE",
-      classification: "Rosé demi-sec",
+      classification: "Rosé",
       region: "Kakhétie",
-      subregion: "Région viticole de Kakhétie",
       country: "Géorgie",
-      grape: "Saperavi 40 %, Rkatsiteli 60 %",
+      grape: "Saperavi et Rkatsiteli",
       grapesSourced: "100 % de vignobles propres",
       alcohol: "11,0 % – 12,5 %",
       servingTemperature: "+8°C à +10°C",
       storageTemperature: "+5°C à +20°C",
-      color: "Rose saumon brillant aux délicats reflets corail",
-      aroma:
-        "Arômes frais de fraise des bois, framboise et cerise rouge, complétés par de subtiles notes florales et de délicates nuances d’agrumes héritées du Rkatsiteli.",
-      taste:
-        "Palais élégant et rafraîchissant, à la douceur naturelle équilibrée et à l’acidité vive. Notes de fruits rouges, de grenade et de pêche mûre pour un profil harmonieux et fruité, à la finale agréable et persistante.",
       tastingNotes:
-        "Climat : continental modéré · Catégorie : vin de table · Sucre : 8–15 g/l · Rendement : 8–10 t/ha",
-      pairing: "Salades légères, fruits de mer, fromages doux et plats d’été.",
+        "Le Rosé est un vin rose vif et rafraîchissant, élaboré à partir des célèbres cépages autochtones géorgiens Saperavi et Rkatsiteli, au caractère léger, vivant et élégant.",
+      color: "Rose tendre aux reflets framboise.",
+      aroma:
+        "Expressif et fruité. Dominent des notes de fraise mûre, framboise, grenade et épine-vinette, complétées par des nuances de pêche, prune rouge et pétales de rose.",
+      taste:
+        "Rafraîchissant, pur et équilibré. Le vin offre une acidité vive et tonique et une texture soyeuse. Le goût reprend pleinement le profil de baies de l’arôme, avec une longue finale juteuse.",
       vinification:
-        "Les raisins sont vendangés séparément à maturité optimale et soigneusement triés. Après un foulage doux, un court contact avec les peaux de Saperavi confère la délicate couleur rose. La fermentation se déroule en cuves inox thermo-régulées à 14°C–16°C pour préserver fraîcheur et intensité aromatique. Elle est arrêtée au niveau de sucre souhaité afin de conserver le fruité naturel et d’obtenir un style demi-sec équilibré. Le vin est élevé en inox avant mise en bouteille dans des conditions de température et d’humidité contrôlées.",
+        "Élaboré selon une technologie européenne. Après un égrappage soigneux, les raisins sont pressés, puis fermentés et élevés en cuves inox à température contrôlée.",
+      vintage: "2025",
     },
     uk: {
       name: "ROSE",
-      classification: "Напівсухе рожеве",
+      classification: "Рожеве",
       region: "Кахетія",
-      subregion: "Виноробний регіон Кахетія",
       country: "Грузія",
-      grape: "Сапераві 40%, Ркацителі 60%",
+      grape: "Сапераві та Ркацителі",
       grapesSourced: "100% виноград із власних виноградників",
       alcohol: "11,0%–12,5%",
       servingTemperature: "+8°C — +10°C",
       storageTemperature: "+5°C — +20°C",
-      color: "Яскравий лососево-рожевий із ніжними кораловими відблисками",
-      aroma:
-        "Свіжі аромати лісової суниці, малини та червоної вишні доповнюються тонкими квітковими нотами й делікатними цитрусовими нюансами, успадкованими від Ркацителі.",
-      taste:
-        "Елегантний і освіжаючий смак зі збалансованою природною солодкістю та яскравою кислотністю. Ноти червоних ягід, граната та стиглого персика створюють гармонійний фруктовий профіль із приємним і стійким післясмаком.",
       tastingNotes:
-        "Клімат: помірно-континентальний · Категорія: столове вино · Цукор: 8–15 г/л · Урожайність: 8–10 т/га",
-      pairing: "Легкі салати, морепродукти, м’які сири та літні страви.",
+        "Розе — яскраве, освіжаюче рожеве вино, створене з легендарних грузинських автохтонних сортів Сапераві та Ркацителі, з легким, живим і елегантним характером.",
+      color: "Ніжно-рожевий із малиновим відтінком.",
+      aroma:
+        "Експресивний і ягідний. Домінують ноти стиглої полуниці, малини, граната та барбарису, доповнені нюансами персика, червоної сливи та пелюсток троянд.",
+      taste:
+        "Освіжаючий, чистий і збалансований. Вино має яскраву, бадьору кислотність і шовковисту текстуру. Смак повністю повторює ягідний профіль аромату, залишаючи довгий соковитий післясмак.",
       vinification:
-        "Виноград збирають окремо при оптимальній зрилості та ретельно сортують. Після м’якого дроблення короткий контакт зі шкіркою Сапераві надає вину ніжний рожевий колір. Ферментація відбувається в нержавіючих резервуарах за контрольованої температури 14°C–16°C для збереження свіжості та ароматичної інтенсивності. Ферментацію зупиняють на потрібному рівні цукру, щоб зберегти природну фруктовість і отримати збалансований напівсухий стиль. Перед розливом вино витримують у нержавіючих резервуарах за контрольованих температури та вологості.",
+        "Вино створене за європейською технологією. Після дбайливого гребеневідділення виноград віджимають із подальшим бродінням і витримкою в резервуарах з нержавіючої сталі за контрольованої температури.",
+      vintage: "2025",
     },
     bg: {
       name: "ROSE",
-      classification: "Полусухо розе",
+      classification: "Розе",
       region: "Кахетия",
-      subregion: "Винарски регион Кахетия",
       country: "Грузия",
-      grape: "Саперави 40%, Ркацители 60%",
+      grape: "Саперави и Ркацители",
       grapesSourced: "100% собствени лозя",
       alcohol: "11.0%–12.5%",
       servingTemperature: "+8°C до +10°C",
       storageTemperature: "+5°C до +20°C",
-      color: "Ярък сьомгово-розов с нежни коралови отблясъци",
-      aroma:
-        "Свежи аромати на горска ягода, малина и червена череша, допълнени от цветни нотки и деликатни цитрусови нюанси от Ркацители.",
-      taste:
-        "Елегантен и освежаващ вкус с балансирана естествена сладост и жива киселинност. Нотки на червени плодове, нар и зряла праскова създават хармоничен плодов профил с приятен и устойчив финиш.",
       tastingNotes:
-        "Климат: умереноконтинентален · Категория: трапезно вино · Захар: 8–15 г/л · Добив: 8–10 т/ха",
-      pairing: "Леки салати, морски дарове, меки сирена и летни ястия.",
+        "Розе е ярко, освежаващо розово вино, създадено от легендарните грузински автохтонни сортове Саперави и Ркацители, с лек, жив и елегантен характер.",
+      color: "Нежнорозов с малинов оттенък.",
+      aroma:
+        "Експресивен и плодов. Доминират нотки на узряла ягода, малина, нар и кисел трън, допълнени от нюанси на праскова, червена слива и розови листенца.",
+      taste:
+        "Освежаващ, чист и балансиран. Виното има ярка, ободряваща киселинност и копринена текстура. Вкусът напълно повтаря плодовия профил на аромата и оставя дълъг, сочен финиш.",
       vinification:
-        "Гроздето се бере отделно при оптимална зрялост и се сортира внимателно. След меко смачкване краткият контакт с ципите на Саперави придава нежния розов цвят. Ферментацията е в неръждаеми резервоари при 14°C–16°C за запазване на свежестта. Ферментацията се спира на желаното ниво на захар за балансиран полусух стил.",
+        "Виното е създадено по европейска технология. След внимателно отделяне на чепките гроздето се изтисква с последваща ферментация и отлежаване в резервоари от неръждаема стомана при контролирана температура.",
       vintage: "2025",
     },
   },
