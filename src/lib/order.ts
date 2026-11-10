@@ -402,11 +402,24 @@ export function formatCustomerConfirmationEmail(
       ? "Free delivery in Spain only (order includes at least 1 box)"
       : "€3 delivery in Torrevieja, Spain (1–4 bottles)";
 
+  const paymentText = [
+    "ONLINE PAYMENT — BANK TRANSFER",
+    "------------------------------",
+    "You can pay by bank transfer using the details below.",
+    "Please include your full name in the transfer reference.",
+    "",
+    "Beneficiary: STAS BUILDING SERVICIO SL.",
+    "Bank: Banco Sabadell",
+    "IBAN: ES15 0081 0628 8100 0335 5039",
+    `Amount (wine subtotal): ${formatEur(subtotal)}`,
+    "(Final total including shipping will be confirmed by our team if needed.)",
+  ].join("\n");
+
   const text = [
     `Dear ${customer.firstName},`,
     "",
     "Thank you for your wine reservation with Georgian Royal Wine (GRW).",
-    "We have received your request and our team will contact you shortly to confirm pricing, shipping, and delivery.",
+    "We have received your request. You can complete payment by bank transfer using the details below; our team will contact you if anything needs confirmation.",
     "",
     "YOUR RESERVATION",
     "----------------",
@@ -425,6 +438,8 @@ export function formatCustomerConfirmationEmail(
     `Delivery: ${deliveryNoteEn}`,
     summary.giftNoteEn ? summary.giftNoteEn : null,
     "(Final total including shipping will be confirmed by our team.)",
+    "",
+    paymentText,
     "",
     "DELIVERY ADDRESS",
     "----------------",
@@ -488,7 +503,7 @@ export function formatCustomerConfirmationEmail(
         <tr>
           <td style="padding:28px 32px 0;">
             <div style="color:#57534e;font-size:15px;line-height:1.6;margin-bottom:20px;">
-              We have received your reservation. Our team will contact you shortly to confirm pricing, shipping, and delivery.
+              We have received your reservation. You can complete payment by bank transfer using the details below; our team will contact you if anything needs confirmation.
             </div>
             <div style="font-size:13px;font-weight:700;color:#722f37;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:14px;border-bottom:2px solid #f5e6d3;padding-bottom:8px;">Your order</div>
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #e8e0d8;border-radius:8px;overflow:hidden;">
@@ -526,6 +541,39 @@ export function formatCustomerConfirmationEmail(
                     }
                   </table>
                   <div style="margin-top:12px;color:#a8a29e;font-size:12px;">Final total including shipping will be confirmed by our team.</div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:0 32px 24px;">
+            <div style="font-size:13px;font-weight:700;color:#722f37;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:14px;border-bottom:2px solid #f5e6d3;padding-bottom:8px;">Online payment — bank transfer</div>
+            <div style="color:#57534e;font-size:14px;line-height:1.6;margin-bottom:14px;">
+              Please transfer the amount below and include your full name in the payment reference.
+            </div>
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#faf7f4;border-radius:8px;border:1px solid #e8e0d8;">
+              <tr>
+                <td style="padding:18px 20px;">
+                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td style="padding:6px 0;color:#78716c;font-size:13px;width:120px;">Beneficiary</td>
+                      <td style="padding:6px 0;color:#1c1917;font-size:14px;font-weight:600;">STAS BUILDING SERVICIO SL.</td>
+                    </tr>
+                    <tr>
+                      <td style="padding:6px 0;color:#78716c;font-size:13px;">Bank</td>
+                      <td style="padding:6px 0;color:#1c1917;font-size:14px;font-weight:600;">Banco Sabadell</td>
+                    </tr>
+                    <tr>
+                      <td style="padding:6px 0;color:#78716c;font-size:13px;">IBAN</td>
+                      <td style="padding:6px 0;color:#1c1917;font-size:15px;font-weight:700;letter-spacing:0.04em;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;">ES15 0081 0628 8100 0335 5039</td>
+                    </tr>
+                    <tr>
+                      <td style="padding:6px 0;color:#78716c;font-size:13px;">Amount</td>
+                      <td style="padding:6px 0;color:#3d1519;font-size:16px;font-weight:700;">${formatEur(subtotal)} <span style="color:#a8a29e;font-size:12px;font-weight:500;">(wine subtotal)</span></td>
+                    </tr>
+                  </table>
                 </td>
               </tr>
             </table>

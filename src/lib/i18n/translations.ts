@@ -304,7 +304,7 @@ const translations = {
       notesHint: "Delivery preferences, business details, or special requests.",
       notesPlaceholder: "e.g. preferred delivery date, VAT number, bulk quantities…",
       orderRequestInfo:
-        "No online payment is required. Submit your order request with the wines and quantities below — our team will contact you to confirm pricing, shipping, and delivery.",
+        "Submit your reservation below. You will receive a confirmation email with bank transfer details to complete payment online.",
       yourOrder: "Your Order",
       editOrder: "Edit Order",
       qty: "Qty",
@@ -316,7 +316,7 @@ const translations = {
       ageNotice: "Must be 18+ to order. Business orders welcome.",
       confirmed: "Order Request Sent!",
       confirmedDesc:
-        "Thank you. We received your order request and will contact you shortly at",
+        "Thank you. We received your reservation — check your inbox for confirmation and bank transfer payment details. We will also contact you at",
       orderTotal: "Requested subtotal",
     },
     product: {
@@ -666,7 +666,7 @@ const translations = {
       notesHint: "Preferencias de entrega, datos comerciales o solicitudes especiales.",
       notesPlaceholder: "ej. fecha de entrega, número de IVA, cantidades…",
       orderRequestInfo:
-        "No se requiere pago en línea. Envíe su solicitud con los vinos y cantidades — nuestro equipo le contactará para confirmar precios y envío.",
+        "Envíe su reserva abajo. Recibirá un email de confirmación con los datos de transferencia bancaria para completar el pago online.",
       yourOrder: "Su Pedido",
       editOrder: "Editar Pedido",
       qty: "Cant.",
@@ -676,7 +676,8 @@ const translations = {
       error: "No se pudo enviar la solicitud. Inténtelo de nuevo.",
       ageNotice: "Debe ser mayor de 18 años. Pedidos comerciales bienvenidos.",
       confirmed: "¡Solicitud Enviada!",
-      confirmedDesc: "Gracias. Recibimos su solicitud y le contactaremos pronto en",
+      confirmedDesc:
+        "Gracias. Recibimos su reserva — revise su correo con la confirmación y los datos de transferencia. También le contactaremos en",
       orderTotal: "Subtotal solicitado",
     },
     product: {
@@ -1026,7 +1027,7 @@ const translations = {
       notesHint: "Предпочтения по доставке, реквизиты или особые пожелания.",
       notesPlaceholder: "напр. дата доставки, VAT, объёмы…",
       orderRequestInfo:
-        "Онлайн-оплата не требуется. Отправьте запрос с винами и количеством — наша команда свяжется с вами для подтверждения цены и доставки.",
+        "Оформите бронь ниже. Вы получите письмо с подтверждением и реквизитами для банковского перевода.",
       yourOrder: "Ваш Заказ",
       editOrder: "Изменить заказ",
       qty: "Кол-во",
@@ -1036,7 +1037,8 @@ const translations = {
       error: "Не удалось отправить запрос. Попробуйте снова.",
       ageNotice: "Заказ с 18 лет. Приветствуются оптовые заказы.",
       confirmed: "Запрос Отправлен!",
-      confirmedDesc: "Спасибо. Мы получили ваш запрос и свяжемся с вами по адресу",
+      confirmedDesc:
+        "Спасибо. Мы получили вашу бронь — проверьте почту: там подтверждение и реквизиты для оплаты. Также свяжемся с вами по адресу",
       orderTotal: "Запрошенный subtotal",
     },
     product: {
@@ -1386,7 +1388,7 @@ const translations = {
       notesHint: "Préférences de livraison, informations commerciales ou demandes spéciales.",
       notesPlaceholder: "ex. date de livraison, numéro TVA, quantités…",
       orderRequestInfo:
-        "Aucun paiement en ligne requis. Envoyez votre demande avec les vins et quantités — notre équipe vous contactera pour confirmer prix et livraison.",
+        "Envoyez votre réservation ci-dessous. Vous recevrez un email de confirmation avec les coordonnées bancaires pour finaliser le paiement.",
       yourOrder: "Votre Commande",
       editOrder: "Modifier la commande",
       qty: "Qté",
@@ -1396,7 +1398,8 @@ const translations = {
       error: "Impossible d'envoyer la demande. Veuillez réessayer.",
       ageNotice: "18 ans minimum. Commandes professionnelles bienvenues.",
       confirmed: "Demande Envoyée !",
-      confirmedDesc: "Merci. Nous avons reçu votre demande et vous contacterons à",
+      confirmedDesc:
+        "Merci. Nous avons reçu votre réservation — consultez votre boîte mail pour la confirmation et les coordonnées de virement. Nous vous contacterons aussi à",
       orderTotal: "Sous-total demandé",
     },
     product: {
@@ -1746,7 +1749,7 @@ const translations = {
       notesHint: "Побажання щодо доставки, реквізити або особливі запити.",
       notesPlaceholder: "напр. дата доставки, VAT, обсяги…",
       orderRequestInfo:
-        "Онлайн-оплата не потрібна. Надішліть запит з винами та кількістю — наша команда зв'яжеться з вами для підтвердження ціни та доставки.",
+        "Оформіть бронювання нижче. Ви отримаєте лист із підтвердженням і реквізитами для банківського переказу.",
       yourOrder: "Ваше Замовлення",
       editOrder: "Редагувати замовлення",
       qty: "К-сть",
@@ -1756,7 +1759,8 @@ const translations = {
       error: "Не вдалося надіслати запит. Спробуйте ще раз.",
       ageNotice: "Замовлення з 18 років. Вітаємо оптові замовлення.",
       confirmed: "Запит Надіслано!",
-      confirmedDesc: "Дякуємо. Ми отримали ваш запит і зв'яжемося з вами за адресою",
+      confirmedDesc:
+        "Дякуємо. Ми отримали ваше бронювання — перевірте пошту: там підтвердження та реквізити для оплати. Також зв'яжемося з вами за адресою",
       orderTotal: "Запитуваний subtotal",
     },
     product: {
@@ -2112,7 +2116,7 @@ const translations = {
       notesHint: "Предпочитания за доставка, бизнес детайли или специални заявки.",
       notesPlaceholder: "напр. предпочитана дата, ДДС номер, количества…",
       orderRequestInfo:
-        "Не се изисква онлайн плащане. Изпратете заявка с вината и количествата — екипът ни ще се свърже за потвърждение на цена, доставка и срок.",
+        "Изпратете резервацията по-долу. Ще получите имейл с потвърждение и банкови данни за онлайн плащане с превод.",
       yourOrder: "Вашата поръчка",
       editOrder: "Редактирай",
       qty: "Кол.",
@@ -2124,7 +2128,7 @@ const translations = {
       ageNotice: "Трябва да сте на 18+ години. Бизнес поръчки са добре дошли.",
       confirmed: "Заявката е изпратена!",
       confirmedDesc:
-        "Благодарим ви. Получихме заявката и скоро ще се свържем на",
+        "Благодарим ви. Получихме резервацията — проверете пощата за потвърждение и банковите данни. Ще се свържем и на",
       orderTotal: "Заявена междинна сума",
     },
     product: {
