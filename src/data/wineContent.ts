@@ -1191,7 +1191,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
   },
   "grw-alazani-valley": {
     en: {
-      name: "ALAZANI VALLEY",
+      name: "ALAZANI VALLEY WHITE",
       classification: "Naturally Semi-Sweet White",
       region: "Kakheti",
       country: "Georgia",
@@ -1211,7 +1211,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       vintage: "2024",
     },
     ru: {
-      name: "ALAZANI VALLEY",
+      name: "ALAZANI VALLEY БЕЛОЕ",
       classification: "Природно-полусладкое белое",
       region: "Кахетия",
       country: "Грузия",
@@ -1231,7 +1231,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       vintage: "2024",
     },
     es: {
-      name: "ALAZANI VALLEY",
+      name: "ALAZANI VALLEY BLANCO",
       classification: "Blanco naturalmente semidulce",
       region: "Kajetia",
       country: "Georgia",
@@ -1251,7 +1251,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       vintage: "2024",
     },
     fr: {
-      name: "ALAZANI VALLEY",
+      name: "ALAZANI VALLEY BLANC",
       classification: "Blanc naturellement demi-doux",
       region: "Kakhétie",
       country: "Géorgie",
@@ -1271,7 +1271,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       vintage: "2024",
     },
     uk: {
-      name: "ALAZANI VALLEY",
+      name: "ALAZANI VALLEY БІЛЕ",
       classification: "Природно напівсолодке біле",
       region: "Кахетія",
       country: "Грузія",
@@ -1291,7 +1291,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       vintage: "2024",
     },
     bg: {
-      name: "ALAZANI VALLEY",
+      name: "ALAZANI VALLEY БЯЛО",
       classification: "Естествено полусладко бяло",
       region: "Кахетия",
       country: "Грузия",
@@ -1455,7 +1455,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
   },
   "grw-alazani-valley-red": {
     en: {
-      name: "ALAZANI VALLEY",
+      name: "ALAZANI VALLEY RED",
       classification: "Naturally Semi-Sweet Red",
       region: "Kakheti",
       country: "Georgia",
@@ -1477,7 +1477,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       vintage: "2025",
     },
     ru: {
-      name: "ALAZANI VALLEY",
+      name: "ALAZANI VALLEY КРАСНОЕ",
       classification: "Природно-полусладкое красное",
       region: "Кахетия",
       country: "Грузия",
@@ -1499,7 +1499,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       vintage: "2025",
     },
     es: {
-      name: "ALAZANI VALLEY",
+      name: "ALAZANI VALLEY TINTO",
       classification: "Tinto naturalmente semidulce",
       region: "Kajetia",
       country: "Georgia",
@@ -1521,7 +1521,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       vintage: "2025",
     },
     fr: {
-      name: "ALAZANI VALLEY",
+      name: "ALAZANI VALLEY ROUGE",
       classification: "Rouge naturellement demi-doux",
       region: "Kakhétie",
       country: "Géorgie",
@@ -1543,7 +1543,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       vintage: "2025",
     },
     uk: {
-      name: "ALAZANI VALLEY",
+      name: "ALAZANI VALLEY ЧЕРВОНЕ",
       classification: "Природно напівсолодке червоне",
       region: "Кахетія",
       country: "Грузія",
@@ -1565,7 +1565,7 @@ export const wineContent: Record<string, Record<Locale, WineContent>> = {
       vintage: "2025",
     },
     bg: {
-      name: "ALAZANI VALLEY",
+      name: "ALAZANI VALLEY ЧЕРВЕНО",
       classification: "Естествено полусладко червено",
       region: "Кахетия",
       country: "Грузия",
