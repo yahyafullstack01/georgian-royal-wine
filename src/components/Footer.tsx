@@ -23,9 +23,9 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-sm font-medium tracking-widest text-gold-400 uppercase">
+            <h3 className="text-sm font-medium tracking-widest text-gold-400 uppercase">
               {t.footer.shop}
-            </h4>
+            </h3>
             <ul className="mt-4 space-y-2 text-sm">
               <li>
                 <Link
@@ -71,9 +71,9 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-sm font-medium tracking-widest text-gold-400 uppercase">
+            <h3 className="text-sm font-medium tracking-widest text-gold-400 uppercase">
               {t.footer.company}
-            </h4>
+            </h3>
             <ul className="mt-4 space-y-2 text-sm">
               <li>
                 <Link href="/about" className="hover:text-gold-400">
@@ -99,9 +99,9 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-sm font-medium tracking-widest text-gold-400 uppercase">
+            <h3 className="text-sm font-medium tracking-widest text-gold-400 uppercase">
               {t.footer.visitUs}
-            </h4>
+            </h3>
             <address className="mt-4 space-y-1 text-sm not-italic text-cream-300/80">
               <p>{t.footer.address1}</p>
               <p>{t.footer.address2}</p>
@@ -141,9 +141,9 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 border-t border-cream-200/10 pt-8">
-          <h4 className="text-sm font-medium tracking-widest text-gold-400 uppercase">
+          <h3 className="text-sm font-medium tracking-widest text-gold-400 uppercase">
             {t.footer.delivery}
-          </h4>
+          </h3>
           <ul className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-sm">
             {cities.map((city) => (
               <li key={city.slug}>

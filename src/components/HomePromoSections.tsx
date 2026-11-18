@@ -81,7 +81,7 @@ export default function HomePromoSections() {
             <div className="relative min-h-[18rem] lg:col-span-5 lg:min-h-[26rem]">
               <Image
                 src="/about/winery-aerial.jpg"
-                alt=""
+                alt="Winery and vineyards from above"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 42vw"
@@ -144,7 +144,7 @@ export default function HomePromoSections() {
               <div className="relative col-span-2 aspect-[16/10] overflow-hidden">
                 <Image
                   src="/about/chokha-bottles.jpg"
-                  alt=""
+                  alt="GRW bottles in the cellar"
                   fill
                   className="object-cover object-[center_35%]"
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -153,7 +153,7 @@ export default function HomePromoSections() {
               <div className="relative aspect-square overflow-hidden">
                 <Image
                   src="/about/barrels.jpg"
-                  alt=""
+                  alt="Oak barrels at the GRW winery"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 50vw, 25vw"
@@ -162,7 +162,7 @@ export default function HomePromoSections() {
               <div className="relative aspect-square overflow-hidden">
                 <Image
                   src="/about/shop-shelves.jpg"
-                  alt=""
+                  alt="GRW wine shelves"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 50vw, 25vw"

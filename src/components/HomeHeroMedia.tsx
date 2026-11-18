@@ -61,39 +61,31 @@ export default function HomeHeroMedia() {
   return (
     <>
       <div className="absolute inset-0">
-        {HERO_SLIDES.map((item, i) => {
-          const active = i === index;
-          return (
-            <div
-              key={`${item.type}-${item.src}`}
-              className={`absolute inset-0 transition-opacity duration-1000 ease-out ${
-                active ? "opacity-100" : "pointer-events-none opacity-0"
-              }`}
-              aria-hidden={!active}
+        <div
+          key={`${slide.type}-${slide.src}`}
+          className="absolute inset-0 animate-[fade-in_1s_ease-out]"
+        >
+          {slide.type === "image" ? (
+            <Image
+              src={slide.src}
+              alt={slide.alt}
+              fill
+              priority={index === 0}
+              className="object-cover"
+              sizes="100vw"
+            />
+          ) : (
+            <video
+              ref={videoRef}
+              muted
+              playsInline
+              preload="metadata"
+              className="absolute inset-0 h-full w-full object-cover"
             >
-              {item.type === "image" ? (
-                <Image
-                  src={item.src}
-                  alt={item.alt}
-                  fill
-                  priority={i === 0}
-                  className="object-cover"
-                  sizes="100vw"
-                />
-              ) : (
-                <video
-                  ref={videoRef}
-                  muted
-                  playsInline
-                  preload="metadata"
-                  className="absolute inset-0 h-full w-full object-cover"
-                >
-                  <source src={item.src} type="video/mp4" />
-                </video>
-              )}
-            </div>
-          );
-        })}
+              <source src={slide.src} type="video/mp4" />
+            </video>
+          )}
+        </div>
       </div>
 
       <div

@@ -47,6 +47,7 @@ export default function Header() {
 
           <Link
             href="/cart"
+            aria-label={t.nav.cart}
             className="relative flex items-center gap-2 rounded-full px-3 py-2 text-sm text-stone-700 transition-colors hover:bg-gold-500/10 dark:text-cream-200 dark:hover:bg-gold-500/10"
           >
             <svg
