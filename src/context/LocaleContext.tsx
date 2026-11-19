@@ -39,6 +39,19 @@ function storageKey(host = getHostKey()): string {
   return `vinea-locale:${host}`;
 }
 
+function detectBrowserLocale(): Locale | null {
+  if (typeof navigator === "undefined") return null;
+  const candidates = navigator.languages?.length
+    ? navigator.languages
+    : [navigator.language];
+
+  for (const raw of candidates) {
+    const code = raw.split("-")[0].toLowerCase();
+    if (VALID_LOCALES.has(code as Locale)) return code as Locale;
+  }
+  return null;
+}
+
 function applyDocumentLang(locale: Locale) {
   document.documentElement.lang = locale;
 }
@@ -65,10 +78,11 @@ export function LocaleProvider({
       return;
     }
     const host = getHostKey();
-    const domainDefault = getDomainDefaultLocale(host);
     const stored = localStorage.getItem(storageKey(host)) as Locale | null;
     const next =
-      stored && VALID_LOCALES.has(stored) ? stored : domainDefault;
+      stored && VALID_LOCALES.has(stored)
+        ? stored
+        : (detectBrowserLocale() ?? getDomainDefaultLocale(host));
     setLocaleState(next);
     applyDocumentLang(next);
     setMounted(true);

@@ -23,6 +23,16 @@ const translations = {
       light: "Light mode",
       dark: "Dark mode",
     },
+    ageGate: {
+      title: "Georgian Royal Wine",
+      question: "Are you 18 years of age or older?",
+      desc: "This website features alcoholic beverages. You must be of legal drinking age to enter.",
+      yes: "Yes, I am 18+",
+      no: "No",
+      blockedTitle: "Access restricted",
+      blockedDesc: "This website is for visitors 18 years of age or older. You cannot enter this site.",
+      blockedCta: "Go to Google",
+    },
     notFound: {
       title: "Page not found",
       desc: "This link may be from our old website. Continue to the shop or homepage.",
@@ -392,6 +402,16 @@ const translations = {
       title: "Página no encontrada",
       desc: "Este enlace puede ser del sitio anterior. Continúe a la tienda o al inicio.",
     },
+    ageGate: {
+      title: "Georgian Royal Wine",
+      question: "¿Tienes 18 años o más?",
+      desc: "Este sitio web presenta bebidas alcohólicas. Debes tener la edad legal para consumir alcohol para entrar.",
+      yes: "Sí, soy mayor de 18",
+      no: "No",
+      blockedTitle: "Acceso restringido",
+      blockedDesc: "Este sitio web es para visitantes mayores de 18 años. No puedes entrar a este sitio.",
+      blockedCta: "Ir a Google",
+    },
     home: {
       est: "Desde 1987",
       heroTitle1: "Vinos que",
@@ -752,6 +772,16 @@ const translations = {
     notFound: {
       title: "Страница не найдена",
       desc: "Эта ссылка может быть со старого сайта. Перейдите в магазин или на главную.",
+    },
+    ageGate: {
+      title: "Georgian Royal Wine",
+      question: "Вам есть 18 лет или больше?",
+      desc: "На этом сайте представлены алкогольные напитки. Для входа вы должны достичь совершеннолетия.",
+      yes: "Да, мне есть 18",
+      no: "Нет",
+      blockedTitle: "Доступ ограничен",
+      blockedDesc: "Этот сайт предназначен для посетителей старше 18 лет. Вы не можете войти на этот сайт.",
+      blockedCta: "Перейти в Google",
     },
     home: {
       est: "С 1987 года",
@@ -1114,6 +1144,16 @@ const translations = {
       title: "Page introuvable",
       desc: "Ce lien peut provenir de l'ancien site. Continuez vers la boutique ou l'accueil.",
     },
+    ageGate: {
+      title: "Georgian Royal Wine",
+      question: "Avez-vous 18 ans ou plus ?",
+      desc: "Ce site présente des boissons alcoolisées. Vous devez avoir atteint l'âge légal pour entrer.",
+      yes: "Oui, j'ai 18 ans ou plus",
+      no: "Non",
+      blockedTitle: "Accès restreint",
+      blockedDesc: "Ce site est réservé aux visiteurs âgés de 18 ans ou plus. Vous ne pouvez pas accéder à ce site.",
+      blockedCta: "Aller sur Google",
+    },
     home: {
       est: "Depuis 1987",
       heroTitle1: "Vin qui",
@@ -1475,6 +1515,16 @@ const translations = {
       title: "Сторінку не знайдено",
       desc: "Це посилання може бути зі старого сайту. Перейдіть до магазину або на головну.",
     },
+    ageGate: {
+      title: "Georgian Royal Wine",
+      question: "Вам є 18 років чи більше?",
+      desc: "На цьому сайті представлені алкогольні напої. Для входу ви маєте досягти повноліття.",
+      yes: "Так, мені є 18",
+      no: "Ні",
+      blockedTitle: "Доступ обмежено",
+      blockedDesc: "Цей сайт призначений для відвідувачів віком від 18 років. Ви не можете увійти на цей сайт.",
+      blockedCta: "Перейти до Google",
+    },
     home: {
       est: "З 1987 року",
       heroTitle1: "Вина, якими",
@@ -1834,6 +1884,16 @@ const translations = {
     theme: {
       light: "Светъл режим",
       dark: "Тъмен режим",
+    },
+    ageGate: {
+      title: "Georgian Royal Wine",
+      question: "На 18 години ли сте или повече?",
+      desc: "Този уебсайт представя алкохолни напитки. Трябва да сте пълнолетни, за да влезете.",
+      yes: "Да, на 18+ съм",
+      no: "Не",
+      blockedTitle: "Достъпът е ограничен",
+      blockedDesc: "Този уебсайт е за посетители на 18 и повече години. Не можете да влезете в този сайт.",
+      blockedCta: "Отиди в Google",
     },
     notFound: {
       title: "Страницата не е намерена",
