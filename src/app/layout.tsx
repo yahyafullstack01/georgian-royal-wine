@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import Providers from "@/components/Providers";
 import JsonLd from "@/components/JsonLd";
 import AgeGate from "@/components/AgeGate";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import { absoluteUrl, siteConfig } from "@/lib/seo";
 import type { Locale } from "@/lib/i18n/translations";
 
@@ -114,6 +115,7 @@ export default async function RootLayout({
           <Header />
           <main className="flex-1">{children}</main>
           <Footer />
+          <WhatsAppButton />
         </Providers>
       </body>
     </html>

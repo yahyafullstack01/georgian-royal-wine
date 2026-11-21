@@ -33,6 +33,9 @@ const translations = {
       blockedDesc: "This website is for visitors 18 years of age or older. You cannot enter this site.",
       blockedCta: "Go to Google",
     },
+    whatsappChat: {
+      label: "Chat with us on WhatsApp",
+    },
     notFound: {
       title: "Page not found",
       desc: "This link may be from our old website. Continue to the shop or homepage.",
@@ -412,6 +415,9 @@ const translations = {
       blockedDesc: "Este sitio web es para visitantes mayores de 18 años. No puedes entrar a este sitio.",
       blockedCta: "Ir a Google",
     },
+    whatsappChat: {
+      label: "Chatea con nosotros por WhatsApp",
+    },
     home: {
       est: "Desde 1987",
       heroTitle1: "Vinos que",
@@ -782,6 +788,9 @@ const translations = {
       blockedTitle: "Доступ ограничен",
       blockedDesc: "Этот сайт предназначен для посетителей старше 18 лет. Вы не можете войти на этот сайт.",
       blockedCta: "Перейти в Google",
+    },
+    whatsappChat: {
+      label: "Напишите нам в WhatsApp",
     },
     home: {
       est: "С 1987 года",
@@ -1154,6 +1163,9 @@ const translations = {
       blockedDesc: "Ce site est réservé aux visiteurs âgés de 18 ans ou plus. Vous ne pouvez pas accéder à ce site.",
       blockedCta: "Aller sur Google",
     },
+    whatsappChat: {
+      label: "Discutez avec nous sur WhatsApp",
+    },
     home: {
       est: "Depuis 1987",
       heroTitle1: "Vin qui",
@@ -1525,6 +1537,9 @@ const translations = {
       blockedDesc: "Цей сайт призначений для відвідувачів віком від 18 років. Ви не можете увійти на цей сайт.",
       blockedCta: "Перейти до Google",
     },
+    whatsappChat: {
+      label: "Напишіть нам у WhatsApp",
+    },
     home: {
       est: "З 1987 року",
       heroTitle1: "Вина, якими",
@@ -1894,6 +1909,9 @@ const translations = {
       blockedTitle: "Достъпът е ограничен",
       blockedDesc: "Този уебсайт е за посетители на 18 и повече години. Не можете да влезете в този сайт.",
       blockedCta: "Отиди в Google",
+    },
+    whatsappChat: {
+      label: "Пишете ни в WhatsApp",
     },
     notFound: {
       title: "Страницата не е намерена",
