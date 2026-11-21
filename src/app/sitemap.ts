@@ -4,8 +4,6 @@ import { wines } from "@/data/wines";
 import { siteConfig } from "@/lib/seo";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const lastModified = new Date();
-
   const staticPages: MetadataRoute.Sitemap = [
     "",
     "/shop",
@@ -15,7 +13,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/testimonials",
   ].map((path) => ({
     url: `${siteConfig.url}${path}`,
-    lastModified,
     changeFrequency: path === "" || path === "/shop" ? "weekly" : "monthly",
     priority: path === "" ? 1 : path === "/shop" ? 0.9 : 0.7,
     ...(path === "" || path === "/shop"
@@ -32,7 +29,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const ruPages: MetadataRoute.Sitemap = ["", "/shop"].map((path) => ({
     url: `${siteConfig.url}/ru${path}`,
-    lastModified,
     changeFrequency: path === "" ? "weekly" : "weekly",
     priority: path === "" ? 1 : 0.9,
     alternates: {
@@ -46,7 +42,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const winePages: MetadataRoute.Sitemap = wines.flatMap((wine) => [
     {
       url: `${siteConfig.url}/wines/${wine.slug}`,
-      lastModified,
       changeFrequency: "monthly" as const,
       priority: 0.8,
       alternates: {
@@ -58,7 +53,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteConfig.url}/ru/wines/${wine.slug}`,
-      lastModified,
       changeFrequency: "monthly" as const,
       priority: 0.8,
       alternates: {
@@ -74,7 +68,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const cityPages: MetadataRoute.Sitemap = cityPaths.flatMap((suffix) => [
     {
       url: `${siteConfig.url}/vino${suffix}`,
-      lastModified,
       changeFrequency: "monthly" as const,
       priority: suffix === "" ? 0.8 : 0.75,
       alternates: {
@@ -86,7 +79,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteConfig.url}/ru/vino${suffix}`,
-      lastModified,
       changeFrequency: "monthly" as const,
       priority: suffix === "" ? 0.8 : 0.75,
       alternates: {
@@ -102,7 +94,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const guidePages: MetadataRoute.Sitemap = guidePaths.flatMap((suffix) => [
     {
       url: `${siteConfig.url}/guias${suffix}`,
-      lastModified,
       changeFrequency: "monthly" as const,
       priority: suffix === "" ? 0.7 : 0.65,
       alternates: {
@@ -114,7 +105,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteConfig.url}/ru/guias${suffix}`,
-      lastModified,
       changeFrequency: "monthly" as const,
       priority: suffix === "" ? 0.7 : 0.65,
       alternates: {

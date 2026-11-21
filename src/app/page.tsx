@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import HomeContent from "@/components/HomeContent";
-import { siteConfig } from "@/lib/seo";
+import { absoluteUrl, siteConfig } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: {
-    absolute:
-      "Comprar vino online en España | Georgian Royal Wine — Torrevieja",
+    absolute: siteConfig.defaultTitle,
   },
   description: siteConfig.defaultDescription,
   keywords: [...siteConfig.keywords],
@@ -17,10 +16,17 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title:
-      "Comprar vino online en España | Georgian Royal Wine — Torrevieja",
+    title: siteConfig.defaultTitle,
     description: siteConfig.defaultDescription,
     url: "/",
+    images: [
+      {
+        url: absoluteUrl("/banner/Home1.jpg"),
+        width: 1280,
+        height: 853,
+        alt: "Georgian Royal Wine — vinos de Kakheti en España",
+      },
+    ],
   },
 };
 

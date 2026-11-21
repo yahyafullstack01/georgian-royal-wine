@@ -1,6 +1,6 @@
 import { siteConfig, absoluteUrl } from "@/lib/seo";
 
-export default function JsonLd() {
+export default function JsonLd({ nonce }: { nonce?: string }) {
   const localBusiness = {
     "@context": "https://schema.org",
     "@type": ["WineStore", "LocalBusiness", "Store"],
@@ -75,10 +75,12 @@ export default function JsonLd() {
     <>
       <script
         type="application/ld+json"
+        nonce={nonce}
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusiness) }}
       />
       <script
         type="application/ld+json"
+        nonce={nonce}
         dangerouslySetInnerHTML={{ __html: JSON.stringify(website) }}
       />
     </>

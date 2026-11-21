@@ -1,13 +1,33 @@
 import { NextResponse, type NextRequest } from "next/server";
 
+function buildCsp(nonce: string) {
+  return [
+    "default-src 'self'",
+    `script-src 'self' 'nonce-${nonce}' 'strict-dynamic' https://www.googletagmanager.com`,
+    "style-src 'self' 'unsafe-inline'",
+    "img-src 'self' data: https:",
+    "font-src 'self' data:",
+    "connect-src 'self' https:",
+    "frame-ancestors 'none'",
+    "base-uri 'self'",
+    "form-action 'self'",
+  ].join("; ");
+}
+
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
+  const nonce = Buffer.from(crypto.randomUUID()).toString("base64");
+  const csp = buildCsp(nonce);
+
+  const headers = new Headers(request.headers);
+  headers.set("x-nonce", nonce);
   if (pathname === "/ru" || pathname.startsWith("/ru/")) {
-    const headers = new Headers(request.headers);
     headers.set("x-locale", "ru");
-    return NextResponse.next({ request: { headers } });
   }
-  return NextResponse.next();
+
+  const response = NextResponse.next({ request: { headers } });
+  response.headers.set("Content-Security-Policy", csp);
+  return response;
 }
 
 export const config = {

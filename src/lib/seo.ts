@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Georgian Royal Wine",
   shortName: "GRW",
-  url: "https://grw-wine.com",
+  url: "https://www.grw-wine.com",
   locale: "es_ES",
   phone: "+34607609474",
   phoneDisplay: "+34 607 609 474",
@@ -16,10 +16,9 @@ export const siteConfig = {
     longitude: -0.6822,
   },
   instagram: "https://www.instagram.com/wine.grw.es",
-  defaultTitle:
-    "Comprar vino online en España | Georgian Royal Wine — Torrevieja",
+  defaultTitle: "Comprar vino online en España | Georgian Royal Wine",
   defaultDescription:
-    "Compra vino online en España — tienda en Torrevieja (Costa Blanca). Vinos premium georgianos y envío a Madrid, Barcelona, Marbella, Valencia, Málaga y toda España. Saperavi, Kindzmarauli, Mukuzani, Khvanchkara, qvevri y Rezo's Wine. Entrega gratis a partir de 1 caja.",
+    "Vinos premium georgianos en Torrevieja, con envío a toda España. Saperavi, Kindzmarauli, Mukuzani y más. Entrega gratis desde 1 caja.",
   keywords: [
     // How clients actually search (general wine Spain)
     "comprar vino online España",

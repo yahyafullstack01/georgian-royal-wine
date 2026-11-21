@@ -102,6 +102,7 @@ export default async function RootLayout({
 }>) {
   const requestHeaders = await headers();
   const routeLocale = requestHeaders.get("x-locale") as Locale | null;
+  const nonce = requestHeaders.get("x-nonce") ?? undefined;
 
   return (
     <html
@@ -110,8 +111,8 @@ export default async function RootLayout({
       className={`${playfair.variable} ${lato.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-cream-50 text-stone-800 dark:bg-stone-950 dark:text-cream-100">
-        <JsonLd />
-        <GoogleAnalytics />
+        <JsonLd nonce={nonce} />
+        <GoogleAnalytics nonce={nonce} />
         <Providers initialLocale={routeLocale ?? undefined}>
           <AgeGate />
           <Header />
