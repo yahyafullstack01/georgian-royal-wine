@@ -12,6 +12,7 @@ const EMAIL = "sbs@sb-servicio.com";
 const WHATSAPP = "https://wa.me/34607609474";
 const INSTAGRAM =
   "https://www.instagram.com/wine.grw.es?stkn=MXI1OTF4NHY4cTF4OA%3D%3D&utm_source=qr";
+const GOOGLE_MAPS = "https://maps.app.goo.gl/vL9XjHPbeQjgSHFG9";
 
 export default function ContactPageContent() {
   const { t } = useLocale();
@@ -82,6 +83,14 @@ export default function ContactPageContent() {
                     <p>{t.footer.address1}</p>
                     <p>{t.footer.address2}</p>
                   </address>
+                  <a
+                    href={GOOGLE_MAPS}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-2 inline-block text-sm font-medium text-burgundy-700 underline-offset-4 hover:underline dark:text-gold-400"
+                  >
+                    {t.contact.getDirections}
+                  </a>
                 </div>
                 <div className="border-l-2 border-gold-500/50 pl-6">
                   <h3 className="text-sm font-medium tracking-widest text-burgundy-700 uppercase dark:text-gold-400">

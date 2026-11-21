@@ -172,6 +172,7 @@ const translations = {
       intro:
         "Partner with GRW to bring premium Georgian wines to your customers across Europe. Whether you're a retailer, restaurant, or distributor — our team is ready to help.",
       visitTasting: "Headquarters",
+      getDirections: "Get directions",
       hours: "Business Hours",
       hoursValue: "Mon–Fri: 10:00 – 19:00\nSat–Sun: Closed",
       getInTouch: "Get in Touch",
@@ -548,6 +549,7 @@ const translations = {
       intro:
         "Nos encantaría saber de usted. Ya sea una pregunta sobre nuestros vinos, ayuda con un pedido o planificar una cata privada.",
       visitTasting: "Visite Nuestra Sala de Cata",
+      getDirections: "Cómo llegar",
       hours: "Horario",
       hoursValue: "Lun–Vie: 10:00 – 19:00\nSáb–Dom: Cerrado",
       getInTouch: "Póngase en Contacto",
@@ -922,6 +924,7 @@ const translations = {
       intro:
         "Мы будем рады услышать вас. Вопрос о винах, помощь с заказом или планирование дегустации — мы всегда готовы помочь.",
       visitTasting: "Посетите Нашу Дегустационную",
+      getDirections: "Проложить маршрут",
       hours: "Часы Работы",
       hoursValue: "Пн–Пт: 10:00 – 19:00\nСб–Вс: Закрыто",
       getInTouch: "Связаться",
@@ -1296,6 +1299,7 @@ const translations = {
       intro:
         "Nous serions ravis de vous entendre. Question sur nos vins, aide avec une commande ou organisation d'une dégustation privée.",
       visitTasting: "Visitez Notre Salle de Dégustation",
+      getDirections: "Itinéraire",
       hours: "Horaires",
       hoursValue: "Lun–Ven : 10:00 – 19:00\nSam–Dim : Fermé",
       getInTouch: "Nous Contacter",
@@ -1670,6 +1674,7 @@ const translations = {
       intro:
         "Ми будемо раді почути вас. Питання про вина, допомога з замовленням або планування дегустації — ми завжди готові допомогти.",
       visitTasting: "Відвідайте Нашу Дегустаційну",
+      getDirections: "Прокласти маршрут",
       hours: "Години Роботи",
       hoursValue: "Пн–Пт: 10:00 – 19:00\nСб–Нд: Закрито",
       getInTouch: "Зв'язатися",
@@ -2049,6 +2054,7 @@ const translations = {
       intro:
         "Партнирайте с GRW, за да предложите премиум грузински вина на клиентите си в Европа. Независимо дали сте търговец, ресторант или дистрибутор — екипът ни е готов да помогне.",
       visitTasting: "Централа",
+      getDirections: "Начертай маршрут",
       hours: "Работно време",
       hoursValue: "Пн–Пт: 10:00 – 19:00\nСб–Нд: Затворено",
       getInTouch: "Свържете се",

@@ -40,8 +40,11 @@ export default function JsonLd() {
       { "@type": "City", name: "Málaga" },
       { "@type": "City", name: "Benidorm" },
     ],
-    sameAs: ["https://www.instagram.com/wine.grw.es"],
-    hasMap: "https://maps.google.com/?q=Calle+Paseo+Vistalegre+8+Torrevieja",
+    sameAs: [
+      "https://www.instagram.com/wine.grw.es",
+      "https://maps.app.goo.gl/vL9XjHPbeQjgSHFG9",
+    ],
+    hasMap: "https://maps.app.goo.gl/vL9XjHPbeQjgSHFG9",
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
