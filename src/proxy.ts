@@ -1,9 +1,14 @@
 import { NextResponse, type NextRequest } from "next/server";
 
 function buildCsp(nonce: string) {
+  // React dev mode needs eval() for its debugging features; it never uses
+  // eval() in production, so only allow it outside production builds.
+  const devEval =
+    process.env.NODE_ENV === "development" ? " 'unsafe-eval'" : "";
+
   return [
     "default-src 'self'",
-    `script-src 'self' 'nonce-${nonce}' 'strict-dynamic' https://www.googletagmanager.com`,
+    `script-src 'self' 'nonce-${nonce}' 'strict-dynamic'${devEval} https://www.googletagmanager.com`,
     "style-src 'self' 'unsafe-inline'",
     "img-src 'self' data: https:",
     "font-src 'self' data:",

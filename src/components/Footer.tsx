@@ -12,7 +12,7 @@ export default function Footer() {
 
   return (
     <footer className="mt-auto border-t border-gold-500/20 bg-burgundy-950 text-cream-200 dark:border-stone-800 dark:bg-stone-900">
-      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 pt-12 pb-28 sm:px-6 sm:pb-12 lg:px-8">
         <GeorgianDivider className="mb-10" />
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div>
