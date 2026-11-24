@@ -16,9 +16,9 @@ export const siteConfig = {
     longitude: -0.6822,
   },
   instagram: "https://www.instagram.com/wine.grw.es",
-  defaultTitle: "Comprar vino online en España | Georgian Royal Wine",
+  defaultTitle: "Vinos a domicilio en España | Georgian Royal Wine",
   defaultDescription:
-    "Vinos premium georgianos en Torrevieja, con envío a toda España. Saperavi, Kindzmarauli, Mukuzani y más. Entrega gratis desde 1 caja.",
+    "Compra vino a domicilio en España — vinos premium georgianos en Torrevieja. Saperavi, Kindzmarauli y más. Entrega gratis desde 1 caja.",
   keywords: [
     // How clients actually search (general wine Spain)
     "comprar vino online España",
@@ -35,6 +35,8 @@ export const siteConfig = {
     "caja de vino online",
     "envio vino a domicilio",
     "entrega vino a domicilio España",
+    "vinos a domicilio",
+    "comprar vino a domicilio",
     "envio vino España",
     "envio gratis vino España",
     "wine delivery Spain",

@@ -473,11 +473,11 @@ const translations = {
         "Sorteos — tour enológico a Georgia, teléfonos, tablets, patinetes eléctricos y más",
       ],
       partnerCta: "Únete al club",
-      deliveryTitle: "Entrega",
+      deliveryTitle: "Vino a domicilio",
       deliveryBenefits: [
         "Entrega express",
         "Torrevieja, España: 3 € de entrega para pedidos de 1 a 4 botellas",
-        "Entrega gratuita solo en España al pedir una caja o más",
+        "Vino a domicilio gratis en toda España al pedir una caja o más",
         "Entrega en España en 48 horas laborables",
         "Servicio de entrega en Europa (coste de envío a confirmar)",
       ],
