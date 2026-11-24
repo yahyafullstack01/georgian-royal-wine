@@ -2443,6 +2443,257 @@ export const guides: GuidePage[] = [
         ]
       }
     }
+  },
+  {
+    "slug": "vino-a-domicilio-en-espana",
+    "locales": {
+      "es": {
+        "title": "Vino a domicilio en España: cómo funciona el envío",
+        "description": "Cómo funciona la entrega de vino a domicilio en España: zonas, plazos, el envío gratis desde una caja y el coste en Torrevieja.",
+        "lead": "Georgian Royal Wine envía vino a domicilio en toda España desde su almacén en Torrevieja. Así son el proceso, los plazos y el coste según dónde viva.",
+        "eyebrow": "Guía",
+        "sections": [
+          {
+            "heading": "Quién recibe el pedido",
+            "paragraphs": [
+              "Entregamos en toda España peninsular. En Torrevieja y alrededores suele llegar en 24–48 horas; al resto de España, en 48 horas laborables."
+            ]
+          },
+          {
+            "heading": "Cuánto cuesta el envío",
+            "paragraphs": [
+              "En Torrevieja, 1 a 4 botellas sueltas cuestan 3 € de envío. Desde una caja (6 botellas), la entrega a domicilio es gratuita en toda España.",
+              "Fuera de España, el envío a otros países de Europa se cotiza aparte según el destino."
+            ]
+          },
+          {
+            "heading": "Qué pasa el día de la entrega",
+            "paragraphs": [
+              "Confirmamos el pedido por correo o WhatsApp con la fecha estimada. El repartidor entrega en la dirección indicada en el checkout; si no hay nadie, se coordina un nuevo intento por teléfono."
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "question": "¿Cuánto tarda la entrega a domicilio?",
+            "answer": "En España, 48 horas laborables desde la confirmación del pedido."
+          },
+          {
+            "question": "¿El envío a domicilio es gratis?",
+            "answer": "Sí, en toda España al pedir una caja o más. Para 1–4 botellas sueltas en Torrevieja, el coste es de 3 €."
+          },
+          {
+            "question": "¿Entregáis fuera de España?",
+            "answer": "Sí, a otros países de Europa, con el coste de envío a confirmar según destino."
+          }
+        ]
+      },
+      "en": {
+        "title": "Wine home delivery in Spain: how shipping works",
+        "description": "How wine home delivery works in Spain: coverage, timing, free shipping from one box, and the cost in Torrevieja.",
+        "lead": "Georgian Royal Wine delivers wine to your door anywhere in Spain from its warehouse in Torrevieja. Here is the process, the timing and the cost depending on where you live.",
+        "eyebrow": "Guide",
+        "sections": [
+          {
+            "heading": "Who gets the order",
+            "paragraphs": [
+              "We deliver across mainland Spain. In Torrevieja and nearby it usually arrives in 24–48 hours; the rest of Spain, in 48 working hours."
+            ]
+          },
+          {
+            "heading": "How much shipping costs",
+            "paragraphs": [
+              "In Torrevieja, 1 to 4 single bottles cost €3 shipping. From one box (6 bottles), home delivery is free across Spain.",
+              "Outside Spain, shipping to other European countries is quoted separately depending on destination."
+            ]
+          },
+          {
+            "heading": "What happens on delivery day",
+            "paragraphs": [
+              "We confirm the order by email or WhatsApp with an estimated date. The courier delivers to the address given at checkout; if no one is home, a new attempt is arranged by phone."
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "question": "How long does home delivery take?",
+            "answer": "In Spain, 48 working hours from order confirmation."
+          },
+          {
+            "question": "Is home delivery free?",
+            "answer": "Yes, anywhere in Spain when you order one box or more. For 1–4 single bottles in Torrevieja, the cost is €3."
+          },
+          {
+            "question": "Do you deliver outside Spain?",
+            "answer": "Yes, to other European countries, with shipping cost confirmed per destination."
+          }
+        ]
+      },
+      "ru": {
+        "title": "Доставка вина на дом в Испании: как это работает",
+        "description": "Как работает доставка вина на дом в Испании: зоны, сроки, бесплатная доставка от одной коробки и стоимость в Торревьехе.",
+        "lead": "Georgian Royal Wine доставляет вино на дом по всей Испании со склада в Торревьехе. Вот как проходит процесс, сроки и стоимость в зависимости от того, где вы живёте.",
+        "eyebrow": "Гид",
+        "sections": [
+          {
+            "heading": "Кто получает заказ",
+            "paragraphs": [
+              "Мы доставляем по всей материковой Испании. В Торревьехе и окрестностях обычно доставка занимает 24–48 часов; по остальной Испании — 48 рабочих часов."
+            ]
+          },
+          {
+            "heading": "Сколько стоит доставка",
+            "paragraphs": [
+              "В Торревьехе 1–4 отдельные бутылки стоят 3 € доставки. От одной коробки (6 бутылок) доставка на дом бесплатна по всей Испании.",
+              "За пределами Испании доставка в другие страны Европы рассчитывается отдельно в зависимости от направления."
+            ]
+          },
+          {
+            "heading": "Что происходит в день доставки",
+            "paragraphs": [
+              "Мы подтверждаем заказ по почте или WhatsApp с примерной датой. Курьер доставляет по адресу, указанному при оформлении заказа; если никого нет дома, новая попытка согласовывается по телефону."
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Сколько занимает доставка на дом?",
+            "answer": "По Испании — 48 рабочих часов с момента подтверждения заказа."
+          },
+          {
+            "question": "Доставка на дом бесплатная?",
+            "answer": "Да, по всей Испании при заказе от одной коробки. За 1–4 отдельные бутылки в Торревьехе стоимость — 3 €."
+          },
+          {
+            "question": "Доставляете ли за пределы Испании?",
+            "answer": "Да, в другие страны Европы, стоимость доставки уточняется по месту назначения."
+          }
+        ]
+      },
+      "fr": {
+        "title": "Livraison de vin à domicile en Espagne : comment ça marche",
+        "description": "Comment fonctionne la livraison de vin à domicile en Espagne : zones, délais, livraison gratuite dès une caisse et coût à Torrevieja.",
+        "lead": "Georgian Royal Wine livre du vin à domicile partout en Espagne depuis son entrepôt de Torrevieja. Voici le déroulement, les délais et le coût selon votre lieu de résidence.",
+        "eyebrow": "Guide",
+        "sections": [
+          {
+            "heading": "Qui reçoit la commande",
+            "paragraphs": [
+              "Nous livrons dans toute l'Espagne continentale. À Torrevieja et aux alentours, la livraison arrive généralement en 24 à 48 heures ; dans le reste de l'Espagne, en 48 heures ouvrées."
+            ]
+          },
+          {
+            "heading": "Combien coûte la livraison",
+            "paragraphs": [
+              "À Torrevieja, 1 à 4 bouteilles seules coûtent 3 € de livraison. À partir d'une caisse (6 bouteilles), la livraison à domicile est gratuite dans toute l'Espagne.",
+              "Hors d'Espagne, la livraison vers d'autres pays d'Europe est devisée séparément selon la destination."
+            ]
+          },
+          {
+            "heading": "Ce qui se passe le jour de la livraison",
+            "paragraphs": [
+              "Nous confirmons la commande par email ou WhatsApp avec une date estimée. Le livreur livre à l'adresse indiquée lors de la commande ; si personne n'est présent, un nouveau passage est organisé par téléphone."
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Combien de temps prend la livraison à domicile ?",
+            "answer": "En Espagne, 48 heures ouvrées à partir de la confirmation de la commande."
+          },
+          {
+            "question": "La livraison à domicile est-elle gratuite ?",
+            "answer": "Oui, partout en Espagne à partir d'une caisse. Pour 1 à 4 bouteilles seules à Torrevieja, le coût est de 3 €."
+          },
+          {
+            "question": "Livrez-vous hors d'Espagne ?",
+            "answer": "Oui, vers d'autres pays d'Europe, le coût de livraison étant confirmé selon la destination."
+          }
+        ]
+      },
+      "uk": {
+        "title": "Доставка вина додому в Іспанії: як це працює",
+        "description": "Як працює доставка вина додому в Іспанії: зони, терміни, безкоштовна доставка від однієї коробки та вартість у Торревʼєсі.",
+        "lead": "Georgian Royal Wine доставляє вино додому по всій Іспанії зі складу в Торревʼєсі. Ось як проходить процес, терміни та вартість залежно від того, де ви живете.",
+        "eyebrow": "Гід",
+        "sections": [
+          {
+            "heading": "Хто отримує замовлення",
+            "paragraphs": [
+              "Ми доставляємо по всій материковій Іспанії. У Торревʼєсі та поруч доставка зазвичай триває 24–48 годин; по решті Іспанії — 48 робочих годин."
+            ]
+          },
+          {
+            "heading": "Скільки коштує доставка",
+            "paragraphs": [
+              "У Торревʼєсі 1–4 окремі пляшки коштують 3 € доставки. Від однієї коробки (6 пляшок) доставка додому безкоштовна по всій Іспанії.",
+              "За межами Іспанії доставка в інші країни Європи розраховується окремо залежно від напрямку."
+            ]
+          },
+          {
+            "heading": "Що відбувається в день доставки",
+            "paragraphs": [
+              "Ми підтверджуємо замовлення поштою або через WhatsApp із приблизною датою. Кур'єр доставляє за адресою, вказаною при оформленні замовлення; якщо нікого немає вдома, нова спроба узгоджується телефоном."
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Скільки триває доставка додому?",
+            "answer": "По Іспанії — 48 робочих годин з моменту підтвердження замовлення."
+          },
+          {
+            "question": "Доставка додому безкоштовна?",
+            "answer": "Так, по всій Іспанії при замовленні від однієї коробки. За 1–4 окремі пляшки в Торревʼєсі вартість — 3 €."
+          },
+          {
+            "question": "Чи доставляєте за межі Іспанії?",
+            "answer": "Так, в інші країни Європи, вартість доставки уточнюється за місцем призначення."
+          }
+        ]
+      },
+      "bg": {
+        "title": "Доставка на вино до дома в Испания: как работи",
+        "description": "Как работи доставката на вино до дома в Испания: зони, срокове, безплатна доставка от една каса и цена в Торревиеха.",
+        "lead": "Georgian Royal Wine доставя вино до дома навсякъде в Испания от склада си в Торревиеха. Ето как протича процесът, сроковете и цената според това къде живеете.",
+        "eyebrow": "Гид",
+        "sections": [
+          {
+            "heading": "Кой получава поръчката",
+            "paragraphs": [
+              "Доставяме в цяла континентална Испания. В Торревиеха и околността доставката обикновено отнема 24–48 часа; в останалата част на Испания — 48 работни часа."
+            ]
+          },
+          {
+            "heading": "Колко струва доставката",
+            "paragraphs": [
+              "В Торревиеха 1 до 4 отделни бутилки струват 3 € доставка. От една каса (6 бутилки) доставката до дома е безплатна в цяла Испания.",
+              "Извън Испания доставката до други европейски страни се калкулира отделно според дестинацията."
+            ]
+          },
+          {
+            "heading": "Какво се случва в деня на доставката",
+            "paragraphs": [
+              "Потвърждаваме поръчката по имейл или WhatsApp с приблизителна дата. Куриерът доставя на адреса, посочен при поръчката; ако няма никой, нов опит се уговаря по телефона."
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Колко време отнема доставката до дома?",
+            "answer": "В Испания — 48 работни часа от потвърждението на поръчката."
+          },
+          {
+            "question": "Безплатна ли е доставката до дома?",
+            "answer": "Да, навсякъде в Испания при поръчка от една каса или повече. За 1–4 отделни бутилки в Торревиеха цената е 3 €."
+          },
+          {
+            "question": "Доставяте ли извън Испания?",
+            "answer": "Да, до други европейски страни, с цена на доставка, потвърдена според дестинацията."
+          }
+        ]
+      }
+    }
   }
 ];
 
