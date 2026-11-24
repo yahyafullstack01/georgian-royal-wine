@@ -10,6 +10,15 @@ interface Props {
   params: Promise<{ slug: string }>;
 }
 
+function toTitleCase(name: string) {
+  return name
+    .split(" ")
+    .map((word) =>
+      word ? word.charAt(0).toUpperCase() + word.slice(1).toLowerCase() : word
+    )
+    .join(" ");
+}
+
 export async function generateStaticParams() {
   return wines.map((wine) => ({ slug: wine.slug }));
 }
@@ -19,13 +28,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const wine = getWineBySlug(slug);
   if (!wine) return { title: "Vino no encontrado" };
   const content = getWineContent(wine.slug, "es");
-  const title = `${content.name} — vino georgiano en España`;
+  const displayName = toTitleCase(content.name);
+  const title = `${displayName} — vino georgiano en España`;
   const taste =
     content.taste?.trim() ||
     content.tastingNotes?.trim() ||
     content.aroma?.trim() ||
     content.classification;
-  const description = `${content.name}: ${taste.slice(0, 140)}${taste.length > 140 ? "…" : ""} Compra online con envío desde Torrevieja a toda España.`;
+  const description = `${displayName}: ${taste.slice(0, 140)}${taste.length > 140 ? "…" : ""} Compra online con envío desde Torrevieja a toda España.`;
 
   return {
     title,
@@ -42,7 +52,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description,
       url: `/wines/${slug}`,
       images: wine.image
-        ? [{ url: wine.image, alt: content.name }]
+        ? [{ url: wine.image, alt: displayName }]
         : undefined,
     },
   };

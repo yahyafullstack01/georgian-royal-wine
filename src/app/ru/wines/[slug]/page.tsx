@@ -10,6 +10,15 @@ interface Props {
   params: Promise<{ slug: string }>;
 }
 
+function toTitleCase(name: string) {
+  return name
+    .split(" ")
+    .map((word) =>
+      word ? word.charAt(0).toUpperCase() + word.slice(1).toLowerCase() : word
+    )
+    .join(" ");
+}
+
 export async function generateStaticParams() {
   return wines.map((wine) => ({ slug: wine.slug }));
 }
@@ -19,13 +28,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const wine = getWineBySlug(slug);
   if (!wine) return { title: "Вино не найдено" };
   const content = getWineContent(wine.slug, "ru");
-  const title = `${content.name} — грузинское вино в Испании`;
+  const displayName = toTitleCase(content.name);
+  const title = `${displayName} — грузинское вино в Испании`;
   const taste =
     content.taste?.trim() ||
     content.tastingNotes?.trim() ||
     content.aroma?.trim() ||
     content.classification;
-  const description = `${content.name}: ${taste.slice(0, 140)}${taste.length > 140 ? "…" : ""} Купить онлайн с доставкой из Торревьехи по всей Испании.`;
+  const description = `${displayName}: ${taste.slice(0, 140)}${taste.length > 140 ? "…" : ""} Купить онлайн с доставкой из Торревьехи по всей Испании.`;
 
   return {
     title,
@@ -43,7 +53,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: `/ru/wines/${slug}`,
       locale: "ru_RU",
       images: wine.image
-        ? [{ url: wine.image, alt: content.name }]
+        ? [{ url: wine.image, alt: displayName }]
         : undefined,
     },
   };
