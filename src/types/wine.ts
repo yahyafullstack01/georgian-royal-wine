@@ -13,6 +13,7 @@ export interface Wine {
   volume: string;
   image: string;
   featured?: boolean;
+  bestseller?: boolean;
   inStock: boolean;
 }
 

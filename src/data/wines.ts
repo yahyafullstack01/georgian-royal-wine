@@ -12,6 +12,7 @@ export const wines: Wine[] = [
     volume: "0.75L",
     image: "/wines/rezos-wine-saperavi.png",
     featured: true,
+    bestseller: true,
     inStock: true,
   },
   {
@@ -38,6 +39,7 @@ export const wines: Wine[] = [
     volume: "0.75L",
     image: "/wines/rezos-wine-kisi.png",
     featured: true,
+    bestseller: true,
     inStock: true,
   },
   {
@@ -64,6 +66,7 @@ export const wines: Wine[] = [
     volume: "0.75L",
     image: "/wines/grw-kisi.jpg",
     featured: true,
+    bestseller: true,
     inStock: true,
   },
   {
@@ -129,6 +132,7 @@ export const wines: Wine[] = [
     volume: "0.75L",
     image: "/wines/grw-khvanchkara.png",
     featured: true,
+    bestseller: true,
     inStock: true,
   },
   {
@@ -155,6 +159,7 @@ export const wines: Wine[] = [
     volume: "0.75L",
     image: "/wines/grw-kindzmarauli.png",
     featured: true,
+    bestseller: true,
     inStock: true,
   },
   {
@@ -194,6 +199,7 @@ export const wines: Wine[] = [
     volume: "0.75L",
     image: "/wines/grw-pirosmani.png",
     featured: true,
+    bestseller: true,
     inStock: true,
   },
   {
@@ -207,6 +213,7 @@ export const wines: Wine[] = [
     volume: "0.75L",
     image: "/wines/grw-saperavi-qvevri.jpg",
     featured: true,
+    bestseller: true,
     inStock: true,
   },
   {

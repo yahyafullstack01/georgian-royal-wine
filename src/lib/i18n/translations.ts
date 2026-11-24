@@ -372,6 +372,7 @@ const translations = {
         "Order one box or more — free delivery in Spain only, plus a corkscrew.",
       cardFreeDelivery: "1 box — free delivery in Spain",
       cardCorkscrewGift: "1 box — free corkscrew",
+      cardBestseller: "Top",
       corkscrewGiftNote: "Order one box and get a corkscrew free.",
       comboSummary:
         "{bottles} bottle(s) + {boxes} box(es) · pay for {paid} · get {total} bottles ({free} free) · {price}",
@@ -747,6 +748,7 @@ const translations = {
         "Una caja o más — entrega gratuita solo en España, más un sacacorchos.",
       cardFreeDelivery: "1 caja — entrega gratuita en España",
       cardCorkscrewGift: "1 caja — sacacorchos gratis",
+      cardBestseller: "Top ventas",
       corkscrewGiftNote: "Pide una caja y recibe un sacacorchos gratis.",
       comboSummary:
         "{bottles} botella(s) + {boxes} caja(s) · paga {paid} · recibe {total} botellas ({free} gratis) · {price}",
@@ -1122,6 +1124,7 @@ const translations = {
         "От 1 коробки — бесплатная доставка только по Испании и штопор.",
       cardFreeDelivery: "1 коробка — бесплатная доставка по Испании",
       cardCorkscrewGift: "1 коробка — штопор в подарок",
+      cardBestseller: "Топ продаж",
       corkscrewGiftNote: "Закажите одну коробку — штопор в подарок.",
       comboSummary:
         "{bottles} бут. + {boxes} кор. · оплата за {paid} · получите {total} бут. ({free} в подарок) · {price}",
@@ -1497,6 +1500,7 @@ const translations = {
         "Une caisse ou plus — livraison gratuite en Espagne uniquement, plus un tire-bouchon.",
       cardFreeDelivery: "1 caisse — livraison gratuite en Espagne",
       cardCorkscrewGift: "1 caisse — tire-bouchon offert",
+      cardBestseller: "Top ventes",
       corkscrewGiftNote: "Commandez une caisse et recevez un tire-bouchon offert.",
       comboSummary:
         "{bottles} bouteille(s) + {boxes} carton(s) · payez {paid} · recevez {total} bouteilles ({free} offerte) · {price}",
@@ -1872,6 +1876,7 @@ const translations = {
         "Від 1 коробки — безкоштовна доставка тільки по Іспанії та штопор.",
       cardFreeDelivery: "1 коробка — безкоштовна доставка Іспанією",
       cardCorkscrewGift: "1 коробка — штопор у подарунок",
+      cardBestseller: "Топ продажів",
       corkscrewGiftNote: "Замовте одну коробку — штопор у подарунок.",
       comboSummary:
         "{bottles} пляш. + {boxes} кор. · оплата за {paid} · отримаєте {total} пляш. ({free} у подарунок) · {price}",
@@ -2254,6 +2259,7 @@ const translations = {
         "Поръчайте една каса или повече — безплатна доставка само в Испания, плюс тирбушон.",
       cardFreeDelivery: "1 каса — безплатна доставка в Испания",
       cardCorkscrewGift: "1 каса — безплатен тирбушон",
+      cardBestseller: "Топ продажби",
       corkscrewGiftNote: "Поръчайте една каса и получете тирбушон безплатно.",
       comboSummary:
         "{bottles} бутилка/и + {boxes} каса/и · плащате за {paid} · получавате {total} бутилки ({free} безплатни) · {price}",

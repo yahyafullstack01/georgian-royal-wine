@@ -31,11 +31,18 @@ export default function ProductCard({ wine }: ProductCardProps) {
           className="object-contain p-2 sm:p-4 transition-transform duration-500 group-hover:scale-105"
           sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
         />
-        {!wine.inStock && (
-          <span className="absolute top-2 left-2 rounded bg-burgundy-900/90 px-1.5 py-0.5 text-[10px] font-medium text-cream-100 sm:top-3 sm:left-3 sm:px-2 sm:py-1 sm:text-xs">
-            {t.product.soldOut}
-          </span>
-        )}
+        <div className="absolute top-2 left-2 flex flex-col items-start gap-1 sm:top-3 sm:left-3">
+          {wine.bestseller && (
+            <span className="rounded bg-gold-500 px-1.5 py-0.5 text-[10px] font-medium tracking-wide text-burgundy-950 uppercase sm:px-2 sm:py-1 sm:text-xs">
+              {t.product.cardBestseller}
+            </span>
+          )}
+          {!wine.inStock && (
+            <span className="rounded bg-burgundy-900/90 px-1.5 py-0.5 text-[10px] font-medium text-cream-100 sm:px-2 sm:py-1 sm:text-xs">
+              {t.product.soldOut}
+            </span>
+          )}
+        </div>
         <span className="absolute top-2 right-2 max-w-[70%] truncate rounded bg-cream-100/90 px-1.5 py-0.5 text-[10px] font-medium text-burgundy-900 sm:top-3 sm:right-3 sm:px-2 sm:py-1 sm:text-xs dark:bg-stone-800/90 dark:text-cream-100">
           {content.classification}
         </span>
