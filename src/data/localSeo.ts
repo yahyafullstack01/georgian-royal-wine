@@ -433,8 +433,8 @@ export const cities: CityPage[] = [
     "name": "Alicante",
     "locales": {
       "es": {
-        "title": "Comprar vino en Alicante | Georgian Royal Wine",
-        "description": "Vino georgiano con envío a Alicante, Elche, Santa Pola y San Juan. Entrega gratis en España desde 1 caja.",
+        "title": "Comprar vinos online en Alicante | Georgian Royal Wine",
+        "description": "Compra vinos online en Alicante con envío a Elche, Santa Pola y San Juan. Entrega gratis en España desde 1 caja.",
         "lead": "Enviamos vino georgiano a Alicante, Elche, Santa Pola y San Juan desde nuestro almacén en Torrevieja. Plazo habitual en España: 48 horas laborables.",
         "eyebrow": "Envío a Alicante",
         "sections": [
@@ -1393,8 +1393,8 @@ export const cities: CityPage[] = [
     "name": "Málaga",
     "locales": {
       "es": {
-        "title": "Comprar vino en Málaga | Georgian Royal Wine",
-        "description": "Vino georgiano con envío a Málaga, Torremolinos, Fuengirola y Benalmádena. Entrega gratis en España desde 1 caja.",
+        "title": "Vino blanco online en Málaga | Georgian Royal Wine",
+        "description": "Compra vino blanco y tinto online en Málaga, con envío a Torremolinos, Fuengirola y Benalmádena. Entrega gratis en España desde 1 caja.",
         "lead": "Enviamos vino georgiano a Málaga, Torremolinos, Fuengirola y Benalmádena desde nuestro almacén en Torrevieja. Plazo habitual en España: 48 horas laborables.",
         "eyebrow": "Envío a Málaga",
         "sections": [
