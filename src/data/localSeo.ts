@@ -2694,6 +2694,257 @@ export const guides: GuidePage[] = [
         ]
       }
     }
+  },
+  {
+    "slug": "mejor-vino-georgiano-para-regalar",
+    "locales": {
+      "es": {
+        "title": "Mejor vino georgiano para regalar: guía rápida",
+        "description": "Qué vino georgiano regalar según la ocasión: Saperavi, Kindzmarauli o una caja con sacacorchos. Precios y cómo pedirlo en España.",
+        "lead": "Elegir vino para regalar es más fácil si sabe si la persona prefiere dulce o seco. Esta guía le ayuda a decidir entre las variedades de Georgian Royal Wine.",
+        "eyebrow": "Guía",
+        "sections": [
+          {
+            "heading": "Según el gusto de quien lo recibe",
+            "paragraphs": [
+              "Si no sabe si prefiere dulce o seco, Kindzmarauli es la apuesta más segura: semidulce, suave y el más reconocido fuera de Georgia. Para alguien que bebe tinto seco a diario, Saperavi es la opción natural."
+            ]
+          },
+          {
+            "heading": "La caja como regalo",
+            "paragraphs": [
+              "Una caja de 6 botellas incluye sacacorchos de regalo y envío gratis en España. Se presenta mejor que botellas sueltas y cuesta lo mismo que 5.",
+              "Puede mezclar variedades distintas en la misma caja para que quien lo reciba pruebe varias."
+            ]
+          },
+          {
+            "heading": "Cómo pedirlo con tiempo",
+            "paragraphs": [
+              "Pida con 2–3 días de margen antes de la fecha: en España la entrega tarda 48 horas laborables. En las notas del pedido puede indicar que es un regalo y la fecha en la que lo necesita."
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "question": "¿Cuál es el vino georgiano más fácil de regalar?",
+            "answer": "Kindzmarauli: semidulce, suave y el más conocido internacionalmente."
+          },
+          {
+            "question": "¿Puedo pedir una caja mixta para regalo?",
+            "answer": "Sí, puede combinar variedades distintas en una misma caja desde el carrito."
+          },
+          {
+            "question": "¿Puedo indicar que es un regalo al hacer el pedido?",
+            "answer": "Sí, escríbalo en el campo de notas del checkout junto con la fecha en la que lo necesita."
+          }
+        ]
+      },
+      "en": {
+        "title": "Best Georgian wine to give as a gift: quick guide",
+        "description": "Which Georgian wine to gift depending on the occasion: Saperavi, Kindzmarauli, or a box with a free corkscrew. Prices and how to order in Spain.",
+        "lead": "Choosing wine as a gift is easier once you know whether the person prefers sweet or dry. This guide helps you pick among Georgian Royal Wine's varieties.",
+        "eyebrow": "Guide",
+        "sections": [
+          {
+            "heading": "Based on the recipient's taste",
+            "paragraphs": [
+              "If you're not sure whether they prefer sweet or dry, Kindzmarauli is the safest bet: semi-sweet, smooth, and the best known outside Georgia. For someone who drinks dry red daily, Saperavi is the natural choice."
+            ]
+          },
+          {
+            "heading": "The box as a gift",
+            "paragraphs": [
+              "A box of 6 bottles includes a free corkscrew and free shipping in Spain. It presents better than single bottles and costs the same as 5.",
+              "You can mix different varieties in the same box so the recipient gets to try several."
+            ]
+          },
+          {
+            "heading": "Ordering with enough time",
+            "paragraphs": [
+              "Order 2–3 days ahead of the date: in Spain delivery takes 48 working hours. In the order notes you can mention it's a gift and the date you need it by."
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "question": "What is the easiest Georgian wine to gift?",
+            "answer": "Kindzmarauli: semi-sweet, smooth, and the most internationally known."
+          },
+          {
+            "question": "Can I order a mixed box as a gift?",
+            "answer": "Yes, you can combine different varieties in the same box from the cart."
+          },
+          {
+            "question": "Can I note that it's a gift when ordering?",
+            "answer": "Yes, write it in the checkout notes field along with the date you need it by."
+          }
+        ]
+      },
+      "ru": {
+        "title": "Лучшее грузинское вино в подарок: краткий гид",
+        "description": "Какое грузинское вино подарить в зависимости от повода: Саперави, Киндзмараули или коробка со штопором в подарок. Цены и как заказать в Испании.",
+        "lead": "Выбрать вино в подарок проще, если знать, предпочитает человек сладкое или сухое. Этот гид поможет выбрать среди вин Georgian Royal Wine.",
+        "eyebrow": "Гид",
+        "sections": [
+          {
+            "heading": "В зависимости от вкуса получателя",
+            "paragraphs": [
+              "Если не знаете, предпочитает ли человек сладкое или сухое, Киндзмараули — самый безопасный выбор: полусладкое, мягкое и самое известное за пределами Грузии. Для тех, кто пьёт сухое красное каждый день, Саперави — естественный выбор."
+            ]
+          },
+          {
+            "heading": "Коробка как подарок",
+            "paragraphs": [
+              "Коробка из 6 бутылок включает штопор в подарок и бесплатную доставку по Испании. Выглядит эффектнее отдельных бутылок и стоит как 5.",
+              "Можно смешать разные сорта в одной коробке, чтобы получатель попробовал несколько."
+            ]
+          },
+          {
+            "heading": "Как заказать заранее",
+            "paragraphs": [
+              "Закажите за 2–3 дня до даты: по Испании доставка занимает 48 рабочих часов. В примечании к заказу можно указать, что это подарок, и нужную дату."
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Какое грузинское вино проще всего подарить?",
+            "answer": "Киндзмараули: полусладкое, мягкое и самое известное на международном уровне."
+          },
+          {
+            "question": "Можно заказать смешанную коробку в подарок?",
+            "answer": "Да, можно сочетать разные сорта в одной коробке прямо в корзине."
+          },
+          {
+            "question": "Можно указать, что это подарок, при заказе?",
+            "answer": "Да, напишите это в примечании при оформлении заказа вместе с нужной датой."
+          }
+        ]
+      },
+      "fr": {
+        "title": "Meilleur vin géorgien à offrir : guide rapide",
+        "description": "Quel vin géorgien offrir selon l'occasion : Saperavi, Kindzmarauli ou une caisse avec tire-bouchon offert. Prix et comment commander en Espagne.",
+        "lead": "Choisir un vin à offrir est plus simple quand on sait si la personne préfère le sec ou le doux. Ce guide vous aide à choisir parmi les variétés de Georgian Royal Wine.",
+        "eyebrow": "Guide",
+        "sections": [
+          {
+            "heading": "Selon le goût du destinataire",
+            "paragraphs": [
+              "Si vous ne savez pas si la personne préfère le doux ou le sec, le Kindzmarauli est le choix le plus sûr : demi-doux, souple, et le plus connu hors de Géorgie. Pour quelqu'un qui boit du rouge sec au quotidien, le Saperavi est le choix naturel."
+            ]
+          },
+          {
+            "heading": "La caisse comme cadeau",
+            "paragraphs": [
+              "Une caisse de 6 bouteilles inclut un tire-bouchon offert et la livraison gratuite en Espagne. Elle se présente mieux que des bouteilles seules et coûte le prix de 5.",
+              "Vous pouvez mélanger différentes variétés dans la même caisse pour que le destinataire en découvre plusieurs."
+            ]
+          },
+          {
+            "heading": "Commander avec de l'avance",
+            "paragraphs": [
+              "Commandez 2 à 3 jours avant la date : en Espagne, la livraison prend 48 heures ouvrées. Dans les notes de commande, vous pouvez préciser qu'il s'agit d'un cadeau et la date souhaitée."
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Quel est le vin géorgien le plus facile à offrir ?",
+            "answer": "Le Kindzmarauli : demi-doux, souple, et le plus connu à l'international."
+          },
+          {
+            "question": "Puis-je commander une caisse mixte pour un cadeau ?",
+            "answer": "Oui, vous pouvez combiner différentes variétés dans la même caisse depuis le panier."
+          },
+          {
+            "question": "Puis-je préciser que c'est un cadeau lors de la commande ?",
+            "answer": "Oui, indiquez-le dans les notes de commande avec la date souhaitée."
+          }
+        ]
+      },
+      "uk": {
+        "title": "Найкраще грузинське вино в подарунок: короткий гід",
+        "description": "Яке грузинське вино подарувати залежно від нагоди: Сапераві, Кіндзмараулі або коробка зі штопором у подарунок. Ціни та як замовити в Іспанії.",
+        "lead": "Обрати вино в подарунок простіше, якщо знати, чи людина любить солодке чи сухе. Цей гід допоможе обрати серед вин Georgian Royal Wine.",
+        "eyebrow": "Гід",
+        "sections": [
+          {
+            "heading": "Залежно від смаку отримувача",
+            "paragraphs": [
+              "Якщо не знаєте, чи людина любить солодке чи сухе, Кіндзмараулі — найбезпечніший вибір: напівсолодке, м'яке і найвідоміше за межами Грузії. Для того, хто п'є сухе червоне щодня, Сапераві — природний вибір."
+            ]
+          },
+          {
+            "heading": "Коробка як подарунок",
+            "paragraphs": [
+              "Коробка з 6 пляшок включає штопор у подарунок та безкоштовну доставку по Іспанії. Виглядає ефектніше за окремі пляшки і коштує як 5.",
+              "Можна поєднати різні сорти в одній коробці, щоб отримувач спробував декілька."
+            ]
+          },
+          {
+            "heading": "Як замовити заздалегідь",
+            "paragraphs": [
+              "Замовляйте за 2–3 дні до дати: по Іспанії доставка триває 48 робочих годин. У примітці до замовлення можна вказати, що це подарунок, та потрібну дату."
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Яке грузинське вино найпростіше подарувати?",
+            "answer": "Кіндзмараулі: напівсолодке, м'яке і найвідоміше на міжнародному рівні."
+          },
+          {
+            "question": "Чи можна замовити змішану коробку в подарунок?",
+            "answer": "Так, можна поєднати різні сорти в одній коробці прямо в кошику."
+          },
+          {
+            "question": "Чи можна вказати, що це подарунок, при замовленні?",
+            "answer": "Так, напишіть це в примітці при оформленні замовлення разом із потрібною датою."
+          }
+        ]
+      },
+      "bg": {
+        "title": "Най-доброто грузинско вино за подарък: кратко ръководство",
+        "description": "Кое грузинско вино да подарите според повода: Саперави, Киндзмараули или каса с тирбушон подарък. Цени и как да поръчате в Испания.",
+        "lead": "Изборът на вино за подарък е по-лесен, ако знаете дали човекът предпочита сладко или сухо. Това ръководство ви помага да изберете сред сортовете на Georgian Royal Wine.",
+        "eyebrow": "Гид",
+        "sections": [
+          {
+            "heading": "Според вкуса на получателя",
+            "paragraphs": [
+              "Ако не сте сигурни дали предпочита сладко или сухо, Киндзмараули е най-сигурният избор: полусладко, меко и най-разпознаваемо извън Грузия. За някой, който пие сухо червено всеки ден, Саперави е естественият избор."
+            ]
+          },
+          {
+            "heading": "Касата като подарък",
+            "paragraphs": [
+              "Каса от 6 бутилки включва тирбушон подарък и безплатна доставка в Испания. Изглежда по-добре от отделни бутилки и струва колкото 5.",
+              "Можете да смесите различни сортове в една каса, за да може получателят да опита няколко."
+            ]
+          },
+          {
+            "heading": "Поръчка с достатъчно време",
+            "paragraphs": [
+              "Поръчайте 2–3 дни преди датата: в Испания доставката отнема 48 работни часа. В бележките към поръчката можете да отбележите, че е подарък, и нужната дата."
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Кое грузинско вино е най-лесно за подарък?",
+            "answer": "Киндзмараули: полусладко, меко и най-познато на международно ниво."
+          },
+          {
+            "question": "Мога ли да поръчам смесена каса за подарък?",
+            "answer": "Да, можете да комбинирате различни сортове в една каса направо от количката."
+          },
+          {
+            "question": "Мога ли да отбележа, че е подарък при поръчката?",
+            "answer": "Да, напишете го в бележките при плащане заедно с нужната дата."
+          }
+        ]
+      }
+    }
   }
 ];
 

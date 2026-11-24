@@ -9,6 +9,7 @@ import JsonLd from "@/components/JsonLd";
 import AgeGate from "@/components/AgeGate";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import MicrosoftClarity from "@/components/MicrosoftClarity";
 import { absoluteUrl, siteConfig } from "@/lib/seo";
 import type { Locale } from "@/lib/i18n/translations";
 
@@ -113,6 +114,7 @@ export default async function RootLayout({
       <body className="flex min-h-full flex-col bg-cream-50 text-stone-800 dark:bg-stone-950 dark:text-cream-100">
         <JsonLd nonce={nonce} />
         <GoogleAnalytics nonce={nonce} />
+        <MicrosoftClarity nonce={nonce} />
         <Providers initialLocale={routeLocale ?? undefined}>
           <AgeGate />
           <Header />
