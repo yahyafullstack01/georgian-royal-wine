@@ -13,6 +13,8 @@ import {
   lineTotal,
 } from "@/lib/packing";
 import { useState } from "react";
+import { trackEvent } from "@/lib/analytics";
+import { getWineContent } from "@/data/wineContent";
 
 interface AddToCartButtonProps {
   wine: Wine;
@@ -79,7 +81,7 @@ export default function AddToCartButton({
   showPackOptions = size === "lg",
 }: AddToCartButtonProps) {
   const { addToCart } = useCart();
-  const { t } = useLocale();
+  const { t, locale } = useLocale();
   const [bottles, setBottles] = useState(0);
   const [boxes, setBoxes] = useState(0);
   const [added, setAdded] = useState(false);
@@ -90,14 +92,29 @@ export default function AddToCartButton({
 
   const handleClick = () => {
     if (!wine.inStock) return;
+    let addedValue = 0;
     if (showPackOptions) {
       if (!hasOrderUnits(bottles, boxes)) return;
       addToCart(wine, bottles, boxes);
+      addedValue = lineTotal(wine, bottles, boxes);
       setBottles(0);
       setBoxes(0);
     } else {
       addToCart(wine, 1, 0);
+      addedValue = wine.price;
     }
+    trackEvent("add_to_cart", {
+      currency: "EUR",
+      value: addedValue,
+      items: [
+        {
+          item_id: wine.slug,
+          item_name: getWineContent(wine.slug, locale).name,
+          price: wine.price,
+          item_category: wine.category,
+        },
+      ],
+    });
     setAdded(true);
     setTimeout(() => setAdded(false), 2000);
   };

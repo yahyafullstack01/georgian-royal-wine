@@ -3,6 +3,7 @@
 import { useState, FormEvent } from "react";
 import { ContactFormData } from "@/types/wine";
 import { useLocale } from "@/context/LocaleContext";
+import { trackEvent } from "@/lib/analytics";
 
 export default function ContactForm() {
   const { t } = useLocale();
@@ -37,6 +38,7 @@ export default function ContactForm() {
       }
 
       setStatus("success");
+      trackEvent("contact_form_submitted", { subject: form.subject });
       setForm({ name: "", email: "", phone: "", subject: "", message: "" });
     } catch {
       setStatus("error");

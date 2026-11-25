@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, FormEvent } from "react";
+import { useEffect, useRef, useState, FormEvent } from "react";
 import { useRouter } from "next/navigation";
 import { useCart } from "@/context/CartContext";
 import { useLocale } from "@/context/LocaleContext";
@@ -8,6 +8,7 @@ import { CheckoutFormData, CustomerType } from "@/types/wine";
 import { formatPrice } from "@/lib/format";
 import type { OrderRequestPayload } from "@/lib/order";
 import { getWineContent } from "@/data/wineContent";
+import { trackEvent } from "@/lib/analytics";
 import {
   bottlesFree,
   bottlesPaid,
@@ -58,6 +59,24 @@ export default function CheckoutForm() {
   const [status, setStatus] = useState<
     "idle" | "processing" | "success" | "error"
   >("idle");
+  const hasTrackedBeginCheckout = useRef(false);
+
+  useEffect(() => {
+    if (hasTrackedBeginCheckout.current || items.length === 0) return;
+    hasTrackedBeginCheckout.current = true;
+    trackEvent("begin_checkout", {
+      currency: "EUR",
+      value: totalPrice,
+      items: items.map((item) => ({
+        item_id: item.wine.slug,
+        item_name: getWineContent(item.wine.slug, locale).name,
+        price: item.wine.price,
+        item_category: item.wine.category,
+      })),
+    });
+    // Fire once when the checkout page first has items, regardless of later re-renders.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   const [errorMessage, setErrorMessage] = useState("");
   const [form, setForm] = useState<CheckoutFormData>({
     customerType: "individual",
@@ -146,6 +165,17 @@ export default function CheckoutForm() {
       }
 
       setStatus("success");
+      trackEvent("order_request_submitted", {
+        currency: "EUR",
+        value: totalPrice,
+        items: payload.items.map((item) => ({
+          item_id: item.slug,
+          item_name: item.name,
+          price: item.unitBottlePrice,
+          item_category: items.find((i) => i.wine.slug === item.slug)?.wine
+            .category,
+        })),
+      });
     } catch (err) {
       setStatus("error");
       setErrorMessage(

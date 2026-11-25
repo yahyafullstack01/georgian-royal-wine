@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Wine } from "@/types/wine";
@@ -9,6 +10,7 @@ import GeorgianDivider from "@/components/GeorgianDivider";
 import { useLocale } from "@/context/LocaleContext";
 import { getWineContent } from "@/data/wineContent";
 import { localizedHref } from "@/lib/i18n/routes";
+import { trackEvent } from "@/lib/analytics";
 
 interface WineDetailContentProps {
   wine: Wine;
@@ -21,6 +23,23 @@ export default function WineDetailContent({
 }: WineDetailContentProps) {
   const { t, locale } = useLocale();
   const content = getWineContent(wine.slug, locale);
+
+  useEffect(() => {
+    trackEvent("view_item", {
+      currency: "EUR",
+      value: wine.price,
+      items: [
+        {
+          item_id: wine.slug,
+          item_name: content.name,
+          price: wine.price,
+          item_category: wine.category,
+        },
+      ],
+    });
+    // Fire once per mounted product page, independent of locale text changes.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [wine.slug]);
 
   const specs = [
     { label: t.product.classification, value: content.classification },
