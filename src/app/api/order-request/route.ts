@@ -2,30 +2,15 @@ import { NextResponse } from "next/server";
 import {
   formatCustomerConfirmationEmail,
   formatStaffOrderEmail,
-  type OrderRequestPayload,
+  isValidOrderRequestPayload,
 } from "@/lib/order";
 import { getNotificationEmail, isMailConfigured, sendMail } from "@/lib/mail";
-
-function isValidPayload(body: unknown): body is OrderRequestPayload {
-  if (!body || typeof body !== "object") return false;
-  const payload = body as OrderRequestPayload;
-  return (
-    Array.isArray(payload.items) &&
-    payload.items.length > 0 &&
-    typeof payload.subtotal === "number" &&
-    payload.customer !== undefined &&
-    typeof payload.customer.email === "string" &&
-    payload.customer.email.length > 0 &&
-    typeof payload.customer.firstName === "string" &&
-    typeof payload.customer.lastName === "string"
-  );
-}
 
 export async function POST(request: Request) {
   try {
     const body = await request.json();
 
-    if (!isValidPayload(body)) {
+    if (!isValidOrderRequestPayload(body)) {
       return NextResponse.json(
         { error: "Invalid order request." },
         { status: 400 }

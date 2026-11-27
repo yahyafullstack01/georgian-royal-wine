@@ -30,6 +30,60 @@ export interface StaffOrderEmail {
 
 export type OrderEmail = StaffOrderEmail;
 
+export function isValidOrderRequestPayload(
+  body: unknown
+): body is OrderRequestPayload {
+  if (!body || typeof body !== "object") return false;
+  const payload = body as OrderRequestPayload;
+  return (
+    Array.isArray(payload.items) &&
+    payload.items.length > 0 &&
+    typeof payload.subtotal === "number" &&
+    payload.customer !== undefined &&
+    typeof payload.customer.email === "string" &&
+    payload.customer.email.length > 0 &&
+    typeof payload.customer.firstName === "string" &&
+    typeof payload.customer.lastName === "string"
+  );
+}
+
+const METADATA_CHUNK_SIZE = 480;
+const METADATA_CHUNK_PREFIX = "order_chunk_";
+
+/** Stripe metadata values are capped at 500 chars; split the payload across keys. */
+export function encodeOrderPayloadForMetadata(
+  payload: OrderRequestPayload
+): Record<string, string> {
+  const json = JSON.stringify(payload);
+  const metadata: Record<string, string> = {};
+  let index = 0;
+  for (let offset = 0; offset < json.length; offset += METADATA_CHUNK_SIZE) {
+    metadata[`${METADATA_CHUNK_PREFIX}${index}`] = json.slice(
+      offset,
+      offset + METADATA_CHUNK_SIZE
+    );
+    index += 1;
+  }
+  return metadata;
+}
+
+export function decodeOrderPayloadFromMetadata(
+  metadata: Record<string, string> | null | undefined
+): OrderRequestPayload | null {
+  if (!metadata) return null;
+  const chunks: string[] = [];
+  for (let index = 0; metadata[`${METADATA_CHUNK_PREFIX}${index}`] !== undefined; index += 1) {
+    chunks.push(metadata[`${METADATA_CHUNK_PREFIX}${index}`]);
+  }
+  if (chunks.length === 0) return null;
+  try {
+    const parsed = JSON.parse(chunks.join(""));
+    return isValidOrderRequestPayload(parsed) ? parsed : null;
+  } catch {
+    return null;
+  }
+}
+
 const BUSINESS_TYPE_RU: Record<BusinessType, string> = {
   restaurant: "Ресторан",
   retailer: "Розничный магазин",
@@ -403,25 +457,19 @@ export function formatCustomerConfirmationEmail(
       : "€3 delivery in Torrevieja, Spain (1–4 bottles)";
 
   const paymentText = [
-    "ONLINE PAYMENT — BANK TRANSFER",
-    "------------------------------",
-    "You can pay by bank transfer using the details below.",
-    "Please include your full name in the transfer reference.",
-    "",
-    "Beneficiary: STAS BUILDING SERVICIO SL.",
-    "Bank: Banco Sabadell",
-    "IBAN: ES15 0081 0628 8100 0335 5039",
-    `Amount (wine subtotal): ${formatEur(subtotal)}`,
-    "(Final total including shipping will be confirmed by our team if needed.)",
+    "PAYMENT CONFIRMED",
+    "-----------------",
+    `Amount paid (wine subtotal): ${formatEur(subtotal)}`,
+    "Your payment has been processed successfully via Stripe.",
   ].join("\n");
 
   const text = [
     `Dear ${customer.firstName},`,
     "",
-    "Thank you for your wine reservation with Georgian Royal Wine (GRW).",
-    "We have received your request. You can complete payment by bank transfer using the details below; our team will contact you if anything needs confirmation.",
+    "Thank you for your order with Georgian Royal Wine (GRW).",
+    "Your payment has been received and your order is confirmed. We will contact you if anything needs confirmation before delivery.",
     "",
-    "YOUR RESERVATION",
+    "YOUR ORDER",
     "----------------",
     ...items.map((item, index) => {
       const freeNote = item.bottlesFree ? `, ${item.bottlesFree} free` : "";
@@ -495,7 +543,7 @@ export function formatCustomerConfirmationEmail(
         <tr>
           <td style="background:linear-gradient(135deg,#3d1519 0%,#722f37 100%);padding:28px 32px;">
             <div style="font-size:12px;color:#f5d0a9;text-transform:uppercase;letter-spacing:0.12em;margin-bottom:6px;">Georgian Royal Wine</div>
-            <div style="font-size:24px;font-weight:700;color:#ffffff;margin-bottom:8px;">Your wine reservation</div>
+            <div style="font-size:24px;font-weight:700;color:#ffffff;margin-bottom:8px;">Payment received — order confirmed</div>
             <div style="font-size:14px;color:#e8c4a0;">Thank you, ${escapeHtml(customer.firstName)}!</div>
           </td>
         </tr>
@@ -503,7 +551,7 @@ export function formatCustomerConfirmationEmail(
         <tr>
           <td style="padding:28px 32px 0;">
             <div style="color:#57534e;font-size:15px;line-height:1.6;margin-bottom:20px;">
-              We have received your reservation. You can complete payment by bank transfer using the details below; our team will contact you if anything needs confirmation.
+              Your payment has been received and your order is confirmed. We will contact you if anything needs confirmation before delivery.
             </div>
             <div style="font-size:13px;font-weight:700;color:#722f37;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:14px;border-bottom:2px solid #f5e6d3;padding-bottom:8px;">Your order</div>
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #e8e0d8;border-radius:8px;overflow:hidden;">
@@ -549,29 +597,18 @@ export function formatCustomerConfirmationEmail(
 
         <tr>
           <td style="padding:0 32px 24px;">
-            <div style="font-size:13px;font-weight:700;color:#722f37;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:14px;border-bottom:2px solid #f5e6d3;padding-bottom:8px;">Online payment — bank transfer</div>
-            <div style="color:#57534e;font-size:14px;line-height:1.6;margin-bottom:14px;">
-              Please transfer the amount below and include your full name in the payment reference.
-            </div>
+            <div style="font-size:13px;font-weight:700;color:#722f37;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:14px;border-bottom:2px solid #f5e6d3;padding-bottom:8px;">Payment confirmed</div>
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#faf7f4;border-radius:8px;border:1px solid #e8e0d8;">
               <tr>
                 <td style="padding:18px 20px;">
                   <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
                     <tr>
-                      <td style="padding:6px 0;color:#78716c;font-size:13px;width:120px;">Beneficiary</td>
-                      <td style="padding:6px 0;color:#1c1917;font-size:14px;font-weight:600;">STAS BUILDING SERVICIO SL.</td>
-                    </tr>
-                    <tr>
-                      <td style="padding:6px 0;color:#78716c;font-size:13px;">Bank</td>
-                      <td style="padding:6px 0;color:#1c1917;font-size:14px;font-weight:600;">Banco Sabadell</td>
-                    </tr>
-                    <tr>
-                      <td style="padding:6px 0;color:#78716c;font-size:13px;">IBAN</td>
-                      <td style="padding:6px 0;color:#1c1917;font-size:15px;font-weight:700;letter-spacing:0.04em;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;">ES15 0081 0628 8100 0335 5039</td>
-                    </tr>
-                    <tr>
-                      <td style="padding:6px 0;color:#78716c;font-size:13px;">Amount</td>
+                      <td style="padding:6px 0;color:#78716c;font-size:13px;width:160px;">Amount paid</td>
                       <td style="padding:6px 0;color:#3d1519;font-size:16px;font-weight:700;">${formatEur(subtotal)} <span style="color:#a8a29e;font-size:12px;font-weight:500;">(wine subtotal)</span></td>
+                    </tr>
+                    <tr>
+                      <td style="padding:6px 0;color:#78716c;font-size:13px;">Payment method</td>
+                      <td style="padding:6px 0;color:#1c1917;font-size:14px;font-weight:600;">Card — processed via Stripe</td>
                     </tr>
                   </table>
                 </td>
@@ -606,7 +643,7 @@ export function formatCustomerConfirmationEmail(
 </html>`;
 
   return {
-    subject: "Your wine reservation — Georgian Royal Wine",
+    subject: "Payment confirmed — your order from Georgian Royal Wine",
     text,
     html,
   };

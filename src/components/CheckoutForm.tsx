@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef, useState, FormEvent } from "react";
-import { useRouter } from "next/navigation";
 import { useCart } from "@/context/CartContext";
 import { useLocale } from "@/context/LocaleContext";
 import { CheckoutFormData, CustomerType } from "@/types/wine";
@@ -51,14 +50,13 @@ const EUROPEAN_COUNTRIES = [
 ];
 
 export default function CheckoutForm() {
-  const router = useRouter();
-  const { items, totalPrice, clearCart } = useCart();
+  const { items, totalPrice } = useCart();
   const { t, locale } = useLocale();
   const totalBoxes = items.reduce((sum, item) => sum + item.boxes, 0);
   const hasFreeDelivery = totalBoxes >= 1;
-  const [status, setStatus] = useState<
-    "idle" | "processing" | "success" | "error"
-  >("idle");
+  const [status, setStatus] = useState<"idle" | "processing" | "error">(
+    "idle"
+  );
   const hasTrackedBeginCheckout = useRef(false);
 
   useEffect(() => {
@@ -153,29 +151,19 @@ export default function CheckoutForm() {
     };
 
     try {
-      const response = await fetch("/api/order-request", {
+      const response = await fetch("/api/checkout-session", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
       });
 
-      if (!response.ok) {
-        const data = await response.json().catch(() => ({}));
+      const data = await response.json().catch(() => ({}));
+
+      if (!response.ok || !data.url) {
         throw new Error(data.error ?? t.checkout.error);
       }
 
-      setStatus("success");
-      trackEvent("order_request_submitted", {
-        currency: "EUR",
-        value: totalPrice,
-        items: payload.items.map((item) => ({
-          item_id: item.slug,
-          item_name: item.name,
-          price: item.unitBottlePrice,
-          item_category: items.find((i) => i.wine.slug === item.slug)?.wine
-            .category,
-        })),
-      });
+      window.location.href = data.url;
     } catch (err) {
       setStatus("error");
       setErrorMessage(
@@ -183,48 +171,6 @@ export default function CheckoutForm() {
       );
     }
   };
-
-  if (status === "success") {
-    return (
-      <div className="mx-auto max-w-lg py-16 text-center">
-        <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-green-100 dark:bg-green-900/50">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={2}
-            stroke="currentColor"
-            className="h-8 w-8 text-green-700 dark:text-green-400"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M4.5 12.75l6 6 9-13.5"
-            />
-          </svg>
-        </div>
-        <h2 className="font-serif text-3xl text-burgundy-950 dark:text-cream-100">
-          {t.checkout.confirmed}
-        </h2>
-        <p className="mt-3 text-stone-600 dark:text-stone-300">
-          {t.checkout.confirmedDesc}{" "}
-          <strong>{form.email}</strong>.
-        </p>
-        <p className="mt-2 text-sm text-stone-500 dark:text-stone-400">
-          {t.checkout.orderTotal}: {formatPrice(totalPrice)}
-        </p>
-        <button
-          onClick={() => {
-            clearCart();
-            router.push("/shop");
-          }}
-          className="mt-8 rounded bg-burgundy-900 px-8 py-3 text-sm font-medium tracking-wide text-cream-100 uppercase transition-colors hover:bg-burgundy-800 dark:bg-gold-500 dark:text-burgundy-950 dark:hover:bg-gold-400"
-        >
-          {t.checkout.continue}
-        </button>
-      </div>
-    );
-  }
 
   return (
     <form onSubmit={handleSubmit} className="grid gap-8 lg:grid-cols-5">
