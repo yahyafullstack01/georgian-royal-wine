@@ -494,6 +494,9 @@ export function formatCustomerConfirmationEmail(
     ...formatDeliveryAddress(customer, "en"),
     "",
     customer.notes ? `YOUR NOTES\n----------\n${customer.notes}\n` : null,
+    "Enjoying GRW? A quick Google review helps other wine lovers find us:",
+    "https://g.page/r/CW8aWniUcU9aECE/review",
+    "",
     "If you have any questions, reply to this email or contact us at sbs@sb-servicio.com / +34 607 609 474.",
     "",
     "Kind regards,",
@@ -622,6 +625,13 @@ export function formatCustomerConfirmationEmail(
             <div style="font-size:13px;font-weight:700;color:#722f37;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:14px;border-bottom:2px solid #f5e6d3;padding-bottom:8px;">Delivery address</div>
             ${addressHtml}
             ${notesBlock}
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:0 32px 28px;text-align:center;">
+            <div style="color:#57534e;font-size:14px;line-height:1.6;margin-bottom:14px;">Enjoying GRW? A quick Google review helps other wine lovers find us.</div>
+            <a href="https://g.page/r/CW8aWniUcU9aECE/review" style="display:inline-block;background:#b8860b;color:#ffffff;font-size:14px;font-weight:700;text-decoration:none;padding:12px 28px;border-radius:6px;letter-spacing:0.02em;">★ Leave a Google review</a>
           </td>
         </tr>
 
